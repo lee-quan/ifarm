@@ -4,17 +4,16 @@
  */
 package ifarm;
 
+import java.sql.Connection;
+
 /**
  *
  * @author Lee Quan
  */
 public class Ifarm {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
     }
     
 }
