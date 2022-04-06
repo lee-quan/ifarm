@@ -1,1 +1,3 @@
 # ifarm
+
+schema = ifarm
