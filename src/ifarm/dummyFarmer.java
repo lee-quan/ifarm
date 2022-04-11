@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class dummyFarmer throws InterruptedException {
+public class dummyFarmer {
 
     static Connection conn = DBConnection.ConnectDB();
 
@@ -43,6 +43,8 @@ public class dummyFarmer throws InterruptedException {
             }
         } catch (SQLException ex) {
             Logger.getLogger(DBConnection.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InterruptedException ex){
+            Logger.getLogger("thread.join").log(Level.SEVERE, null, ex);
         }
     }
 
