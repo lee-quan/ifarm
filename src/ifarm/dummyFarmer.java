@@ -9,7 +9,7 @@ public class dummyFarmer {
 
     static Connection conn = DBConnection.ConnectDB();
 
-    public void test() {
+    public void test() throws InterruptedException {
         try {
             Statement myStmt = conn.createStatement();
             ResultSet rs = myStmt.executeQuery("SELECT count(_id) as count FROM users");
