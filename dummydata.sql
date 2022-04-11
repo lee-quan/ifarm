@@ -369,3 +369,22 @@ INSERT INTO `ifarm`.farm (_id, name, address)  VALUES ("8", "Bittersweet Lands",
 INSERT INTO `ifarm`.farm (_id, name, address)  VALUES ("9", "Windy Oaks Fields", "764-1552 In, Road");
 INSERT INTO `ifarm`.farm (_id, name, address)  VALUES ("10", "Rattlesnake Ranch", "P.O. Box 279, 8717 Id Road");
 
+CREATE TABLE `ifarm`.`users` (
+  `_id` VARCHAR(45) NOT NULL,
+  `name` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NULL,
+  `phoneNumber` VARCHAR(45) NULL,
+  `farm` VARCHAR(45) NULL,
+  PRIMARY KEY (`_id`));
+
+INSERT INTO `ifarm`.users (_id, name,email,password,phoneNumber)  VALUES ("1","Marcille Berthomieu", "mberthomieu0@fc2.com","Pc97yP0","2447014408");
+INSERT INTO `ifarm`.users (_id, name,email,password,phoneNumber)  VALUES ("2","Chrotoem Alfonzo", "calfonzo1@paypal.com","enkFFqY0cB","9001803118");
+INSERT INTO `ifarm`.users (_id, name,email,password,phoneNumber)  VALUES ("3","Rafaelia Liddel", "rliddel2@cargocollective.com","MMwyT2x5p","3803680022");
+INSERT INTO `ifarm`.users (_id, name,email,password,phoneNumber)  VALUES ("4","Avrit Norcliffe", "anorcliffe3@paypal.com","EK7FyqHN4k31","2243262065");
+INSERT INTO `ifarm`.users (_id, name,email,password,phoneNumber)  VALUES ("5","Job Circuitt", "jcircuitt4@xinhuanet.com","rM2IVvWBb","3291791565");
+INSERT INTO `ifarm`.users (_id, name,email,password,phoneNumber)  VALUES ("6","Rouvin Gollard", "rgollard5@salon.com","giIqSJfxnte","4178211489");
+INSERT INTO `ifarm`.users (_id, name,email,password,phoneNumber)  VALUES ("7","Caria Flay", "cflay6@yale.edu","TpZrKOdVYl6e","5954450414");
+INSERT INTO `ifarm`.users (_id, name,email,password,phoneNumber)  VALUES ("8","Carmen Frenzel;", "cfrenzel7@uol.com.br","7n2BPX2","5108764012");
+INSERT INTO `ifarm`.users (_id, name,email,password,phoneNumber)  VALUES ("9","Courtnay Dugood", "cdugood8@mayoclinic.com","by9HKKOPs","9828379079");
+INSERT INTO `ifarm`.users (_id, name,email,password,phoneNumber)  VALUES ("10","Amandie Stife", "astife9@hud.gov","laeLRim","6597619213");
