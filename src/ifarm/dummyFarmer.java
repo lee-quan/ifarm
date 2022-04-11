@@ -5,11 +5,11 @@ import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class dummyFarmer throws InterruptedException {
+public class dummyFarmer {
 
     static Connection conn = DBConnection.ConnectDB();
 
-    public void test() {
+    public void test() throws InterruptedException {
         try {
             Statement myStmt = conn.createStatement();
             ResultSet rs = myStmt.executeQuery("SELECT count(_id) as count FROM users");
