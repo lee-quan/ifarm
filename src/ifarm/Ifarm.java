@@ -54,18 +54,18 @@ public class Ifarm {
 
         for (int i = 0; i < numOfUser; i++) {
             //randomly assign farms to each user
-            farmThreads[i] = d.new generate(userFarm, numOfUser, numOfFarm, i);
+            farmThreads[i] = d.new generate(userFarm, numOfFarm, i);
         }
 
         for (int i = 0; i < numOfFarm; i++) {
             //randomly assign plants to each farm
-            plantThreads[i] = d.new generate(farmPlant, numOfFarm, numOfPlant, i);
+            plantThreads[i] = d.new generate(farmPlant, numOfPlant, i);
 
             //randomly assign fertilisers to each farm
-            fertiliserThreads[i] = d.new generate(farmFertiliser, numOfFarm, numOfFertiliser, i);
+            fertiliserThreads[i] = d.new generate(farmFertiliser, numOfFertiliser, i);
 
             //randomly assign pesticides to each farm
-            pesticideThreads[i] = d.new generate(farmPesticides, numOfFarm, numOfPesticide, i);
+            pesticideThreads[i] = d.new generate(farmPesticides, numOfPesticide, i);
         }
 
         try {
@@ -79,7 +79,6 @@ public class Ifarm {
             }
             for (int i = 0; i < numOfUser; i++) {
                 farmThreads[i].join();
-
             }
             for (int i = 0; i < numOfFarm; i++) {
                 plantThreads[i].join();

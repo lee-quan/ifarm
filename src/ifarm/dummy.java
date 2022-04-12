@@ -35,18 +35,18 @@ public class dummy {
 
     class generate extends Thread {
         String[] array;
-        int num,num1,index;
+        int num,index;
         
-        public generate(String[] array, int num, int num1, int index){
+        public generate(String[] array, int num, int index){
             this.array = array;
             this.num = num;
-            this.num1 = num1;
+
             this.index = index;
         }
         
         public void run() {
             String str = "";
-            int[] arr = new int[num1];
+            int[] arr = new int[num];
             for (int i = 0; i < arr.length; i++) {
                 arr[i] = i + 1; 
             }
@@ -55,7 +55,7 @@ public class dummy {
             
             int count = 0;
             while (true) {
-                int index = random.nextInt(num1);
+                int index = random.nextInt(num);
                 int temp = arr[index];
                 if (temp == -1) {
                     break;
