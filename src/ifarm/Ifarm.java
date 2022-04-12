@@ -49,8 +49,8 @@ public class Ifarm {
 
         String[] userFarm = new String[numOfUser];
         String[] farmPlant = new String[numOfFarm];
-        String[] farmFertiliser = new String[numOfFertiliser];
-        String[] farmPesticides = new String[numOfPesticide];
+        String[] farmFertiliser = new String[numOfFarm];
+        String[] farmPesticides = new String[numOfFarm];
 
         for (int i = 0; i < numOfUser; i++) {
             //randomly assign farms to each user
