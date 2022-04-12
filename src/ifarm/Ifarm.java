@@ -26,13 +26,12 @@ public class Ifarm {
         dummy.generate[] pesticideThreads = new dummy.generate[10];
         dummy.generate[] fertiliserThreads = new dummy.generate[10];
         dummy d = new dummy();
-
         for (int i = 0; i < 5; i++) {
             totalRow[i] = d.new count(count, tableName[i], i);
         }
         try {
             for (dummy.count thread : totalRow) {
-                thread.run();
+                thread.start();
             }
 
             for (dummy.count thread : totalRow) {
@@ -42,11 +41,16 @@ public class Ifarm {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        int numOfUser = count[0], numOfFarm = count[1], numOfPlant = count[2], numOfFertiliser = count[3], numOfPesticide = count[4];
-        String[] userFarm = new String[count[0]];
-        String[] farmPlant = new String[count[1]];
-        String[] farmFertiliser = new String[count[1]];
-        String[] farmPesticides = new String[count[1]];
+        int numOfUser = count[0],
+                numOfFarm = count[1],
+                numOfPlant = count[2],
+                numOfFertiliser = count[3],
+                numOfPesticide = count[4];
+
+        String[] userFarm = new String[numOfUser];
+        String[] farmPlant = new String[numOfFarm];
+        String[] farmFertiliser = new String[numOfFertiliser];
+        String[] farmPesticides = new String[numOfPesticide];
 
         for (int i = 0; i < numOfUser; i++) {
             //randomly assign farms to each user
@@ -67,38 +71,34 @@ public class Ifarm {
         try {
             for (int i = 0; i < numOfUser; i++) {
                 farmThreads[i].start();
-                farmThreads[i].join();
             }
             for (int i = 0; i < numOfFarm; i++) {
                 plantThreads[i].start();
                 fertiliserThreads[i].start();
                 pesticideThreads[i].start();
+            }
+            for (int i = 0; i < numOfUser; i++) {
+                farmThreads[i].join();
+
+            }
+            for (int i = 0; i < numOfFarm; i++) {
                 plantThreads[i].join();
                 fertiliserThreads[i].join();
                 pesticideThreads[i].join();
             }
-//            for (int i = 0; i < numOfUser; i++) {
-//                farmThreads[i].join();
-//
-//            }
-//            for (int i = 0; i < numOfFarm; i++) {
-//                plantThreads[i].join();
-//                fertiliserThreads[i].join();
-//                pesticideThreads[i].join();
-//            }
         } catch (InterruptedException ex) {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }
         System.out.println("User");
         for (int i = 0; i < numOfUser; i++) {
-            System.out.println("User " + (i + 1) + "'s farm = [" + userFarm[i]+"]");
+            System.out.println("User " + (i + 1) + "'s farm = [" + userFarm[i] + "]");
         }
-        
+
         for (int i = 0; i < numOfFarm; i++) {
             System.out.println("\nFarm " + (i + 1) + ":");
-            System.out.println("Plant = [" + farmPlant[i]+"]");
-            System.out.println("Fertilizer = [" + farmFertiliser[i]+"]");
-            System.out.println("Pesticide = [" + farmPesticides[i]+"]");
+            System.out.println("Plant = [" + farmPlant[i] + "]");
+            System.out.println("Fertilizer = [" + farmFertiliser[i] + "]");
+            System.out.println("Pesticide = [" + farmPesticides[i] + "]");
 
         }
 

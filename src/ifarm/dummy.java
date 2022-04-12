@@ -48,8 +48,9 @@ public class dummy {
             String str = "";
             int[] arr = new int[num1];
             for (int i = 0; i < arr.length; i++) {
-                arr[i] = i + 1;
+                arr[i] = i + 1; 
             }
+            
             Random random = new Random();
             
             int count = 0;
@@ -60,6 +61,7 @@ public class dummy {
                     break;
                 } else {
                     arr[index] = -1;
+
                     if (count == 0) {
                         str += temp + "";
                     } else {
