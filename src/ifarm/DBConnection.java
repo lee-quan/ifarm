@@ -25,19 +25,4 @@ public class DBConnection {
         }
         return conn;
     }
-//    public static void main(String[] args) {
-//        try {
-//            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ifarm?serverTimezone=UTC","root","1111");
-//            Statement myStmt = conn.createStatement();
-//            ResultSet rs = myStmt.executeQuery("SELECT * FROM farm");
-//            
-//            
-//            while (rs.next()){
-//                System.out.println(rs.getString("name") + " is name, and address is " + rs.getString("address"));
-//            }
-//
-//        } catch (SQLException ex) {
-//            Logger.getLogger(DBConnection.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
 }
