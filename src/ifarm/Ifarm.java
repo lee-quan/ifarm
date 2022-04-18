@@ -5,6 +5,7 @@
 package ifarm;
 
 import java.sql.*;
+import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -16,56 +17,70 @@ import javax.swing.JOptionPane;
 public class Ifarm {
 
     public static void main(String[] args) {
-        //        0: users, 1:farms, 2:plant, 3:fertiliser, 4:pesticide
-        int[] count = new int[5];
-        String[] tableName = {"users", "farm", "plant", "fertiliser", "pesticide"};
 
-        dummy.count[] totalRow = new dummy.count[5];
-        dummy.generate[] farmThreads = new dummy.generate[10];
-        dummy.generate[] plantThreads = new dummy.generate[10];
-        dummy.generate[] pesticideThreads = new dummy.generate[10];
-        dummy.generate[] fertiliserThreads = new dummy.generate[10];
-        dummy d = new dummy();
-        for (int i = 0; i < 5; i++) {
-            totalRow[i] = d.new count(count, tableName[i], i);
+        String[] tableName = {"users", "farm", "plant", "fertiliser", "pesticide"};
+        
+        testfordummy d = new testfordummy();
+        testfordummy.count[] dcthread = new testfordummy.count[tableName.length];        
+        HashMap<String,Integer> MaxData = new HashMap<>();
+        
+        // creating threads
+        for (int i=0;i<tableName.length;i++){            
+            dcthread[i] = d.new count(tableName[i]);
         }
+        
+        //starting all threads and make sure all the threads finished execution
         try {
-            for (dummy.count thread : totalRow) {
+            for (testfordummy.count thread : dcthread) {
                 thread.start();
             }
 
-            for (dummy.count thread : totalRow) {
+            for (testfordummy.count thread : dcthread) {
                 thread.join();
             }
         } catch (InterruptedException ex) {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+        //put the data calculated into HashMap
+        for (int i=0;i<tableName.length;i++){
+            MaxData.put(tableName[i], dcthread[i].getMax());            
+        }
+        
+        //set all the maximum value into a constant variable
+        final int numOfUser = dcthread[0].getMax(),
+                numOfFarm = dcthread[1].getMax(),
+                numOfPlant = dcthread[2].getMax(),
+                numOfFertiliser = dcthread[3].getMax(),
+                numOfPesticide = dcthread[4].getMax();
+        
+        // create threads for generating farm, plant, pesticide and fertiliser
+        testfordummy.generate[] farmThreads = new testfordummy.generate[numOfUser];
+        testfordummy.generate[] plantThreads = new testfordummy.generate[numOfUser];
+        testfordummy.generate[] pesticideThreads = new testfordummy.generate[numOfUser];
+        testfordummy.generate[] fertiliserThreads = new testfordummy.generate[numOfUser];
 
-        int numOfUser = count[0],
-                numOfFarm = count[1],
-                numOfPlant = count[2],
-                numOfFertiliser = count[3],
-                numOfPesticide = count[4];
-
-        String[] userFarm = new String[numOfUser];
-        String[] farmPlant = new String[numOfFarm];
-        String[] farmFertiliser = new String[numOfFarm];
-        String[] farmPesticides = new String[numOfFarm];
-
+        //create 2 arrays to store all the user and farms
+        User[] users = new User[numOfUser];
+        Farm[] farms = new Farm[numOfFarm];
+        
+        
         for (int i = 0; i < numOfUser; i++) {
             //randomly assign farms to each user
-            farmThreads[i] = d.new generate(userFarm, numOfFarm, i);
+            users[i] = new User((i+1)+"");
+            farmThreads[i] = d.new generate(users[i], numOfFarm, "user");
         }
 
         for (int i = 0; i < numOfFarm; i++) {
             //randomly assign plants to each farm
-            plantThreads[i] = d.new generate(farmPlant, numOfPlant, i);
+            farms[i] = new Farm((i+1)+"");
+            plantThreads[i] = d.new generate(farms[i], numOfPlant, "plant");
 
             //randomly assign fertilisers to each farm
-            fertiliserThreads[i] = d.new generate(farmFertiliser, numOfFertiliser, i);
+            fertiliserThreads[i] = d.new generate(farms[i], numOfFertiliser, "fertiliser");
 
             //randomly assign pesticides to each farm
-            pesticideThreads[i] = d.new generate(farmPesticides, numOfPesticide, i);
+            pesticideThreads[i] = d.new generate(farms[i], numOfPesticide, "pesticide");
         }
 
         try {
@@ -90,14 +105,14 @@ public class Ifarm {
         }
         System.out.println("User");
         for (int i = 0; i < numOfUser; i++) {
-            System.out.println("User " + (i + 1) + "'s farm = [" + userFarm[i] + "]");
+            System.out.println("User's "+(i+1)+": "+users[i].getFarm());
         }
 
         for (int i = 0; i < numOfFarm; i++) {
             System.out.println("\nFarm " + (i + 1) + ":");
-            System.out.println("Plant = [" + farmPlant[i] + "]");
-            System.out.println("Fertilizer = [" + farmFertiliser[i] + "]");
-            System.out.println("Pesticide = [" + farmPesticides[i] + "]");
+            System.out.println("Plant = "+farms[i].getPlant());
+            System.out.println("Fertilizer = "+farms[i].getFertiliser());
+            System.out.println("Pesticide = "+farms[i].getPesticide());
 
         }
 
