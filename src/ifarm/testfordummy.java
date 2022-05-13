@@ -75,17 +75,17 @@ public class testfordummy {
                     arr[index] = -1;                    
                                         
                     if (obj instanceof User && name.endsWith("user")){
-                        ((User) obj).insertFarm(index+"");
+                        ((User) obj).insertFarm((index+1)+"");
                     }
                     else if (obj instanceof Farm){
                         if (name.equals("plant")){
-                            ((Farm) obj).insertPlant(index+"");                            
+                            ((Farm) obj).insertPlant((index+1)+"");                      
                         }
                         else if (name.equals("fertiliser")){
-                            ((Farm) obj).insertFertiliser(index+"");
+                            ((Farm) obj).insertFertiliser((index+1)+"");
                         }
                         else{
-                            ((Farm) obj).insertPesticide(index+"");
+                            ((Farm) obj).insertPesticide((index+1)+"");
                         }
                     }                    
                 }                
