@@ -4,11 +4,16 @@
  */
 package ifarm;
 
-import java.sql.*;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -17,104 +22,84 @@ import javax.swing.JOptionPane;
 public class Ifarm {
 
     public static void main(String[] args) {
+        //Introduction of thread pool
+        ExecutorService executorservice = Executors.newFixedThreadPool(10);
 
         String[] tableName = {"users", "farm", "plant", "fertiliser", "pesticide"};
-        
-        testfordummy d = new testfordummy();
-        testfordummy.count[] dcthread = new testfordummy.count[tableName.length];        
-        HashMap<String,Integer> MaxData = new HashMap<>();
-        
-        // creating threads
-        for (int i=0;i<tableName.length;i++){            
-            dcthread[i] = d.new count(tableName[i]);
-        }
-        
-        //starting all threads and make sure all the threads finished execution
-        try {
-            for (testfordummy.count thread : dcthread) {
-                thread.start();
-            }
 
-            for (testfordummy.count thread : dcthread) {
-                thread.join();
+        testfordummy d = new testfordummy();
+        HashMap<String, Integer> MaxData = new HashMap<>();
+        List<testfordummy.count> taskList = new ArrayList<>();
+
+        // creating callable task
+        for (String tableName1 : tableName) {
+            testfordummy.count run = d.new count(tableName1);
+            taskList.add(run);
+        }
+        // create a list of future object to store data
+        List<Future<Integer>> resultList;
+
+        try {
+            // submit the collection of task for thread to run
+            resultList = executorservice.invokeAll(taskList);
+            
+            // get the data from future list and put it into hashmap
+            for (int i = 0; i < resultList.size(); i++) {
+                Future<Integer> future = resultList.get(i);
+                MaxData.put(tableName[i], future.get());
             }
-        } catch (InterruptedException ex) {
+        } catch (InterruptedException | ExecutionException ex) {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        //put the data calculated into HashMap
-        for (int i=0;i<tableName.length;i++){
-            MaxData.put(tableName[i], dcthread[i].getMax());            
-        }
-        
+
         //set all the maximum value into a constant variable
-        final int numOfUser = dcthread[0].getMax(),
-                numOfFarm = dcthread[1].getMax(),
-                numOfPlant = dcthread[2].getMax(),
-                numOfFertiliser = dcthread[3].getMax(),
-                numOfPesticide = dcthread[4].getMax();
-        
-        // create threads for generating farm, plant, pesticide and fertiliser
-        testfordummy.generate[] farmThreads = new testfordummy.generate[numOfUser];
-        testfordummy.generate[] plantThreads = new testfordummy.generate[numOfUser];
-        testfordummy.generate[] pesticideThreads = new testfordummy.generate[numOfUser];
-        testfordummy.generate[] fertiliserThreads = new testfordummy.generate[numOfUser];
+        final int numOfUser = MaxData.get("users"),
+                numOfFarm = MaxData.get("farm"),
+                numOfPlant = MaxData.get("plant"),
+                numOfFertiliser = MaxData.get("fertiliser"),
+                numOfPesticide = MaxData.get("pesticide");
 
         //create 2 arrays to store all the user and farms
         User[] users = new User[numOfUser];
         Farm[] farms = new Farm[numOfFarm];
-        
-        
+
+        // execute user task
         for (int i = 0; i < numOfUser; i++) {
-            //randomly assign farms to each user
-            users[i] = new User((i+1)+"");
-            farmThreads[i] = d.new generate(users[i], numOfFarm, "user");
+            users[i] = new User((i + 1) + "");
+            Runnable user = d.new generate(users[i], numOfFarm, "user");
+            executorservice.execute(user);
         }
 
+        //execute farm task
         for (int i = 0; i < numOfFarm; i++) {
             //randomly assign plants to each farm
-            farms[i] = new Farm((i+1)+"");
-            plantThreads[i] = d.new generate(farms[i], numOfPlant, "plant");
-
-            //randomly assign fertilisers to each farm
-            fertiliserThreads[i] = d.new generate(farms[i], numOfFertiliser, "fertiliser");
-
-            //randomly assign pesticides to each farm
-            pesticideThreads[i] = d.new generate(farms[i], numOfPesticide, "pesticide");
+            farms[i] = new Farm((i + 1) + "");
+            Runnable plant = d.new generate(farms[i], numOfPlant, "plant");
+            Runnable fertiliser = d.new generate(farms[i], numOfFertiliser, "fertiliser");
+            Runnable pesticide = d.new generate(farms[i], numOfPesticide, "pesticide");
+            executorservice.execute(plant);
+            executorservice.execute(fertiliser);
+            executorservice.execute(pesticide);
         }
 
-        try {
-            for (int i = 0; i < numOfUser; i++) {
-                farmThreads[i].start();
-            }
-            for (int i = 0; i < numOfFarm; i++) {
-                plantThreads[i].start();
-                fertiliserThreads[i].start();
-                pesticideThreads[i].start();
-            }
-            for (int i = 0; i < numOfUser; i++) {
-                farmThreads[i].join();
-            }
-            for (int i = 0; i < numOfFarm; i++) {
-                plantThreads[i].join();
-                fertiliserThreads[i].join();
-                pesticideThreads[i].join();
-            }
-        } catch (InterruptedException ex) {
-            Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
-        }
         System.out.println("User");
         for (int i = 0; i < numOfUser; i++) {
-            System.out.println("User's "+(i+1)+": "+users[i].getFarm());
+            System.out.println("User's " + (i + 1) + ": " + users[i].getFarm());
         }
 
         for (int i = 0; i < numOfFarm; i++) {
             System.out.println("\nFarm " + (i + 1) + ":");
-            System.out.println("Plant = "+farms[i].getPlant());
-            System.out.println("Fertilizer = "+farms[i].getFertiliser());
-            System.out.println("Pesticide = "+farms[i].getPesticide());
+            System.out.println("Plant = " + farms[i].getPlant());
+            System.out.println("Fertilizer = " + farms[i].getFertiliser());
+            System.out.println("Pesticide = " + farms[i].getPesticide());
 
         }
 
+        try {
+            executorservice.shutdown();
+            executorservice.awaitTermination(2, TimeUnit.SECONDS);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }

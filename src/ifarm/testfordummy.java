@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Random;
+import java.util.concurrent.Callable;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -20,16 +21,17 @@ public class testfordummy {
     
     Connection conn = DBConnection.ConnectDB();
     
-    class count extends Thread{
+    class count implements Callable<Integer>{
         private int max;
-        private String sql;
+        private final String sql;
         
         public count(String key){
             this.sql = "SELECT count(_id) as count FROM "+key;
         }
         
         
-        public void run(){
+        @Override
+        public Integer call(){
             try {
                 Statement myStmt = conn.createStatement();
                 ResultSet rs = myStmt.executeQuery(sql);
@@ -39,14 +41,11 @@ public class testfordummy {
             } catch (SQLException ex) {
                 Logger.getLogger(testfordummy.class.getName()).log(Level.SEVERE, null, ex);
             }
-        }
-        
-        public int getMax(){
             return max;
         }
     }
     
-    class generate extends Thread {
+    class generate implements Runnable {
         Object obj;
         int num;
         String name;
@@ -58,6 +57,7 @@ public class testfordummy {
             this.name = name;
         }
         
+        @Override
         public void run() {            
             int[] arr = new int[num];
             for (int i = 0; i < arr.length; i++) {
@@ -77,15 +77,11 @@ public class testfordummy {
                     if (obj instanceof User && name.endsWith("user")){
                         ((User) obj).insertFarm((index+1)+"");
                     }
-                    else if (obj instanceof Farm){
-                        if (name.equals("plant")){
-                            ((Farm) obj).insertPlant((index+1)+"");                      
-                        }
-                        else if (name.equals("fertiliser")){
-                            ((Farm) obj).insertFertiliser((index+1)+"");
-                        }
-                        else{
-                            ((Farm) obj).insertPesticide((index+1)+"");
+                    else if (obj instanceof Farm farm){
+                        switch (name) {
+                            case "plant" -> farm.insertPlant((index+1)+"");
+                            case "fertiliser" -> farm.insertFertiliser((index+1)+"");
+                            default -> farm.insertPesticide((index+1)+"");
                         }
                     }                    
                 }                
