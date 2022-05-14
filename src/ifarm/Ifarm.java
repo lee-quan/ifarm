@@ -7,6 +7,7 @@ package ifarm;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -20,6 +21,16 @@ import java.util.logging.Logger;
  * @author Lee Quan
  */
 public class Ifarm {
+
+    private static Callable<Void> toCallable(final Runnable runnable) {
+        return new Callable<Void>() {
+            @Override
+            public Void call() {
+                runnable.run();
+                return null;
+            }
+        };
+    }
 
     public static void main(String[] args) {
         //Introduction of thread pool
@@ -36,13 +47,14 @@ public class Ifarm {
             testfordummy.count run = d.new count(tableName1);
             taskList.add(run);
         }
+
         // create a list of future object to store data
         List<Future<Integer>> resultList;
 
         try {
             // submit the collection of task for thread to run
             resultList = executorservice.invokeAll(taskList);
-            
+
             // get the data from future list and put it into hashmap
             for (int i = 0; i < resultList.size(); i++) {
                 Future<Integer> future = resultList.get(i);
@@ -63,25 +75,37 @@ public class Ifarm {
         User[] users = new User[numOfUser];
         Farm[] farms = new Farm[numOfFarm];
 
+        
+        List<Callable<Void>> callables = new ArrayList<>();
         // execute user task
         for (int i = 0; i < numOfUser; i++) {
             users[i] = new User((i + 1) + "");
             Runnable user = d.new generate(users[i], numOfFarm, "user");
-            executorservice.execute(user);
+            callables.add(toCallable(user));
         }
 
         //execute farm task
+        
         for (int i = 0; i < numOfFarm; i++) {
             //randomly assign plants to each farm
             farms[i] = new Farm((i + 1) + "");
             Runnable plant = d.new generate(farms[i], numOfPlant, "plant");
             Runnable fertiliser = d.new generate(farms[i], numOfFertiliser, "fertiliser");
             Runnable pesticide = d.new generate(farms[i], numOfPesticide, "pesticide");
-            executorservice.execute(plant);
-            executorservice.execute(fertiliser);
-            executorservice.execute(pesticide);
+//            executorservice.execute(plant);
+//            executorservice.execute(fertiliser);
+//            executorservice.execute(pesticide);
+            callables.add(toCallable(plant));
+            callables.add(toCallable(fertiliser));
+            callables.add(toCallable(pesticide));
         }
-
+        
+        try {
+            executorservice.invokeAll(callables);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
         System.out.println("User");
         for (int i = 0; i < numOfUser; i++) {
             System.out.println("User's " + (i + 1) + ": " + users[i].getFarm());
