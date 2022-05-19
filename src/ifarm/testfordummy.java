@@ -4,6 +4,7 @@
  */
 package ifarm;
 
+import database.DBConnection;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
