@@ -106,9 +106,7 @@ public class Generator {
                 } else {
                     arr[index] = -1;
 
-                    if (obj instanceof User && name.endsWith("user")) {
-                        ((User) obj).insertFarm((index + 1) + "");
-                    } else if (obj instanceof Farm farm) {
+                    if (obj instanceof Farm farm) {
                         switch (name) {
                             case "plant" ->
                                 farm.insertPlant((index + 1) + "");

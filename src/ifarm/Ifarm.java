@@ -78,18 +78,11 @@ public class Ifarm {
                 numOfFertiliser = MaxData.get("fertiliser"),
                 numOfPesticide = MaxData.get("pesticide");
 
-        //create 2 arrays to store all the user and farms
-        User[] users = new User[numOfUser];
+        //create 2 arrays to store all farms
         Farm[] farms = new Farm[numOfFarm];
 
         
         List<Callable<Void>> callables = new ArrayList<>();
-        // execute user task
-//        for (int i = 0; i < numOfUser; i++) {
-//            users[i] = new User((i + 1) + "");
-//            Runnable user = d.new generate(users[i], numOfFarm, "user");
-//            callables.add(toCallable(user));
-//        }
 
         //execute farm task
         
