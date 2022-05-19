@@ -45,6 +45,7 @@ class Farmer implements Runnable {
 
     @Override
     public void run() {
+        // Generate Activities
         try {
             Statement myStmt = conn.createStatement();
             ResultSet rs = myStmt.executeQuery("INSERT INTO ");

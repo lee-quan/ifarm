@@ -26,13 +26,16 @@ public class FarmerSimulator implements FarmerSimulatorInterface {
     @Override
     public Farmer[] generateFarmers(int numberOfFarmers) {
         sql += " LIMIT " + numberOfFarmers;
+        // create fixed thread poo;
         ExecutorService executorService = Executors.newFixedThreadPool(10);
 
         Generator.count getTotalNumberOfFarm = gen.new count("farm");
         Future<Integer> count = executorService.submit(getTotalNumberOfFarm);
 
-        List<Generator.generateFarmForUser> taskList = new ArrayList<>();
+        List<Generator.generateFarmForFarmer> taskList = new ArrayList<>();
         List<Future<String>> resultList;
+        
+        //Farmer array to store all the farmer class
         farmers = new Farmer[numberOfFarmers];
 
         try {
@@ -40,6 +43,7 @@ public class FarmerSimulator implements FarmerSimulatorInterface {
                 Generator.generateFarmForFarmer farmGenerator = gen.new generateFarmForFarmer(count.get());
                 taskList.add(farmGenerator);
             }
+            // execute generate farm task and wait till finish completion 
             resultList = executorService.invokeAll(taskList);
             
             Statement myStmt = conn.createStatement();
