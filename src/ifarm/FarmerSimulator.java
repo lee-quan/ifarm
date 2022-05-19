@@ -40,46 +40,54 @@ public class FarmerSimulator implements FarmerSimulatorInterface {
 
         try {
             for (int i = 0; i < numberOfFarmers; i++) {
-                Generator.generateFarmForFarmer farmGenerator = gen.new generateFarmForFarmer(count.get());
+                farmers[i] = new Farmer((i+1)+"");
+                Generator.generateFarmForFarmer farmGenerator = gen.new generateFarmForFarmer(farmers[i],count.get());                
                 taskList.add(farmGenerator);
             }
+            
             // execute generate farm task and wait till finish completion 
             resultList = executorService.invokeAll(taskList);
-            
-            Statement myStmt = conn.createStatement();
-
-            myStmt.executeUpdate("TRUNCATE `ifarm`.`users`;");
-            ResultSet rs = myStmt.executeQuery(sql);
-
-            int counter = 0;
-            while (rs.next()) {
-                Future<String> future = resultList.get(counter);
-                String _id = rs.getString(1),
-                        name = rs.getString(2),
-                        email = rs.getString(3),
-                        password = rs.getString(4),
-                        phoneNumber = rs.getString(5),
-                        insertSql = "INSERT INTO users (_id, name,email,password,phoneNumber,farm) VALUES ("
-                        + "\"" + _id + "\","
-                        + "\"" + name + "\","
-                        + "\"" + email + "\","
-                        + "\"" + password + "\","
-                        + "\"" + phoneNumber + "\","
-                        + "\"" + future.get() + "\""
-                        + ")";
-                        System.out.println(insertSql);
-                PreparedStatement pstmt = conn.prepareStatement(insertSql);
-                pstmt.execute();
-                farmers[Integer.parseInt(_id) - 1] = new Farmer(_id, name,email,password,phoneNumber, future.get());
-
-                counter++;
+            for (int i = 0; i < numberOfFarmers; i++) {
+                System.out.println("Farmers: "+farmers[i].getId());
+                System.out.println("Farm :"+farmers[i].getFarm());
+                System.out.println();
+                
             }
+            
+            // execute mysql to insert details of farmer
+//            Statement myStmt = conn.createStatement();
+//
+//            myStmt.executeUpdate("TRUNCATE `ifarm`.`users`;");
+//            ResultSet rs = myStmt.executeQuery(sql);
+//
+//            int counter = 0;
+//            while (rs.next()) {
+//                Future<String> future = resultList.get(counter);
+//                String _id = rs.getString(1),
+//                        name = rs.getString(2),
+//                        email = rs.getString(3),
+//                        password = rs.getString(4),
+//                        phoneNumber = rs.getString(5),
+//                        insertSql = "INSERT INTO users (_id, name,email,password,phoneNumber,farm) VALUES ("
+//                        + "\"" + _id + "\","
+//                        + "\"" + name + "\","
+//                        + "\"" + email + "\","
+//                        + "\"" + password + "\","
+//                        + "\"" + phoneNumber + "\","
+//                        + "\"" + future.get() + "\""
+//                        + ")";
+//                        System.out.println(insertSql);
+//                PreparedStatement pstmt = conn.prepareStatement(insertSql);
+//                pstmt.execute();
+//                
+//                farmers[Integer.parseInt(_id) - 1] = new Farmer(_id, name,email,password,phoneNumber, future.get());
+
+//                counter++;
+//            }
         } catch (InterruptedException ex) {
             Logger.getLogger(FarmerSimulator.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ExecutionException ex) {
-            Logger.getLogger(FarmerSimulator.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(FarmerSimulator.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FarmerSimulator.class.getName()).log(Level.SEVERE, null, ex);       
         }
         executorService.shutdown();
         return farmers;

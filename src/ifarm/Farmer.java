@@ -2,21 +2,26 @@ package ifarm;
 
 import database.DBConnection;
 import java.sql.*;
+import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class Farmer implements Runnable {
 
-    private String _id, name, email, password, phoneNumber, farm;
+    private String _id, name, email, password, phoneNumber;
     private Connection conn = DBConnection.ConnectDB();
+    private LinkedList<String> farms;
 
-    public Farmer(String _id, String name, String email, String password, String phoneNumber, String farm) {
+    public Farmer(String _id) {
+        farms = new LinkedList<>();
         this._id = _id;
+    }
+    
+    public void setDetails(String name, String email, String password, String phoneNumber){        
         this.name = name;
         this.email = email;
         this.password = password;
-        this.phoneNumber = phoneNumber;
-        this.farm = farm;
+        this.phoneNumber = phoneNumber; 
     }
 
     public String getId() {
@@ -38,9 +43,23 @@ class Farmer implements Runnable {
     public String getPhoneNumber() {
         return phoneNumber;
     }
-    
+
+    public void insertFarm(String farmid) {
+        farms.add(farmid);
+    }
+
     public String getFarm() {
-        return farm;
+        String str = "";
+
+        for (int i = 0; i < farms.size(); i++) {
+            if (i == farms.size() - 1) {
+                str += farms.get(i);
+            } else {
+                str += farms.get(i) + ",";
+            }
+        }
+
+        return str;
     }
 
     @Override

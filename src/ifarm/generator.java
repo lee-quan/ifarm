@@ -46,8 +46,9 @@ public class Generator {
     class generateFarmForFarmer implements Callable<String> {
 
         int numOfFarm;
-
-        public generateFarmForFarmer(int numOfFarm) {
+        Farmer farmer;
+        public generateFarmForFarmer(Farmer farmer, int numOfFarm) {
+            this.farmer = farmer;
             this.numOfFarm = numOfFarm;
         }
 
@@ -56,9 +57,7 @@ public class Generator {
             for (int i = 0; i < arr.length; i++) {
                 arr[i] = i + 1;
             }
-            Random random = new Random();
-            String str = "";
-            boolean first = true;
+            Random random = new Random();                        
             while (true) {
                 int index = random.nextInt(numOfFarm);
                 
@@ -67,17 +66,12 @@ public class Generator {
                 if (temp == -1) {
                     break;
                 } else {
-                    arr[index] = -1;
-                    if (first) {
-                        first = false;
-                        str += temp + "";
-                    } else {
-                        str += "," + temp;
-                    }
+                    arr[index] = -1;                     
+                    farmer.insertFarm((index+1)+"");
                 }
 
             }
-            return str;
+            return "";
         }
     }
 
