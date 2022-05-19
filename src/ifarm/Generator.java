@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  */
 public class Generator {
 
-    Connection conn = DBConnection.ConnectDB();
+    DBConnection db = new DBConnection();
 
     class count implements Callable<Integer> {
 
@@ -31,8 +31,8 @@ public class Generator {
         @Override
         public Integer call() {
             try {
-                Statement myStmt = conn.createStatement();
-                ResultSet rs = myStmt.executeQuery(sql);
+
+                ResultSet rs = db.retrieve(sql);
                 while (rs.next()) {
                     max = Integer.parseInt(rs.getString("count"));
                 }
@@ -42,11 +42,13 @@ public class Generator {
             return max;
         }
     }
+
     // Generate Farm for farmer with callable 
     class generateFarmForFarmer implements Callable<String> {
 
         int numOfFarm;
         Farmer farmer;
+
         public generateFarmForFarmer(Farmer farmer, int numOfFarm) {
             this.farmer = farmer;
             this.numOfFarm = numOfFarm;
@@ -57,17 +59,17 @@ public class Generator {
             for (int i = 0; i < arr.length; i++) {
                 arr[i] = i + 1;
             }
-            Random random = new Random();                        
+            Random random = new Random();
             while (true) {
                 int index = random.nextInt(numOfFarm);
-                
+
                 int temp = arr[index];
 
                 if (temp == -1) {
                     break;
                 } else {
-                    arr[index] = -1;                     
-                    farmer.insertFarm((index+1)+"");
+                    arr[index] = -1;
+                    farmer.insertFarm((index + 1) + "");
                 }
 
             }

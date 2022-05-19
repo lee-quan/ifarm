@@ -10,10 +10,11 @@ CREATE TABLE `ifarm`.`farm` (
   `_id` VARCHAR(45) NOT NULL,
   `name` VARCHAR(45) NOT NULL,
   `address` VARCHAR(45) NOT NULL,
-  `plants` VARCHAR(45) NULL,
-  `fertilizers` VARCHAR(45) NULL,
-  `pesticides` VARCHAR(45) NULL,
+  `plants` VARCHAR(255) NULL,
+  `fertilizers` VARCHAR(255) NULL,
+  `pesticides` VARCHAR(255) NULL,
   PRIMARY KEY (`_id`));
+
 
 CREATE TABLE `ifarm`.`plant` (
   `_id` VARCHAR(45) NOT NULL,

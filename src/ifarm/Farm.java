@@ -12,9 +12,7 @@ import java.util.LinkedList;
  */
 public class Farm {
 
-    private LinkedList<String> plant;
-    private LinkedList<String> fertiliser;
-    private LinkedList<String> pesticide;
+    private LinkedList<String> plant, fertiliser, pesticide;
     private final String id;
 
     public Farm(String id) {

@@ -8,20 +8,30 @@ import java.util.logging.Logger;
 
 class Farmer implements Runnable {
 
+    DBConnection db = new DBConnection();
     private String _id, name, email, password, phoneNumber;
-    private Connection conn = DBConnection.ConnectDB();
+//    private Connection conn = DBConnection.ConnectDB();
     private LinkedList<String> farms;
 
     public Farmer(String _id) {
         farms = new LinkedList<>();
         this._id = _id;
     }
-    
-    public void setDetails(String name, String email, String password, String phoneNumber){        
+
+    public void setDetails(String name, String email, String password, String phoneNumber) throws SQLException {
         this.name = name;
         this.email = email;
         this.password = password;
-        this.phoneNumber = phoneNumber; 
+        this.phoneNumber = phoneNumber;
+        String insertSql = "INSERT INTO users (_id, name,email,password,phoneNumber,farm) VALUES ("
+                + "\"" + _id + "\","
+                + "\"" + name + "\","
+                + "\"" + email + "\","
+                + "\"" + password + "\","
+                + "\"" + phoneNumber + "\","
+                + "\"" + getFarm() + "\""
+                + ")";
+        db.insert(insertSql);
     }
 
     public String getId() {
@@ -65,15 +75,15 @@ class Farmer implements Runnable {
     @Override
     public void run() {
         // Generate Activities
-        try {
-            Statement myStmt = conn.createStatement();
-            ResultSet rs = myStmt.executeQuery("INSERT INTO ");
-            while (rs.next()) {
-
-            }
-        } catch (SQLException ex) {
-            Logger.getLogger(Generator.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        try {
+//            Statement myStmt = conn.createStatement();
+//            ResultSet rs = myStmt.executeQuery("INSERT INTO ");
+//            while (rs.next()) {
+//
+//            }
+//        } catch (SQLException ex) {
+//            Logger.getLogger(Generator.class.getName()).log(Level.SEVERE, null, ex);
+//        }
 
     }
 
