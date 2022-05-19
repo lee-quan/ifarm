@@ -5,6 +5,7 @@
 package ifarm;
 
 import database.DBConnection;
+import java.io.File;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -37,13 +38,14 @@ public class Ifarm {
     }
 
     public static void main(String[] args) throws SQLException {
+        final int NumOfFarmer = 100;
         FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM usersList ORDER BY CAST(_id as unsigned)");
-        simulator.generateFarmers(10);
+        Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
 
 //        Introduction of thread pool
         ExecutorService executorservice = Executors.newFixedThreadPool(10);
 
-        String[] tableName = {"users", "farm", "plant", "fertiliser", "pesticide"};
+        String[] tableName = {"farm", "plant", "fertiliser", "pesticide"};
 
         Generator d = new Generator();
         HashMap<String, Integer> MaxData = new HashMap<>();
@@ -72,11 +74,11 @@ public class Ifarm {
         }
 
         //set all the maximum value into a constant variable
-        final int numOfUser = MaxData.get("users"),
-                numOfFarm = MaxData.get("farm"),
-                numOfPlant = MaxData.get("plant"),
-                numOfFertiliser = MaxData.get("fertiliser"),
-                numOfPesticide = MaxData.get("pesticide");
+        final int
+        numOfFarm = MaxData.get("farm"),
+        numOfPlant = MaxData.get("plant"),
+        numOfFertiliser = MaxData.get("fertiliser"),
+        numOfPesticide = MaxData.get("pesticide");
 
         //create 2 arrays to store all farms
         Farm[] farms = new Farm[numOfFarm];
@@ -106,7 +108,7 @@ public class Ifarm {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-//        System.out.println("User");
+//        System.out.println("Farmer");
 //        for (int i = 0; i < numOfUser; i++) {
 //            System.out.println("User's " + (i + 1) + ": " + users[i].getFarm());
 //        }
@@ -119,16 +121,21 @@ public class Ifarm {
             String updateSql = "UPDATE farm "
                     + "SET plants=\""+farms[i].getPlant()+"\","
                     + "fertilizers=\""+farms[i].getFertiliser()+"\","
-                    + "pesticides=\""+farms[i].getPesticide()+"\" WHERE _id=\""+farms[i].getId()+"\"";
-            System.out.println(updateSql);
+                    + "pesticides=\""+farms[i].getPesticide()+"\" WHERE _id=\""+farms[i].getId()+"\"";            
             db.update(updateSql);
         }
-
-        try {
-            executorservice.shutdown();
-            executorservice.awaitTermination(2, TimeUnit.SECONDS);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
+        
+        // generate activities
+        File logfile = new File("log.txt");
+        long starttime = System.currentTimeMillis();
+        for (int i = 0; i < NumOfFarmer; i++) {            
+            farmer[i].setFarm(farms);
+            executorservice.submit(farmer[i]);
         }
+        executorservice.shutdown();
+        while(!executorservice.isTerminated()){            
+        }
+        long endtime = System.currentTimeMillis();
+        System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is "+(endtime - starttime));
     }
 }

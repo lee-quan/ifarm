@@ -6,14 +6,14 @@ public class Activity {
     private String action;
     private String type;
     private String unit;
-    private Integer quantity;
+    private Double quantity;
     private Integer field;
     private Integer row;
-    private Integer farmId;
-    private Integer userId;
+    private String farmId;
+    private String userId;
 
     
-    public Activity(String _id, String date, String action, String type, String unit, Integer quantity, Integer field, Integer row, Integer farmId, Integer userId) {
+    public Activity(String _id, String date, String action, String type, String unit, Double quantity, Integer field, Integer row, String farmId, String userId) {
         this._id = _id;
         this.date = date;
         this.action = action;
@@ -46,7 +46,7 @@ public class Activity {
         return unit;
     }
 
-    public Integer getQuantity() {
+    public Double getQuantity() {
         return quantity;
     }
 
@@ -58,11 +58,17 @@ public class Activity {
         return row;
     }
 
-    public Integer getFarmId() {
+    public String getFarmId() {
         return farmId;
     }
 
-    public Integer getUserId() {
+    public String getUserId() {
         return userId;
+    }
+    
+    public String toLogFile(){
+        // Exp log file: Sowing Broccoli Field 1 Row 1 1 kg 2022-03-03
+        String str = action + " " + type + " Field " + field + " Row " + row + " " + quantity + " " + unit + " " + date;
+        return str;
     }
 }
