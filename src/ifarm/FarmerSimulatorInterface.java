@@ -9,7 +9,6 @@ package ifarm;
  * @author Lee Quan
  */
 public interface FarmerSimulatorInterface {
-
     Farmer[] generateFarmers(int numberOfFarmers);
 }
 
