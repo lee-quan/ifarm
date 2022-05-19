@@ -23,16 +23,6 @@ public class FarmerSimulator implements FarmerSimulatorInterface {
         this.sql = sql;
     }
 
-    public Callable<Void> toCallable(final Runnable runnable) {
-        return new Callable<Void>() {
-            @Override
-            public Void call() {
-                runnable.run();
-                return null;
-            }
-        };
-    }
-
     @Override
     public Farmer[] generateFarmers(int numberOfFarmers) {
         sql += " LIMIT " + numberOfFarmers;
@@ -47,11 +37,11 @@ public class FarmerSimulator implements FarmerSimulatorInterface {
 
         try {
             for (int i = 0; i < numberOfFarmers; i++) {
-                Generator.generateFarmForUser farmGenerator = gen.new generateFarmForUser(count.get());
+                Generator.generateFarmForFarmer farmGenerator = gen.new generateFarmForFarmer(count.get());
                 taskList.add(farmGenerator);
             }
-
             resultList = executorService.invokeAll(taskList);
+            
             Statement myStmt = conn.createStatement();
 
             myStmt.executeUpdate("TRUNCATE `ifarm`.`users`;");
@@ -78,7 +68,6 @@ public class FarmerSimulator implements FarmerSimulatorInterface {
                 pstmt.execute();
                 farmers[Integer.parseInt(_id) - 1] = new Farmer(_id, name,email,password,phoneNumber, future.get());
 
-
                 counter++;
             }
         } catch (InterruptedException ex) {
@@ -91,5 +80,4 @@ public class FarmerSimulator implements FarmerSimulatorInterface {
         executorService.shutdown();
         return farmers;
     }
-
 }

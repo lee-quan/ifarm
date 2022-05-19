@@ -34,7 +34,7 @@ public class Ifarm {
 
     public static void main(String[] args) {
         FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM usersList ORDER BY CAST(_id as unsigned)");
-        simulator.generateFarmers(60);
+        simulator.generateFarmers(99);
 
         //Introduction of thread pool
 //        ExecutorService executorservice = Executors.newFixedThreadPool(10);

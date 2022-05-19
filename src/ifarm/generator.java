@@ -43,11 +43,11 @@ public class Generator {
         }
     }
 
-    class generateFarmForUser implements Callable<String> {
+    class generateFarmForFarmer implements Callable<String> {
 
         int numOfFarm;
 
-        public generateFarmForUser(int numOfFarm) {
+        public generateFarmForFarmer(int numOfFarm) {
             this.numOfFarm = numOfFarm;
         }
 
