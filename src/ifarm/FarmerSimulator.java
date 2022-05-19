@@ -57,7 +57,7 @@ public class FarmerSimulator implements FarmerSimulatorInterface {
             // execute mysql to insert details of farmer
             db.truncate("TRUNCATE `ifarm`.`users`;");
             ResultSet rs = db.retrieve(sql);
-//
+
             int counter = 0;
             while (rs.next()) {
                 Future<String> future = resultList.get(counter);
@@ -69,11 +69,7 @@ public class FarmerSimulator implements FarmerSimulatorInterface {
                 farmers[counter].setDetails(name, email, password, phoneNumber);
                 counter++;
             }
-        } catch (InterruptedException ex) {
-            Logger.getLogger(FarmerSimulator.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ExecutionException ex) {
-            Logger.getLogger(FarmerSimulator.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
+        } catch (InterruptedException | ExecutionException | SQLException ex) {
             Logger.getLogger(FarmerSimulator.class.getName()).log(Level.SEVERE, null, ex);
         }
         executorService.shutdown();
