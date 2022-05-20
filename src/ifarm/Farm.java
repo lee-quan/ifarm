@@ -80,4 +80,16 @@ public class Farm {
         return id;
     }
 
+    public LinkedList getPlantList() {
+        return plant;
+    }
+//    plant, fertiliser, pesticide;
+    public LinkedList getFertiliserList() {
+        return fertiliser;
+    }
+        public LinkedList getPesticideList() {
+        return pesticide;
+    }
+    
+
 }

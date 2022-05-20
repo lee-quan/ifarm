@@ -23,9 +23,9 @@ import java.util.logging.Logger;
  * @author Lee Quan
  */
 public class Ifarm {
-    
+
     private static DBConnection db = new DBConnection();
-    
+
     private static Callable<Void> toCallable(final Runnable runnable) {
         return new Callable<Void>() {
             @Override
@@ -38,7 +38,7 @@ public class Ifarm {
 
     public static void main(String[] args) throws SQLException {
         FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM usersList ORDER BY CAST(_id as unsigned)");
-        simulator.generateFarmers(10);
+        Farmer[] farmers = simulator.generateFarmers(10);
 
 //        Introduction of thread pool
         ExecutorService executorservice = Executors.newFixedThreadPool(10);
@@ -81,49 +81,42 @@ public class Ifarm {
         //create 2 arrays to store all farms
         Farm[] farms = new Farm[numOfFarm];
 
-        
         List<Callable<Void>> callables = new ArrayList<>();
 
         //execute farm task
-        
         for (int i = 0; i < numOfFarm; i++) {
             //randomly assign plants to each farm
             farms[i] = new Farm((i + 1) + "");
             Runnable plant = d.new generate(farms[i], numOfPlant, "plant");
             Runnable fertiliser = d.new generate(farms[i], numOfFertiliser, "fertiliser");
             Runnable pesticide = d.new generate(farms[i], numOfPesticide, "pesticide");
-//            executorservice.execute(plant);
-//            executorservice.execute(fertiliser);
-//            executorservice.execute(pesticide);
             callables.add(toCallable(plant));
             callables.add(toCallable(fertiliser));
             callables.add(toCallable(pesticide));
         }
-        
+
         try {
             executorservice.invokeAll(callables);
         } catch (InterruptedException ex) {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-//        System.out.println("User");
-//        for (int i = 0; i < numOfUser; i++) {
-//            System.out.println("User's " + (i + 1) + ": " + users[i].getFarm());
-//        }
 
         for (int i = 0; i < numOfFarm; i++) {
-            System.out.println("\nFarm " + (i + 1) + ":");
-            System.out.println("Plant = " + farms[i].getPlant());
-            System.out.println("Fertilizer = " + farms[i].getFertiliser());
-            System.out.println("Pesticide = " + farms[i].getPesticide());
+//            System.out.println("\nFarm " + (i + 1) + ":");
+//            System.out.println("Plant = " + farms[i].getPlant());
+//            System.out.println("Fertilizer = " + farms[i].getFertiliser());
+//            System.out.println("Pesticide = " + farms[i].getPesticide());
             String updateSql = "UPDATE farm "
-                    + "SET plants=\""+farms[i].getPlant()+"\","
-                    + "fertilizers=\""+farms[i].getFertiliser()+"\","
-                    + "pesticides=\""+farms[i].getPesticide()+"\" WHERE _id=\""+farms[i].getId()+"\"";
-            System.out.println(updateSql);
+                    + "SET plants=\"" + farms[i].getPlant() + "\","
+                    + "fertilizers=\"" + farms[i].getFertiliser() + "\","
+                    + "pesticides=\"" + farms[i].getPesticide() + "\" WHERE _id=\"" + farms[i].getId() + "\"";
             db.update(updateSql);
         }
 
+//        for (Farmer i : farmers) {
+//            i.sequantialRun(farms);
+//        }
+          farmers[0].sequantialRun(farms);
         try {
             executorservice.shutdown();
             executorservice.awaitTermination(2, TimeUnit.SECONDS);
