@@ -127,14 +127,13 @@ class Farmer implements Runnable {
                     // check at least 1000 activities
 
                     if (activityNum >= 1000) {
-                        if (r.nextInt(2) == 0) {
-                            this.TotalAct = activityNum;
+                        if (r.nextInt(2) == 0) {                            
                             break;
                         }
                     }
                     // random for activity id, date, action, type, unit, quantity, field, row, farmid, userid
                     String id = activityNum + "";
-                    String date = r.nextInt(2020) + 2000 + "-" + r.nextInt(12) + 1 + "-" + r.nextInt(30) + 1;
+                    String date = r.nextInt(20) + 2000 + "-" + (r.nextInt(12) + 1) + "-" + (r.nextInt(30) + 1);
                     String action = ActivityName[r.nextInt(ActivityName.length)];
                     int farmid = Integer.parseInt(farms.get(i));
                     String userid = this._id;
