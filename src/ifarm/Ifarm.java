@@ -42,122 +42,130 @@ public class Ifarm {
     }
 
     public static void main(String[] args) throws SQLException, FileNotFoundException, IOException {
-        String[] plantArr = new Plant().getPlantArr();
-        String[] fertilizerArr = new Fertilizer().getFertilizerArr();
-        String[] pesticideArr = new Pesticide().getPesticideArr();
+        try {
+            String[] plantArr = new Plant().getPlantArr();
+            String[] fertilizerArr = new Fertilizer().getFertilizerArr();
+            String[] pesticideArr = new Pesticide().getPesticideArr();
 
-        final int NumOfFarmer = 100;
-        FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM usersList ORDER BY CAST(_id as unsigned)");
-        Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
+            final int NumOfFarmer = 100;
+            FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM usersList ORDER BY CAST(_id as unsigned)");
+            Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
 
 //        Introduction of thread pool
-        ExecutorService executorservice = Executors.newFixedThreadPool(10);
+            ExecutorService executorservice = Executors.newFixedThreadPool(20);
 
-        String[] tableName = {"farm", "plant", "fertiliser", "pesticide"};
+            String[] tableName = {"farm", "plant", "fertiliser", "pesticide"};
 
-        Generator d = new Generator();
-        HashMap<String, Integer> MaxData = new HashMap<>();
-        List<Generator.count> taskList = new ArrayList<>();
+            Generator d = new Generator();
+            HashMap<String, Integer> MaxData = new HashMap<>();
+            List<Generator.count> taskList = new ArrayList<>();
 
-        // creating callable task
-        for (String tableName1 : tableName) {
-            Generator.count run = d.new count(tableName1);
-            taskList.add(run);
-        }
-
-        // create a list of future object to store data
-        List<Future<Integer>> resultList;
-
-        try {
-            // submit the collection of task for thread to run
-            resultList = executorservice.invokeAll(taskList);
-
-            // get the data from future list and put it into hashmap
-            for (int i = 0; i < resultList.size(); i++) {
-                Future<Integer> future = resultList.get(i);
-                MaxData.put(tableName[i], future.get());
+// creating callable task
+            for (String tableName1 : tableName) {
+                Generator.count run = d.new count(tableName1);
+                taskList.add(run);
             }
-        } catch (InterruptedException | ExecutionException ex) {
-            Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
-        }
 
-        //set all the maximum value into a constant variable
-        final int numOfFarm = MaxData.get("farm"),
-                numOfPlant = MaxData.get("plant"),
-                numOfFertiliser = MaxData.get("fertiliser"),
-                numOfPesticide = MaxData.get("pesticide");
+// create a list of future object to store data
+            List<Future<Integer>> resultList;
 
-        //create 2 arrays to store all farms
-        Farm[] farms = new Farm[numOfFarm];
+            try {
+                // submit the collection of task for thread to run
+                resultList = executorservice.invokeAll(taskList);
 
-        List<Callable<Void>> callables = new ArrayList<>();
+                // get the data from future list and put it into hashmap
+                for (int i = 0; i < resultList.size(); i++) {
+                    Future<Integer> future = resultList.get(i);
+                    MaxData.put(tableName[i], future.get());
+                }
+            } catch (InterruptedException | ExecutionException ex) {
+                Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
-        //execute farm task
-        for (int i = 0; i < numOfFarm; i++) {
-            //randomly assign plants to each farm
-            farms[i] = new Farm((i + 1) + "");
-            Runnable plant = d.new generate(farms[i], numOfPlant, "plant");
-            Runnable fertiliser = d.new generate(farms[i], numOfFertiliser, "fertiliser");
-            Runnable pesticide = d.new generate(farms[i], numOfPesticide, "pesticide");
+//set all the maximum value into a constant variable
+            final int numOfFarm = MaxData.get("farm"),
+                    numOfPlant = MaxData.get("plant"),
+                    numOfFertiliser = MaxData.get("fertiliser"),
+                    numOfPesticide = MaxData.get("pesticide");
+
+//create 2 arrays to store all farms
+            Farm[] farms = new Farm[numOfFarm];
+
+            List<Callable<Void>> callables = new ArrayList<>();
+
+//execute farm task
+            for (int i = 0; i < numOfFarm; i++) {
+                //randomly assign plants to each farm
+                farms[i] = new Farm((i + 1) + "");
+                Runnable plant = d.new generate(farms[i], numOfPlant, "plant");
+                Runnable fertiliser = d.new generate(farms[i], numOfFertiliser, "fertiliser");
+                Runnable pesticide = d.new generate(farms[i], numOfPesticide, "pesticide");
 //            executorservice.execute(plant);
 //            executorservice.execute(fertiliser);
 //            executorservice.execute(pesticide);
-            callables.add(toCallable(plant));
-            callables.add(toCallable(fertiliser));
-            callables.add(toCallable(pesticide));
-        }
+                callables.add(toCallable(plant));
+                callables.add(toCallable(fertiliser));
+                callables.add(toCallable(pesticide));
+            }
 
-        try {
-            executorservice.invokeAll(callables);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
-        }
+            try {
+                executorservice.invokeAll(callables);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
 //        System.out.println("Farmer");
 //        for (int i = 0; i < numOfUser; i++) {
 //            System.out.println("User's " + (i + 1) + ": " + users[i].getFarm());
 //        }
-        for (int i = 0; i < numOfFarm; i++) {
+            for (int i = 0; i < numOfFarm; i++) {
 //            System.out.println("\nFarm " + (i + 1) + ":");
 //            System.out.println("Plant = " + farms[i].getPlant());
 //            System.out.println("Fertilizer = " + farms[i].getFertiliser());
 //            System.out.println("Pesticide = " + farms[i].getPesticide());
-            String updateSql = "UPDATE farm "
-                    + "SET plants=\"" + farms[i].getPlant() + "\","
-                    + "fertilizers=\"" + farms[i].getFertiliser() + "\","
-                    + "pesticides=\"" + farms[i].getPesticide() + "\" WHERE _id=\"" + farms[i].getId() + "\"";
-            db.update(updateSql);
-        }
+                String updateSql = "UPDATE farm "
+                        + "SET plants=\"" + farms[i].getPlant() + "\","
+                        + "fertilizers=\"" + farms[i].getFertiliser() + "\","
+                        + "pesticides=\"" + farms[i].getPesticide() + "\" WHERE _id=\"" + farms[i].getId() + "\"";
+                db.update(updateSql);
+            }
 
-        Files.deleteIfExists(Paths.get("log.txt"));
-        Files.deleteIfExists(Paths.get("log1.txt"));
+            Files.deleteIfExists(Paths.get("log.txt"));
+            Files.deleteIfExists(Paths.get("log1.txt"));
 
-        PrintWriter pwS = new PrintWriter(new FileOutputStream("log1.txt", true));
-        PrintWriter pwC = new PrintWriter(new FileOutputStream("log.txt", true));
-        // generate activities
-        long starttime = System.currentTimeMillis();
-        for (int i = 0; i < NumOfFarmer; i++) {
-            farmer[i].setFarm(farms);
-            farmer[i].setPlantArr(plantArr);
-            farmer[i].setPesticideArr(pesticideArr);
-            farmer[i].setFertilizerArr(fertilizerArr);
-            farmer[i].setPrintWriter(pwC);
-            executorservice.submit(farmer[i]);
-        }
-        executorservice.shutdown();
-        while (!executorservice.isTerminated()) {
-        }
+            PrintWriter pwS = new PrintWriter(new FileOutputStream("log1.txt", true));
+            PrintWriter pwC = new PrintWriter(new FileOutputStream("log.txt", true));
+// generate activities
+            List<Callable<Void>> FarmerCallables = new ArrayList<>();
 
-        long endtime = System.currentTimeMillis();
-        System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
+            for (int i = 0; i < NumOfFarmer; i++) {
+                farmer[i].setFarm(farms);
+                farmer[i].setPlantArr(plantArr);
+                farmer[i].setPesticideArr(pesticideArr);
+                farmer[i].setFertilizerArr(fertilizerArr);
+                farmer[i].setPrintWriter(pwC);
+                FarmerCallables.add(toCallable(farmer[i]));
+            }
 
-        long sequential_starttime = System.currentTimeMillis();
-        for (Farmer i : farmer) {
-            i.setPrintWriter(pwS);
-            i.run();
+            long starttime = System.currentTimeMillis();
+            executorservice.invokeAll(FarmerCallables);
+            executorservice.shutdown();
+            while (!executorservice.isTerminated()) {
+            }
+            long endtime = System.currentTimeMillis();
+            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
+
+            long sequential_starttime = System.currentTimeMillis();
+            for (Farmer i : farmer) {
+                i.setPrintWriter(pwS);
+                i.run();
+            }
+            long sequential_endtime = System.currentTimeMillis();
+            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
+
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }
-        long sequential_endtime = System.currentTimeMillis();
-        System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
 
     }
 }
