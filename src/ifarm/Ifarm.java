@@ -6,6 +6,13 @@ package ifarm;
 
 import database.DBConnection;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -37,7 +44,7 @@ public class Ifarm {
         };
     }
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException, FileNotFoundException, IOException {
         final int NumOfFarmer = 100;
         FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM usersList ORDER BY CAST(_id as unsigned)");
         Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
@@ -121,8 +128,10 @@ public class Ifarm {
             db.update(updateSql);
         }
 
+
+        PrintWriter pwS = new PrintWriter(new FileOutputStream("log1.txt", false));
+        Files.deleteIfExists(Paths.get("log.txt"));
         // generate activities
-        File logfile = new File("log.txt");
         long starttime = System.currentTimeMillis();
         for (int i = 0; i < NumOfFarmer; i++) {
             farmer[i].setFarm(farms);
@@ -131,16 +140,16 @@ public class Ifarm {
         executorservice.shutdown();
         while (!executorservice.isTerminated()) {
         }
-
+        
         long endtime = System.currentTimeMillis();
         System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
 
         long sequential_starttime = System.currentTimeMillis();
         for (Farmer i : farmer) {
-            i.sequantialRun(farms);
+            i.sequantialRun(farms,pwS);
         }
         long sequential_endtime = System.currentTimeMillis();
-        System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using setquantial programming is " + (sequential_endtime - sequential_starttime));
+        System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
 
     }
 }
