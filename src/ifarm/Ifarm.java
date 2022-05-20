@@ -45,7 +45,7 @@ public class Ifarm {
         String[] plantArr = new Plant().getPlantArr();
         String[] fertilizerArr = new Fertilizer().getFertilizerArr();
         String[] pesticideArr = new Pesticide().getPesticideArr();
-        
+
         final int NumOfFarmer = 100;
         FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM usersList ORDER BY CAST(_id as unsigned)");
         Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
@@ -129,29 +129,35 @@ public class Ifarm {
             db.update(updateSql);
         }
 
-
-        PrintWriter pwS = new PrintWriter(new FileOutputStream("log1.txt", false));
         Files.deleteIfExists(Paths.get("log.txt"));
+        Files.deleteIfExists(Paths.get("log1.txt"));
+
+        PrintWriter pwS = new PrintWriter(new FileOutputStream("log1.txt", true));
+        PrintWriter pwC = new PrintWriter(new FileOutputStream("log.txt", true));
         // generate activities
         long starttime = System.currentTimeMillis();
         for (int i = 0; i < NumOfFarmer; i++) {
             farmer[i].setFarm(farms);
+            farmer[i].setPlantArr(plantArr);
+            farmer[i].setPesticideArr(pesticideArr);
+            farmer[i].setFertilizerArr(fertilizerArr);
+            farmer[i].setPrintWriter(pwC);
             executorservice.submit(farmer[i]);
         }
         executorservice.shutdown();
         while (!executorservice.isTerminated()) {
         }
-        
+
         long endtime = System.currentTimeMillis();
         System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
 
         long sequential_starttime = System.currentTimeMillis();
         for (Farmer i : farmer) {
-            i.sequantialRun(farms,pwS,plantArr,fertilizerArr, pesticideArr);
+            i.setPrintWriter(pwS);
+            i.run();
         }
         long sequential_endtime = System.currentTimeMillis();
         System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
 
-        
     }
 }

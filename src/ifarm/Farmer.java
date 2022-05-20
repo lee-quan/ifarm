@@ -16,18 +16,14 @@ class Farmer implements Runnable {
 
     DBConnection db = new DBConnection();
     private String _id, name, email, password, phoneNumber;
-
-    private ResultSet plantRs, fertilizerRs, pesticideRs;
-
-    private Plant[] plant;
-    private Fertilizer[] fertilizer;
-    private Pesticide[] pesticide;
-//    private PrintWriter pwC;
-//    private Connection conn = DBConnection.ConnectDB();
+    private String[] plantArr, fertilizerArr, pesticideArr, nameArr = new String[100];
+    volatile int activityNum;
     private LinkedList<String> farms;
     private Farm[] farm;
+    private PrintWriter pw;
 
     public Farmer(String _id) {
+        this.activityNum = 1;
         farms = new LinkedList<>();
         this._id = _id;
     }
@@ -36,9 +32,26 @@ class Farmer implements Runnable {
         this.farm = farm;
     }
 
-//    public void setPrintWriter(PrintWriter pw) {
-//        this.pwC = pw;
-//    }
+    public void setPlantArr(String[] plantArr) {
+        this.plantArr = plantArr;
+    }
+
+    public void setFertilizerArr(String[] fertilizerArr) {
+        this.fertilizerArr = fertilizerArr;
+    }
+
+    public void setPesticideArr(String[] pesticideArr) {
+        this.pesticideArr = pesticideArr;
+    }
+
+    public void setNameArr(String[] nameArr) {
+        this.nameArr = nameArr;
+    }
+
+    public void setPrintWriter(PrintWriter pw) {
+        this.pw = pw;
+    }
+    
     public void setDetails(String name, String email, String password, String phoneNumber) throws SQLException {
         this.name = name;
         this.email = email;
@@ -96,16 +109,16 @@ class Farmer implements Runnable {
     @Override
     // Generate Activities and write into log files (Concurrent)
     public void run() {
-        PrintWriter pwC = null;
-        try {
-            pwC = new PrintWriter(new FileOutputStream("log.txt", true));
             String[] ActivityName = {"Sowing", "Fertilizers", "Pesticides", "Harvest", "Sales"};
             String[] UnitType = {"mass", "pack", "volume"};
             Random r = new Random();
-            int activityNum = 1;
+
             for (int i = 0; i < farms.size(); i++) {
+                activityNum = 1;
+//                System.out.println("Farmer " + this._id + " on Farm " + farms.get(i) + "\n");
 //                writeLogFile(pwC, "Farmer " + this._id + " on Farm " + farms.get(i) + "\n");
                 while (true) {
+//                    System.out.println(farms.get(i));
                     // check at least 1000 activities
 
                     if (activityNum >= 1000) {
@@ -140,22 +153,15 @@ class Farmer implements Runnable {
                     int field = r.nextInt(3) + 1;
                     int row = r.nextInt(3) + 1;
 
+                    activityNum++;
                     //Create new Activity
-                    Activity act = new Activity(id, date, action, type, unit, quantity, field, row, farmid + "", userid);
-
+                    Activity act = new Activity(id, date, action, type, unit, quantity, field, row, farmid + "", userid,plantArr, fertilizerArr, pesticideArr);
                     // write the log file
                     // Exp log file: Sowing Broccol  Field 1 Row 1 1 kg 2022-03-03
-                    writeLogFile(pwC, "Farmer " + this._id + " on Farm " + farms.get(i) + " " + act.toLogFileBackUp() + "\n");
-                    activityNum++;
-
+                    writeLogFile(pw, "Farmer " + this._id + " on Farm " + farms.get(i) + " " + act.toLogFile() + "\n");
                 }
 
             }
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(Farmer.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
-            pwC.close();
-        }
 
     }
 
@@ -165,59 +171,61 @@ class Farmer implements Runnable {
     }
 
     // Generate Activities and write into log files (Sequential)
-    public void sequantialRun(Farm[] farm, PrintWriter pwS, String[] plantArr, String[] fertilizerArr, String[] pesticideArr) {
-//        System.out.println("Farmer " + getId());
-        String[] ActivityName = {"Sowing", "Fertilizers", "Pesticides", "Harvest", "Sales"};
-        String[] UnitType = {"mass", "pack", "volume"};
-        Random r = new Random();
-        int activityNum = 1;
-
-        for (int i = 0; i < farms.size(); i++) {
-//            writeLogFile(pwS, "Farmer " + this._id + " on Farm " + farms.get(i) + "\n");
-            while (true) {
-                // check at least 1000 activities 
-
-                if (activityNum >= 1000) {
-                    if (r.nextInt(2) == 0) {
-                        break;
-                    }
-                }
-                // random for activity id, date, action, type, unit, quantity, field, row, farmid, userid 
-                String id = activityNum + "";
-                String date = r.nextInt(2020) + 2000 + "-" + r.nextInt(12) + 1 + "-" + r.nextInt(30) + 1;
-                String action = ActivityName[r.nextInt(ActivityName.length)];
-                int farmid = Integer.parseInt(farms.get(i));
-                String userid = this._id;
-                String type;
-                if (action.equals("Sowing") || action.equals("Harvest") || action.equals("Sales")) {
-                    //store plants name
-                    String plantid = farm[farmid - 1].getPlantlist().get(r.nextInt(farm[farmid - 1].getPlantlist().size()));
-                    type = plantid;
-
-                } else if (action.equals("Fertilizers")) {
-                    //store fertilizers name
-                    String fertilizerid = farm[farmid - 1].getFertiliserlist().get(r.nextInt(farm[farmid - 1].getFertiliserlist().size()));
-                    type = fertilizerid;
-                } else {
-                    //store pesticide name
-                    String pesticideid = farm[farmid - 1].getPesticidelist().get(r.nextInt(farm[farmid - 1].getPesticidelist().size()));
-                    type = pesticideid;
-                }
-                String unit = UnitType[r.nextInt(UnitType.length)];
-                Double quantity = r.nextDouble(5);
-                quantity = Math.rint(quantity * 100) / 100;
-                int field = r.nextInt(3) + 1;
-                int row = r.nextInt(3) + 1;
-
-                //Create new Activity
-                Activity act = new Activity(id, date, action, type, unit, quantity, field, row, farmid + "", userid);
-                // write the log file
-                // Exp log file: Sowing Broccol  Field 1 Row 1 1 kg 2022-03-03
-                writeLogFile(pwS, "Farmer " + this._id + " on Farm " + farms.get(i) + " " + act.toLogFile(plantArr, fertilizerArr, pesticideArr) + "\n");
-                activityNum++;
-
-            }
-
-        }
-    }
+//    public void sequantialRun() {
+//        PrintWriter pwS = null;
+////        System.out.println("Farmer " + getId());
+//            String[] ActivityName = {"Sowing", "Fertilizers", "Pesticides", "Harvest", "Sales"};
+//            String[] UnitType = {"mass", "pack", "volume"};
+//            Random r = new Random();
+//            int activityNum = 1;
+//
+//            for (int i = 0; i < farms.size(); i++) {
+////            writeLogFile(pwS, "Farmer " + this._id + " on Farm " + farms.get(i) + "\n");
+//                while (true) {
+//                    // check at least 1000 activities 
+//
+//                    if (activityNum >= 1000) {
+//                        if (r.nextInt(2) == 0) {
+//                            break;
+//                        }
+//                    }
+//                    // random for activity id, date, action, type, unit, quantity, field, row, farmid, userid
+//                    String id = activityNum + "";
+//                    String date = r.nextInt(2020) + 2000 + "-" + r.nextInt(12) + 1 + "-" + r.nextInt(30) + 1;
+//                    String action = ActivityName[r.nextInt(ActivityName.length)];
+//                    int farmid = Integer.parseInt(farms.get(i));
+//                    String userid = this._id;
+//                    String type;
+//                    if (action.equals("Sowing") || action.equals("Harvest") || action.equals("Sales")) {
+//                        //store plants name
+//                        String plantid = farm[farmid - 1].getPlantlist().get(r.nextInt(farm[farmid - 1].getPlantlist().size()));
+//                        type = plantid;
+//
+//                    } else if (action.equals("Fertilizers")) {
+//                        //store fertilizers name
+//                        String fertilizerid = farm[farmid - 1].getFertiliserlist().get(r.nextInt(farm[farmid - 1].getFertiliserlist().size()));
+//                        type = fertilizerid;
+//                    } else {
+//                        //store pesticide name
+//                        String pesticideid = farm[farmid - 1].getPesticidelist().get(r.nextInt(farm[farmid - 1].getPesticidelist().size()));
+//                        type = pesticideid;
+//                    }
+//                    String unit = UnitType[r.nextInt(UnitType.length)];
+//                    Double quantity = r.nextDouble(5);
+//                    quantity = Math.rint(quantity * 100) / 100;
+//                    int field = r.nextInt(3) + 1;
+//                    int row = r.nextInt(3) + 1;
+//
+//                    //Create new Activity
+//                    Activity act = new Activity(id, date, action, type, unit, quantity, field, row, farmid + "", userid,plantArr, fertilizerArr, pesticideArr);
+////                     write the log file
+////                     Exp log file: Sowing Broccol  Field 1 Row 1 1 kg 2022-03-03
+//                    writeLogFile(pwS, "Farmer " + this._id + " on Farm " + farms.get(i) + " " + act.toLogFile() + "\n");
+//                    activityNum++;
+//
+//                }
+//
+//            }
+//
+//    }
 }

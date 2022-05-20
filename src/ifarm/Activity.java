@@ -12,9 +12,11 @@ public class Activity {
     private Integer row;
     private String farmId;
     private String userId;
-    private String[] name = new String[100];
+    private String[] plantArr, fertilizerArr, pesticideArr, name = new String[100];
 
-    public Activity(String _id, String date, String action, String type, String unit, Double quantity, Integer field, Integer row, String farmId, String userId) {
+    public Activity(String _id, String date, String action, String type,
+            String unit, Double quantity, Integer field, Integer row, String farmId,
+            String userId, String[] plantArr, String[] fertilizerArr, String[] pesticideArr) {
         this._id = _id;
         this.date = date;
         this.action = action;
@@ -25,6 +27,9 @@ public class Activity {
         this.row = row;
         this.farmId = farmId;
         this.userId = userId;
+        this.plantArr = plantArr;
+        this.fertilizerArr = fertilizerArr;
+        this.pesticideArr = pesticideArr;
     }
 
     public String get_id() {
@@ -68,21 +73,17 @@ public class Activity {
     }
 //            String[] ActivityName = {"Sowing", "Fertilizers", "Pesticides", "Harvest", "Sales"};
 
-
-    public String toLogFileBackUp() {
+    public String toLogFile() {
+        if (action == "Sowing" || action == "Harvest" || action == "Sales") {
+            name = plantArr;
+        } else if (action == "Fertilizers") {
+            name = fertilizerArr;
+        } else {
+            name = pesticideArr;
+        }
 
         // Exp log file: Sowing Broccoli Field 1 Row 1 1 kg 2022-03-03
-        String str = action + " " + name[Integer.parseInt(type)-1] + " Field " + field + " Row " + row + " " + quantity + " " + unit + " " + date;
-        return str;
-    }
-    
-    public String toLogFile(String[] plantArr, String[] fertilizerArr, String[] pesticideArr) {
-        if(action=="Sowing" || action=="Harvest" || action == "Sales") name=plantArr;
-        else if(action=="Fertilizers") name = fertilizerArr;
-        else name = pesticideArr;
-        
-        // Exp log file: Sowing Broccoli Field 1 Row 1 1 kg 2022-03-03
-        String str = action + " " + name[Integer.parseInt(type)-1] + " Field " + field + " Row " + row + " " + quantity + " " + unit + " " + date;
+        String str = action + " " + name[Integer.parseInt(type) - 1] + " Field " + field + " Row " + row + " " + quantity + " " + unit + " " + date;
         return str;
     }
 }
