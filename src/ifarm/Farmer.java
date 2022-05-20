@@ -16,6 +16,12 @@ class Farmer implements Runnable {
 
     DBConnection db = new DBConnection();
     private String _id, name, email, password, phoneNumber;
+
+    private ResultSet plantRs, fertilizerRs, pesticideRs;
+
+    private Plant[] plant;
+    private Fertilizer[] fertilizer;
+    private Pesticide[] pesticide;
 //    private PrintWriter pwC;
 //    private Connection conn = DBConnection.ConnectDB();
     private LinkedList<String> farms;
@@ -139,7 +145,7 @@ class Farmer implements Runnable {
 
                     // write the log file
                     // Exp log file: Sowing Broccol  Field 1 Row 1 1 kg 2022-03-03
-                    writeLogFile(pwC, "Farmer " + this._id + " on Farm " + farms.get(i) + " " + act.toLogFile()+"\n");
+                    writeLogFile(pwC, "Farmer " + this._id + " on Farm " + farms.get(i) + " " + act.toLogFileBackUp() + "\n");
                     activityNum++;
 
                 }
@@ -159,7 +165,7 @@ class Farmer implements Runnable {
     }
 
     // Generate Activities and write into log files (Sequential)
-    public void sequantialRun(Farm[] farm, PrintWriter pwS) {
+    public void sequantialRun(Farm[] farm, PrintWriter pwS, String[] plantArr, String[] fertilizerArr, String[] pesticideArr) {
 //        System.out.println("Farmer " + getId());
         String[] ActivityName = {"Sowing", "Fertilizers", "Pesticides", "Harvest", "Sales"};
         String[] UnitType = {"mass", "pack", "volume"};
@@ -205,10 +211,9 @@ class Farmer implements Runnable {
 
                 //Create new Activity
                 Activity act = new Activity(id, date, action, type, unit, quantity, field, row, farmid + "", userid);
-
                 // write the log file
                 // Exp log file: Sowing Broccol  Field 1 Row 1 1 kg 2022-03-03
-                writeLogFile(pwS, "Farmer " + this._id + " on Farm " + farms.get(i) + " " + act.toLogFile()+"\n");
+                writeLogFile(pwS, "Farmer " + this._id + " on Farm " + farms.get(i) + " " + act.toLogFile(plantArr, fertilizerArr, pesticideArr) + "\n");
                 activityNum++;
 
             }

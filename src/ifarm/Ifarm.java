@@ -42,6 +42,10 @@ public class Ifarm {
     }
 
     public static void main(String[] args) throws SQLException, FileNotFoundException, IOException {
+        String[] plantArr = new Plant().getPlantArr();
+        String[] fertilizerArr = new Fertilizer().getFertilizerArr();
+        String[] pesticideArr = new Pesticide().getPesticideArr();
+        
         final int NumOfFarmer = 100;
         FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM usersList ORDER BY CAST(_id as unsigned)");
         Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
@@ -143,10 +147,11 @@ public class Ifarm {
 
         long sequential_starttime = System.currentTimeMillis();
         for (Farmer i : farmer) {
-            i.sequantialRun(farms,pwS);
+            i.sequantialRun(farms,pwS,plantArr,fertilizerArr, pesticideArr);
         }
         long sequential_endtime = System.currentTimeMillis();
         System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
 
+        
     }
 }

@@ -1,6 +1,7 @@
 package ifarm;
 
 public class Activity {
+
     private String _id;
     private String date;
     private String action;
@@ -11,8 +12,8 @@ public class Activity {
     private Integer row;
     private String farmId;
     private String userId;
+    private String[] name = new String[100];
 
-    
     public Activity(String _id, String date, String action, String type, String unit, Double quantity, Integer field, Integer row, String farmId, String userId) {
         this._id = _id;
         this.date = date;
@@ -33,7 +34,7 @@ public class Activity {
     public String getDate() {
         return date;
     }
-    
+
     public String getAction() {
         return action;
     }
@@ -65,10 +66,23 @@ public class Activity {
     public String getUserId() {
         return userId;
     }
-    
-    public String toLogFile(){
+//            String[] ActivityName = {"Sowing", "Fertilizers", "Pesticides", "Harvest", "Sales"};
+
+
+    public String toLogFileBackUp() {
+
         // Exp log file: Sowing Broccoli Field 1 Row 1 1 kg 2022-03-03
-        String str = action + " " + type + " Field " + field + " Row " + row + " " + quantity + " " + unit + " " + date;
+        String str = action + " " + name[Integer.parseInt(type)-1] + " Field " + field + " Row " + row + " " + quantity + " " + unit + " " + date;
+        return str;
+    }
+    
+    public String toLogFile(String[] plantArr, String[] fertilizerArr, String[] pesticideArr) {
+        if(action=="Sowing" || action=="Harvest" || action == "Sales") name=plantArr;
+        else if(action=="Fertilizers") name = fertilizerArr;
+        else name = pesticideArr;
+        
+        // Exp log file: Sowing Broccoli Field 1 Row 1 1 kg 2022-03-03
+        String str = action + " " + name[Integer.parseInt(type)-1] + " Field " + field + " Row " + row + " " + quantity + " " + unit + " " + date;
         return str;
     }
 }
