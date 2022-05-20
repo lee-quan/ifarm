@@ -48,9 +48,8 @@ public class FarmerSimulator implements FarmerSimulatorInterface {
             // execute generate farm task and wait till finish completion 
             resultList = executorService.invokeAll(taskList);
             for (int i = 0; i < numberOfFarmers; i++) {
-                System.out.println("Farmers: " + farmers[i].getId());
-                System.out.println("Farm :" + farmers[i].getFarm());
-                System.out.println();
+                System.out.println("Farmers: " + farmers[i].getId()+" Farm :" + farmers[i].getFarm());
+
 
             }
 

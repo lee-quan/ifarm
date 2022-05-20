@@ -24,9 +24,9 @@ import java.util.logging.Logger;
  * @author Lee Quan
  */
 public class Ifarm {
-    
+
     private static DBConnection db = new DBConnection();
-    
+
     private static Callable<Void> toCallable(final Runnable runnable) {
         return new Callable<Void>() {
             @Override
@@ -74,20 +74,17 @@ public class Ifarm {
         }
 
         //set all the maximum value into a constant variable
-        final int
-        numOfFarm = MaxData.get("farm"),
-        numOfPlant = MaxData.get("plant"),
-        numOfFertiliser = MaxData.get("fertiliser"),
-        numOfPesticide = MaxData.get("pesticide");
+        final int numOfFarm = MaxData.get("farm"),
+                numOfPlant = MaxData.get("plant"),
+                numOfFertiliser = MaxData.get("fertiliser"),
+                numOfPesticide = MaxData.get("pesticide");
 
         //create 2 arrays to store all farms
         Farm[] farms = new Farm[numOfFarm];
 
-        
         List<Callable<Void>> callables = new ArrayList<>();
 
         //execute farm task
-        
         for (int i = 0; i < numOfFarm; i++) {
             //randomly assign plants to each farm
             farms[i] = new Farm((i + 1) + "");
@@ -101,41 +98,49 @@ public class Ifarm {
             callables.add(toCallable(fertiliser));
             callables.add(toCallable(pesticide));
         }
-        
+
         try {
             executorservice.invokeAll(callables);
         } catch (InterruptedException ex) {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
 //        System.out.println("Farmer");
 //        for (int i = 0; i < numOfUser; i++) {
 //            System.out.println("User's " + (i + 1) + ": " + users[i].getFarm());
 //        }
-
         for (int i = 0; i < numOfFarm; i++) {
-            System.out.println("\nFarm " + (i + 1) + ":");
-            System.out.println("Plant = " + farms[i].getPlant());
-            System.out.println("Fertilizer = " + farms[i].getFertiliser());
-            System.out.println("Pesticide = " + farms[i].getPesticide());
+//            System.out.println("\nFarm " + (i + 1) + ":");
+//            System.out.println("Plant = " + farms[i].getPlant());
+//            System.out.println("Fertilizer = " + farms[i].getFertiliser());
+//            System.out.println("Pesticide = " + farms[i].getPesticide());
             String updateSql = "UPDATE farm "
-                    + "SET plants=\""+farms[i].getPlant()+"\","
-                    + "fertilizers=\""+farms[i].getFertiliser()+"\","
-                    + "pesticides=\""+farms[i].getPesticide()+"\" WHERE _id=\""+farms[i].getId()+"\"";            
+                    + "SET plants=\"" + farms[i].getPlant() + "\","
+                    + "fertilizers=\"" + farms[i].getFertiliser() + "\","
+                    + "pesticides=\"" + farms[i].getPesticide() + "\" WHERE _id=\"" + farms[i].getId() + "\"";
             db.update(updateSql);
         }
-        
+
         // generate activities
         File logfile = new File("log.txt");
         long starttime = System.currentTimeMillis();
-        for (int i = 0; i < NumOfFarmer; i++) {            
+        for (int i = 0; i < NumOfFarmer; i++) {
             farmer[i].setFarm(farms);
             executorservice.submit(farmer[i]);
         }
         executorservice.shutdown();
-        while(!executorservice.isTerminated()){            
+        while (!executorservice.isTerminated()) {
         }
+
         long endtime = System.currentTimeMillis();
-        System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is "+(endtime - starttime));
+        System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
+
+        long sequential_starttime = System.currentTimeMillis();
+        for (Farmer i : farmer) {
+            i.sequantialRun(farms);
+        }
+        long sequential_endtime = System.currentTimeMillis();
+        System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using setquantial programming is " + (sequential_endtime - sequential_starttime));
+
     }
 }
