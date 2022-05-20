@@ -5,6 +5,14 @@
 package ifarm;
 
 import database.DBConnection;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -36,14 +44,19 @@ public class Ifarm {
         };
     }
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException, FileNotFoundException, IOException {
+        final int NumOfFarmer = 100;
         FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM usersList ORDER BY CAST(_id as unsigned)");
+<<<<<<< HEAD
         Farmer[] farmers = simulator.generateFarmers(10);
+=======
+        Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
+>>>>>>> activity
 
 //        Introduction of thread pool
         ExecutorService executorservice = Executors.newFixedThreadPool(10);
 
-        String[] tableName = {"users", "farm", "plant", "fertiliser", "pesticide"};
+        String[] tableName = {"farm", "plant", "fertiliser", "pesticide"};
 
         Generator d = new Generator();
         HashMap<String, Integer> MaxData = new HashMap<>();
@@ -72,8 +85,7 @@ public class Ifarm {
         }
 
         //set all the maximum value into a constant variable
-        final int numOfUser = MaxData.get("users"),
-                numOfFarm = MaxData.get("farm"),
+        final int numOfFarm = MaxData.get("farm"),
                 numOfPlant = MaxData.get("plant"),
                 numOfFertiliser = MaxData.get("fertiliser"),
                 numOfPesticide = MaxData.get("pesticide");
@@ -101,6 +113,13 @@ public class Ifarm {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }
 
+<<<<<<< HEAD
+=======
+//        System.out.println("Farmer");
+//        for (int i = 0; i < numOfUser; i++) {
+//            System.out.println("User's " + (i + 1) + ": " + users[i].getFarm());
+//        }
+>>>>>>> activity
         for (int i = 0; i < numOfFarm; i++) {
 //            System.out.println("\nFarm " + (i + 1) + ":");
 //            System.out.println("Plant = " + farms[i].getPlant());
@@ -113,6 +132,7 @@ public class Ifarm {
             db.update(updateSql);
         }
 
+<<<<<<< HEAD
 //        for (Farmer i : farmers) {
 //            i.sequantialRun(farms);
 //        }
@@ -122,6 +142,30 @@ public class Ifarm {
             executorservice.awaitTermination(2, TimeUnit.SECONDS);
         } catch (InterruptedException ex) {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
+=======
+
+        PrintWriter pwS = new PrintWriter(new FileOutputStream("log1.txt", false));
+        Files.deleteIfExists(Paths.get("log.txt"));
+        // generate activities
+        long starttime = System.currentTimeMillis();
+        for (int i = 0; i < NumOfFarmer; i++) {
+            farmer[i].setFarm(farms);
+            executorservice.submit(farmer[i]);
+>>>>>>> activity
         }
+        executorservice.shutdown();
+        while (!executorservice.isTerminated()) {
+        }
+        
+        long endtime = System.currentTimeMillis();
+        System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
+
+        long sequential_starttime = System.currentTimeMillis();
+        for (Farmer i : farmer) {
+            i.sequantialRun(farms,pwS);
+        }
+        long sequential_endtime = System.currentTimeMillis();
+        System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
+
     }
 }

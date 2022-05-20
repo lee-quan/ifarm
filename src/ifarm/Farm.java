@@ -33,7 +33,17 @@ public class Farm {
     public void insertPesticide(String pesticideid) {
         pesticide.add(pesticideid);
     }
-
+    
+    public LinkedList<String> getPlantlist(){
+        return this.plant;
+    }
+    public LinkedList<String> getFertiliserlist(){
+        return this.fertiliser;
+    }
+    public LinkedList<String> getPesticidelist(){
+        return this.pesticide;
+    }
+    
     public String getPlant() {
         String str = "";
 
