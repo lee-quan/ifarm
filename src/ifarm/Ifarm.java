@@ -138,22 +138,13 @@ public class Ifarm {
 // generate activities
             List<Callable<Void>> FarmerCallables = new ArrayList<>();
 
-            for (int i = 0; i < NumOfFarmer; i++) {
-                farmer[i].setFarm(farms);
-                farmer[i].setPlantArr(plantArr);
-                farmer[i].setPesticideArr(pesticideArr);
-                farmer[i].setFertilizerArr(fertilizerArr);
-                farmer[i].setPrintWriter(pwC);
-                FarmerCallables.add(toCallable(farmer[i]));
+            for (Farmer i : farmer) {
+                i.setFarm(farms);
+                i.setPlantArr(plantArr);
+                i.setPesticideArr(pesticideArr);
+                i.setFertilizerArr(fertilizerArr);
+                FarmerCallables.add(toCallable(i));
             }
-
-            long starttime = System.currentTimeMillis();
-            executorservice.invokeAll(FarmerCallables);
-            executorservice.shutdown();
-            while (!executorservice.isTerminated()) {
-            }
-            long endtime = System.currentTimeMillis();
-            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
 
             long sequential_starttime = System.currentTimeMillis();
             for (Farmer i : farmer) {
@@ -163,6 +154,19 @@ public class Ifarm {
             long sequential_endtime = System.currentTimeMillis();
             System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
 
+            for(Farmer i : farmer){
+                i.setPrintWriter(pwC);
+            }
+            
+            long starttime = System.currentTimeMillis();
+            executorservice.invokeAll(FarmerCallables);
+            executorservice.shutdown();
+            while (!executorservice.isTerminated()) {
+            }
+            long endtime = System.currentTimeMillis();
+            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
+
+            
         } catch (InterruptedException ex) {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }
