@@ -21,6 +21,7 @@ class Farmer implements Runnable {
     private LinkedList<String> farms;
     private Farm[] farm;
     private PrintWriter pw;
+    private int TotalAct;
 
     public Farmer(String _id) {
         this.activityNum = 1;
@@ -91,6 +92,10 @@ class Farmer implements Runnable {
     public void insertFarm(String farmid) {
         farms.add(farmid);
     }
+    
+    public int getTotalAct(){
+        return this.TotalAct;
+    }
 
     public String getFarm() {
         String str = "";
@@ -123,6 +128,7 @@ class Farmer implements Runnable {
 
                     if (activityNum >= 1000) {
                         if (r.nextInt(2) == 0) {
+                            this.TotalAct = activityNum;
                             break;
                         }
                     }

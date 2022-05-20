@@ -165,8 +165,11 @@ public class Ifarm {
             }
             long endtime = System.currentTimeMillis();
             System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
-
             
+            System.out.println("\nFarmer Activities number: ");
+            for (Farmer i : farmer) {
+                System.out.println("Farmer "+i.getId()+" has "+i.getTotalAct() + " activities");
+            }
         } catch (InterruptedException ex) {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }
