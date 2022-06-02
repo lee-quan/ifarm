@@ -29,15 +29,12 @@ import java.util.logging.Logger;
  */
 public class Ifarm {
 
-    private static DBConnection db = new DBConnection();
+    private static final DBConnection db = new DBConnection();
 
     private static Callable<Void> toCallable(final Runnable runnable) {
-        return new Callable<Void>() {
-            @Override
-            public Void call() {
-                runnable.run();
-                return null;
-            }
+        return () -> {
+            runnable.run();
+            return null;
         };
     }
 
@@ -170,6 +167,7 @@ public class Ifarm {
             
             System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
             
+            System.out.println();
             for(Farmer i : farmer){
                 i.getActivityList();
             }

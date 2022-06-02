@@ -1,1185 +1,1017 @@
-Act 1 Farmer 1 on Farm 6 Fertilizers Sunpic 3 Field 3 Row 2 4.53 pack 2016-1-22
-Act 2 Farmer 1 on Farm 6 Sales Atlantic Cup Lichen Field 3 Row 3 2.42 volume 2000-1-2
-Act 3 Farmer 1 on Farm 6 Harvest Jointfir Field 2 Row 3 2.08 pack 2009-11-20
-Act 4 Farmer 1 on Farm 6 Pesticides Shamrock Pesticide Field 2 Row 3 2.69 pack 2012-8-8
-Act 5 Farmer 1 on Farm 6 Fertilizers Keogn Orien Field 2 Row 3 3.93 mass 2015-9-9
-Act 6 Farmer 1 on Farm 6 Pesticides Curaron 50 Field 1 Row 1 1.83 mass 2004-2-18
-Act 7 Farmer 1 on Farm 6 Pesticides Shamrock Pesticide Field 3 Row 2 1.73 mass 2008-10-4
-Act 8 Farmer 1 on Farm 6 Sowing Jointfir Field 1 Row 1 2.43 mass 2002-6-22
-Act 9 Farmer 1 on Farm 6 Sowing Pink Tickseed Field 1 Row 2 0.14 volume 2012-10-29
-Act 10 Farmer 1 on Farm 6 Fertilizers Keogn Orien Field 2 Row 2 2.72 mass 2010-2-27
-Act 11 Farmer 1 on Farm 6 Harvest Jointfir Field 1 Row 1 1.45 volume 2020-9-29
-Act 12 Farmer 1 on Farm 6 Sales Atlantic Cup Lichen Field 1 Row 1 1.7 pack 2011-12-9
-Act 13 Farmer 1 on Farm 6 Sales Dot Lichen Field 1 Row 3 3.95 volume 2012-10-10
-Act 14 Farmer 1 on Farm 6 Sowing Eggleaf Silktassel Field 3 Row 3 4.49 pack 2018-3-2
-Act 15 Farmer 1 on Farm 6 Pesticides Curaron 50 Field 2 Row 2 2.55 volume 2016-12-9
-Act 16 Farmer 1 on Farm 6 Sales Eggleaf Silktassel Field 1 Row 3 3.83 volume 2009-6-4
-Act 17 Farmer 1 on Farm 6 Pesticides Methoxychlor (methoxychlor) Field 1 Row 1 0.03 pack 2019-11-21
-Act 18 Farmer 1 on Farm 6 Sowing Southern Monardella Field 1 Row 3 3.45 mass 2007-9-9
-Act 19 Farmer 1 on Farm 6 Pesticides Shamrock Pesticide Field 3 Row 3 0.37 mass 2020-3-14
-Act 20 Farmer 1 on Farm 6 Fertilizers Zinc Ammonium Sulfate Solution Field 1 Row 2 1.18 volume 2013-4-14
-Act 21 Farmer 1 on Farm 6 Sales Moenkopi Milkvetch Field 3 Row 3 2.6 volume 2012-11-24
-Act 22 Farmer 1 on Farm 6 Fertilizers GuthionChongi 4 Field 1 Row 1 4.74 volume 2010-5-8
-Act 23 Farmer 1 on Farm 6 Fertilizers Phosphoric Acid Field 1 Row 3 2.08 volume 2015-9-18
-Act 24 Farmer 1 on Farm 6 Pesticides Shamrock Pesticide Field 1 Row 2 2.89 mass 2008-6-20
-Act 25 Farmer 1 on Farm 6 Harvest Pink Tickseed Field 3 Row 2 4.75 pack 2005-8-22
-Act 26 Farmer 1 on Farm 6 Fertilizers Magnesium Nitrate Field 2 Row 3 0.68 volume 2017-7-6
-Act 27 Farmer 1 on Farm 6 Harvest Atlantic Cup Lichen Field 3 Row 1 1.12 volume 2012-7-5
-Act 28 Farmer 1 on Farm 6 Sowing Dot Lichen Field 3 Row 2 4.37 pack 2018-1-8
-Act 29 Farmer 1 on Farm 6 Pesticides Curaron 50 Field 2 Row 1 0.83 mass 2009-4-30
-Act 30 Farmer 1 on Farm 6 Harvest Pink Tickseed Field 2 Row 2 2.25 volume 2014-4-16
-Act 31 Farmer 1 on Farm 6 Sales Jointfir Field 3 Row 2 1.73 volume 2005-1-4
-Act 32 Farmer 1 on Farm 6 Fertilizers KullMein 31 Field 2 Row 1 4.25 mass 2002-4-24
-Act 33 Farmer 1 on Farm 6 Pesticides Methoxychlor (methoxychlor) Field 2 Row 2 4.4 mass 2016-5-17
-Act 34 Farmer 1 on Farm 6 Sowing Eggleaf Silktassel Field 2 Row 1 4.93 pack 2016-12-2
-Act 35 Farmer 1 on Farm 6 Fertilizers RunBigkals 09-124 Field 1 Row 2 0.59 pack 2005-3-13
-Act 36 Farmer 1 on Farm 6 Sowing Moenkopi Milkvetch Field 3 Row 1 2.22 mass 2008-4-10
-Act 37 Farmer 1 on Farm 6 Fertilizers Basic Lime Phosphate Field 1 Row 3 3.82 mass 2001-9-1
-Act 38 Farmer 1 on Farm 6 Harvest Eggleaf Silktassel Field 1 Row 3 1.57 mass 2004-9-23
-Act 39 Farmer 1 on Farm 6 Sales Eggleaf Silktassel Field 3 Row 1 3.98 mass 2012-5-19
-Act 40 Farmer 1 on Farm 6 Fertilizers RunBigkals 09-124 Field 3 Row 3 2.85 volume 2008-3-20
-Act 41 Farmer 1 on Farm 6 Sowing Atlantic Cup Lichen Field 3 Row 3 2.42 mass 2003-7-17
-Act 42 Farmer 1 on Farm 6 Sales Jointfir Field 1 Row 3 3.63 volume 2015-2-2
-Act 43 Farmer 1 on Farm 6 Sales Pink Tickseed Field 3 Row 3 3.76 volume 2006-10-7
-Act 44 Farmer 1 on Farm 6 Fertilizers Magnesium Nitrate Field 2 Row 2 1.88 volume 2012-1-3
-Act 45 Farmer 1 on Farm 6 Pesticides Curaron 50 Field 2 Row 2 1.0 pack 2019-7-15
-Act 46 Farmer 1 on Farm 6 Sowing Atlantic Cup Lichen Field 1 Row 1 2.4 pack 2012-1-23
-Act 47 Farmer 1 on Farm 6 Sowing Jointfir Field 3 Row 2 3.39 pack 2005-4-22
-Act 48 Farmer 1 on Farm 6 Harvest Pink Tickseed Field 1 Row 1 2.68 mass 2008-6-15
-Act 49 Farmer 1 on Farm 6 Pesticides Shamrock Pesticide Field 2 Row 3 2.27 mass 2016-6-24
-Act 50 Farmer 1 on Farm 6 Sales Eggleaf Silktassel Field 3 Row 3 4.72 volume 2017-4-20
-Act 1 Farmer 1 on Farm 2 Sales Circumpolar Starwort Field 2 Row 1 2.94 pack 2008-5-9
-Act 2 Farmer 1 on Farm 2 Harvest Pinaleno Mountain Rubberweed Field 1 Row 1 0.31 mass 2018-2-2
-Act 3 Farmer 1 on Farm 2 Fertilizers Chong Fa23 Field 3 Row 3 1.59 volume 2017-4-16
-Act 4 Farmer 1 on Farm 2 Harvest Orcutt's Threeawn Field 3 Row 2 1.33 mass 2017-6-4
-Act 5 Farmer 1 on Farm 2 Sales Orcutt's Threeawn Field 3 Row 2 3.85 pack 2020-5-6
-Act 6 Farmer 1 on Farm 2 Sales Royal Tonguefern Field 2 Row 3 4.91 mass 2020-9-18
-Act 7 Farmer 1 on Farm 2 Sales Black Gram Field 1 Row 2 1.17 volume 2019-3-29
-Act 8 Farmer 1 on Farm 2 Harvest Prickly Bog Sedge Field 1 Row 1 2.36 mass 2009-2-22
-Act 9 Farmer 1 on Farm 2 Harvest Prickly Bog Sedge Field 3 Row 1 0.52 volume 2012-3-21
-Act 10 Farmer 1 on Farm 2 Sales Silky Willow Field 1 Row 3 3.41 volume 2015-2-17
-Act 11 Farmer 1 on Farm 2 Fertilizers Zinc Manganese Amm Sulfate Field 3 Row 1 0.4 volume 2006-6-28
-Act 12 Farmer 1 on Farm 2 Pesticides Methidathion (organophosphate) Field 3 Row 3 3.48 mass 2000-6-30
-Act 13 Farmer 1 on Farm 2 Pesticides Methidathion (organophosphate) Field 1 Row 2 0.23 volume 2020-3-23
-Act 14 Farmer 1 on Farm 2 Harvest Bluntleaf Waterleaf Field 2 Row 3 3.96 pack 2019-5-5
-Act 15 Farmer 1 on Farm 2 Sowing Prickly Bog Sedge Field 1 Row 1 0.37 pack 2012-10-2
-Act 16 Farmer 1 on Farm 2 Pesticides Methoxychlor (methoxychlor) Field 1 Row 3 0.61 pack 2016-2-23
-Act 17 Farmer 1 on Farm 2 Sowing Eggleaf Silktassel Field 2 Row 2 3.16 mass 2011-1-17
-Act 18 Farmer 1 on Farm 2 Fertilizers Kelthweiane Field 1 Row 3 0.84 pack 2011-11-28
-Act 19 Farmer 1 on Farm 2 Sowing Upright Chickweed Field 3 Row 1 0.16 volume 2004-5-9
-Act 20 Farmer 1 on Farm 2 Pesticides Methoxychlor (methoxychlor) Field 3 Row 1 0.01 pack 2016-6-25
-Act 21 Farmer 1 on Farm 2 Harvest Maui Melicope Field 2 Row 3 4.21 pack 2006-1-2
-Act 22 Farmer 1 on Farm 2 Harvest Orcutt's Threeawn Field 3 Row 2 1.64 volume 2002-12-10
-Act 23 Farmer 1 on Farm 2 Sales Rhexophyllum Moss Field 2 Row 2 3.76 pack 2010-10-11
-Act 24 Farmer 1 on Farm 2 Sowing Woolly Prairie Clover Field 1 Row 2 1.34 volume 2001-8-25
-Act 25 Farmer 1 on Farm 2 Fertilizers Calcium Metaphosphate Field 2 Row 2 0.03 volume 2019-10-25
-Act 26 Farmer 1 on Farm 2 Sowing Orcutt's Threeawn Field 2 Row 1 1.37 volume 2019-6-25
-Act 27 Farmer 1 on Farm 2 Harvest Royal Tonguefern Field 3 Row 1 4.52 mass 2011-3-12
-Act 28 Farmer 1 on Farm 2 Sales Orcutt's Threeawn Field 2 Row 3 4.17 mass 2009-8-27
-Act 29 Farmer 1 on Farm 2 Fertilizers Hexakis 33 Field 3 Row 3 1.92 volume 2010-9-15
-Act 30 Farmer 1 on Farm 2 Sowing Prickly Bog Sedge Field 3 Row 3 2.58 volume 2010-2-13
-Act 31 Farmer 1 on Farm 2 Sales Orcutt's Threeawn Field 1 Row 1 3.56 pack 2013-12-28
-Act 32 Farmer 1 on Farm 2 Fertilizers Basic Lime Phosphate Field 3 Row 1 3.76 volume 2003-5-21
-Act 33 Farmer 1 on Farm 2 Pesticides Carbaryl (N-methyl carbamate), Field 3 Row 2 3.43 mass 2019-12-13
-Act 34 Farmer 1 on Farm 2 Pesticides Asana XL (esfenvalerate) Field 3 Row 3 0.54 volume 2012-3-12
-Act 35 Farmer 1 on Farm 2 Fertilizers Zjies Shaet Field 2 Row 2 2.96 mass 2012-11-12
-Act 36 Farmer 1 on Farm 2 Pesticides Asana XL (esfenvalerate) Field 2 Row 1 3.59 pack 2000-3-30
-Act 37 Farmer 1 on Farm 2 Sowing Maui Melicope Field 2 Row 1 2.68 mass 2002-5-12
-Act 38 Farmer 1 on Farm 2 Sales Black Gram Field 1 Row 3 2.24 pack 2005-8-3
-Act 39 Farmer 1 on Farm 2 Harvest Circumpolar Starwort Field 2 Row 2 3.39 mass 2000-11-18
-Act 40 Farmer 1 on Farm 2 Pesticides Asana XL (esfenvalerate) Field 3 Row 3 0.27 pack 2013-1-14
-Act 41 Farmer 1 on Farm 2 Sales Eggleaf Silktassel Field 1 Row 1 2.84 volume 2010-10-18
-Act 42 Farmer 1 on Farm 2 Sales Black Gram Field 2 Row 2 0.82 volume 2002-2-24
-Act 43 Farmer 1 on Farm 2 Pesticides Carbaryl (N-methyl carbamate), Field 3 Row 3 0.52 mass 2015-3-2
-Act 44 Farmer 1 on Farm 2 Sales Prickly Bog Sedge Field 1 Row 2 0.96 pack 2016-9-3
-Act 45 Farmer 1 on Farm 2 Fertilizers Cobalt Sulfate Field 2 Row 3 0.59 pack 2013-11-18
-Act 46 Farmer 1 on Farm 2 Sales Maui Melicope Field 3 Row 1 4.35 volume 2005-5-15
-Act 47 Farmer 1 on Farm 2 Fertilizers Calcium Metaphosphate Field 2 Row 2 3.53 pack 2006-1-29
-Act 48 Farmer 1 on Farm 2 Sales Maui Melicope Field 2 Row 3 4.23 mass 2006-5-3
-Act 49 Farmer 1 on Farm 2 Pesticides Asana XL (esfenvalerate) Field 3 Row 1 1.33 pack 2019-9-12
-Act 50 Farmer 1 on Farm 2 Sales Toothed Pogonatum Moss Field 2 Row 2 3.8 mass 2006-6-4
-Act 51 Farmer 1 on Farm 2 Pesticides Carbaryl (N-methyl carbamate), Field 2 Row 3 4.41 mass 2015-10-20
-Act 1 Farmer 1 on Farm 5 Sales Desert Starvine Field 3 Row 1 4.82 mass 2018-4-27
-Act 2 Farmer 1 on Farm 5 Pesticides Carbaryl (N-methyl carbamate), Field 3 Row 3 3.61 mass 2020-4-28
-Act 3 Farmer 1 on Farm 5 Harvest Ring Lichen Field 1 Row 2 1.25 pack 2016-6-30
-Act 4 Farmer 1 on Farm 5 Harvest Atlantic Cup Lichen Field 3 Row 2 3.63 mass 2007-5-5
-Act 5 Farmer 1 on Farm 5 Harvest Shield Lichen Field 2 Row 2 2.35 volume 2003-10-5
-Act 6 Farmer 1 on Farm 5 Sowing Desert Starvine Field 3 Row 2 1.79 pack 2006-1-17
-Act 7 Farmer 1 on Farm 5 Pesticides Imidan 50 WP Field 1 Row 3 4.19 volume 2008-4-3
-Act 8 Farmer 1 on Farm 5 Sowing Atlantic Cup Lichen Field 3 Row 1 1.83 mass 2003-1-1
-Act 9 Farmer 1 on Farm 5 Fertilizers Aluminum Sulfate Field 2 Row 3 1.76 volume 2010-9-27
-Act 10 Farmer 1 on Farm 5 Pesticides Thiodan 35 Field 3 Row 2 0.95 mass 2005-1-24
-Act 11 Farmer 1 on Farm 5 Harvest Chilean Wormseed Field 1 Row 1 1.48 volume 2006-7-29
-Act 12 Farmer 1 on Farm 5 Sales Alkali Milkvetch Field 1 Row 2 0.95 volume 2019-2-20
-Act 13 Farmer 1 on Farm 5 Harvest Shield Lichen Field 1 Row 1 1.04 mass 2016-3-29
-Act 14 Farmer 1 on Farm 5 Harvest Alkali Milkvetch Field 1 Row 3 3.86 mass 2003-11-2
-Act 15 Farmer 1 on Farm 5 Fertilizers Sodium Nitrate Field 2 Row 2 0.31 pack 2018-10-14
-Act 16 Farmer 1 on Farm 5 Harvest Kentucky Lady's Slipper Field 3 Row 2 2.25 volume 2002-7-11
-Act 17 Farmer 1 on Farm 5 Pesticides Esfenvalerate (pyrethroid) Field 2 Row 1 0.62 volume 2019-11-10
-Act 18 Farmer 1 on Farm 5 Fertilizers Ammonium Nitrate - Sulfate Field 2 Row 1 2.65 volume 2020-4-16
-Act 19 Farmer 1 on Farm 5 Pesticides Confidor 17.8 Field 3 Row 2 3.12 volume 2014-1-30
-Act 20 Farmer 1 on Farm 5 Fertilizers Sodium Nitrate Field 2 Row 3 4.3 pack 2020-11-29
-Act 21 Farmer 1 on Farm 5 Pesticides Imidan 50 WP Field 3 Row 2 1.97 mass 2015-12-1
-Act 22 Farmer 1 on Farm 5 Fertilizers Aluminum Sulfate Field 3 Row 1 4.78 pack 2014-12-3
-Act 23 Farmer 1 on Farm 5 Sowing Atlantic Cup Lichen Field 2 Row 3 2.32 mass 2016-1-7
-Act 24 Farmer 1 on Farm 5 Sales Chilean Wormseed Field 2 Row 2 3.72 volume 2001-2-23
-Act 25 Farmer 1 on Farm 5 Sales Ring Lichen Field 2 Row 1 3.33 mass 2017-11-10
-Act 26 Farmer 1 on Farm 5 Pesticides Dipel 2X Field 3 Row 1 4.45 mass 2003-7-21
-Act 27 Farmer 1 on Farm 5 Sowing Chilean Wormseed Field 3 Row 2 0.7 mass 2010-2-15
-Act 28 Farmer 1 on Farm 5 Pesticides Esfenvalerate (pyrethroid) Field 3 Row 3 0.55 volume 2012-7-9
-Act 29 Farmer 1 on Farm 5 Sales Shield Lichen Field 2 Row 3 3.56 mass 2017-3-25
-Act 30 Farmer 1 on Farm 5 Fertilizers Ammonium Nitrate - Sulfate Field 1 Row 2 1.32 pack 2009-7-7
-Act 31 Farmer 1 on Farm 5 Fertilizers Dup 1.2-1 Field 3 Row 2 4.6 mass 2003-6-6
-Act 32 Farmer 1 on Farm 5 Sowing Shield Lichen Field 1 Row 2 1.89 volume 2003-1-7
-Act 33 Farmer 1 on Farm 5 Pesticides Dipel 2X Field 2 Row 3 3.22 volume 2006-8-9
-Act 34 Farmer 1 on Farm 5 Sowing Alkali Milkvetch Field 2 Row 3 3.58 volume 2014-10-8
-Act 35 Farmer 1 on Farm 5 Pesticides Pyrethrins Field 1 Row 3 0.62 volume 2015-9-19
-Act 36 Farmer 1 on Farm 5 Harvest Ring Lichen Field 1 Row 3 4.26 pack 2019-3-2
-Act 37 Farmer 1 on Farm 5 Sales Desert Starvine Field 1 Row 3 3.23 mass 2003-6-23
-Act 38 Farmer 1 on Farm 5 Harvest Longleaf False Goldeneye Field 1 Row 2 1.78 pack 2010-10-24
-Act 39 Farmer 1 on Farm 5 Sales Desert Starvine Field 3 Row 2 1.28 pack 2001-5-30
-Act 40 Farmer 1 on Farm 5 Pesticides Metasystox 25 Field 1 Row 1 2.85 pack 2000-9-6
-Act 41 Farmer 1 on Farm 5 Pesticides Carbaryl (N-methyl carbamate), Field 2 Row 1 4.91 mass 2014-5-2
-Act 42 Farmer 1 on Farm 5 Fertilizers Amm Nitrate-Limestone Mixtures Field 1 Row 1 2.92 mass 2006-11-8
-Act 43 Farmer 1 on Farm 5 Fertilizers Ammonium Nitrate Field 1 Row 2 3.76 pack 2019-9-7
-Act 44 Farmer 1 on Farm 5 Sales Shield Lichen Field 3 Row 2 0.81 pack 2001-10-17
-Act 45 Farmer 1 on Farm 5 Sowing Kentucky Lady's Slipper Field 2 Row 2 1.44 pack 2017-12-30
-Act 46 Farmer 1 on Farm 5 Sowing Guara Blanca Field 1 Row 1 1.53 pack 2009-4-25
-Act 47 Farmer 1 on Farm 5 Pesticides Carbaryl (N-methyl carbamate), Field 1 Row 2 0.92 volume 2011-11-6
-Act 48 Farmer 1 on Farm 5 Sales Redbird Flower Field 2 Row 1 2.33 pack 2008-6-25
-Act 49 Farmer 1 on Farm 5 Pesticides MSR (oxydemeton-methyl) Field 2 Row 1 4.81 volume 2005-12-15
-Act 50 Farmer 1 on Farm 5 Pesticides Abamectin Field 2 Row 3 0.36 mass 2011-11-22
-Act 51 Farmer 1 on Farm 5 Pesticides Confidor 17.8 Field 3 Row 1 4.72 mass 2007-4-8
-Act 52 Farmer 1 on Farm 5 Sowing Guara Blanca Field 2 Row 2 1.0 mass 2009-3-25
-Act 1 Farmer 1 on Farm 9 Sowing Wild Chives Field 3 Row 2 1.34 pack 2016-9-3
-Act 2 Farmer 1 on Farm 9 Sowing Circumpolar Starwort Field 3 Row 3 4.09 volume 2000-10-24
-Act 3 Farmer 1 on Farm 9 Pesticides Curaron 50 Field 3 Row 1 2.23 volume 2007-4-12
-Act 4 Farmer 1 on Farm 9 Pesticides Zeal (etoxazole) Field 1 Row 3 1.37 volume 2016-12-10
-Act 5 Farmer 1 on Farm 9 Fertilizers Ammonium Phosphate Sulfate Field 3 Row 1 4.49 volume 2012-7-8
-Act 6 Farmer 1 on Farm 9 Sales Chilean Wormseed Field 1 Row 1 2.7 pack 2014-12-30
-Act 7 Farmer 1 on Farm 9 Sowing St. Augustine Grass Field 3 Row 1 1.8 mass 2017-12-18
-Act 8 Farmer 1 on Farm 9 Pesticides Zeal (etoxazole) Field 3 Row 1 0.06 pack 2006-10-29
-Act 9 Farmer 1 on Farm 9 Sowing Wild Chives Field 3 Row 3 1.37 pack 2010-11-14
-Act 10 Farmer 1 on Farm 9 Pesticides Curaron 50 Field 3 Row 1 0.52 volume 2012-9-7
-Act 11 Farmer 1 on Farm 9 Sales Circumpolar Starwort Field 3 Row 1 1.69 mass 2020-3-16
-Act 12 Farmer 1 on Farm 9 Sowing St. Augustine Grass Field 3 Row 2 0.93 pack 2014-6-12
-Act 13 Farmer 1 on Farm 9 Fertilizers Guano Field 1 Row 1 0.59 mass 2016-9-26
-Act 14 Farmer 1 on Farm 9 Sowing Wild Chives Field 2 Row 1 1.44 mass 2011-4-26
-Act 15 Farmer 1 on Farm 9 Harvest Wild Chives Field 3 Row 3 2.57 volume 2011-6-28
-Act 16 Farmer 1 on Farm 9 Pesticides Curaron 50 Field 2 Row 1 1.03 mass 2001-9-5
-Act 17 Farmer 1 on Farm 9 Fertilizers Ammonium Thiosulfate Field 2 Row 3 3.8 pack 2010-1-2
-Act 18 Farmer 1 on Farm 9 Pesticides Life Botanic Natural Pesticide Field 1 Row 1 4.55 volume 2008-7-15
-Act 19 Farmer 1 on Farm 9 Pesticides Flash 25 Field 3 Row 2 2.49 mass 2003-10-16
-Act 20 Farmer 1 on Farm 9 Harvest Oatgrass Field 3 Row 2 4.02 volume 2006-1-18
-Act 21 Farmer 1 on Farm 9 Fertilizers Ammonium Phosphate Sulfate Field 1 Row 2 2.9 pack 2007-3-11
-Act 22 Farmer 1 on Farm 9 Sales Whiskerbush Field 3 Row 1 2.66 volume 2015-4-22
-Act 23 Farmer 1 on Farm 9 Fertilizers Calcium Metaphosphate Field 2 Row 1 4.12 volume 2014-1-11
-Act 24 Farmer 1 on Farm 9 Sowing Circumpolar Starwort Field 2 Row 1 4.26 volume 2006-3-23
-Act 25 Farmer 1 on Farm 9 Pesticides Life Botanic Natural Pesticide Field 3 Row 1 1.58 mass 2012-2-18
-Act 26 Farmer 1 on Farm 9 Fertilizers Magnesium Nitrate Field 1 Row 1 1.1 pack 2017-4-20
-Act 27 Farmer 1 on Farm 9 Pesticides Vendex (hexakis fenbutatin-oxide) Field 1 Row 1 2.74 mass 2013-10-27
-Act 28 Farmer 1 on Farm 9 Pesticides Pirit 1PCS Field 1 Row 1 3.9 pack 2010-1-3
-Act 29 Farmer 1 on Farm 9 Sales Whiskerbush Field 1 Row 2 0.07 pack 2008-12-27
-Act 30 Farmer 1 on Farm 9 Pesticides Vendex (hexakis fenbutatin-oxide) Field 2 Row 1 0.73 volume 2006-7-25
-Act 31 Farmer 1 on Farm 9 Sowing Whiskerbush Field 1 Row 1 3.2 pack 2018-5-30
-Act 32 Farmer 1 on Farm 9 Pesticides Flash 25 Field 3 Row 3 0.94 mass 2016-4-25
-Act 33 Farmer 1 on Farm 9 Sales Chilean Wormseed Field 2 Row 2 0.49 mass 2006-12-29
-Act 34 Farmer 1 on Farm 9 Sowing St. Augustine Grass Field 1 Row 3 3.66 pack 2019-12-29
-Act 35 Farmer 1 on Farm 9 Pesticides Flash 25 Field 2 Row 1 2.54 volume 2002-12-19
-Act 36 Farmer 1 on Farm 9 Pesticides Curaron 50 Field 3 Row 2 3.77 pack 2012-11-17
-Act 37 Farmer 1 on Farm 9 Fertilizers Guano Field 2 Row 2 4.47 pack 2008-10-9
-Act 38 Farmer 1 on Farm 9 Sowing St. Augustine Grass Field 1 Row 1 1.61 pack 2012-6-11
-Act 39 Farmer 1 on Farm 9 Fertilizers Ammonium Thiosulfate Field 3 Row 2 1.41 volume 2017-6-23
-Act 40 Farmer 1 on Farm 9 Sales Lacy Spleenwort Field 2 Row 2 4.62 pack 2017-9-15
-Act 41 Farmer 1 on Farm 9 Harvest Whiskerbush Field 3 Row 3 4.56 volume 2016-6-9
-Act 42 Farmer 1 on Farm 9 Pesticides Flash 25 Field 1 Row 2 0.07 pack 2002-5-23
-Act 43 Farmer 1 on Farm 9 Harvest St. Augustine Grass Field 1 Row 3 2.09 mass 2010-4-26
-Act 44 Farmer 1 on Farm 9 Harvest Circumpolar Starwort Field 2 Row 1 0.41 mass 2013-3-19
-Act 45 Farmer 1 on Farm 9 Harvest St. Augustine Grass Field 1 Row 2 2.21 mass 2006-1-19
-Act 46 Farmer 1 on Farm 9 Pesticides Life Botanic Natural Pesticide Field 3 Row 1 2.6 volume 2005-1-22
-Act 47 Farmer 1 on Farm 9 Harvest Circumpolar Starwort Field 2 Row 2 4.32 mass 2007-6-14
-Act 48 Farmer 1 on Farm 9 Harvest Whiskerbush Field 2 Row 1 1.05 pack 2002-7-24
-Act 49 Farmer 1 on Farm 9 Pesticides Pirit 1PCS Field 2 Row 3 1.16 pack 2012-6-20
-Act 50 Farmer 1 on Farm 9 Sowing Chilean Wormseed Field 2 Row 2 1.46 pack 2013-10-19
-Act 51 Farmer 1 on Farm 9 Pesticides Vendex (hexakis fenbutatin-oxide) Field 3 Row 1 2.09 pack 2019-2-8
-Act 52 Farmer 1 on Farm 9 Sowing Wild Chives Field 2 Row 2 1.99 volume 2005-11-21
-Act 1 Farmer 1 on Farm 4 Sowing Hairy White Oldfield Aster Field 2 Row 1 4.26 pack 2008-9-12
-Act 2 Farmer 1 on Farm 4 Pesticides Asataf 75 Field 2 Row 3 1.77 volume 2006-6-19
-Act 3 Farmer 1 on Farm 4 Sales Greenleaf Five Eyes Field 3 Row 2 3.35 volume 2011-6-28
-Act 4 Farmer 1 on Farm 4 Harvest Pink Tickseed Field 3 Row 1 4.45 mass 2009-8-4
-Act 5 Farmer 1 on Farm 4 Sales Blueflower Eryngo Field 2 Row 1 4.28 mass 2006-12-9
-Act 6 Farmer 1 on Farm 4 Sowing Small Onion Field 3 Row 3 4.9 pack 2012-3-25
-Act 7 Farmer 1 on Farm 4 Sowing Hairy White Oldfield Aster Field 1 Row 2 2.21 pack 2010-5-17
-Act 8 Farmer 1 on Farm 4 Sowing Pink Tickseed Field 3 Row 1 2.18 mass 2010-11-25
-Act 9 Farmer 1 on Farm 4 Sowing Small Onion Field 2 Row 1 2.99 mass 2017-9-24
-Act 10 Farmer 1 on Farm 4 Sowing Vail Lake Ceanothus Field 3 Row 3 4.26 pack 2018-1-11
-Act 11 Farmer 1 on Farm 4 Sales Pink Tickseed Field 1 Row 1 0.54 pack 2018-10-10
-Act 12 Farmer 1 on Farm 4 Sowing Quinine Field 2 Row 2 3.06 mass 2009-3-10
-Act 13 Farmer 1 on Farm 4 Fertilizers Warrior Chong Field 1 Row 1 3.52 pack 2008-6-15
-Act 14 Farmer 1 on Farm 4 Fertilizers Urea Field 3 Row 1 0.92 volume 2007-11-8
-Act 15 Farmer 1 on Farm 4 Sowing Cnicus Field 3 Row 2 3.98 pack 2005-10-21
-Act 16 Farmer 1 on Farm 4 Fertilizers Ammonium Phosphate Sulfate Field 1 Row 1 4.43 mass 2005-12-8
-Act 17 Farmer 1 on Farm 4 Fertilizers Cwqgon 400 Field 1 Row 2 1.1 mass 2000-5-21
-Act 18 Farmer 1 on Farm 4 Sales Hairy White Oldfield Aster Field 1 Row 1 2.21 pack 2020-12-23
-Act 19 Farmer 1 on Farm 4 Pesticides MSR (oxydemeton-methyl) Field 2 Row 1 1.42 pack 2011-9-20
-Act 20 Farmer 1 on Farm 4 Pesticides Methidathion (organophosphate) Field 1 Row 1 1.38 volume 2019-12-24
-Act 21 Farmer 1 on Farm 4 Pesticides MSR (oxydemeton-methyl) Field 1 Row 1 1.51 pack 2011-10-11
-Act 22 Farmer 1 on Farm 4 Harvest Lacy Spleenwort Field 2 Row 3 3.97 volume 2009-3-2
-Act 23 Farmer 1 on Farm 4 Pesticides Decis 2.8 Field 2 Row 1 2.94 volume 2013-7-27
-Act 24 Farmer 1 on Farm 4 Sales Desert Starvine Field 2 Row 1 3.86 mass 2017-10-28
-Act 25 Farmer 1 on Farm 4 Fertilizers Cwqgon 400 Field 2 Row 2 1.67 volume 2001-2-30
-Act 26 Farmer 1 on Farm 4 Sales Brown Beaksedge Field 2 Row 3 4.01 pack 2020-8-21
-Act 27 Farmer 1 on Farm 4 Sales Brown Beaksedge Field 3 Row 1 4.69 mass 2008-6-2
-Act 28 Farmer 1 on Farm 4 Sowing Vail Lake Ceanothus Field 2 Row 1 0.75 pack 2015-1-7
-Act 29 Farmer 1 on Farm 4 Sowing Small Onion Field 3 Row 3 0.07 mass 2014-1-10
-Act 30 Farmer 1 on Farm 4 Harvest Fewleaf Sunflower Field 2 Row 1 1.33 volume 2004-5-15
-Act 31 Farmer 1 on Farm 4 Harvest Greenleaf Five Eyes Field 1 Row 2 0.99 pack 2019-4-12
-Act 32 Farmer 1 on Farm 4 Fertilizers Ammonium Phosphate Sulfate Field 2 Row 1 2.71 mass 2003-8-8
-Act 33 Farmer 1 on Farm 4 Fertilizers Warrior Chong Field 1 Row 3 3.45 mass 2011-9-27
-Act 34 Farmer 1 on Farm 4 Pesticides Dimilin (diflubenzuron) Field 2 Row 2 1.84 volume 2014-2-18
-Act 35 Farmer 1 on Farm 4 Sales Desert Starvine Field 3 Row 3 2.34 volume 2002-6-8
-Act 36 Farmer 1 on Farm 4 Pesticides Acrolein Field 1 Row 3 2.98 pack 2019-4-13
-Act 37 Farmer 1 on Farm 4 Pesticides Skupantaf 49 Field 1 Row 1 0.71 pack 2016-9-5
-Act 38 Farmer 1 on Farm 4 Sales Small Onion Field 3 Row 3 0.43 pack 2012-5-22
-Act 39 Farmer 1 on Farm 4 Harvest Quinine Field 1 Row 1 0.74 mass 2020-9-17
-Act 40 Farmer 1 on Farm 4 Sowing Cnicus Field 2 Row 1 2.6 pack 2019-3-19
-Act 41 Farmer 1 on Farm 4 Fertilizers Cwqgon 400 Field 1 Row 1 1.52 mass 2013-2-6
-Act 42 Farmer 1 on Farm 4 Fertilizers Urea Field 2 Row 1 1.28 mass 2004-4-23
-Act 43 Farmer 1 on Farm 4 Sowing Cnicus Field 1 Row 1 4.81 mass 2000-10-8
-Act 44 Farmer 1 on Farm 4 Pesticides Vendex (hexakis fenbutatin-oxide) Field 2 Row 1 3.7 mass 2005-1-27
-Act 45 Farmer 1 on Farm 4 Sowing Small Onion Field 1 Row 2 4.48 volume 2013-2-5
-Act 46 Farmer 1 on Farm 4 Harvest Mate Field 3 Row 2 2.26 pack 2012-10-21
-Act 47 Farmer 1 on Farm 4 Sales Lacy Spleenwort Field 2 Row 3 2.48 volume 2004-7-8
-Act 48 Farmer 1 on Farm 4 Sales Pink Tickseed Field 3 Row 1 2.54 volume 2011-12-23
-Act 49 Farmer 1 on Farm 4 Sowing Small Onion Field 1 Row 3 4.05 mass 2011-9-9
-Act 50 Farmer 1 on Farm 4 Pesticides Dibrom 8E Field 1 Row 2 1.56 pack 2010-5-6
-Act 51 Farmer 1 on Farm 4 Fertilizers Nitrogen Product Field 3 Row 3 2.69 mass 2014-10-9
-Act 52 Farmer 1 on Farm 4 Sales Greenleaf Five Eyes Field 1 Row 2 3.76 volume 2008-4-12
-Act 53 Farmer 1 on Farm 4 Fertilizers Urea Field 3 Row 3 2.97 volume 2004-11-11
-Act 1 Farmer 1 on Farm 10 Harvest Clay Sand Verbena Field 2 Row 2 1.54 volume 2002-8-19
-Act 2 Farmer 1 on Farm 10 Pesticides Fudan 3G Field 3 Row 1 1.4 volume 2015-2-28
-Act 3 Farmer 1 on Farm 10 Pesticides Dimethoate 4E (organophosphate) Field 3 Row 1 3.69 pack 2012-9-7
-Act 4 Farmer 1 on Farm 10 Fertilizers Soil Amendment Field 3 Row 1 2.16 volume 2016-5-12
-Act 5 Farmer 1 on Farm 10 Sales Hairy Jointweed Field 2 Row 1 1.11 mass 2000-4-9
-Act 6 Farmer 1 on Farm 10 Sales Brickellbush Field 1 Row 3 2.29 pack 2004-6-3
-Act 7 Farmer 1 on Farm 10 Pesticides Baythroid (cyfluthrin) Field 3 Row 2 0.65 mass 2017-10-8
-Act 8 Farmer 1 on Farm 10 Fertilizers Calcium Ammonium Nitrate 1 Field 1 Row 1 2.15 mass 2001-11-4
-Act 9 Farmer 1 on Farm 10 Harvest Ring Lichen Field 1 Row 1 0.49 volume 2001-7-20
-Act 10 Farmer 1 on Farm 10 Fertilizers Phosphoric Acid Field 3 Row 1 4.85 volume 2018-12-18
-Act 11 Farmer 1 on Farm 10 Sowing Kern Mallow Field 2 Row 2 1.24 pack 2015-8-29
-Act 12 Farmer 1 on Farm 10 Harvest Maui Melicope Field 2 Row 1 4.47 mass 2009-9-1
-Act 13 Farmer 1 on Farm 10 Harvest Southern Monardella Field 2 Row 2 1.61 mass 2008-4-17
-Act 14 Farmer 1 on Farm 10 Sales Chilean Wormseed Field 3 Row 1 4.01 mass 2004-2-3
-Act 15 Farmer 1 on Farm 10 Sales Rock Mousetail Field 2 Row 3 1.02 pack 2010-6-5
-Act 16 Farmer 1 on Farm 10 Harvest Pleodendron Field 1 Row 2 1.19 mass 2003-12-21
-Act 17 Farmer 1 on Farm 10 Sowing Chilean Wormseed Field 1 Row 3 2.07 volume 2019-5-12
-Act 18 Farmer 1 on Farm 10 Pesticides Fudan 3G Field 1 Row 1 3.56 mass 2015-6-22
-Act 19 Farmer 1 on Farm 10 Sales Kern Mallow Field 2 Row 2 2.43 pack 2017-5-23
-Act 20 Farmer 1 on Farm 10 Sales Brown Beaksedge Field 3 Row 1 3.59 pack 2011-12-17
-Act 21 Farmer 1 on Farm 10 Pesticides Imidacolprad Field 2 Row 3 3.54 mass 2003-10-16
-Act 22 Farmer 1 on Farm 10 Sales Big Bend Woodyaster Field 3 Row 3 4.42 volume 2000-5-21
-Act 23 Farmer 1 on Farm 10 Pesticides Asataf 75 Field 1 Row 2 4.18 mass 2020-11-23
-Act 24 Farmer 1 on Farm 10 Pesticides Baba Mr Ganick Organic Pesticide Field 3 Row 2 0.84 pack 2006-7-14
-Act 25 Farmer 1 on Farm 10 Sales Kern Mallow Field 1 Row 3 0.45 volume 2019-5-16
-Act 26 Farmer 1 on Farm 10 Sales Clay Sand Verbena Field 2 Row 1 2.71 mass 2006-3-14
-Act 27 Farmer 1 on Farm 10 Harvest Clustered Goldenweed Field 2 Row 3 2.68 pack 2005-3-25
-Act 28 Farmer 1 on Farm 10 Sales Brown Beaksedge Field 2 Row 3 4.9 volume 2018-7-27
-Act 29 Farmer 1 on Farm 10 Sales Brown Beaksedge Field 2 Row 1 3.17 volume 2010-1-9
-Act 30 Farmer 1 on Farm 10 Sales Clay Sand Verbena Field 3 Row 3 4.54 mass 2017-7-3
-Act 31 Farmer 1 on Farm 10 Harvest Big Bend Woodyaster Field 2 Row 1 0.54 mass 2001-9-22
-Act 32 Farmer 1 on Farm 10 Sales Puckhout Field 3 Row 2 0.29 mass 2003-2-11
-Act 33 Farmer 1 on Farm 10 Harvest Cnicus Field 1 Row 3 4.73 volume 2017-9-4
-Act 34 Farmer 1 on Farm 10 Fertilizers Soil Amendment Field 1 Row 3 1.27 pack 2016-2-6
-Act 35 Farmer 1 on Farm 10 Pesticides Parathion 4E Field 3 Row 2 1.74 pack 2011-8-30
-Act 36 Farmer 1 on Farm 10 Fertilizers Petronas21 Field 3 Row 1 3.94 mass 2018-6-3
-Act 37 Farmer 1 on Farm 10 Harvest English Walnut Field 1 Row 3 0.7 mass 2007-4-16
-Act 38 Farmer 1 on Farm 10 Pesticides Baba Mr Ganick Organic Pesticide Field 2 Row 3 1.81 volume 2005-5-3
-Act 39 Farmer 1 on Farm 10 Sowing Puckhout Field 1 Row 2 0.37 volume 2019-1-27
-Act 40 Farmer 1 on Farm 10 Fertilizers Calcium Ammonium Nitrate 1 Field 1 Row 1 0.99 pack 2018-11-23
-Act 41 Farmer 1 on Farm 10 Sales Dot Lichen Field 1 Row 1 1.86 mass 2017-1-18
-Act 42 Farmer 1 on Farm 10 Fertilizers Calcium Ammonium Nitrate 1 Field 1 Row 1 2.85 pack 2008-5-16
-Act 43 Farmer 1 on Farm 10 Fertilizers Manganese Sulfate Field 2 Row 3 4.5 volume 2011-6-14
-Act 44 Farmer 1 on Farm 10 Fertilizers Petronas21 Field 3 Row 1 1.64 pack 2020-2-6
-Act 45 Farmer 1 on Farm 10 Sales Cnicus Field 1 Row 3 0.28 volume 2017-6-10
-Act 46 Farmer 1 on Farm 10 Pesticides BAYEreagen Field 1 Row 2 3.85 pack 2006-12-10
-Act 47 Farmer 1 on Farm 10 Fertilizers Phosphoric Acid Field 1 Row 1 4.44 volume 2018-9-11
-Act 48 Farmer 1 on Farm 10 Harvest Dot Lichen Field 2 Row 3 2.77 mass 2003-5-3
-Act 49 Farmer 1 on Farm 10 Sowing Maui Melicope Field 1 Row 3 4.84 volume 2009-10-4
-Act 50 Farmer 1 on Farm 10 Pesticides BAYEreagen Field 2 Row 1 0.64 pack 2014-2-19
-Act 51 Farmer 1 on Farm 10 Fertilizers Soil Amendment Field 3 Row 2 3.84 pack 2005-6-1
-Act 52 Farmer 1 on Farm 10 Sales Clustered Goldenweed Field 3 Row 1 0.22 mass 2003-11-29
-Act 1 Farmer 1 on Farm 7 Sales Hairy White Oldfield Aster Field 2 Row 1 4.44 pack 2002-12-25
-Act 2 Farmer 1 on Farm 7 Pesticides HectarLavette 455 Field 2 Row 3 0.57 mass 2010-10-14
-Act 3 Farmer 1 on Farm 7 Harvest Moenkopi Milkvetch Field 3 Row 2 4.97 volume 2015-2-18
-Act 4 Farmer 1 on Farm 7 Pesticides Confidor 17.8 Field 3 Row 2 2.52 pack 2012-4-9
-Act 5 Farmer 1 on Farm 7 Harvest Bill's Neoparrya Field 3 Row 3 3.72 mass 2007-6-9
-Act 6 Farmer 1 on Farm 7 Fertilizers Limestone, Phosphatic Field 3 Row 1 2.59 mass 2001-2-5
-Act 7 Farmer 1 on Farm 7 Harvest Bill's Neoparrya Field 1 Row 3 4.77 mass 2005-12-12
-Act 8 Farmer 1 on Farm 7 Pesticides Lorsban 4E (chlorpyrifos) Field 1 Row 2 3.77 volume 2003-8-3
-Act 9 Farmer 1 on Farm 7 Sowing Hairy White Oldfield Aster Field 1 Row 3 3.92 volume 2019-12-30
-Act 10 Farmer 1 on Farm 7 Fertilizers Petronas21 Field 2 Row 3 0.29 volume 2001-3-30
-Act 11 Farmer 1 on Farm 7 Pesticides Baythroid 2 (cyfluthrin) Field 1 Row 1 4.63 mass 2004-9-4
-Act 12 Farmer 1 on Farm 7 Fertilizers Petronas21 Field 2 Row 3 4.88 mass 2000-7-19
-Act 13 Farmer 1 on Farm 7 Harvest Moenkopi Milkvetch Field 2 Row 2 0.89 pack 2006-8-9
-Act 14 Farmer 1 on Farm 7 Sales Hairy White Oldfield Aster Field 1 Row 1 0.89 pack 2009-2-30
-Act 15 Farmer 1 on Farm 7 Sales Hairy White Oldfield Aster Field 3 Row 3 0.11 mass 2013-11-11
-Act 16 Farmer 1 on Farm 7 Sales Hairy White Oldfield Aster Field 1 Row 3 0.13 mass 2012-8-29
-Act 17 Farmer 1 on Farm 7 Harvest Hairy White Oldfield Aster Field 1 Row 2 3.35 volume 2020-6-5
-Act 18 Farmer 1 on Farm 7 Sowing Bill's Neoparrya Field 3 Row 3 2.59 mass 2009-4-27
-Act 19 Farmer 1 on Farm 7 Sales Moenkopi Milkvetch Field 2 Row 2 3.34 pack 2019-1-11
-Act 20 Farmer 1 on Farm 7 Sowing Bill's Neoparrya Field 3 Row 1 0.56 mass 2016-1-7
-Act 21 Farmer 1 on Farm 7 Sales Bill's Neoparrya Field 1 Row 1 3.21 volume 2003-12-21
-Act 22 Farmer 1 on Farm 7 Pesticides Thiodan 35 Field 1 Row 3 0.02 pack 2020-4-1
-Act 23 Farmer 1 on Farm 7 Fertilizers Warrior Chong Field 3 Row 2 3.63 pack 2011-8-21
-Act 24 Farmer 1 on Farm 7 Pesticides Shamrock Pesticide Field 3 Row 3 4.16 pack 2011-7-1
-Act 25 Farmer 1 on Farm 7 Fertilizers Potassium Nitrate Field 2 Row 2 0.53 volume 2013-7-4
-Act 26 Farmer 1 on Farm 7 Fertilizers Petronas21 Field 2 Row 3 0.3 pack 2017-3-26
-Act 27 Farmer 1 on Farm 7 Harvest Bill's Neoparrya Field 2 Row 3 2.39 volume 2015-8-25
-Act 28 Farmer 1 on Farm 7 Sowing Bill's Neoparrya Field 3 Row 3 0.38 mass 2008-9-16
-Act 29 Farmer 1 on Farm 7 Fertilizers Limestone, Phosphatic Field 3 Row 3 4.5 mass 2015-4-13
-Act 30 Farmer 1 on Farm 7 Harvest Hairy White Oldfield Aster Field 1 Row 1 1.92 volume 2011-9-13
-Act 31 Farmer 1 on Farm 7 Fertilizers Anhydrous Ammonia Field 3 Row 3 4.76 mass 2009-4-27
-Act 32 Farmer 1 on Farm 7 Pesticides Pyrethrins Field 3 Row 3 0.25 volume 2019-1-20
-Act 33 Farmer 1 on Farm 7 Pesticides Duojunling Plants Fungicide Field 3 Row 2 3.04 pack 2007-11-24
-Act 34 Farmer 1 on Farm 7 Pesticides Confidor 17.8 Field 3 Row 1 3.16 pack 2012-11-29
-Act 35 Farmer 1 on Farm 7 Sales Hairy White Oldfield Aster Field 3 Row 3 0.32 pack 2000-12-6
-Act 36 Farmer 1 on Farm 7 Harvest Moenkopi Milkvetch Field 3 Row 1 4.8 volume 2005-3-30
-Act 37 Farmer 1 on Farm 7 Harvest Moenkopi Milkvetch Field 2 Row 2 3.2 mass 2007-10-27
-Act 38 Farmer 1 on Farm 7 Sowing Moenkopi Milkvetch Field 2 Row 3 4.82 mass 2010-3-16
-Act 39 Farmer 1 on Farm 7 Sowing Bill's Neoparrya Field 2 Row 3 0.61 pack 2014-1-14
-Act 40 Farmer 1 on Farm 7 Sowing Hairy White Oldfield Aster Field 3 Row 3 1.66 mass 2002-7-26
-Act 41 Farmer 1 on Farm 7 Fertilizers Potassium Nitrate Field 3 Row 3 2.05 mass 2005-7-20
-Act 42 Farmer 1 on Farm 7 Fertilizers Potassium Nitrate Field 1 Row 1 0.52 mass 2013-8-5
-Act 43 Farmer 1 on Farm 7 Fertilizers Urea Field 3 Row 2 2.45 volume 2020-3-14
-Act 44 Farmer 1 on Farm 7 Fertilizers ImidanSeal Field 2 Row 2 4.73 mass 2008-2-8
-Act 45 Farmer 1 on Farm 7 Fertilizers Ammonium Nitrate Field 1 Row 1 4.25 pack 2007-1-24
-Act 46 Farmer 1 on Farm 7 Sales Hairy White Oldfield Aster Field 1 Row 1 0.4 pack 2002-8-29
-Act 47 Farmer 1 on Farm 7 Pesticides HectarLavette 455 Field 3 Row 3 3.33 volume 2019-2-15
-Act 48 Farmer 1 on Farm 7 Sales Moenkopi Milkvetch Field 3 Row 3 3.68 pack 2013-1-18
-Act 49 Farmer 1 on Farm 7 Pesticides Pyrethrins Field 1 Row 3 1.38 pack 2004-7-5
-Act 50 Farmer 1 on Farm 7 Fertilizers Anhydrous Ammonia Field 1 Row 1 1.19 mass 2016-9-12
-Act 1 Farmer 1 on Farm 3 Harvest Chisos Prairie Acacia Field 3 Row 3 4.64 mass 2016-10-13
-Act 2 Farmer 1 on Farm 3 Pesticides YUMYUM Pesticide Field 3 Row 2 1.97 mass 2004-12-6
-Act 3 Farmer 1 on Farm 3 Sowing Clay Sand Verbena Field 1 Row 3 4.97 mass 2018-9-23
-Act 4 Farmer 1 on Farm 3 Fertilizers Nitric Phosphate Field 2 Row 2 4.99 pack 2014-3-30
-Act 5 Farmer 1 on Farm 3 Sales Fewleaf Sunflower Field 2 Row 1 3.71 pack 2001-5-24
-Act 6 Farmer 1 on Farm 3 Sales Rock Mousetail Field 2 Row 2 0.12 mass 2003-5-20
-Act 7 Farmer 1 on Farm 3 Sowing Yunnan Bauhinia Field 2 Row 3 4.76 volume 2016-1-8
-Act 8 Farmer 1 on Farm 3 Fertilizers Zinc Petrusia Field 1 Row 2 2.52 volume 2003-3-7
-Act 9 Farmer 1 on Farm 3 Sales Lesser Canadian St. Johnswort Field 1 Row 1 2.96 pack 2004-3-7
-Act 10 Farmer 1 on Farm 3 Sowing Durango Tumblemustard Field 1 Row 2 1.71 pack 2005-5-2
-Act 11 Farmer 1 on Farm 3 Fertilizers Bone Meal, Raw Field 3 Row 3 2.72 pack 2013-11-8
-Act 12 Farmer 1 on Farm 3 Fertilizers Manure Salts Field 1 Row 2 4.87 mass 2009-9-15
-Act 13 Farmer 1 on Farm 3 Sowing Kentucky Lady's Slipper Field 2 Row 3 4.72 volume 2011-3-10
-Act 14 Farmer 1 on Farm 3 Sales Lacy Spleenwort Field 3 Row 3 2.6 volume 2008-12-18
-Act 15 Farmer 1 on Farm 3 Sales Lacy Spleenwort Field 2 Row 2 0.68 pack 2018-8-2
-Act 16 Farmer 1 on Farm 3 Fertilizers Ferric Sulfate Field 2 Row 2 0.08 mass 2001-10-11
-Act 17 Farmer 1 on Farm 3 Pesticides Baba Mr Ganick Organic Pesticide Field 1 Row 2 4.52 mass 2002-3-3
-Act 18 Farmer 1 on Farm 3 Sales Chisos Prairie Acacia Field 3 Row 2 1.21 volume 2005-1-25
-Act 19 Farmer 1 on Farm 3 Fertilizers Kelthweiane Field 3 Row 2 3.45 pack 2005-10-18
-Act 20 Farmer 1 on Farm 3 Pesticides EcoPest Field 3 Row 2 3.1 pack 2001-4-6
-Act 21 Farmer 1 on Farm 3 Harvest Kentucky Lady's Slipper Field 1 Row 3 4.57 pack 2006-11-9
-Act 22 Farmer 1 on Farm 3 Sales Lacy Spleenwort Field 1 Row 1 2.33 pack 2016-9-29
-Act 23 Farmer 1 on Farm 3 Sales Yunnan Bauhinia Field 2 Row 1 0.02 pack 2010-12-29
-Act 24 Farmer 1 on Farm 3 Sales Rock Mousetail Field 1 Row 1 1.4 volume 2015-8-1
-Act 25 Farmer 1 on Farm 3 Pesticides Shamrock Pesticide Field 2 Row 1 3.7 volume 2012-2-22
-Act 26 Farmer 1 on Farm 3 Fertilizers Manure Salts Field 1 Row 2 2.5 volume 2005-5-18
-Act 27 Farmer 1 on Farm 3 Pesticides BAYEreagen Field 1 Row 1 0.7 mass 2014-7-15
-Act 28 Farmer 1 on Farm 3 Sales Chisos Prairie Acacia Field 2 Row 3 3.99 mass 2014-4-18
-Act 29 Farmer 1 on Farm 3 Harvest Rock Mousetail Field 1 Row 1 3.33 pack 2009-9-19
-Act 30 Farmer 1 on Farm 3 Fertilizers Kelthweiane Field 2 Row 2 4.54 pack 2009-11-23
-Act 31 Farmer 1 on Farm 3 Harvest Durango Tumblemustard Field 3 Row 2 0.73 mass 2008-8-3
-Act 32 Farmer 1 on Farm 3 Harvest Clay Sand Verbena Field 2 Row 3 3.04 volume 2011-1-10
-Act 33 Farmer 1 on Farm 3 Pesticides YUMYUM Pesticide Field 1 Row 1 4.4 mass 2003-9-28
-Act 34 Farmer 1 on Farm 3 Sowing Yunnan Bauhinia Field 1 Row 3 0.69 volume 2009-7-16
-Act 35 Farmer 1 on Farm 3 Sales Kentucky Lady's Slipper Field 1 Row 1 0.8 volume 2013-2-23
-Act 36 Farmer 1 on Farm 3 Harvest Clay Sand Verbena Field 3 Row 1 3.94 mass 2007-3-7
-Act 37 Farmer 1 on Farm 3 Sales Rock Mousetail Field 1 Row 1 0.22 pack 2010-11-25
-Act 38 Farmer 1 on Farm 3 Harvest Durango Tumblemustard Field 1 Row 2 1.39 mass 2017-7-14
-Act 39 Farmer 1 on Farm 3 Sowing Fewleaf Sunflower Field 2 Row 3 1.7 pack 2020-2-16
-Act 40 Farmer 1 on Farm 3 Fertilizers Dipel 2X Field 3 Row 3 0.3 pack 2020-5-2
-Act 41 Farmer 1 on Farm 3 Harvest Fewleaf Sunflower Field 1 Row 2 0.77 volume 2007-11-24
-Act 42 Farmer 1 on Farm 3 Sowing Yunnan Bauhinia Field 3 Row 2 1.38 pack 2010-8-8
-Act 43 Farmer 1 on Farm 3 Harvest Fewleaf Sunflower Field 3 Row 3 0.53 volume 2011-7-17
-Act 44 Farmer 1 on Farm 3 Fertilizers Norm 188 Field 3 Row 1 4.73 pack 2010-5-8
-Act 45 Farmer 1 on Farm 3 Sales Durango Tumblemustard Field 2 Row 1 4.48 pack 2007-11-5
-Act 46 Farmer 1 on Farm 3 Fertilizers Manure Salts Field 2 Row 2 0.47 mass 2007-4-1
-Act 47 Farmer 1 on Farm 3 Harvest Chisos Prairie Acacia Field 3 Row 3 3.29 pack 2014-9-8
-Act 48 Farmer 1 on Farm 3 Fertilizers Petronas21 Field 1 Row 2 4.53 mass 2000-9-17
-Act 49 Farmer 1 on Farm 3 Sales Clay Sand Verbena Field 1 Row 2 4.29 pack 2020-2-11
-Act 50 Farmer 1 on Farm 3 Fertilizers Calcium Metaphosphate Field 2 Row 1 3.46 pack 2012-8-23
-Act 51 Farmer 1 on Farm 3 Harvest Durango Tumblemustard Field 2 Row 2 1.32 volume 2011-7-16
-Act 52 Farmer 1 on Farm 3 Harvest Lesser Canadian St. Johnswort Field 1 Row 3 1.55 mass 2020-1-11
-Act 1 Farmer 2 on Farm 8 Fertilizers Zjies Shaet Field 3 Row 1 4.38 pack 2011-6-20
-Act 2 Farmer 2 on Farm 8 Fertilizers Calcium Cyanamide Field 1 Row 1 1.51 volume 2020-2-11
-Act 3 Farmer 2 on Farm 8 Harvest Jointfir Field 3 Row 2 0.54 pack 2009-7-11
-Act 4 Farmer 2 on Farm 8 Sowing Giant Flatsedge Field 2 Row 1 4.28 volume 2006-10-28
-Act 5 Farmer 2 on Farm 8 Pesticides BayerDecus Field 3 Row 3 1.31 volume 2008-2-5
-Act 6 Farmer 2 on Farm 8 Fertilizers SevinQian Field 2 Row 2 1.08 pack 2014-6-15
-Act 7 Farmer 2 on Farm 8 Harvest Peach Springs Canyon Cholla Field 3 Row 2 0.07 pack 2010-8-2
-Act 8 Farmer 2 on Farm 8 Harvest Orcutt's Threeawn Field 1 Row 1 0.63 volume 2019-7-28
-Act 9 Farmer 2 on Farm 8 Pesticides Fastac BASF Field 2 Row 3 4.62 mass 2007-2-19
-Act 10 Farmer 2 on Farm 8 Harvest Chilean Wormseed Field 2 Row 2 0.58 volume 2011-1-21
-Act 11 Farmer 2 on Farm 8 Pesticides Fudan 3G Field 2 Row 1 1.06 pack 2018-2-20
-Act 12 Farmer 2 on Farm 8 Fertilizers Potassium Carbonate Field 1 Row 3 0.85 pack 2018-6-18
-Act 13 Farmer 2 on Farm 8 Fertilizers Calcium Nitrate - Urea Field 2 Row 2 2.68 volume 2015-9-3
-Act 14 Farmer 2 on Farm 8 Fertilizers Calcium Nitrate Field 1 Row 1 0.57 mass 2010-4-22
-Act 15 Farmer 2 on Farm 8 Harvest Quinine Field 2 Row 2 0.66 mass 2019-8-29
-Act 16 Farmer 2 on Farm 8 Sales Bushy Goldentop Field 1 Row 2 2.35 volume 2005-1-27
-Act 17 Farmer 2 on Farm 8 Sowing Indian Teasel Field 3 Row 2 2.22 pack 2002-6-28
-Act 18 Farmer 2 on Farm 8 Sowing Upright Chickweed Field 1 Row 1 4.41 pack 2015-7-6
-Act 19 Farmer 2 on Farm 8 Harvest Quinine Field 1 Row 1 0.45 volume 2009-12-10
-Act 20 Farmer 2 on Farm 8 Pesticides Fastac BASF Field 2 Row 2 0.07 volume 2006-7-14
-Act 21 Farmer 2 on Farm 8 Fertilizers SevinQian Field 3 Row 3 1.97 volume 2014-6-25
-Act 22 Farmer 2 on Farm 8 Harvest Oatgrass Field 3 Row 1 0.05 volume 2005-11-6
-Act 23 Farmer 2 on Farm 8 Fertilizers Potassium Carbonate Field 1 Row 1 0.12 volume 2020-7-15
-Act 24 Farmer 2 on Farm 8 Pesticides Baba Mr Ganick Organic Pesticide Field 3 Row 1 0.08 mass 2002-1-21
-Act 25 Farmer 2 on Farm 8 Fertilizers Zjies Shaet Field 1 Row 3 1.05 mass 2019-4-10
-Act 26 Farmer 2 on Farm 8 Sales Desert Starvine Field 3 Row 1 0.96 mass 2001-11-24
-Act 27 Farmer 2 on Farm 8 Pesticides BayerDecus Field 1 Row 1 4.19 volume 2011-9-23
-Act 28 Farmer 2 on Farm 8 Sales Oatgrass Field 2 Row 2 4.74 pack 2015-4-24
-Act 29 Farmer 2 on Farm 8 Fertilizers Zjies Shaet Field 2 Row 2 1.78 pack 2019-4-8
-Act 30 Farmer 2 on Farm 8 Fertilizers Calcium Nitrate - Urea Field 3 Row 1 4.22 mass 2017-1-11
-Act 31 Farmer 2 on Farm 8 Sales Oatgrass Field 2 Row 2 4.07 volume 2020-12-3
-Act 32 Farmer 2 on Farm 8 Pesticides Armada 1.8EC Field 2 Row 2 1.66 mass 2019-9-13
-Act 33 Farmer 2 on Farm 8 Pesticides Bacillus thuringiensis (BT—Biologicals), Field 3 Row 3 4.39 pack 2014-10-10
-Act 34 Farmer 2 on Farm 8 Pesticides Nutri Garlic Oil Plus Field 2 Row 3 0.02 mass 2017-12-29
-Act 35 Farmer 2 on Farm 8 Fertilizers Calcium Nitrate Field 2 Row 3 4.33 pack 2008-11-6
-Act 36 Farmer 2 on Farm 8 Sales Peach Springs Canyon Cholla Field 1 Row 3 4.32 mass 2003-7-3
-Act 37 Farmer 2 on Farm 8 Sowing Upright Chickweed Field 2 Row 2 2.72 mass 2020-1-24
-Act 38 Farmer 2 on Farm 8 Sowing Giant Flatsedge Field 2 Row 1 3.19 pack 2005-1-12
-Act 39 Farmer 2 on Farm 8 Harvest Quinine Field 3 Row 1 4.08 pack 2018-9-7
-Act 40 Farmer 2 on Farm 8 Fertilizers Hexakis 33 Field 3 Row 1 4.27 pack 2008-5-20
-Act 41 Farmer 2 on Farm 8 Harvest Cliff Beardtongue Field 3 Row 3 3.58 mass 2007-7-20
-Act 42 Farmer 2 on Farm 8 Fertilizers ImidanSeal Field 3 Row 1 1.3 volume 2015-3-23
-Act 43 Farmer 2 on Farm 8 Fertilizers Calcium Nitrate Field 2 Row 2 1.11 pack 2006-5-2
-Act 44 Farmer 2 on Farm 8 Harvest Desert Starvine Field 2 Row 3 3.12 volume 2016-7-7
-Act 45 Farmer 2 on Farm 8 Sowing Eggleaf Silktassel Field 1 Row 3 3.79 pack 2000-1-12
-Act 46 Farmer 2 on Farm 8 Sowing Upright Chickweed Field 2 Row 3 2.93 mass 2009-1-26
-Act 47 Farmer 2 on Farm 8 Harvest Clustered Goldenweed Field 1 Row 3 3.7 mass 2007-12-7
-Act 48 Farmer 2 on Farm 8 Sales Jointfir Field 3 Row 3 2.62 pack 2000-3-22
-Act 49 Farmer 2 on Farm 8 Fertilizers Calcium Cyanamide Field 3 Row 2 3.14 volume 2014-1-17
-Act 50 Farmer 2 on Farm 8 Fertilizers Potassium Carbonate Field 3 Row 3 1.75 mass 2014-4-20
-Act 51 Farmer 2 on Farm 8 Sales Peach Springs Canyon Cholla Field 1 Row 1 1.2 pack 2010-12-13
-Act 52 Farmer 2 on Farm 8 Fertilizers SevinQian Field 3 Row 2 3.69 volume 2003-5-16
-Act 1 Farmer 3 on Farm 2 Sales Bluntleaf Waterleaf Field 3 Row 3 1.4 mass 2008-7-14
-Act 2 Farmer 3 on Farm 2 Sales Russian Rocket Field 3 Row 2 3.93 mass 2017-12-7
-Act 3 Farmer 3 on Farm 2 Fertilizers Basic Lime Phosphate Field 3 Row 2 1.13 pack 2001-3-28
-Act 4 Farmer 3 on Farm 2 Sowing Toothed Pogonatum Moss Field 2 Row 1 0.77 pack 2014-7-11
-Act 5 Farmer 3 on Farm 2 Fertilizers Diammonium Phosphate Field 1 Row 1 2.62 volume 2000-1-8
-Act 6 Farmer 3 on Farm 2 Sales Purplestem Aster Field 2 Row 3 2.63 mass 2013-12-30
-Act 7 Farmer 3 on Farm 2 Harvest Prickly Bog Sedge Field 1 Row 1 1.18 volume 2005-10-24
-Act 8 Farmer 3 on Farm 2 Pesticides Mustang Max (pyrethroid) Field 2 Row 3 3.5 pack 2005-9-8
-Act 9 Farmer 3 on Farm 2 Harvest Desert Starvine Field 1 Row 2 1.57 volume 2012-4-22
-Act 10 Farmer 3 on Farm 2 Sales Black Gram Field 1 Row 2 2.39 volume 2016-9-27
-Act 11 Farmer 3 on Farm 2 Sowing Royal Tonguefern Field 2 Row 1 0.36 mass 2001-5-16
-Act 12 Farmer 3 on Farm 2 Fertilizers Kelthweiane Field 2 Row 1 4.56 pack 2019-5-7
-Act 13 Farmer 3 on Farm 2 Sowing Silky Willow Field 1 Row 1 4.29 pack 2014-6-30
-Act 14 Farmer 3 on Farm 2 Pesticides Mustang Max (pyrethroid) Field 1 Row 1 3.88 pack 2009-9-18
-Act 15 Farmer 3 on Farm 2 Pesticides Imidan (phosmet) Field 3 Row 3 3.84 pack 2018-3-11
-Act 16 Farmer 3 on Farm 2 Fertilizers Ammonium Polysulfide Field 3 Row 3 4.07 mass 2010-5-26
-Act 17 Farmer 3 on Farm 2 Sales Royal Tonguefern Field 2 Row 3 3.71 pack 2016-1-27
-Act 18 Farmer 3 on Farm 2 Sowing Circumpolar Starwort Field 1 Row 1 0.25 mass 2020-2-19
-Act 19 Farmer 3 on Farm 2 Sowing Bluntleaf Waterleaf Field 1 Row 3 3.31 pack 2014-2-2
-Act 20 Farmer 3 on Farm 2 Sales Rhexophyllum Moss Field 2 Row 3 0.37 pack 2012-8-9
-Act 21 Farmer 3 on Farm 2 Pesticides Imidan (phosmet) Field 1 Row 1 0.5 mass 2007-2-2
-Act 22 Farmer 3 on Farm 2 Pesticides Methidathion (organophosphate) Field 2 Row 1 0.66 mass 2011-11-5
-Act 23 Farmer 3 on Farm 2 Harvest Orcutt's Threeawn Field 3 Row 3 3.03 pack 2010-7-6
-Act 24 Farmer 3 on Farm 2 Sales Circumpolar Starwort Field 1 Row 3 0.41 pack 2011-3-2
-Act 25 Farmer 3 on Farm 2 Fertilizers Kelthweiane Field 3 Row 2 0.64 mass 2018-12-20
-Act 26 Farmer 3 on Farm 2 Sowing Maui Melicope Field 1 Row 1 3.01 volume 2012-10-5
-Act 27 Farmer 3 on Farm 2 Sales Pinaleno Mountain Rubberweed Field 3 Row 3 3.05 mass 2010-3-4
-Act 28 Farmer 3 on Farm 2 Fertilizers Kelthweiane Field 2 Row 2 2.03 pack 2016-8-2
-Act 29 Farmer 3 on Farm 2 Sales Liverleaf Wintergreen Field 3 Row 3 2.42 mass 2009-4-5
-Act 30 Farmer 3 on Farm 2 Pesticides Asana XL (esfenvalerate) Field 2 Row 3 1.02 volume 2009-8-15
-Act 31 Farmer 3 on Farm 2 Sowing Purplestem Aster Field 2 Row 2 3.87 mass 2006-2-14
-Act 32 Farmer 3 on Farm 2 Sowing Rhexophyllum Moss Field 3 Row 2 2.23 mass 2012-6-9
-Act 33 Farmer 3 on Farm 2 Pesticides Methoxychlor (methoxychlor) Field 2 Row 2 3.35 mass 2014-4-7
-Act 34 Farmer 3 on Farm 2 Sowing Circumpolar Starwort Field 1 Row 3 4.02 mass 2019-10-11
-Act 35 Farmer 3 on Farm 2 Fertilizers Zinc Petrusia Field 3 Row 2 2.05 pack 2014-2-20
-Act 36 Farmer 3 on Farm 2 Sowing Rhexophyllum Moss Field 3 Row 1 2.56 pack 2013-2-30
-Act 37 Farmer 3 on Farm 2 Fertilizers Chong Fa23 Field 2 Row 3 2.24 pack 2013-10-3
-Act 38 Farmer 3 on Farm 2 Sowing Pinaleno Mountain Rubberweed Field 1 Row 2 0.05 volume 2017-8-10
-Act 39 Farmer 3 on Farm 2 Harvest Toothed Pogonatum Moss Field 3 Row 1 2.6 mass 2014-6-15
-Act 40 Farmer 3 on Farm 2 Sowing Prickly Bog Sedge Field 1 Row 2 1.52 mass 2002-5-13
-Act 41 Farmer 3 on Farm 2 Sales Upright Chickweed Field 3 Row 3 4.94 mass 2019-11-21
-Act 42 Farmer 3 on Farm 2 Sales Rhexophyllum Moss Field 3 Row 2 4.29 pack 2006-2-8
-Act 43 Farmer 3 on Farm 2 Fertilizers Nitrogen Product Field 3 Row 1 4.61 mass 2016-4-14
-Act 44 Farmer 3 on Farm 2 Sowing Toothed Pogonatum Moss Field 3 Row 3 3.77 pack 2004-1-5
-Act 45 Farmer 3 on Farm 2 Harvest Maui Melicope Field 2 Row 1 2.43 pack 2020-7-18
-Act 46 Farmer 3 on Farm 2 Sales Liverleaf Wintergreen Field 3 Row 3 4.53 pack 2004-9-5
-Act 47 Farmer 3 on Farm 2 Pesticides Imidan (phosmet) Field 3 Row 1 3.24 pack 2016-12-16
-Act 48 Farmer 3 on Farm 2 Sowing Prickly Bog Sedge Field 2 Row 3 2.33 pack 2008-10-6
-Act 49 Farmer 3 on Farm 2 Fertilizers Dup 1.2-1 Field 2 Row 1 3.29 pack 2000-9-14
-Act 50 Farmer 3 on Farm 2 Fertilizers Zinc Manganese Amm Sulfate Field 3 Row 1 4.58 mass 2009-4-1
-Act 51 Farmer 3 on Farm 2 Harvest Shining Alkaligrass Field 1 Row 3 3.85 mass 2009-2-12
-Act 1 Farmer 3 on Farm 5 Harvest Longleaf False Goldeneye Field 1 Row 3 3.44 mass 2017-4-16
-Act 2 Farmer 3 on Farm 5 Harvest Alkali Milkvetch Field 1 Row 3 4.5 volume 2014-3-11
-Act 3 Farmer 3 on Farm 5 Pesticides Thiodan 35 Field 1 Row 3 1.11 pack 2005-12-9
-Act 4 Farmer 3 on Farm 5 Sowing Atlantic Cup Lichen Field 2 Row 2 1.8 mass 2007-5-16
-Act 5 Farmer 3 on Farm 5 Pesticides Metasystox 25 Field 2 Row 2 4.6 pack 2016-3-20
-Act 6 Farmer 3 on Farm 5 Pesticides Confidor 17.8 Field 2 Row 3 1.96 volume 2006-1-22
-Act 7 Farmer 3 on Farm 5 Harvest Ring Lichen Field 3 Row 1 0.88 pack 2000-11-20
-Act 8 Farmer 3 on Farm 5 Fertilizers Ammonium Nitrate Field 1 Row 2 4.83 mass 2007-12-21
-Act 9 Farmer 3 on Farm 5 Fertilizers Ferrous Ammonium Sulfate Field 2 Row 3 0.45 mass 2015-8-8
-Act 10 Farmer 3 on Farm 5 Sowing Calabar Bean Field 3 Row 1 1.09 pack 2012-1-27
-Act 11 Farmer 3 on Farm 5 Sales Chilean Wormseed Field 3 Row 3 1.89 volume 2003-5-21
-Act 12 Farmer 3 on Farm 5 Pesticides Abamectin Field 3 Row 1 0.56 volume 2005-8-25
-Act 13 Farmer 3 on Farm 5 Sales Ring Lichen Field 3 Row 1 2.46 volume 2011-4-12
-Act 14 Farmer 3 on Farm 5 Sowing Redbird Flower Field 1 Row 3 4.19 mass 2007-11-15
-Act 15 Farmer 3 on Farm 5 Sales Kentucky Lady's Slipper Field 3 Row 3 3.97 volume 2004-7-27
-Act 16 Farmer 3 on Farm 5 Pesticides ECPA Field 2 Row 1 4.9 pack 2020-4-23
-Act 17 Farmer 3 on Farm 5 Sowing Longleaf False Goldeneye Field 1 Row 2 3.81 mass 2004-8-26
-Act 18 Farmer 3 on Farm 5 Sowing Redbird Flower Field 2 Row 1 2.87 pack 2004-12-11
-Act 19 Farmer 3 on Farm 5 Sales Guara Blanca Field 2 Row 1 0.73 volume 2005-10-19
-Act 20 Farmer 3 on Farm 5 Pesticides ECPA Field 2 Row 2 1.48 mass 2008-9-16
-Act 21 Farmer 3 on Farm 5 Harvest Ring Lichen Field 2 Row 3 4.77 pack 2016-3-12
-Act 22 Farmer 3 on Farm 5 Harvest Guara Blanca Field 1 Row 1 3.58 pack 2016-3-18
-Act 23 Farmer 3 on Farm 5 Sales Desert Starvine Field 2 Row 1 1.53 mass 2013-7-17
-Act 24 Farmer 3 on Farm 5 Sowing Chilean Wormseed Field 1 Row 1 2.23 mass 2014-12-21
-Act 25 Farmer 3 on Farm 5 Pesticides Metasystox 25 Field 1 Row 3 0.12 volume 2004-10-9
-Act 26 Farmer 3 on Farm 5 Sowing Desert Starvine Field 3 Row 1 1.82 mass 2006-4-18
-Act 27 Farmer 3 on Farm 5 Fertilizers Ammonium Nitrate - Sulfate Field 3 Row 1 2.42 mass 2011-2-17
-Act 28 Farmer 3 on Farm 5 Harvest Desert Starvine Field 3 Row 1 2.0 mass 2018-1-15
-Act 29 Farmer 3 on Farm 5 Pesticides Abamectin Field 1 Row 2 1.69 pack 2020-8-14
-Act 30 Farmer 3 on Farm 5 Harvest Alkali Milkvetch Field 2 Row 2 3.06 volume 2017-10-30
-Act 31 Farmer 3 on Farm 5 Sales Longleaf False Goldeneye Field 1 Row 2 0.46 mass 2009-1-30
-Act 32 Farmer 3 on Farm 5 Pesticides Thiodan 35 Field 1 Row 1 4.0 pack 2001-4-27
-Act 33 Farmer 3 on Farm 5 Pesticides Dimethoate 4E (organophosphate) Field 2 Row 1 1.82 pack 2002-6-22
-Act 34 Farmer 3 on Farm 5 Sales Alkali Milkvetch Field 2 Row 3 1.36 mass 2007-2-6
-Act 35 Farmer 3 on Farm 5 Fertilizers Zinc Oxysulfate Field 3 Row 2 1.52 mass 2017-4-13
-Act 36 Farmer 3 on Farm 5 Pesticides MSR (oxydemeton-methyl) Field 1 Row 3 0.31 pack 2004-8-12
-Act 37 Farmer 3 on Farm 5 Sowing Atlantic Cup Lichen Field 2 Row 2 3.22 mass 2011-10-24
-Act 38 Farmer 3 on Farm 5 Fertilizers Ferrous Ammonium Sulfate Field 3 Row 1 4.47 pack 2006-3-16
-Act 39 Farmer 3 on Farm 5 Fertilizers Ferrous Ammonium Sulfate Field 3 Row 1 2.47 volume 2008-11-14
-Act 40 Farmer 3 on Farm 5 Sales Alkali Milkvetch Field 2 Row 1 4.91 mass 2015-4-3
-Act 41 Farmer 3 on Farm 5 Harvest Atlantic Cup Lichen Field 2 Row 2 4.18 volume 2009-9-25
-Act 42 Farmer 3 on Farm 5 Fertilizers Ammonium Nitrate - Sulfate Field 1 Row 1 4.82 volume 2006-3-19
-Act 43 Farmer 3 on Farm 5 Pesticides Nutri Garlic Oil Plus Field 3 Row 3 4.77 mass 2019-1-20
-Act 44 Farmer 3 on Farm 5 Sowing Kentucky Lady's Slipper Field 2 Row 1 1.94 mass 2000-1-5
-Act 45 Farmer 3 on Farm 5 Fertilizers Ammonium Nitrate - Sulfate Field 3 Row 1 3.02 pack 2018-10-11
-Act 46 Farmer 3 on Farm 5 Sales Redbird Flower Field 1 Row 1 1.14 mass 2014-5-21
-Act 47 Farmer 3 on Farm 5 Fertilizers Ammonium Thiosulfate Field 1 Row 3 2.48 pack 2019-2-23
-Act 48 Farmer 3 on Farm 5 Sowing Desert Starvine Field 2 Row 1 3.17 volume 2019-11-24
-Act 49 Farmer 3 on Farm 5 Pesticides Nutri Garlic Oil Plus Field 2 Row 2 4.14 pack 2012-1-8
-Act 50 Farmer 3 on Farm 5 Harvest Atlantic Cup Lichen Field 3 Row 2 4.49 mass 2004-11-24
-Act 51 Farmer 3 on Farm 5 Pesticides ECPA Field 2 Row 3 2.88 volume 2016-7-7
-Act 52 Farmer 3 on Farm 5 Pesticides Thiodan 35 Field 3 Row 3 4.58 volume 2004-9-27
-Act 53 Farmer 3 on Farm 5 Sowing Redbird Flower Field 2 Row 2 4.75 volume 2009-11-28
-Act 1 Farmer 3 on Farm 10 Fertilizers Incrusi Ferti Inc. Pe 349 Field 2 Row 3 2.88 pack 2014-1-14
-Act 2 Farmer 3 on Farm 10 Pesticides Baythroid (cyfluthrin) Field 2 Row 3 4.97 mass 2011-11-27
-Act 3 Farmer 3 on Farm 10 Sales Ring Lichen Field 2 Row 3 1.63 mass 2020-6-18
-Act 4 Farmer 3 on Farm 10 Sales Dot Lichen Field 2 Row 2 4.55 pack 2009-3-6
-Act 5 Farmer 3 on Farm 10 Fertilizers Nitrogen Field 1 Row 3 2.36 mass 2005-9-1
-Act 6 Farmer 3 on Farm 10 Sales Big Bend Woodyaster Field 3 Row 1 2.2 pack 2020-1-18
-Act 7 Farmer 3 on Farm 10 Pesticides Abamectin Field 3 Row 2 1.91 pack 2000-6-5
-Act 8 Farmer 3 on Farm 10 Fertilizers Manganese Sulfate Field 2 Row 1 4.03 mass 2006-12-6
-Act 9 Farmer 3 on Farm 10 Sowing Hairy Jointweed Field 3 Row 1 0.41 mass 2017-10-25
-Act 10 Farmer 3 on Farm 10 Sowing Clustered Goldenweed Field 3 Row 1 0.87 volume 2017-7-21
-Act 11 Farmer 3 on Farm 10 Fertilizers Soil Amendment Field 2 Row 2 4.06 pack 2017-8-15
-Act 12 Farmer 3 on Farm 10 Fertilizers Phosphoric Acid Field 3 Row 3 1.34 volume 2005-12-3
-Act 13 Farmer 3 on Farm 10 Pesticides Dimethoate 4E (organophosphate) Field 3 Row 2 3.61 volume 2006-10-21
-Act 14 Farmer 3 on Farm 10 Sales Clustered Goldenweed Field 2 Row 1 1.52 pack 2017-6-26
-Act 15 Farmer 3 on Farm 10 Fertilizers Calcium Nitrate Field 3 Row 1 3.64 mass 2017-8-3
-Act 16 Farmer 3 on Farm 10 Harvest Southern Monardella Field 3 Row 3 3.36 volume 2008-5-3
-Act 17 Farmer 3 on Farm 10 Pesticides Fudan 3G Field 1 Row 2 2.13 pack 2020-5-6
-Act 18 Farmer 3 on Farm 10 Sales Kern Mallow Field 1 Row 1 1.15 volume 2009-4-11
-Act 19 Farmer 3 on Farm 10 Harvest Puckhout Field 2 Row 2 1.46 pack 2005-6-23
-Act 20 Farmer 3 on Farm 10 Fertilizers Incrusi Ferti Inc. Pe 349 Field 3 Row 2 0.68 volume 2011-10-21
-Act 21 Farmer 3 on Farm 10 Fertilizers Nitrogen Field 3 Row 2 2.6 pack 2004-1-29
-Act 22 Farmer 3 on Farm 10 Sales Cnicus Field 2 Row 2 2.23 mass 2015-7-13
-Act 23 Farmer 3 on Farm 10 Sales Rock Mousetail Field 2 Row 3 0.35 mass 2005-4-23
-Act 24 Farmer 3 on Farm 10 Sowing Russian Rocket Field 1 Row 2 1.89 volume 2005-10-4
-Act 25 Farmer 3 on Farm 10 Sales Kern Mallow Field 1 Row 3 4.75 mass 2008-3-15
-Act 26 Farmer 3 on Farm 10 Fertilizers Nitrogen Field 1 Row 2 0.03 pack 2004-12-18
-Act 27 Farmer 3 on Farm 10 Sales Clay Sand Verbena Field 2 Row 1 1.46 volume 2011-1-21
-Act 28 Farmer 3 on Farm 10 Pesticides Abamectin Field 2 Row 1 0.97 mass 2007-8-18
-Act 29 Farmer 3 on Farm 10 Fertilizers Manganese Sulfate Field 1 Row 1 3.91 pack 2000-1-18
-Act 30 Farmer 3 on Farm 10 Harvest Brickellbush Field 2 Row 1 3.84 pack 2001-6-25
-Act 31 Farmer 3 on Farm 10 Pesticides Punkaso 10 Field 3 Row 2 3.28 pack 2007-9-18
-Act 32 Farmer 3 on Farm 10 Fertilizers Phosphoric Acid Field 2 Row 3 1.07 mass 2012-3-7
-Act 33 Farmer 3 on Farm 10 Sales Pleodendron Field 1 Row 3 0.47 volume 2017-4-7
-Act 34 Farmer 3 on Farm 10 Fertilizers Manganese Sulfate Field 2 Row 3 3.33 mass 2007-6-14
-Act 35 Farmer 3 on Farm 10 Sowing Southern Monardella Field 1 Row 3 2.99 volume 2006-9-30
-Act 36 Farmer 3 on Farm 10 Fertilizers Soil Amendment Field 1 Row 1 1.99 mass 2008-8-16
-Act 37 Farmer 3 on Farm 10 Fertilizers Soil Amendment Field 1 Row 1 2.84 pack 2004-1-18
-Act 38 Farmer 3 on Farm 10 Pesticides Nutri Garlic Oil Plus Field 2 Row 2 4.63 pack 2012-10-8
-Act 39 Farmer 3 on Farm 10 Fertilizers Soil Amendment Field 3 Row 2 4.88 volume 2016-5-24
-Act 40 Farmer 3 on Farm 10 Pesticides Dimethoate 4E (organophosphate) Field 3 Row 3 2.56 pack 2020-9-8
-Act 41 Farmer 3 on Farm 10 Sales Russian Rocket Field 3 Row 3 1.87 mass 2013-9-7
-Act 42 Farmer 3 on Farm 10 Pesticides Asataf 75 Field 1 Row 1 1.61 mass 2006-12-19
-Act 43 Farmer 3 on Farm 10 Harvest Dot Lichen Field 2 Row 2 0.09 pack 2005-1-16
-Act 44 Farmer 3 on Farm 10 Sowing Pleodendron Field 1 Row 3 3.51 mass 2009-2-26
-Act 45 Farmer 3 on Farm 10 Harvest Brickellbush Field 3 Row 3 3.17 volume 2008-6-29
-Act 46 Farmer 3 on Farm 10 Harvest Southern Monardella Field 2 Row 2 1.62 volume 2002-10-20
-Act 47 Farmer 3 on Farm 10 Pesticides Dimethoate 4E (organophosphate) Field 1 Row 2 0.14 mass 2000-11-8
-Act 48 Farmer 3 on Farm 10 Harvest Guara Blanca Field 1 Row 3 0.44 pack 2009-3-10
-Act 49 Farmer 3 on Farm 10 Harvest English Walnut Field 3 Row 2 2.82 volume 2019-6-8
-Act 50 Farmer 3 on Farm 10 Sowing Dot Lichen Field 2 Row 3 0.91 pack 2015-6-1
-Act 51 Farmer 3 on Farm 10 Sowing Clay Sand Verbena Field 3 Row 2 3.37 pack 2006-5-26
-Act 1 Farmer 3 on Farm 8 Sales Giant Flatsedge Field 2 Row 2 1.05 pack 2019-11-11
-Act 2 Farmer 3 on Farm 8 Fertilizers Ammonium Thiosulfate Field 1 Row 2 4.03 mass 2015-12-10
-Act 3 Farmer 3 on Farm 8 Fertilizers Calcium Nitrate Field 3 Row 2 0.88 volume 2000-1-3
-Act 4 Farmer 3 on Farm 8 Sales Shining Alkaligrass Field 3 Row 1 1.22 volume 2002-5-7
-Act 5 Farmer 3 on Farm 8 Sales Eggleaf Silktassel Field 3 Row 1 2.05 mass 2002-3-1
-Act 6 Farmer 3 on Farm 8 Harvest Bushy Goldentop Field 2 Row 1 0.01 mass 2017-8-28
-Act 7 Farmer 3 on Farm 8 Harvest Bushy Goldentop Field 2 Row 1 0.17 pack 2016-12-29
-Act 8 Farmer 3 on Farm 8 Pesticides Pyrethrins Field 1 Row 1 1.68 pack 2019-2-6
-Act 9 Farmer 3 on Farm 8 Harvest Durango Tumblemustard Field 2 Row 2 1.88 mass 2000-5-30
-Act 10 Farmer 3 on Farm 8 Fertilizers Ammonium Thiosulfate Field 3 Row 1 2.49 mass 2013-11-4
-Act 11 Farmer 3 on Farm 8 Harvest Quinine Field 1 Row 1 4.28 mass 2020-12-2
-Act 12 Farmer 3 on Farm 8 Fertilizers Calcium Nitrate Field 1 Row 1 4.3 pack 2015-9-21
-Act 13 Farmer 3 on Farm 8 Sowing Eggleaf Silktassel Field 2 Row 1 4.31 mass 2001-5-11
-Act 14 Farmer 3 on Farm 8 Harvest Greenleaf Five Eyes Field 2 Row 2 4.95 mass 2016-8-7
-Act 15 Farmer 3 on Farm 8 Fertilizers Calcium Nitrate - Urea Field 2 Row 3 1.98 mass 2014-3-22
-Act 16 Farmer 3 on Farm 8 Sowing Quinine Field 2 Row 3 0.77 volume 2002-10-17
-Act 17 Farmer 3 on Farm 8 Sales Eggleaf Silktassel Field 1 Row 1 1.57 mass 2011-9-19
-Act 18 Farmer 3 on Farm 8 Harvest Jointfir Field 3 Row 1 4.08 volume 2012-3-30
-Act 19 Farmer 3 on Farm 8 Sowing Greenleaf Five Eyes Field 2 Row 2 4.07 pack 2011-12-26
-Act 20 Farmer 3 on Farm 8 Pesticides Actara 25 Field 3 Row 1 2.15 mass 2013-10-27
-Act 21 Farmer 3 on Farm 8 Sales Eggleaf Silktassel Field 2 Row 3 2.25 mass 2000-5-29
-Act 22 Farmer 3 on Farm 8 Sales Desert Starvine Field 2 Row 2 0.22 pack 2009-12-10
-Act 23 Farmer 3 on Farm 8 Fertilizers Potassium Carbonate Field 2 Row 1 4.35 volume 2008-5-28
-Act 24 Farmer 3 on Farm 8 Fertilizers Precipitated Phosphate Field 1 Row 2 4.06 volume 2006-2-15
-Act 25 Farmer 3 on Farm 8 Pesticides Nutri Garlic Oil Plus Field 3 Row 2 3.29 mass 2009-9-1
-Act 26 Farmer 3 on Farm 8 Sales Clustered Goldenweed Field 2 Row 3 2.71 mass 2011-3-4
-Act 27 Farmer 3 on Farm 8 Pesticides Armada 1.8EC Field 1 Row 2 0.87 mass 2009-4-14
-Act 28 Farmer 3 on Farm 8 Fertilizers Potassium Carbonate Field 2 Row 3 3.06 volume 2008-11-24
-Act 29 Farmer 3 on Farm 8 Sowing Peach Springs Canyon Cholla Field 3 Row 3 1.45 mass 2014-11-26
-Act 30 Farmer 3 on Farm 8 Sales Peach Springs Canyon Cholla Field 2 Row 1 1.07 mass 2003-11-14
-Act 31 Farmer 3 on Farm 8 Sowing Desert Starvine Field 2 Row 1 3.56 pack 2020-3-1
-Act 32 Farmer 3 on Farm 8 Sales Jointfir Field 1 Row 3 2.68 pack 2003-10-20
-Act 33 Farmer 3 on Farm 8 Pesticides Nutri Garlic Oil Plus Field 3 Row 2 2.91 pack 2001-11-25
-Act 34 Farmer 3 on Farm 8 Pesticides Dimethoate 4E (organophosphate) Field 3 Row 3 3.53 mass 2020-4-24
-Act 35 Farmer 3 on Farm 8 Sowing Shining Alkaligrass Field 1 Row 1 0.39 mass 2016-9-10
-Act 36 Farmer 3 on Farm 8 Sales Twocleft Stenogyne Field 3 Row 3 1.82 volume 2007-3-22
-Act 37 Farmer 3 on Farm 8 Pesticides Baythroid 2 (cyfluthrin) Field 1 Row 3 0.29 volume 2004-12-2
-Act 38 Farmer 3 on Farm 8 Sowing Bushy Goldentop Field 2 Row 3 2.88 mass 2009-2-24
-Act 39 Farmer 3 on Farm 8 Harvest Chilean Wormseed Field 1 Row 1 4.93 volume 2004-4-25
-Act 40 Farmer 3 on Farm 8 Sowing Greenleaf Five Eyes Field 2 Row 3 2.06 pack 2009-7-17
-Act 41 Farmer 3 on Farm 8 Harvest Oatgrass Field 1 Row 3 3.19 mass 2017-9-11
-Act 42 Farmer 3 on Farm 8 Fertilizers Zjies Shaet Field 3 Row 2 0.36 volume 2018-10-26
-Act 43 Farmer 3 on Farm 8 Sowing Oatgrass Field 1 Row 3 2.23 mass 2015-7-20
-Act 44 Farmer 3 on Farm 8 Pesticides Dimethoate 4E (organophosphate) Field 1 Row 2 4.63 volume 2006-4-14
-Act 45 Farmer 3 on Farm 8 Fertilizers SevinQian Field 2 Row 3 1.03 mass 2009-3-28
-Act 46 Farmer 3 on Farm 8 Sales Thorn-mint Field 1 Row 3 2.1 pack 2006-2-9
-Act 47 Farmer 3 on Farm 8 Pesticides Actara 25 Field 3 Row 3 3.16 volume 2003-3-28
-Act 48 Farmer 3 on Farm 8 Sowing Indian Teasel Field 1 Row 3 2.13 pack 2004-5-4
-Act 49 Farmer 3 on Farm 8 Harvest Giant Flatsedge Field 3 Row 1 2.0 pack 2008-3-19
-Act 50 Farmer 3 on Farm 8 Harvest Bushy Goldentop Field 3 Row 2 3.88 volume 2012-3-2
-Act 1 Farmer 3 on Farm 9 Sowing Oatgrass Field 2 Row 3 1.74 pack 2002-7-10
-Act 2 Farmer 3 on Farm 9 Sowing Whiskerbush Field 3 Row 1 3.37 mass 2008-11-11
-Act 3 Farmer 3 on Farm 9 Sowing Chilean Wormseed Field 1 Row 1 4.39 volume 2019-9-22
-Act 4 Farmer 3 on Farm 9 Pesticides Life Botanic Natural Pesticide Field 1 Row 2 3.4 mass 2002-3-19
-Act 5 Farmer 3 on Farm 9 Sowing Hairy Jointweed Field 2 Row 3 3.18 volume 2013-8-5
-Act 6 Farmer 3 on Farm 9 Sales Lacy Spleenwort Field 2 Row 2 4.62 pack 2019-5-26
-Act 7 Farmer 3 on Farm 9 Harvest Circumpolar Starwort Field 2 Row 3 2.94 mass 2010-7-9
-Act 8 Farmer 3 on Farm 9 Harvest Circumpolar Starwort Field 1 Row 1 2.68 mass 2011-1-10
-Act 9 Farmer 3 on Farm 9 Harvest Whiskerbush Field 2 Row 2 0.56 pack 2011-12-17
-Act 10 Farmer 3 on Farm 9 Sowing Oatgrass Field 2 Row 1 2.04 mass 2015-10-4
-Act 11 Farmer 3 on Farm 9 Sowing Chilean Wormseed Field 2 Row 1 3.25 pack 2002-4-30
-Act 12 Farmer 3 on Farm 9 Fertilizers Ammonium Thiosulfate Field 3 Row 1 3.38 pack 2016-8-13
-Act 13 Farmer 3 on Farm 9 Pesticides Pirit 1PCS Field 3 Row 3 4.89 mass 2007-6-14
-Act 14 Farmer 3 on Farm 9 Pesticides Flash 25 Field 3 Row 3 0.43 mass 2011-2-1
-Act 15 Farmer 3 on Farm 9 Sowing St. Augustine Grass Field 3 Row 1 3.04 mass 2004-4-21
-Act 16 Farmer 3 on Farm 9 Pesticides Curaron 50 Field 3 Row 2 2.18 pack 2000-1-9
-Act 17 Farmer 3 on Farm 9 Harvest Whiskerbush Field 3 Row 2 0.7 mass 2007-3-8
-Act 18 Farmer 3 on Farm 9 Fertilizers Ammonium Thiosulfate Field 1 Row 2 2.97 mass 2018-9-11
-Act 19 Farmer 3 on Farm 9 Fertilizers Calcium Metaphosphate Field 1 Row 3 2.14 pack 2006-2-27
-Act 20 Farmer 3 on Farm 9 Harvest Lacy Spleenwort Field 1 Row 2 4.02 pack 2014-11-20
-Act 21 Farmer 3 on Farm 9 Fertilizers Magnesium Nitrate Field 3 Row 2 0.81 pack 2020-10-30
-Act 22 Farmer 3 on Farm 9 Sales Oatgrass Field 3 Row 2 4.27 pack 2007-8-12
-Act 23 Farmer 3 on Farm 9 Pesticides Curaron 50 Field 3 Row 2 1.09 mass 2001-9-10
-Act 24 Farmer 3 on Farm 9 Sales St. Augustine Grass Field 3 Row 3 3.87 volume 2007-5-15
-Act 25 Farmer 3 on Farm 9 Harvest Oatgrass Field 2 Row 3 1.09 volume 2004-4-8
-Act 26 Farmer 3 on Farm 9 Sales Whiskerbush Field 2 Row 3 0.65 volume 2002-11-10
-Act 27 Farmer 3 on Farm 9 Harvest Oatgrass Field 1 Row 2 1.58 volume 2009-7-14
-Act 28 Farmer 3 on Farm 9 Sowing Hairy Jointweed Field 3 Row 2 3.8 mass 2002-11-3
-Act 29 Farmer 3 on Farm 9 Harvest Circumpolar Starwort Field 2 Row 1 1.94 pack 2014-5-19
-Act 30 Farmer 3 on Farm 9 Pesticides Curaron 50 Field 1 Row 2 1.36 pack 2006-8-1
-Act 31 Farmer 3 on Farm 9 Sales Hairy Jointweed Field 1 Row 1 0.04 pack 2006-5-23
-Act 32 Farmer 3 on Farm 9 Sales Oatgrass Field 1 Row 1 2.74 volume 2016-9-1
-Act 33 Farmer 3 on Farm 9 Harvest Oatgrass Field 3 Row 3 0.15 pack 2018-9-11
-Act 34 Farmer 3 on Farm 9 Fertilizers Magnesium Nitrate Field 1 Row 1 1.41 volume 2015-2-13
-Act 35 Farmer 3 on Farm 9 Pesticides Life Botanic Natural Pesticide Field 3 Row 1 4.65 mass 2000-1-3
-Act 36 Farmer 3 on Farm 9 Harvest Wild Chives Field 3 Row 2 3.16 pack 2007-6-14
-Act 37 Farmer 3 on Farm 9 Fertilizers Zinc Manganese Amm Sulfate Field 1 Row 1 2.93 volume 2000-3-14
-Act 38 Farmer 3 on Farm 9 Sales Wild Chives Field 3 Row 1 0.25 pack 2016-7-15
-Act 39 Farmer 3 on Farm 9 Fertilizers Ammonium Thiosulfate Field 1 Row 2 3.99 volume 2006-2-16
-Act 40 Farmer 3 on Farm 9 Harvest Wild Chives Field 3 Row 2 0.9 pack 2003-2-19
-Act 41 Farmer 3 on Farm 9 Pesticides Zeal (etoxazole) Field 3 Row 2 4.33 pack 2018-1-4
-Act 42 Farmer 3 on Farm 9 Sowing Wild Chives Field 3 Row 2 1.74 volume 2015-6-3
-Act 43 Farmer 3 on Farm 9 Harvest Whiskerbush Field 1 Row 2 1.16 mass 2012-11-26
-Act 44 Farmer 3 on Farm 9 Pesticides Curaron 50 Field 1 Row 1 0.58 pack 2015-4-5
-Act 45 Farmer 3 on Farm 9 Harvest Oatgrass Field 1 Row 1 3.76 mass 2012-1-2
-Act 46 Farmer 3 on Farm 9 Pesticides Pirit 1PCS Field 3 Row 1 3.44 volume 2006-4-3
-Act 47 Farmer 3 on Farm 9 Pesticides Zeal (etoxazole) Field 1 Row 3 1.56 mass 2019-8-1
-Act 48 Farmer 3 on Farm 9 Harvest Hairy Jointweed Field 3 Row 1 4.72 pack 2006-8-21
-Act 49 Farmer 3 on Farm 9 Sales Wild Chives Field 3 Row 1 1.48 volume 2010-9-15
-Act 50 Farmer 3 on Farm 9 Harvest Wild Chives Field 2 Row 3 3.34 pack 2015-11-18
-Act 51 Farmer 3 on Farm 9 Harvest Whiskerbush Field 1 Row 3 0.37 pack 2005-3-15
-Act 52 Farmer 3 on Farm 9 Sowing Wild Chives Field 3 Row 2 0.72 mass 2002-1-5
-Act 53 Farmer 3 on Farm 9 Sowing Whiskerbush Field 1 Row 3 2.89 volume 2011-10-21
-Act 54 Farmer 3 on Farm 9 Fertilizers Magnesium Nitrate Field 2 Row 1 1.35 volume 2006-12-15
-Act 55 Farmer 3 on Farm 9 Sales Whiskerbush Field 3 Row 1 1.65 mass 2020-11-9
-Act 56 Farmer 3 on Farm 9 Sowing St. Augustine Grass Field 1 Row 2 1.98 mass 2013-5-11
-Act 57 Farmer 3 on Farm 9 Harvest Lacy Spleenwort Field 2 Row 3 4.21 pack 2018-5-18
-Act 1 Farmer 4 on Farm 9 Fertilizers Calcium Metaphosphate Field 3 Row 1 1.58 mass 2013-2-30
-Act 2 Farmer 4 on Farm 9 Harvest Hairy Jointweed Field 1 Row 1 0.83 volume 2004-2-6
-Act 3 Farmer 4 on Farm 9 Sales Circumpolar Starwort Field 3 Row 2 2.83 mass 2017-11-19
-Act 4 Farmer 4 on Farm 9 Sales Chilean Wormseed Field 2 Row 1 0.31 mass 2013-5-17
-Act 5 Farmer 4 on Farm 9 Sales Lacy Spleenwort Field 1 Row 3 2.71 volume 2009-3-27
-Act 6 Farmer 4 on Farm 9 Sowing Hairy Jointweed Field 2 Row 1 0.41 volume 2002-8-26
-Act 7 Farmer 4 on Farm 9 Fertilizers Guano Field 1 Row 2 3.82 mass 2006-6-19
-Act 8 Farmer 4 on Farm 9 Fertilizers Ammonium Thiosulfate Field 1 Row 2 2.08 mass 2005-2-4
-Act 9 Farmer 4 on Farm 9 Sales Hairy Jointweed Field 3 Row 3 0.76 volume 2008-11-19
-Act 10 Farmer 4 on Farm 9 Sales Circumpolar Starwort Field 2 Row 2 3.27 volume 2015-1-3
-Act 11 Farmer 4 on Farm 9 Harvest Whiskerbush Field 1 Row 3 3.51 mass 2002-5-30
-Act 12 Farmer 4 on Farm 9 Sales Lacy Spleenwort Field 2 Row 1 4.96 volume 2002-10-17
-Act 13 Farmer 4 on Farm 9 Pesticides Pirit 1PCS Field 1 Row 2 0.17 pack 2011-6-7
-Act 14 Farmer 4 on Farm 9 Harvest Lacy Spleenwort Field 1 Row 1 0.11 pack 2001-10-18
-Act 15 Farmer 4 on Farm 9 Sales Chilean Wormseed Field 2 Row 1 2.91 pack 2012-9-1
-Act 16 Farmer 4 on Farm 9 Sowing Oatgrass Field 1 Row 3 2.97 pack 2000-6-7
-Act 17 Farmer 4 on Farm 9 Fertilizers Magnesium Nitrate Field 1 Row 2 1.58 mass 2016-11-30
-Act 18 Farmer 4 on Farm 9 Harvest Whiskerbush Field 1 Row 3 2.97 mass 2014-9-11
-Act 19 Farmer 4 on Farm 9 Pesticides Zeal (etoxazole) Field 2 Row 1 2.69 pack 2011-4-12
-Act 20 Farmer 4 on Farm 9 Fertilizers Guano Field 3 Row 1 2.88 pack 2009-8-25
-Act 21 Farmer 4 on Farm 9 Sowing Chilean Wormseed Field 1 Row 3 2.37 mass 2000-4-24
-Act 22 Farmer 4 on Farm 9 Sales Chilean Wormseed Field 3 Row 1 4.12 mass 2018-12-20
-Act 23 Farmer 4 on Farm 9 Pesticides Curaron 50 Field 2 Row 1 2.66 volume 2003-9-2
-Act 24 Farmer 4 on Farm 9 Sales St. Augustine Grass Field 2 Row 2 0.84 volume 2014-5-12
-Act 25 Farmer 4 on Farm 9 Fertilizers Ammonium Thiosulfate Field 3 Row 2 2.81 volume 2010-2-14
-Act 26 Farmer 4 on Farm 9 Sales Wild Chives Field 2 Row 3 4.84 pack 2020-11-4
-Act 27 Farmer 4 on Farm 9 Pesticides Zeal (etoxazole) Field 1 Row 2 1.61 volume 2020-5-12
-Act 28 Farmer 4 on Farm 9 Sales Hairy Jointweed Field 3 Row 3 3.41 volume 2013-3-13
-Act 29 Farmer 4 on Farm 9 Sowing Whiskerbush Field 3 Row 2 1.99 pack 2019-4-13
-Act 30 Farmer 4 on Farm 9 Sales Lacy Spleenwort Field 2 Row 1 0.96 pack 2019-2-8
-Act 31 Farmer 4 on Farm 9 Harvest Chilean Wormseed Field 3 Row 2 4.03 volume 2003-2-26
-Act 32 Farmer 4 on Farm 9 Fertilizers Zinc Manganese Amm Sulfate Field 2 Row 2 0.24 pack 2008-10-16
-Act 33 Farmer 4 on Farm 9 Fertilizers Guano Field 2 Row 2 2.59 volume 2018-10-27
-Act 34 Farmer 4 on Farm 9 Harvest Hairy Jointweed Field 2 Row 3 3.16 mass 2000-5-3
-Act 35 Farmer 4 on Farm 9 Sowing St. Augustine Grass Field 2 Row 3 3.63 mass 2016-1-3
-Act 36 Farmer 4 on Farm 9 Fertilizers Ammonium Thiosulfate Field 3 Row 1 0.27 pack 2003-4-18
-Act 37 Farmer 4 on Farm 9 Sales Lacy Spleenwort Field 1 Row 3 1.34 pack 2006-4-19
-Act 38 Farmer 4 on Farm 9 Sowing Oatgrass Field 3 Row 3 4.61 pack 2003-6-9
-Act 39 Farmer 4 on Farm 9 Fertilizers Ferric Sulfate Field 1 Row 2 1.67 mass 2016-4-10
-Act 40 Farmer 4 on Farm 9 Sales Chilean Wormseed Field 1 Row 1 4.59 mass 2001-11-23
-Act 41 Farmer 4 on Farm 9 Sowing Whiskerbush Field 1 Row 3 2.29 volume 2007-6-16
-Act 42 Farmer 4 on Farm 9 Harvest Whiskerbush Field 1 Row 2 2.1 volume 2010-12-26
-Act 43 Farmer 4 on Farm 9 Fertilizers Magnesium Nitrate Field 1 Row 2 2.12 volume 2001-8-18
-Act 44 Farmer 4 on Farm 9 Sowing Wild Chives Field 2 Row 3 1.38 pack 2017-10-10
-Act 45 Farmer 4 on Farm 9 Fertilizers Guano Field 2 Row 3 3.07 volume 2003-6-29
-Act 46 Farmer 4 on Farm 9 Sowing Wild Chives Field 3 Row 3 4.77 volume 2000-3-30
-Act 47 Farmer 4 on Farm 9 Sales Whiskerbush Field 2 Row 3 3.85 mass 2009-10-22
-Act 48 Farmer 4 on Farm 9 Fertilizers Zinc Manganese Amm Sulfate Field 1 Row 3 2.32 pack 2012-1-1
-Act 49 Farmer 4 on Farm 9 Sales Oatgrass Field 3 Row 1 4.84 pack 2008-7-7
-Act 50 Farmer 4 on Farm 9 Fertilizers Ammonium Thiosulfate Field 2 Row 1 0.48 mass 2013-8-12
-Act 51 Farmer 4 on Farm 9 Sowing Hairy Jointweed Field 1 Row 3 0.3 mass 2019-1-11
-Act 1 Farmer 4 on Farm 2 Sowing Eggleaf Silktassel Field 3 Row 2 4.0 pack 2016-5-20
-Act 2 Farmer 4 on Farm 2 Sowing Maui Melicope Field 1 Row 1 1.79 pack 2010-3-2
-Act 3 Farmer 4 on Farm 2 Harvest Woolly Prairie Clover Field 1 Row 2 2.29 mass 2000-2-22
-Act 4 Farmer 4 on Farm 2 Fertilizers Ammonium Nitrate - Sulfate Field 3 Row 1 3.39 volume 2003-12-13
-Act 5 Farmer 4 on Farm 2 Sales Woolly Prairie Clover Field 2 Row 2 3.52 volume 2020-4-19
-Act 6 Farmer 4 on Farm 2 Fertilizers Zinc Manganese Amm Sulfate Field 2 Row 2 4.96 volume 2006-4-16
-Act 7 Farmer 4 on Farm 2 Pesticides Asana XL (esfenvalerate) Field 1 Row 2 4.12 mass 2010-8-28
-Act 8 Farmer 4 on Farm 2 Pesticides Methoxychlor (methoxychlor) Field 1 Row 1 3.86 mass 2012-6-23
-Act 9 Farmer 4 on Farm 2 Harvest Desert Starvine Field 3 Row 2 4.23 pack 2001-9-22
-Act 10 Farmer 4 on Farm 2 Sales Liverleaf Wintergreen Field 1 Row 1 2.27 mass 2005-11-28
-Act 11 Farmer 4 on Farm 2 Pesticides Imidan (phosmet) Field 3 Row 3 1.26 pack 2006-12-7
-Act 12 Farmer 4 on Farm 2 Pesticides Methidathion (organophosphate) Field 1 Row 2 0.36 pack 2001-3-28
-Act 13 Farmer 4 on Farm 2 Harvest Circumpolar Starwort Field 2 Row 2 0.19 volume 2016-10-15
-Act 14 Farmer 4 on Farm 2 Pesticides Methidathion (organophosphate) Field 2 Row 2 0.63 pack 2012-10-7
-Act 15 Farmer 4 on Farm 2 Sowing Orcutt's Threeawn Field 2 Row 1 0.62 mass 2013-7-13
-Act 16 Farmer 4 on Farm 2 Harvest Woolly Prairie Clover Field 1 Row 1 3.99 volume 2013-4-8
-Act 17 Farmer 4 on Farm 2 Sowing Royal Tonguefern Field 1 Row 3 4.46 pack 2011-1-7
-Act 18 Farmer 4 on Farm 2 Sowing Circumpolar Starwort Field 3 Row 1 2.64 pack 2013-12-2
-Act 19 Farmer 4 on Farm 2 Fertilizers Cobalt Sulfate Field 3 Row 1 4.78 mass 2011-9-5
-Act 20 Farmer 4 on Farm 2 Pesticides Imidan (phosmet) Field 2 Row 1 1.98 pack 2019-2-28
-Act 21 Farmer 4 on Farm 2 Harvest Purplestem Aster Field 1 Row 2 1.84 pack 2003-11-6
-Act 22 Farmer 4 on Farm 2 Sowing Russian Rocket Field 3 Row 1 1.47 volume 2005-10-26
-Act 23 Farmer 4 on Farm 2 Sales Prickly Bog Sedge Field 2 Row 1 2.49 mass 2011-2-29
-Act 24 Farmer 4 on Farm 2 Pesticides Methoxychlor (methoxychlor) Field 2 Row 1 0.96 pack 2014-8-15
-Act 25 Farmer 4 on Farm 2 Pesticides Mustang Max (pyrethroid) Field 1 Row 2 2.52 volume 2004-7-8
-Act 26 Farmer 4 on Farm 2 Sowing Purplestem Aster Field 3 Row 1 4.96 mass 2020-7-15
-Act 27 Farmer 4 on Farm 2 Harvest Prickly Bog Sedge Field 3 Row 3 1.35 volume 2013-10-30
-Act 28 Farmer 4 on Farm 2 Pesticides Mustang Max (pyrethroid) Field 2 Row 3 1.66 volume 2006-10-10
-Act 29 Farmer 4 on Farm 2 Pesticides Methidathion (organophosphate) Field 2 Row 3 1.22 pack 2001-10-30
-Act 30 Farmer 4 on Farm 2 Sales Prickly Bog Sedge Field 1 Row 2 3.92 pack 2016-9-4
-Act 31 Farmer 4 on Farm 2 Pesticides Imidan (phosmet) Field 3 Row 1 4.43 volume 2017-3-25
-Act 32 Farmer 4 on Farm 2 Sales Royal Tonguefern Field 1 Row 3 0.24 mass 2006-10-24
-Act 33 Farmer 4 on Farm 2 Fertilizers Zjies Shaet Field 3 Row 1 1.14 mass 2005-6-7
-Act 34 Farmer 4 on Farm 2 Pesticides Mustang Max (pyrethroid) Field 1 Row 2 0.25 mass 2019-3-10
-Act 35 Farmer 4 on Farm 2 Sales Silky Willow Field 1 Row 3 1.05 volume 2008-9-18
-Act 36 Farmer 4 on Farm 2 Harvest Black Gram Field 3 Row 1 0.99 pack 2005-9-6
-Act 37 Farmer 4 on Farm 2 Fertilizers Kelthweiane Field 1 Row 1 4.9 pack 2002-5-11
-Act 38 Farmer 4 on Farm 2 Sales Woolly Prairie Clover Field 1 Row 1 0.31 volume 2005-3-16
-Act 39 Farmer 4 on Farm 2 Sales Rhexophyllum Moss Field 2 Row 1 0.17 pack 2006-8-21
-Act 40 Farmer 4 on Farm 2 Pesticides Imidan (phosmet) Field 3 Row 1 1.22 mass 2017-12-25
-Act 41 Farmer 4 on Farm 2 Sowing Liverleaf Wintergreen Field 1 Row 3 4.91 mass 2004-9-16
-Act 42 Farmer 4 on Farm 2 Fertilizers Nitrogen Product Field 3 Row 3 2.69 mass 2006-7-24
-Act 43 Farmer 4 on Farm 2 Harvest Black Gram Field 3 Row 2 3.5 pack 2002-7-20
-Act 44 Farmer 4 on Farm 2 Sales Orcutt's Threeawn Field 3 Row 3 1.61 mass 2012-4-12
-Act 45 Farmer 4 on Farm 2 Sales Woolly Prairie Clover Field 3 Row 2 3.62 pack 2010-3-2
-Act 46 Farmer 4 on Farm 2 Harvest Prickly Bog Sedge Field 2 Row 3 1.91 volume 2006-9-5
-Act 47 Farmer 4 on Farm 2 Fertilizers Cobalt Sulfate Field 2 Row 3 4.09 volume 2007-1-17
-Act 48 Farmer 4 on Farm 2 Sales Purplestem Aster Field 3 Row 2 4.43 pack 2005-8-7
-Act 49 Farmer 4 on Farm 2 Sales Woolly Prairie Clover Field 1 Row 1 4.76 pack 2006-1-3
-Act 50 Farmer 4 on Farm 2 Harvest Rhexophyllum Moss Field 3 Row 3 1.35 pack 2014-8-13
-Act 51 Farmer 4 on Farm 2 Fertilizers Keogn Orien Field 1 Row 2 4.41 volume 2009-7-16
-Act 52 Farmer 4 on Farm 2 Sales Black Gram Field 3 Row 2 3.58 mass 2015-12-9
-Act 53 Farmer 4 on Farm 2 Sowing Upright Chickweed Field 2 Row 3 4.16 pack 2000-8-20
-Act 54 Farmer 4 on Farm 2 Sowing Bluntleaf Waterleaf Field 3 Row 1 2.67 pack 2019-10-7
-Act 55 Farmer 4 on Farm 2 Pesticides Imidan (phosmet) Field 1 Row 1 3.46 mass 2018-7-26
-Act 1 Farmer 4 on Farm 3 Sowing Rock Mousetail Field 3 Row 1 2.39 volume 2012-2-27
-Act 2 Farmer 4 on Farm 3 Sales Kentucky Lady's Slipper Field 2 Row 3 1.91 pack 2020-7-28
-Act 3 Farmer 4 on Farm 3 Fertilizers Magnesium Phosphate Field 2 Row 3 0.35 pack 2017-1-19
-Act 4 Farmer 4 on Farm 3 Sowing Lesser Canadian St. Johnswort Field 1 Row 2 1.68 pack 2008-9-2
-Act 5 Farmer 4 on Farm 3 Fertilizers Superphosphate, Enriched Field 2 Row 1 3.71 volume 2015-12-6
-Act 6 Farmer 4 on Farm 3 Sowing Clay Sand Verbena Field 2 Row 3 2.89 pack 2013-8-13
-Act 7 Farmer 4 on Farm 3 Pesticides Shamrock Pesticide Field 2 Row 2 0.55 mass 2018-9-13
-Act 8 Farmer 4 on Farm 3 Fertilizers Calcium Metaphosphate Field 2 Row 1 2.76 mass 2016-8-30
-Act 9 Farmer 4 on Farm 3 Harvest Lesser Canadian St. Johnswort Field 2 Row 1 0.78 volume 2003-5-8
-Act 10 Farmer 4 on Farm 3 Harvest Lesser Canadian St. Johnswort Field 1 Row 3 0.43 volume 2016-4-8
-Act 11 Farmer 4 on Farm 3 Sales Yunnan Bauhinia Field 2 Row 2 1.92 pack 2009-3-14
-Act 12 Farmer 4 on Farm 3 Sowing Lesser Canadian St. Johnswort Field 1 Row 1 0.81 volume 2018-5-13
-Act 13 Farmer 4 on Farm 3 Harvest Clay Sand Verbena Field 1 Row 3 0.62 volume 2018-8-19
-Act 14 Farmer 4 on Farm 3 Pesticides EcoPest Field 3 Row 3 4.71 volume 2012-2-7
-Act 15 Farmer 4 on Farm 3 Pesticides Baba Mr Ganick Organic Pesticide Field 3 Row 2 2.18 volume 2017-11-19
-Act 16 Farmer 4 on Farm 3 Harvest Lesser Canadian St. Johnswort Field 3 Row 3 3.21 volume 2003-7-28
-Act 17 Farmer 4 on Farm 3 Harvest Lesser Canadian St. Johnswort Field 2 Row 1 1.76 mass 2012-4-25
-Act 18 Farmer 4 on Farm 3 Sales Kentucky Lady's Slipper Field 3 Row 3 4.94 pack 2003-6-18
-Act 19 Farmer 4 on Farm 3 Harvest Rock Mousetail Field 1 Row 2 4.08 pack 2018-11-30
-Act 20 Farmer 4 on Farm 3 Fertilizers Nitric Phosphate Field 2 Row 3 1.12 pack 2014-12-27
-Act 21 Farmer 4 on Farm 3 Fertilizers Ferric Sulfate Field 1 Row 2 0.56 mass 2015-3-19
-Act 22 Farmer 4 on Farm 3 Fertilizers Calcium Metaphosphate Field 2 Row 2 0.18 volume 2000-12-7
-Act 23 Farmer 4 on Farm 3 Fertilizers Ferric Sulfate Field 1 Row 2 2.9 pack 2003-1-10
-Act 24 Farmer 4 on Farm 3 Sowing Durango Tumblemustard Field 2 Row 2 3.61 volume 2014-9-20
-Act 25 Farmer 4 on Farm 3 Sales Lesser Canadian St. Johnswort Field 3 Row 1 0.74 volume 2002-4-22
-Act 26 Farmer 4 on Farm 3 Pesticides Bulldock 2.5 Field 3 Row 1 0.56 pack 2010-6-27
-Act 27 Farmer 4 on Farm 3 Pesticides Shamrock Pesticide Field 3 Row 2 3.65 mass 2002-4-4
-Act 28 Farmer 4 on Farm 3 Sowing Fewleaf Sunflower Field 2 Row 3 3.29 mass 2016-2-1
-Act 29 Farmer 4 on Farm 3 Sales Rock Mousetail Field 3 Row 3 4.07 pack 2012-10-9
-Act 30 Farmer 4 on Farm 3 Fertilizers Zinc Petrusia Field 1 Row 1 2.57 mass 2014-12-6
-Act 31 Farmer 4 on Farm 3 Harvest Clay Sand Verbena Field 2 Row 2 4.64 pack 2007-7-23
-Act 32 Farmer 4 on Farm 3 Sowing Rock Mousetail Field 3 Row 2 3.2 mass 2018-9-10
-Act 33 Farmer 4 on Farm 3 Pesticides Vertimac Field 3 Row 3 4.28 volume 2018-8-16
-Act 34 Farmer 4 on Farm 3 Fertilizers Warrior Chong Field 2 Row 2 1.7 mass 2014-1-27
-Act 35 Farmer 4 on Farm 3 Pesticides Baythroid 2 (cyfluthrin) Field 3 Row 1 0.19 volume 2010-7-6
-Act 36 Farmer 4 on Farm 3 Sowing Clay Sand Verbena Field 2 Row 2 1.96 pack 2001-12-4
-Act 37 Farmer 4 on Farm 3 Fertilizers Calcium Metaphosphate Field 3 Row 1 1.2 volume 2007-9-7
-Act 38 Farmer 4 on Farm 3 Sales Fewleaf Sunflower Field 3 Row 1 1.63 pack 2001-12-2
-Act 39 Farmer 4 on Farm 3 Harvest Lacy Spleenwort Field 3 Row 1 4.53 volume 2008-3-21
-Act 40 Farmer 4 on Farm 3 Sales Rock Mousetail Field 3 Row 3 0.12 volume 2002-5-22
-Act 41 Farmer 4 on Farm 3 Pesticides YUMYUM Pesticide Field 1 Row 1 1.3 pack 2001-8-7
-Act 42 Farmer 4 on Farm 3 Sowing Yunnan Bauhinia Field 2 Row 2 1.43 mass 2006-5-5
-Act 43 Farmer 4 on Farm 3 Pesticides Lorsban 4E (chlorpyrifos) Field 3 Row 1 0.22 volume 2000-8-23
-Act 44 Farmer 4 on Farm 3 Sales Kentucky Lady's Slipper Field 1 Row 1 0.67 mass 2006-7-26
-Act 45 Farmer 4 on Farm 3 Harvest Rock Mousetail Field 3 Row 1 0.89 volume 2002-2-24
-Act 46 Farmer 4 on Farm 3 Sowing Fewleaf Sunflower Field 3 Row 3 1.03 volume 2009-4-8
-Act 47 Farmer 4 on Farm 3 Sales Fewleaf Sunflower Field 1 Row 2 3.68 volume 2009-4-10
-Act 48 Farmer 4 on Farm 3 Sowing Chisos Prairie Acacia Field 2 Row 3 0.27 mass 2012-7-1
-Act 49 Farmer 4 on Farm 3 Sales Yunnan Bauhinia Field 2 Row 1 3.01 pack 2006-12-18
-Act 50 Farmer 4 on Farm 3 Sales Durango Tumblemustard Field 2 Row 1 0.23 pack 2011-6-29
-Act 1 Farmer 5 on Farm 9 Pesticides Curaron 50 Field 3 Row 1 2.2 mass 2013-2-11
-Act 2 Farmer 5 on Farm 9 Harvest Chilean Wormseed Field 2 Row 3 4.05 mass 2004-8-4
-Act 3 Farmer 5 on Farm 9 Sales Whiskerbush Field 1 Row 1 3.44 pack 2019-12-18
-Act 4 Farmer 5 on Farm 9 Harvest St. Augustine Grass Field 1 Row 2 0.82 pack 2008-7-13
-Act 5 Farmer 5 on Farm 9 Pesticides Zeal (etoxazole) Field 1 Row 1 1.43 mass 2008-5-3
-Act 6 Farmer 5 on Farm 9 Pesticides Curaron 50 Field 3 Row 2 1.36 mass 2002-6-23
-Act 7 Farmer 5 on Farm 9 Sowing Whiskerbush Field 2 Row 1 1.38 mass 2008-3-20
-Act 8 Farmer 5 on Farm 9 Pesticides Vendex (hexakis fenbutatin-oxide) Field 3 Row 2 2.14 pack 2018-1-16
-Act 9 Farmer 5 on Farm 9 Pesticides Flash 25 Field 3 Row 2 1.78 volume 2005-11-3
-Act 10 Farmer 5 on Farm 9 Pesticides Pirit 1PCS Field 1 Row 2 1.74 mass 2006-2-1
-Act 11 Farmer 5 on Farm 9 Sowing Oatgrass Field 1 Row 3 3.98 mass 2001-4-29
-Act 12 Farmer 5 on Farm 9 Pesticides Curaron 50 Field 1 Row 3 4.45 volume 2020-11-15
-Act 13 Farmer 5 on Farm 9 Pesticides Vendex (hexakis fenbutatin-oxide) Field 2 Row 1 1.65 pack 2003-5-1
-Act 14 Farmer 5 on Farm 9 Sowing Lacy Spleenwort Field 2 Row 1 0.46 mass 2009-3-26
-Act 15 Farmer 5 on Farm 9 Pesticides Life Botanic Natural Pesticide Field 3 Row 1 0.78 pack 2020-11-18
-Act 16 Farmer 5 on Farm 9 Harvest Lacy Spleenwort Field 1 Row 2 2.99 mass 2013-4-21
-Act 17 Farmer 5 on Farm 9 Sowing St. Augustine Grass Field 2 Row 2 4.4 mass 2018-2-5
-Act 18 Farmer 5 on Farm 9 Fertilizers Magnesium Nitrate Field 3 Row 3 2.51 mass 2001-3-12
-Act 19 Farmer 5 on Farm 9 Sowing Hairy Jointweed Field 1 Row 1 2.78 volume 2006-6-14
-Act 20 Farmer 5 on Farm 9 Fertilizers Magnesium Nitrate Field 1 Row 2 2.57 mass 2017-7-4
-Act 21 Farmer 5 on Farm 9 Sales Whiskerbush Field 1 Row 1 3.24 volume 2018-2-9
-Act 22 Farmer 5 on Farm 9 Fertilizers Ammonium Phosphate Sulfate Field 1 Row 3 3.22 volume 2006-8-25
-Act 23 Farmer 5 on Farm 9 Fertilizers Ammonium Thiosulfate Field 1 Row 3 4.33 pack 2006-4-16
-Act 24 Farmer 5 on Farm 9 Sowing Hairy Jointweed Field 2 Row 2 1.13 mass 2000-5-12
-Act 25 Farmer 5 on Farm 9 Fertilizers Ammonium Phosphate Sulfate Field 1 Row 2 3.9 mass 2003-12-20
-Act 26 Farmer 5 on Farm 9 Sales Whiskerbush Field 3 Row 2 4.21 mass 2011-1-28
-Act 27 Farmer 5 on Farm 9 Pesticides Vendex (hexakis fenbutatin-oxide) Field 3 Row 2 2.59 volume 2006-5-9
-Act 28 Farmer 5 on Farm 9 Pesticides Curaron 50 Field 2 Row 1 4.36 mass 2009-3-25
-Act 29 Farmer 5 on Farm 9 Fertilizers Zinc Manganese Amm Sulfate Field 3 Row 3 2.01 mass 2015-9-9
-Act 30 Farmer 5 on Farm 9 Fertilizers Ferric Sulfate Field 2 Row 1 4.79 mass 2008-9-14
-Act 31 Farmer 5 on Farm 9 Sales Circumpolar Starwort Field 2 Row 3 2.81 mass 2019-9-5
-Act 32 Farmer 5 on Farm 9 Fertilizers Ammonium Phosphate Sulfate Field 3 Row 2 1.07 mass 2012-10-11
-Act 33 Farmer 5 on Farm 9 Harvest Whiskerbush Field 1 Row 1 1.49 mass 2002-8-13
-Act 34 Farmer 5 on Farm 9 Pesticides Pirit 1PCS Field 2 Row 3 4.58 mass 2017-12-7
-Act 35 Farmer 5 on Farm 9 Pesticides Life Botanic Natural Pesticide Field 3 Row 1 2.67 mass 2010-2-16
-Act 36 Farmer 5 on Farm 9 Sales St. Augustine Grass Field 1 Row 3 1.28 mass 2007-12-2
-Act 37 Farmer 5 on Farm 9 Sales Chilean Wormseed Field 3 Row 3 1.4 mass 2010-5-10
-Act 38 Farmer 5 on Farm 9 Sales Hairy Jointweed Field 3 Row 3 3.36 mass 2012-7-2
-Act 39 Farmer 5 on Farm 9 Harvest Chilean Wormseed Field 3 Row 2 3.48 pack 2010-4-6
-Act 40 Farmer 5 on Farm 9 Sales Oatgrass Field 1 Row 1 2.65 volume 2015-2-1
-Act 41 Farmer 5 on Farm 9 Pesticides Pirit 1PCS Field 2 Row 1 3.25 volume 2013-12-12
-Act 42 Farmer 5 on Farm 9 Pesticides Life Botanic Natural Pesticide Field 1 Row 1 2.65 pack 2004-2-14
-Act 43 Farmer 5 on Farm 9 Sowing Hairy Jointweed Field 2 Row 1 1.08 mass 2012-12-1
-Act 44 Farmer 5 on Farm 9 Pesticides Pirit 1PCS Field 2 Row 2 1.26 mass 2020-10-30
-Act 45 Farmer 5 on Farm 9 Fertilizers Ferric Sulfate Field 1 Row 2 2.61 volume 2018-6-29
-Act 46 Farmer 5 on Farm 9 Pesticides Curaron 50 Field 2 Row 3 1.55 mass 2005-12-4
-Act 47 Farmer 5 on Farm 9 Pesticides Curaron 50 Field 2 Row 2 4.39 volume 2003-8-19
-Act 48 Farmer 5 on Farm 9 Sales Circumpolar Starwort Field 2 Row 1 3.97 pack 2004-12-5
-Act 49 Farmer 5 on Farm 9 Pesticides Flash 25 Field 3 Row 3 3.2 volume 2007-4-22
-Act 50 Farmer 5 on Farm 9 Sowing Lacy Spleenwort Field 3 Row 1 0.73 pack 2002-8-13
-Act 1 Farmer 5 on Farm 6 Fertilizers Liquid Amm Polyphosphate Field 1 Row 2 0.37 mass 2014-1-21
-Act 2 Farmer 5 on Farm 6 Sales Eggleaf Silktassel Field 3 Row 3 0.12 mass 2016-6-14
-Act 3 Farmer 5 on Farm 6 Pesticides Shamrock Pesticide Field 3 Row 2 4.86 pack 2001-11-13
-Act 4 Farmer 5 on Farm 6 Fertilizers LannateL Field 3 Row 3 1.26 pack 2014-12-22
-Act 5 Farmer 5 on Farm 6 Pesticides Curaron 50 Field 2 Row 1 1.51 volume 2013-8-3
-Act 6 Farmer 5 on Farm 6 Sowing Southern Monardella Field 2 Row 1 3.31 mass 2010-8-26
-Act 7 Farmer 5 on Farm 6 Sowing Dot Lichen Field 1 Row 1 2.43 pack 2018-1-29
-Act 8 Farmer 5 on Farm 6 Harvest Dot Lichen Field 3 Row 1 3.53 pack 2002-9-2
-Act 9 Farmer 5 on Farm 6 Fertilizers Keogn Orien Field 1 Row 3 3.88 mass 2008-5-29
-Act 10 Farmer 5 on Farm 6 Pesticides Shamrock Pesticide Field 3 Row 3 3.94 mass 2013-3-22
-Act 11 Farmer 5 on Farm 6 Sales Dot Lichen Field 3 Row 1 3.66 pack 2015-5-16
-Act 12 Farmer 5 on Farm 6 Harvest Dot Lichen Field 1 Row 2 2.86 mass 2017-4-7
-Act 13 Farmer 5 on Farm 6 Pesticides Curaron 50 Field 3 Row 3 1.24 pack 2002-3-5
-Act 14 Farmer 5 on Farm 6 Harvest Eggleaf Silktassel Field 3 Row 2 4.86 mass 2014-11-8
-Act 15 Farmer 5 on Farm 6 Sales Dot Lichen Field 1 Row 1 2.98 pack 2005-2-19
-Act 16 Farmer 5 on Farm 6 Harvest Atlantic Cup Lichen Field 1 Row 3 3.88 volume 2005-2-10
-Act 17 Farmer 5 on Farm 6 Harvest Moenkopi Milkvetch Field 3 Row 1 4.24 mass 2015-8-27
-Act 18 Farmer 5 on Farm 6 Sowing Jointfir Field 2 Row 2 2.22 volume 2003-1-14
-Act 19 Farmer 5 on Farm 6 Harvest Atlantic Cup Lichen Field 2 Row 1 1.02 pack 2009-12-2
-Act 20 Farmer 5 on Farm 6 Fertilizers Sunpic 3 Field 1 Row 2 1.98 pack 2019-7-7
-Act 21 Farmer 5 on Farm 6 Sowing Atlantic Cup Lichen Field 2 Row 1 4.16 pack 2009-11-11
-Act 22 Farmer 5 on Farm 6 Harvest Atlantic Cup Lichen Field 3 Row 3 2.0 volume 2008-6-15
-Act 23 Farmer 5 on Farm 6 Harvest Pink Tickseed Field 1 Row 2 3.85 pack 2015-6-6
-Act 24 Farmer 5 on Farm 6 Sowing Lesser Canadian St. Johnswort Field 2 Row 3 3.39 pack 2019-8-22
-Act 25 Farmer 5 on Farm 6 Pesticides Methoxychlor (methoxychlor) Field 3 Row 2 4.33 pack 2002-10-19
-Act 26 Farmer 5 on Farm 6 Fertilizers Magnesium Phosphate Field 2 Row 2 3.25 volume 2007-12-9
-Act 27 Farmer 5 on Farm 6 Sales Eggleaf Silktassel Field 1 Row 2 1.4 volume 2010-4-12
-Act 28 Farmer 5 on Farm 6 Fertilizers GuthionChongi 4 Field 1 Row 3 0.61 mass 2007-2-26
-Act 29 Farmer 5 on Farm 6 Fertilizers Calcium Cyanamide Field 1 Row 3 3.06 pack 2005-4-26
-Act 30 Farmer 5 on Farm 6 Fertilizers Liquid Amm Polyphosphate Field 3 Row 2 0.7 mass 2003-2-14
-Act 31 Farmer 5 on Farm 6 Sowing Atlantic Cup Lichen Field 3 Row 2 2.07 pack 2020-6-18
-Act 32 Farmer 5 on Farm 6 Harvest Eggleaf Silktassel Field 2 Row 3 3.72 volume 2010-9-13
-Act 33 Farmer 5 on Farm 6 Sowing Atlantic Cup Lichen Field 3 Row 2 4.07 pack 2009-8-20
-Act 34 Farmer 5 on Farm 6 Harvest Eggleaf Silktassel Field 2 Row 2 0.11 pack 2001-8-6
-Act 35 Farmer 5 on Farm 6 Fertilizers Magnesium Nitrate Field 2 Row 2 0.06 volume 2001-6-12
-Act 36 Farmer 5 on Farm 6 Sales Moenkopi Milkvetch Field 1 Row 2 4.8 mass 2007-10-19
-Act 37 Farmer 5 on Farm 6 Sales Dot Lichen Field 2 Row 2 3.95 mass 2020-11-5
-Act 38 Farmer 5 on Farm 6 Fertilizers Basic Lime Phosphate Field 2 Row 1 3.79 pack 2000-5-19
-Act 39 Farmer 5 on Farm 6 Harvest Atlantic Cup Lichen Field 3 Row 2 1.35 pack 2005-5-23
-Act 40 Farmer 5 on Farm 6 Sales Southern Monardella Field 1 Row 3 0.07 mass 2015-11-17
-Act 41 Farmer 5 on Farm 6 Sowing Lesser Canadian St. Johnswort Field 3 Row 1 2.85 pack 2012-5-25
-Act 42 Farmer 5 on Farm 6 Fertilizers Basic Lime Phosphate Field 3 Row 1 1.07 pack 2017-11-18
-Act 43 Farmer 5 on Farm 6 Sowing Lesser Canadian St. Johnswort Field 3 Row 2 3.4 volume 2000-6-8
-Act 44 Farmer 5 on Farm 6 Harvest Pink Tickseed Field 3 Row 2 2.95 volume 2019-6-4
-Act 45 Farmer 5 on Farm 6 Pesticides YUMYUM Pesticide Field 1 Row 2 1.91 pack 2017-1-2
-Act 46 Farmer 5 on Farm 6 Sowing Lesser Canadian St. Johnswort Field 1 Row 3 3.88 pack 2017-1-17
-Act 47 Farmer 5 on Farm 6 Sales Atlantic Cup Lichen Field 2 Row 1 1.88 pack 2013-9-12
-Act 48 Farmer 5 on Farm 6 Fertilizers LannateL Field 2 Row 2 4.99 mass 2001-3-27
-Act 49 Farmer 5 on Farm 6 Sowing Moenkopi Milkvetch Field 2 Row 3 1.7 pack 2009-12-30
-Act 50 Farmer 5 on Farm 6 Pesticides Shamrock Pesticide Field 1 Row 3 1.87 mass 2020-11-5
-Act 51 Farmer 5 on Farm 6 Fertilizers Phosphoric Acid Field 2 Row 1 3.23 volume 2002-12-14
-Act 1 Farmer 5 on Farm 7 Sowing Moenkopi Milkvetch Field 1 Row 1 3.43 volume 2011-3-18
-Act 2 Farmer 5 on Farm 7 Harvest Hairy White Oldfield Aster Field 1 Row 2 4.24 mass 2004-11-5
-Act 3 Farmer 5 on Farm 7 Fertilizers Warrior Chong Field 2 Row 2 0.49 volume 2001-10-13
-Act 4 Farmer 5 on Farm 7 Harvest Moenkopi Milkvetch Field 1 Row 1 4.6 pack 2000-11-12
-Act 5 Farmer 5 on Farm 7 Sales Bill's Neoparrya Field 1 Row 2 4.25 volume 2010-9-12
-Act 6 Farmer 5 on Farm 7 Harvest Bill's Neoparrya Field 1 Row 1 3.08 volume 2009-1-2
-Act 7 Farmer 5 on Farm 7 Sales Moenkopi Milkvetch Field 3 Row 1 3.33 mass 2004-1-26
-Act 8 Farmer 5 on Farm 7 Fertilizers Limestone, Phosphatic Field 1 Row 2 2.22 volume 2010-6-2
-Act 9 Farmer 5 on Farm 7 Fertilizers Urea Field 1 Row 3 0.54 volume 2011-6-29
-Act 10 Farmer 5 on Farm 7 Fertilizers Ammonium Nitrate Field 1 Row 3 1.82 mass 2011-1-27
-Act 11 Farmer 5 on Farm 7 Pesticides Baythroid 2 (cyfluthrin) Field 2 Row 1 2.31 volume 2005-3-20
-Act 12 Farmer 5 on Farm 7 Pesticides Lorsban 4E (chlorpyrifos) Field 2 Row 2 3.24 pack 2020-11-3
-Act 13 Farmer 5 on Farm 7 Sowing Moenkopi Milkvetch Field 3 Row 3 3.31 volume 2016-3-30
-Act 14 Farmer 5 on Farm 7 Harvest Bill's Neoparrya Field 2 Row 2 2.75 volume 2000-8-26
-Act 15 Farmer 5 on Farm 7 Sales Moenkopi Milkvetch Field 3 Row 1 4.79 pack 2013-5-4
-Act 16 Farmer 5 on Farm 7 Sowing Hairy White Oldfield Aster Field 1 Row 2 3.92 pack 2019-12-30
-Act 17 Farmer 5 on Farm 7 Harvest Hairy White Oldfield Aster Field 2 Row 1 1.84 mass 2015-11-14
-Act 18 Farmer 5 on Farm 7 Sales Hairy White Oldfield Aster Field 1 Row 2 2.56 mass 2008-7-24
-Act 19 Farmer 5 on Farm 7 Pesticides Thiodan 35 Field 1 Row 3 0.81 pack 2019-12-5
-Act 20 Farmer 5 on Farm 7 Pesticides Shamrock Pesticide Field 2 Row 3 4.58 volume 2017-6-1
-Act 21 Farmer 5 on Farm 7 Pesticides Confidor 17.8 Field 3 Row 2 2.34 pack 2015-5-17
-Act 22 Farmer 5 on Farm 7 Harvest Bill's Neoparrya Field 3 Row 1 0.1 mass 2016-8-13
-Act 23 Farmer 5 on Farm 7 Harvest Bill's Neoparrya Field 2 Row 2 1.3 mass 2011-7-20
-Act 24 Farmer 5 on Farm 7 Sowing Moenkopi Milkvetch Field 1 Row 3 0.99 volume 2002-5-6
-Act 25 Farmer 5 on Farm 7 Pesticides YUMYUM Pesticide Field 2 Row 1 2.26 volume 2005-3-8
-Act 26 Farmer 5 on Farm 7 Harvest Bill's Neoparrya Field 2 Row 1 4.07 volume 2016-2-8
-Act 27 Farmer 5 on Farm 7 Sales Hairy White Oldfield Aster Field 3 Row 1 4.35 mass 2016-6-10
-Act 28 Farmer 5 on Farm 7 Sales Moenkopi Milkvetch Field 1 Row 2 1.28 volume 2000-5-14
-Act 29 Farmer 5 on Farm 7 Pesticides YUMYUM Pesticide Field 2 Row 1 3.24 volume 2007-4-21
-Act 30 Farmer 5 on Farm 7 Fertilizers Petronas21 Field 1 Row 2 4.6 mass 2008-8-17
-Act 31 Farmer 5 on Farm 7 Sales Bill's Neoparrya Field 2 Row 2 0.46 mass 2016-1-7
-Act 32 Farmer 5 on Farm 7 Fertilizers KullMein 31 Field 1 Row 1 0.44 pack 2020-7-8
-Act 33 Farmer 5 on Farm 7 Sales Bill's Neoparrya Field 2 Row 3 2.48 mass 2019-7-5
-Act 34 Farmer 5 on Farm 7 Sales Hairy White Oldfield Aster Field 1 Row 1 3.74 pack 2008-3-29
-Act 35 Farmer 5 on Farm 7 Harvest Moenkopi Milkvetch Field 3 Row 1 2.27 mass 2019-3-9
-Act 36 Farmer 5 on Farm 7 Pesticides Lorsban 4E (chlorpyrifos) Field 1 Row 3 1.07 volume 2002-9-6
-Act 37 Farmer 5 on Farm 7 Sowing Moenkopi Milkvetch Field 3 Row 3 1.55 volume 2017-6-27
-Act 38 Farmer 5 on Farm 7 Sowing Moenkopi Milkvetch Field 1 Row 3 3.93 mass 2006-3-22
-Act 39 Farmer 5 on Farm 7 Sales Bill's Neoparrya Field 2 Row 1 4.13 mass 2019-7-3
-Act 40 Farmer 5 on Farm 7 Fertilizers KullMein 31 Field 1 Row 2 1.61 mass 2018-1-27
-Act 41 Farmer 5 on Farm 7 Sowing Hairy White Oldfield Aster Field 3 Row 2 2.42 mass 2012-7-4
-Act 42 Farmer 5 on Farm 7 Harvest Hairy White Oldfield Aster Field 3 Row 1 0.66 mass 2018-1-22
-Act 43 Farmer 5 on Farm 7 Pesticides Pyrethrins Field 2 Row 2 0.18 pack 2020-9-3
-Act 44 Farmer 5 on Farm 7 Pesticides Lorsban 4E (chlorpyrifos) Field 3 Row 3 1.88 pack 2012-6-5
-Act 45 Farmer 5 on Farm 7 Pesticides Duojunling Plants Fungicide Field 1 Row 3 3.71 pack 2009-5-25
-Act 46 Farmer 5 on Farm 7 Sales Moenkopi Milkvetch Field 2 Row 1 1.18 mass 2018-7-21
-Act 47 Farmer 5 on Farm 7 Harvest Hairy White Oldfield Aster Field 1 Row 3 3.63 pack 2005-9-25
-Act 48 Farmer 5 on Farm 7 Harvest Moenkopi Milkvetch Field 2 Row 1 4.38 mass 2004-9-19
-Act 49 Farmer 5 on Farm 7 Pesticides Thiodan 35 Field 3 Row 1 0.21 mass 2012-4-9
-Act 50 Farmer 5 on Farm 7 Sowing Moenkopi Milkvetch Field 3 Row 3 0.07 pack 2012-6-22
-Act 1 Farmer 5 on Farm 2 Fertilizers Keogn Orien Field 1 Row 1 0.07 volume 2008-8-6
-Act 2 Farmer 5 on Farm 2 Harvest Maui Melicope Field 3 Row 3 3.11 pack 2013-9-26
-Act 3 Farmer 5 on Farm 2 Sowing Liverleaf Wintergreen Field 1 Row 1 4.52 volume 2014-8-28
-Act 4 Farmer 5 on Farm 2 Pesticides Asana XL (esfenvalerate) Field 3 Row 1 4.29 volume 2004-2-30
-Act 5 Farmer 5 on Farm 2 Sowing Upright Chickweed Field 1 Row 3 4.84 mass 2004-2-30
-Act 6 Farmer 5 on Farm 2 Sales Toothed Pogonatum Moss Field 1 Row 2 2.61 pack 2019-8-29
-Act 7 Farmer 5 on Farm 2 Fertilizers Calcium Metaphosphate Field 1 Row 3 0.45 mass 2003-5-15
-Act 8 Farmer 5 on Farm 2 Harvest Eggleaf Silktassel Field 3 Row 3 1.78 volume 2018-6-30
-Act 9 Farmer 5 on Farm 2 Harvest Upright Chickweed Field 3 Row 3 1.37 pack 2011-5-27
-Act 10 Farmer 5 on Farm 2 Sales Circumpolar Starwort Field 2 Row 1 2.35 volume 2019-4-18
-Act 11 Farmer 5 on Farm 2 Sowing Rhexophyllum Moss Field 3 Row 3 1.28 volume 2013-5-26
-Act 12 Farmer 5 on Farm 2 Harvest Prickly Bog Sedge Field 1 Row 2 2.28 mass 2011-8-12
-Act 13 Farmer 5 on Farm 2 Fertilizers Calcium Metaphosphate Field 3 Row 3 3.13 pack 2007-6-26
-Act 14 Farmer 5 on Farm 2 Sowing Shining Alkaligrass Field 2 Row 1 4.56 pack 2004-11-18
-Act 15 Farmer 5 on Farm 2 Fertilizers Nitrogen Product Field 1 Row 1 0.97 mass 2001-8-18
-Act 16 Farmer 5 on Farm 2 Sales Toothed Pogonatum Moss Field 1 Row 1 3.62 pack 2002-2-15
-Act 17 Farmer 5 on Farm 2 Sales Shining Alkaligrass Field 1 Row 1 4.27 volume 2014-4-27
-Act 18 Farmer 5 on Farm 2 Fertilizers Ammonium Polysulfide Field 3 Row 1 0.93 pack 2019-12-8
-Act 19 Farmer 5 on Farm 2 Fertilizers Cobalt Sulfate Field 1 Row 2 1.09 volume 2016-9-13
-Act 20 Farmer 5 on Farm 2 Sales Pinaleno Mountain Rubberweed Field 1 Row 2 4.49 volume 2006-10-26
-Act 21 Farmer 5 on Farm 2 Sowing Maui Melicope Field 3 Row 3 1.54 mass 2010-1-11
-Act 22 Farmer 5 on Farm 2 Fertilizers Calcium Metaphosphate Field 1 Row 3 0.92 mass 2013-9-5
-Act 23 Farmer 5 on Farm 2 Pesticides Methidathion (organophosphate) Field 2 Row 3 1.52 volume 2018-4-10
-Act 24 Farmer 5 on Farm 2 Sales Russian Rocket Field 1 Row 1 3.22 pack 2017-9-14
-Act 25 Farmer 5 on Farm 2 Sales Orcutt's Threeawn Field 3 Row 2 3.45 mass 2020-4-18
-Act 26 Farmer 5 on Farm 2 Sales Shining Alkaligrass Field 1 Row 1 0.81 pack 2010-7-24
-Act 27 Farmer 5 on Farm 2 Fertilizers Calcium Metaphosphate Field 1 Row 1 3.45 mass 2020-12-8
-Act 28 Farmer 5 on Farm 2 Harvest Toothed Pogonatum Moss Field 2 Row 3 2.84 mass 2006-1-17
-Act 29 Farmer 5 on Farm 2 Sowing Purplestem Aster Field 2 Row 2 2.16 pack 2013-10-11
-Act 30 Farmer 5 on Farm 2 Pesticides Asana XL (esfenvalerate) Field 3 Row 1 3.56 mass 2000-10-22
-Act 31 Farmer 5 on Farm 2 Harvest Shining Alkaligrass Field 3 Row 1 0.7 volume 2003-4-3
-Act 32 Farmer 5 on Farm 2 Sales Circumpolar Starwort Field 2 Row 1 3.3 mass 2002-9-20
-Act 33 Farmer 5 on Farm 2 Harvest Bluntleaf Waterleaf Field 1 Row 2 1.13 pack 2017-11-18
-Act 34 Farmer 5 on Farm 2 Fertilizers Dup 1.2-1 Field 1 Row 1 0.99 mass 2006-7-14
-Act 35 Farmer 5 on Farm 2 Harvest Toothed Pogonatum Moss Field 3 Row 2 4.61 volume 2002-3-7
-Act 36 Farmer 5 on Farm 2 Harvest Purplestem Aster Field 2 Row 2 0.54 mass 2015-9-25
-Act 37 Farmer 5 on Farm 2 Fertilizers Kelthweiane Field 3 Row 1 3.91 pack 2000-7-7
-Act 38 Farmer 5 on Farm 2 Harvest Prickly Bog Sedge Field 3 Row 2 1.39 volume 2013-4-12
-Act 39 Farmer 5 on Farm 2 Sowing Bluntleaf Waterleaf Field 2 Row 3 3.35 mass 2002-2-7
-Act 40 Farmer 5 on Farm 2 Fertilizers Basic Lime Phosphate Field 1 Row 3 2.84 volume 2009-9-26
-Act 41 Farmer 5 on Farm 2 Fertilizers Calcium Metaphosphate Field 3 Row 2 4.46 mass 2006-4-5
-Act 42 Farmer 5 on Farm 2 Harvest Shining Alkaligrass Field 1 Row 1 2.63 pack 2000-4-1
-Act 43 Farmer 5 on Farm 2 Pesticides Asana XL (esfenvalerate) Field 2 Row 1 3.38 mass 2013-2-24
-Act 44 Farmer 5 on Farm 2 Fertilizers Zinc Petrusia Field 1 Row 3 4.06 pack 2007-4-12
-Act 45 Farmer 5 on Farm 2 Fertilizers Calcium Metaphosphate Field 2 Row 2 4.63 pack 2000-4-20
-Act 46 Farmer 5 on Farm 2 Fertilizers Cobalt Sulfate Field 2 Row 1 2.7 pack 2006-10-12
-Act 47 Farmer 5 on Farm 2 Fertilizers Ammonium Nitrate - Sulfate Field 3 Row 3 4.6 volume 2002-12-24
-Act 48 Farmer 5 on Farm 2 Fertilizers Cobalt Sulfate Field 2 Row 1 4.39 pack 2015-10-22
-Act 49 Farmer 5 on Farm 2 Harvest Orcutt's Threeawn Field 1 Row 2 2.37 volume 2001-1-23
-Act 50 Farmer 5 on Farm 2 Sales Upright Chickweed Field 1 Row 2 1.83 pack 2018-12-23
-Act 1 Farmer 5 on Farm 3 Sales Yunnan Bauhinia Field 1 Row 3 1.15 mass 2009-9-19
-Act 2 Farmer 5 on Farm 3 Fertilizers Kelthweiane Field 2 Row 2 4.05 volume 2003-7-5
-Act 3 Farmer 5 on Farm 3 Harvest Fewleaf Sunflower Field 3 Row 2 1.92 pack 2018-5-3
-Act 4 Farmer 5 on Farm 3 Sowing Lesser Canadian St. Johnswort Field 1 Row 1 3.33 pack 2011-7-25
-Act 5 Farmer 5 on Farm 3 Pesticides Lorsban 4E (chlorpyrifos) Field 3 Row 2 2.83 pack 2007-2-3
-Act 6 Farmer 5 on Farm 3 Harvest Durango Tumblemustard Field 3 Row 1 4.92 mass 2002-10-17
-Act 7 Farmer 5 on Farm 3 Sales Kentucky Lady's Slipper Field 1 Row 1 3.38 volume 2016-5-13
-Act 8 Farmer 5 on Farm 3 Harvest Yunnan Bauhinia Field 3 Row 3 3.14 volume 2006-3-25
-Act 9 Farmer 5 on Farm 3 Sales Yunnan Bauhinia Field 1 Row 1 3.6 volume 2020-5-11
-Act 10 Farmer 5 on Farm 3 Sowing Fewleaf Sunflower Field 2 Row 3 3.68 volume 2004-10-23
-Act 11 Farmer 5 on Farm 3 Pesticides Baythroid 2 (cyfluthrin) Field 1 Row 1 3.18 volume 2001-10-3
-Act 12 Farmer 5 on Farm 3 Fertilizers Manure Salts Field 3 Row 3 0.12 volume 2013-3-5
-Act 13 Farmer 5 on Farm 3 Pesticides Mustang Max (pyrethroid) Field 2 Row 2 1.21 pack 2014-8-4
-Act 14 Farmer 5 on Farm 3 Sales Fewleaf Sunflower Field 2 Row 3 3.15 volume 2002-5-22
-Act 15 Farmer 5 on Farm 3 Sales Fewleaf Sunflower Field 1 Row 3 0.2 mass 2009-1-19
-Act 16 Farmer 5 on Farm 3 Sowing Lesser Canadian St. Johnswort Field 3 Row 1 0.58 mass 2011-1-23
-Act 17 Farmer 5 on Farm 3 Sowing Fewleaf Sunflower Field 3 Row 2 4.84 volume 2005-8-2
-Act 18 Farmer 5 on Farm 3 Sowing Fewleaf Sunflower Field 1 Row 2 4.37 pack 2008-12-17
-Act 19 Farmer 5 on Farm 3 Harvest Kentucky Lady's Slipper Field 1 Row 1 2.67 pack 2005-1-4
-Act 20 Farmer 5 on Farm 3 Sowing Lacy Spleenwort Field 1 Row 2 0.5 pack 2009-11-6
-Act 21 Farmer 5 on Farm 3 Sowing Clay Sand Verbena Field 3 Row 2 0.73 volume 2018-2-13
-Act 22 Farmer 5 on Farm 3 Fertilizers Zinc Petrusia Field 2 Row 3 2.39 pack 2008-2-28
-Act 23 Farmer 5 on Farm 3 Harvest Yunnan Bauhinia Field 2 Row 2 0.05 pack 2014-3-29
-Act 24 Farmer 5 on Farm 3 Fertilizers Superphosphate, Enriched Field 2 Row 1 2.43 volume 2019-4-2
-Act 25 Farmer 5 on Farm 3 Sowing Rock Mousetail Field 1 Row 2 0.87 mass 2005-3-2
-Act 26 Farmer 5 on Farm 3 Pesticides Baba Mr Ganick Organic Pesticide Field 3 Row 1 4.63 pack 2005-11-12
-Act 27 Farmer 5 on Farm 3 Pesticides Vertimac Field 3 Row 3 1.43 volume 2016-8-4
-Act 28 Farmer 5 on Farm 3 Pesticides Baythroid 2 (cyfluthrin) Field 3 Row 3 0.66 volume 2018-7-16
-Act 29 Farmer 5 on Farm 3 Sowing Fewleaf Sunflower Field 1 Row 1 1.38 pack 2018-9-10
-Act 30 Farmer 5 on Farm 3 Harvest Kentucky Lady's Slipper Field 3 Row 1 3.99 volume 2016-9-12
-Act 31 Farmer 5 on Farm 3 Sales Lesser Canadian St. Johnswort Field 2 Row 2 1.41 mass 2014-1-9
-Act 32 Farmer 5 on Farm 3 Pesticides Baba Mr Ganick Organic Pesticide Field 3 Row 1 0.4 volume 2014-11-19
-Act 33 Farmer 5 on Farm 3 Harvest Lesser Canadian St. Johnswort Field 3 Row 2 1.75 volume 2010-7-19
-Act 34 Farmer 5 on Farm 3 Harvest Rock Mousetail Field 2 Row 2 3.05 mass 2017-10-10
-Act 35 Farmer 5 on Farm 3 Harvest Chisos Prairie Acacia Field 1 Row 2 1.13 volume 2015-2-26
-Act 36 Farmer 5 on Farm 3 Harvest Clay Sand Verbena Field 1 Row 1 0.43 volume 2014-4-3
-Act 37 Farmer 5 on Farm 3 Sales Durango Tumblemustard Field 2 Row 1 4.86 volume 2005-4-1
-Act 38 Farmer 5 on Farm 3 Pesticides Baythroid 2 (cyfluthrin) Field 3 Row 3 4.54 volume 2006-7-1
-Act 39 Farmer 5 on Farm 3 Sowing Chisos Prairie Acacia Field 1 Row 3 3.58 mass 2013-11-22
-Act 40 Farmer 5 on Farm 3 Fertilizers Dipel 2X Field 3 Row 2 3.62 volume 2014-4-30
-Act 41 Farmer 5 on Farm 3 Fertilizers Warrior Chong Field 1 Row 1 4.29 mass 2015-12-12
-Act 42 Farmer 5 on Farm 3 Pesticides Bulldock 2.5 Field 2 Row 3 1.43 pack 2003-6-6
-Act 43 Farmer 5 on Farm 3 Sales Rock Mousetail Field 1 Row 2 0.34 mass 2004-4-4
-Act 44 Farmer 5 on Farm 3 Fertilizers LannateL Field 3 Row 3 2.63 pack 2003-11-23
-Act 45 Farmer 5 on Farm 3 Sales Clay Sand Verbena Field 3 Row 1 0.41 mass 2002-12-19
-Act 46 Farmer 5 on Farm 3 Harvest Yunnan Bauhinia Field 3 Row 1 2.92 pack 2006-9-11
-Act 47 Farmer 5 on Farm 3 Sales Kentucky Lady's Slipper Field 1 Row 3 0.12 mass 2004-2-1
-Act 48 Farmer 5 on Farm 3 Sales Fewleaf Sunflower Field 2 Row 2 2.12 pack 2014-1-18
-Act 49 Farmer 5 on Farm 3 Sowing Lesser Canadian St. Johnswort Field 3 Row 2 4.84 volume 2011-2-21
-Act 50 Farmer 5 on Farm 3 Harvest Durango Tumblemustard Field 2 Row 3 4.93 mass 2018-5-24
-Act 51 Farmer 5 on Farm 3 Harvest Durango Tumblemustard Field 3 Row 3 4.62 mass 2002-3-9
-Act 52 Farmer 5 on Farm 3 Fertilizers Manure Salts Field 2 Row 2 1.77 pack 2020-11-27
-Act 1 Farmer 5 on Farm 10 Fertilizers Calcium Ammonium Nitrate 1 Field 2 Row 2 2.76 pack 2012-5-24
-Act 2 Farmer 5 on Farm 10 Sowing Guara Blanca Field 3 Row 2 2.01 pack 2007-4-24
-Act 3 Farmer 5 on Farm 10 Pesticides Nutri Garlic Oil Plus Field 1 Row 1 0.15 mass 2004-2-13
-Act 4 Farmer 5 on Farm 10 Pesticides Asataf 75 Field 3 Row 2 3.16 pack 2003-3-12
-Act 5 Farmer 5 on Farm 10 Harvest Ring Lichen Field 1 Row 2 3.13 volume 2019-3-19
-Act 6 Farmer 5 on Farm 10 Pesticides Baba Mr Ganick Organic Pesticide Field 3 Row 1 1.85 volume 2020-6-26
-Act 7 Farmer 5 on Farm 10 Harvest Chilean Wormseed Field 3 Row 2 0.34 mass 2011-8-15
-Act 8 Farmer 5 on Farm 10 Fertilizers Incrusi Ferti Inc. Pe 349 Field 3 Row 2 1.68 volume 2006-7-17
-Act 9 Farmer 5 on Farm 10 Pesticides Imidacolprad Field 3 Row 3 1.24 pack 2013-4-13
-Act 10 Farmer 5 on Farm 10 Sowing Pleodendron Field 2 Row 1 4.45 mass 2013-1-26
-Act 11 Farmer 5 on Farm 10 Pesticides Asataf 75 Field 1 Row 3 3.67 pack 2010-9-27
-Act 12 Farmer 5 on Farm 10 Harvest Chilean Wormseed Field 2 Row 1 4.28 volume 2009-4-6
-Act 13 Farmer 5 on Farm 10 Fertilizers Calcium Ammonium Nitrate 1 Field 2 Row 1 2.34 volume 2019-10-22
-Act 14 Farmer 5 on Farm 10 Fertilizers Incrusi Ferti Inc. Pe 349 Field 3 Row 3 1.61 mass 2000-3-12
-Act 15 Farmer 5 on Farm 10 Pesticides BAYEreagen Field 2 Row 1 3.94 pack 2010-6-21
-Act 16 Farmer 5 on Farm 10 Fertilizers Manganese Sulfate Field 1 Row 3 3.97 pack 2011-6-7
-Act 17 Farmer 5 on Farm 10 Sales Rock Mousetail Field 1 Row 1 3.68 pack 2000-6-17
-Act 18 Farmer 5 on Farm 10 Sales Pleodendron Field 1 Row 2 3.52 volume 2005-8-7
-Act 19 Farmer 5 on Farm 10 Pesticides Parathion 4E Field 3 Row 1 0.82 volume 2008-8-2
-Act 20 Farmer 5 on Farm 10 Sowing Rock Mousetail Field 2 Row 2 2.29 volume 2007-4-4
-Act 21 Farmer 5 on Farm 10 Sowing Big Bend Woodyaster Field 3 Row 3 0.48 pack 2009-7-12
-Act 22 Farmer 5 on Farm 10 Sowing Hairy Jointweed Field 3 Row 2 1.43 pack 2014-4-6
-Act 23 Farmer 5 on Farm 10 Sales Cnicus Field 2 Row 2 2.44 volume 2018-4-13
-Act 24 Farmer 5 on Farm 10 Sales Brown Beaksedge Field 2 Row 2 4.55 mass 2016-7-22
-Act 25 Farmer 5 on Farm 10 Sowing Maui Melicope Field 2 Row 2 1.22 volume 2018-12-17
-Act 26 Farmer 5 on Farm 10 Sales Clay Sand Verbena Field 3 Row 1 2.88 mass 2012-1-18
-Act 27 Farmer 5 on Farm 10 Sales Guara Blanca Field 2 Row 1 2.66 volume 2012-1-8
-Act 28 Farmer 5 on Farm 10 Sowing Brown Beaksedge Field 1 Row 3 0.8 volume 2009-6-7
-Act 29 Farmer 5 on Farm 10 Harvest Kern Mallow Field 3 Row 1 3.35 pack 2019-3-28
-Act 30 Farmer 5 on Farm 10 Fertilizers Soil Amendment Field 2 Row 1 5.0 pack 2016-12-3
-Act 31 Farmer 5 on Farm 10 Harvest Puckhout Field 2 Row 3 4.83 mass 2002-2-19
-Act 32 Farmer 5 on Farm 10 Harvest Kern Mallow Field 1 Row 2 4.14 volume 2017-9-16
-Act 33 Farmer 5 on Farm 10 Harvest English Walnut Field 3 Row 1 3.28 mass 2004-9-25
-Act 34 Farmer 5 on Farm 10 Sales Ring Lichen Field 2 Row 1 2.92 mass 2012-4-19
-Act 35 Farmer 5 on Farm 10 Pesticides Dimethoate 4E (organophosphate) Field 3 Row 2 2.64 volume 2003-11-27
-Act 36 Farmer 5 on Farm 10 Fertilizers Calcium Nitrate Field 1 Row 1 1.51 volume 2007-9-24
-Act 37 Farmer 5 on Farm 10 Pesticides Dimethoate 4E (organophosphate) Field 3 Row 3 1.34 mass 2019-3-27
-Act 38 Farmer 5 on Farm 10 Sales Cnicus Field 1 Row 1 2.34 pack 2008-12-7
-Act 39 Farmer 5 on Farm 10 Fertilizers Calcium Ammonium Nitrate 1 Field 2 Row 3 4.85 pack 2000-7-30
-Act 40 Farmer 5 on Farm 10 Sales Hairy Jointweed Field 1 Row 1 3.18 volume 2002-7-3
-Act 41 Farmer 5 on Farm 10 Sowing Brown Beaksedge Field 1 Row 2 3.07 pack 2012-12-11
-Act 42 Farmer 5 on Farm 10 Fertilizers Incrusi Ferti Inc. Pe 349 Field 3 Row 2 1.63 mass 2006-12-20
-Act 43 Farmer 5 on Farm 10 Sowing Maui Melicope Field 2 Row 1 2.08 volume 2017-4-4
-Act 44 Farmer 5 on Farm 10 Pesticides Abamectin Field 3 Row 3 1.03 volume 2001-10-1
-Act 45 Farmer 5 on Farm 10 Pesticides Fudan 3G Field 1 Row 1 2.78 volume 2005-6-14
-Act 46 Farmer 5 on Farm 10 Sales Guara Blanca Field 3 Row 1 1.14 volume 2002-12-29
-Act 47 Farmer 5 on Farm 10 Pesticides Baythroid (cyfluthrin) Field 2 Row 3 2.77 volume 2013-7-17
-Act 48 Farmer 5 on Farm 10 Sales Clustered Goldenweed Field 1 Row 3 2.06 volume 2018-11-2
-Act 49 Farmer 5 on Farm 10 Sales Clay Sand Verbena Field 2 Row 1 3.84 volume 2003-8-5
-Act 50 Farmer 5 on Farm 10 Pesticides Dimethoate 4E (organophosphate) Field 2 Row 2 4.54 pack 2015-2-7
+Act 1 Farmer 1 on Farm 5 Sowing Pink Tickseed Field 1 Row 3 0.21 volume 2002-8-26
+Act 2 Farmer 1 on Farm 5 Sales Liverleaf Wintergreen Field 1 Row 1 2.58 mass 2009-12-18
+Act 3 Farmer 1 on Farm 5 Sales Oatgrass Field 2 Row 3 4.9 pack 2020-7-11
+Act 4 Farmer 1 on Farm 5 Pesticides ECPA Field 2 Row 1 3.68 mass 2012-8-29
+Act 5 Farmer 1 on Farm 5 Sales Pink Tickseed Field 2 Row 3 4.82 volume 2020-4-29
+Act 6 Farmer 1 on Farm 5 Fertilizers Bone Meal, Steamed Field 1 Row 3 2.35 volume 2006-9-9
+Act 7 Farmer 1 on Farm 5 Sowing Idaho Blue-eyed Grass Field 1 Row 3 3.72 mass 2015-2-27
+Act 8 Farmer 1 on Farm 5 Fertilizers Aluminum Sulfate Field 3 Row 2 1.9 pack 2009-5-11
+Act 9 Farmer 1 on Farm 5 Harvest Idaho Blue-eyed Grass Field 3 Row 2 0.46 mass 2003-6-23
+Act 10 Farmer 1 on Farm 5 Sowing Atlantic Cup Lichen Field 1 Row 2 4.87 volume 2005-4-11
+Act 11 Farmer 1 on Farm 5 Pesticides Methidathion (organophosphate) Field 1 Row 1 1.35 mass 2012-1-29
+Act 12 Farmer 1 on Farm 5 Pesticides Dimilin (diflubenzuron) Field 2 Row 3 4.45 volume 2016-6-29
+Act 13 Farmer 1 on Farm 5 Sowing Silky Willow Field 3 Row 1 1.11 pack 2006-8-19
+Act 14 Farmer 1 on Farm 5 Sales Pink Tickseed Field 3 Row 1 2.98 volume 2000-12-8
+Act 15 Farmer 1 on Farm 5 Sales Liverleaf Wintergreen Field 2 Row 3 2.13 mass 2016-9-17
+Act 16 Farmer 1 on Farm 5 Harvest Silky Willow Field 2 Row 3 1.42 volume 2018-3-23
+Act 17 Farmer 1 on Farm 5 Pesticides Dimilin (diflubenzuron) Field 2 Row 3 4.6 volume 2015-3-14
+Act 18 Farmer 1 on Farm 5 Sales Atlantic Cup Lichen Field 1 Row 1 0.3 pack 2020-4-20
+Act 19 Farmer 1 on Farm 5 Sales Idaho Blue-eyed Grass Field 3 Row 2 1.31 mass 2017-7-27
+Act 20 Farmer 1 on Farm 5 Harvest Liverleaf Wintergreen Field 3 Row 2 1.36 mass 2015-2-28
+Act 21 Farmer 1 on Farm 5 Sowing Woolly Prairie Clover Field 3 Row 2 0.91 mass 2019-10-30
+Act 22 Farmer 1 on Farm 5 Fertilizers Calcium Nitrate Field 3 Row 2 0.23 volume 2012-6-12
+Act 23 Farmer 1 on Farm 5 Harvest Liverleaf Wintergreen Field 2 Row 3 1.69 volume 2003-6-5
+Act 24 Farmer 1 on Farm 5 Pesticides Dimilin (diflubenzuron) Field 1 Row 1 1.62 volume 2014-1-4
+Act 25 Farmer 1 on Farm 5 Harvest Woolly Prairie Clover Field 1 Row 1 2.97 mass 2018-1-4
+Act 26 Farmer 1 on Farm 5 Harvest Night Scented Orchid Field 1 Row 3 2.79 volume 2008-2-16
+Act 27 Farmer 1 on Farm 5 Sales Night Scented Orchid Field 1 Row 2 2.16 volume 2006-1-16
+Act 28 Farmer 1 on Farm 5 Pesticides Methidathion (organophosphate) Field 3 Row 2 3.45 mass 2010-2-27
+Act 29 Farmer 1 on Farm 5 Sowing Idaho Blue-eyed Grass Field 2 Row 1 4.11 mass 2002-5-7
+Act 30 Farmer 1 on Farm 5 Sowing Idaho Blue-eyed Grass Field 2 Row 2 2.12 pack 2020-1-21
+Act 31 Farmer 1 on Farm 5 Pesticides Slyngenta Field 2 Row 3 4.68 volume 2004-3-10
+Act 32 Farmer 1 on Farm 5 Sales Atlantic Cup Lichen Field 1 Row 3 2.15 volume 2018-3-21
+Act 33 Farmer 1 on Farm 5 Pesticides Cymbush 25 Field 1 Row 3 1.34 mass 2013-7-6
+Act 34 Farmer 1 on Farm 5 Pesticides Vertimac Field 2 Row 3 0.23 mass 2016-12-25
+Act 35 Farmer 1 on Farm 5 Pesticides Dimilin (diflubenzuron) Field 2 Row 2 0.33 volume 2010-12-27
+Act 36 Farmer 1 on Farm 5 Fertilizers Aluminum Sulfate Field 2 Row 3 4.25 mass 2008-10-25
+Act 37 Farmer 1 on Farm 5 Sowing Maui Melicope Field 1 Row 1 3.15 volume 2014-6-20
+Act 38 Farmer 1 on Farm 5 Sales Liverleaf Wintergreen Field 3 Row 3 0.2 mass 2007-8-14
+Act 39 Farmer 1 on Farm 5 Pesticides Dimilin (diflubenzuron) Field 1 Row 2 0.51 mass 2007-3-25
+Act 40 Farmer 1 on Farm 5 Fertilizers Dup 1.2-1 Field 1 Row 3 3.82 volume 2018-4-25
+Act 41 Farmer 1 on Farm 5 Fertilizers Triple Super Phosphate Field 3 Row 1 3.13 pack 2016-7-13
+Act 42 Farmer 1 on Farm 5 Sowing Japanese Elm Field 3 Row 3 4.98 pack 2015-6-15
+Act 43 Farmer 1 on Farm 5 Fertilizers Aluminum Sulfate Field 1 Row 2 1.04 volume 2009-11-3
+Act 44 Farmer 1 on Farm 5 Harvest Oatgrass Field 1 Row 2 1.93 volume 2004-7-13
+Act 45 Farmer 1 on Farm 5 Sales Pink Tickseed Field 3 Row 1 2.92 volume 2011-11-24
+Act 46 Farmer 1 on Farm 5 Harvest Oatgrass Field 1 Row 1 1.22 volume 2018-5-3
+Act 47 Farmer 1 on Farm 5 Pesticides Methidathion (organophosphate) Field 3 Row 3 0.61 volume 2013-12-18
+Act 48 Farmer 1 on Farm 5 Pesticides Cymbush 25 Field 2 Row 3 3.83 volume 2001-5-29
+Act 49 Farmer 1 on Farm 5 Sales Silky Willow Field 3 Row 2 3.8 mass 2016-5-30
+Act 50 Farmer 1 on Farm 5 Pesticides Dimilin (diflubenzuron) Field 3 Row 1 0.31 mass 2003-4-4
+Act 51 Farmer 1 on Farm 5 Fertilizers Potassium Chloride Field 3 Row 2 3.95 volume 2014-9-14
+Act 1 Farmer 1 on Farm 3 Pesticides Sevin (carbaryl) Field 1 Row 1 4.0 pack 2013-11-17
+Act 2 Farmer 1 on Farm 3 Pesticides Endosulfan (organochlorine) Field 1 Row 2 0.86 pack 2016-5-10
+Act 3 Farmer 1 on Farm 3 Fertilizers Calcium Metaphosphate Field 1 Row 3 2.62 mass 2000-4-11
+Act 4 Farmer 1 on Farm 3 Harvest Atlantic Cup Lichen Field 3 Row 1 3.28 volume 2000-10-9
+Act 5 Farmer 1 on Farm 3 Harvest Lesser Canadian St. Johnswort Field 1 Row 1 2.53 mass 2010-5-30
+Act 6 Farmer 1 on Farm 3 Pesticides Imidan 50 WP Field 2 Row 2 1.64 pack 2012-1-30
+Act 7 Farmer 1 on Farm 3 Fertilizers Rikkuan 21 Field 2 Row 3 1.27 mass 2002-12-9
+Act 8 Farmer 1 on Farm 3 Fertilizers QianZeal Field 3 Row 1 4.94 mass 2020-5-17
+Act 9 Farmer 1 on Farm 3 Harvest Rock Mousetail Field 2 Row 3 3.32 mass 2001-6-27
+Act 10 Farmer 1 on Farm 3 Harvest Rock Mousetail Field 2 Row 2 2.15 volume 2019-4-15
+Act 11 Farmer 1 on Farm 3 Pesticides Actara 25 Field 1 Row 2 4.15 volume 2009-3-3
+Act 12 Farmer 1 on Farm 3 Fertilizers Incrusi Ferti Inc. Pe 349 Field 1 Row 3 2.89 mass 2019-3-14
+Act 13 Farmer 1 on Farm 3 Fertilizers Calcium Cyanamide Field 2 Row 3 1.97 pack 2009-3-21
+Act 14 Farmer 1 on Farm 3 Sales Shield Lichen Field 3 Row 3 4.45 volume 2003-7-22
+Act 15 Farmer 1 on Farm 3 Harvest Rock Mousetail Field 2 Row 2 3.64 pack 2012-4-11
+Act 16 Farmer 1 on Farm 3 Pesticides Actara 25 Field 3 Row 3 4.6 mass 2016-5-3
+Act 17 Farmer 1 on Farm 3 Harvest Shield Lichen Field 2 Row 2 1.23 mass 2003-4-22
+Act 18 Farmer 1 on Farm 3 Fertilizers Calcium Cyanamide Field 2 Row 2 4.25 pack 2007-3-27
+Act 19 Farmer 1 on Farm 3 Pesticides Baythroid 2 (cyfluthrin) Field 2 Row 1 4.52 mass 2019-11-13
+Act 20 Farmer 1 on Farm 3 Sales Lesser Canadian St. Johnswort Field 3 Row 2 2.51 mass 2017-10-24
+Act 21 Farmer 1 on Farm 3 Sales Rock Mousetail Field 1 Row 3 3.16 mass 2001-1-28
+Act 22 Farmer 1 on Farm 3 Pesticides TKL Organic Pesticide Field 1 Row 2 2.46 pack 2012-5-12
+Act 23 Farmer 1 on Farm 3 Harvest Atlantic Cup Lichen Field 3 Row 2 4.44 volume 2006-2-24
+Act 24 Farmer 1 on Farm 3 Fertilizers Ammonium Polyphosphate (POLY11) Field 2 Row 3 2.65 pack 2004-7-2
+Act 25 Farmer 1 on Farm 3 Sowing Rock Mousetail Field 3 Row 1 1.98 volume 2011-7-12
+Act 26 Farmer 1 on Farm 3 Sowing Lesser Canadian St. Johnswort Field 2 Row 3 4.86 volume 2003-12-3
+Act 27 Farmer 1 on Farm 3 Sowing Shield Lichen Field 1 Row 1 2.22 volume 2003-2-20
+Act 28 Farmer 1 on Farm 3 Fertilizers QianZeal Field 2 Row 2 2.46 volume 2017-6-5
+Act 29 Farmer 1 on Farm 3 Harvest Atlantic Cup Lichen Field 1 Row 1 4.63 volume 2008-2-17
+Act 30 Farmer 1 on Farm 3 Sales Shield Lichen Field 3 Row 3 3.48 mass 2007-7-5
+Act 31 Farmer 1 on Farm 3 Sales Rock Mousetail Field 2 Row 1 3.34 mass 2006-1-7
+Act 32 Farmer 1 on Farm 3 Sales Shield Lichen Field 3 Row 2 3.29 pack 2017-9-11
+Act 33 Farmer 1 on Farm 3 Sales Rock Mousetail Field 3 Row 3 1.16 pack 2017-10-18
+Act 34 Farmer 1 on Farm 3 Pesticides Actara 25 Field 1 Row 3 0.14 pack 2007-2-2
+Act 35 Farmer 1 on Farm 3 Sowing Atlantic Cup Lichen Field 3 Row 2 0.94 mass 2005-6-23
+Act 36 Farmer 1 on Farm 3 Sowing Shield Lichen Field 3 Row 1 0.14 pack 2008-5-13
+Act 37 Farmer 1 on Farm 3 Sales Rock Mousetail Field 1 Row 2 1.13 volume 2010-12-21
+Act 38 Farmer 1 on Farm 3 Sowing Shield Lichen Field 2 Row 2 1.09 volume 2010-9-12
+Act 39 Farmer 1 on Farm 3 Harvest Rock Mousetail Field 3 Row 2 1.42 mass 2003-2-14
+Act 40 Farmer 1 on Farm 3 Sowing Shield Lichen Field 3 Row 3 0.75 volume 2000-1-26
+Act 41 Farmer 1 on Farm 3 Sowing Shield Lichen Field 1 Row 1 0.51 volume 2018-4-17
+Act 42 Farmer 1 on Farm 3 Fertilizers Calcium Metaphosphate Field 1 Row 2 3.95 mass 2003-11-20
+Act 43 Farmer 1 on Farm 3 Pesticides Baythroid 2 (cyfluthrin) Field 2 Row 3 0.05 pack 2019-3-30
+Act 44 Farmer 1 on Farm 3 Sales Lesser Canadian St. Johnswort Field 1 Row 3 3.59 mass 2012-6-8
+Act 45 Farmer 1 on Farm 3 Harvest Shield Lichen Field 2 Row 2 0.12 mass 2020-10-15
+Act 46 Farmer 1 on Farm 3 Sowing Lesser Canadian St. Johnswort Field 3 Row 1 1.7 pack 2000-6-1
+Act 47 Farmer 1 on Farm 3 Harvest Rock Mousetail Field 2 Row 3 0.88 mass 2016-12-25
+Act 48 Farmer 1 on Farm 3 Sales Shield Lichen Field 1 Row 3 4.53 mass 2013-5-6
+Act 49 Farmer 1 on Farm 3 Fertilizers Precipitated Phosphate Field 1 Row 3 2.86 volume 2000-3-1
+Act 50 Farmer 1 on Farm 3 Fertilizers Ammonium Polyphosphate (POLY11) Field 1 Row 3 1.37 mass 2020-5-26
+Act 1 Farmer 2 on Farm 3 Sales Rock Mousetail Field 1 Row 1 1.39 pack 2011-7-16
+Act 2 Farmer 2 on Farm 3 Sales Lesser Canadian St. Johnswort Field 3 Row 2 4.09 mass 2016-10-7
+Act 3 Farmer 2 on Farm 3 Fertilizers Incrusi Ferti Inc. Pe 349 Field 1 Row 3 3.02 pack 2015-9-14
+Act 4 Farmer 2 on Farm 3 Harvest Lesser Canadian St. Johnswort Field 3 Row 3 0.27 mass 2002-9-25
+Act 5 Farmer 2 on Farm 3 Sales Lesser Canadian St. Johnswort Field 1 Row 2 4.45 pack 2007-4-6
+Act 6 Farmer 2 on Farm 3 Sales Lesser Canadian St. Johnswort Field 2 Row 3 0.56 volume 2005-12-26
+Act 7 Farmer 2 on Farm 3 Sowing Lesser Canadian St. Johnswort Field 2 Row 3 2.37 mass 2015-1-7
+Act 8 Farmer 2 on Farm 3 Sowing Shield Lichen Field 2 Row 2 4.12 mass 2001-8-25
+Act 9 Farmer 2 on Farm 3 Pesticides Imidan 50 WP Field 1 Row 3 1.66 pack 2011-5-30
+Act 10 Farmer 2 on Farm 3 Harvest Shield Lichen Field 3 Row 1 0.55 mass 2020-5-14
+Act 11 Farmer 2 on Farm 3 Harvest Rock Mousetail Field 1 Row 2 3.44 volume 2013-10-24
+Act 12 Farmer 2 on Farm 3 Fertilizers Ammonium Polyphosphate (POLY11) Field 3 Row 3 2.58 volume 2003-9-10
+Act 13 Farmer 2 on Farm 3 Sowing Lesser Canadian St. Johnswort Field 2 Row 1 4.28 pack 2013-8-12
+Act 14 Farmer 2 on Farm 3 Sowing Rock Mousetail Field 2 Row 1 2.61 pack 2008-7-26
+Act 15 Farmer 2 on Farm 3 Harvest Lesser Canadian St. Johnswort Field 3 Row 1 3.85 pack 2007-9-10
+Act 16 Farmer 2 on Farm 3 Sales Rock Mousetail Field 3 Row 3 1.44 volume 2007-12-13
+Act 17 Farmer 2 on Farm 3 Sowing Rock Mousetail Field 3 Row 1 1.54 mass 2015-6-28
+Act 18 Farmer 2 on Farm 3 Fertilizers Kelthweiane Field 1 Row 2 4.69 pack 2014-4-18
+Act 19 Farmer 2 on Farm 3 Pesticides Esfenvalerate (pyrethroid) Field 3 Row 3 0.65 mass 2020-3-11
+Act 20 Farmer 2 on Farm 3 Pesticides Actara 25 Field 3 Row 1 2.99 pack 2000-3-20
+Act 21 Farmer 2 on Farm 3 Sowing Rock Mousetail Field 3 Row 2 1.14 volume 2006-9-12
+Act 22 Farmer 2 on Farm 3 Pesticides Imidan 50 WP Field 2 Row 3 3.61 volume 2002-8-11
+Act 23 Farmer 2 on Farm 3 Fertilizers Precipitated Phosphate Field 1 Row 2 2.88 volume 2012-11-9
+Act 24 Farmer 2 on Farm 3 Sales Atlantic Cup Lichen Field 1 Row 3 1.98 volume 2014-3-23
+Act 25 Farmer 2 on Farm 3 Sales Rock Mousetail Field 2 Row 1 2.83 pack 2019-11-9
+Act 26 Farmer 2 on Farm 3 Sales Shield Lichen Field 3 Row 1 2.66 pack 2004-11-18
+Act 27 Farmer 2 on Farm 3 Sowing Rock Mousetail Field 1 Row 1 4.02 pack 2005-2-22
+Act 28 Farmer 2 on Farm 3 Sowing Lesser Canadian St. Johnswort Field 3 Row 3 2.61 mass 2015-2-22
+Act 29 Farmer 2 on Farm 3 Pesticides Endosulfan (organochlorine) Field 3 Row 2 0.72 volume 2005-10-3
+Act 30 Farmer 2 on Farm 3 Sales Rock Mousetail Field 3 Row 3 0.6 volume 2010-9-24
+Act 31 Farmer 2 on Farm 3 Pesticides Diazinon (organophosphate), Field 3 Row 3 3.52 volume 2005-3-21
+Act 32 Farmer 2 on Farm 3 Fertilizers Precipitated Phosphate Field 2 Row 2 0.95 mass 2005-1-9
+Act 33 Farmer 2 on Farm 3 Sowing Lesser Canadian St. Johnswort Field 2 Row 3 0.68 mass 2010-1-29
+Act 34 Farmer 2 on Farm 3 Sowing Rock Mousetail Field 2 Row 2 1.35 pack 2004-3-4
+Act 35 Farmer 2 on Farm 3 Harvest Atlantic Cup Lichen Field 2 Row 1 3.35 mass 2017-4-21
+Act 36 Farmer 2 on Farm 3 Harvest Lesser Canadian St. Johnswort Field 3 Row 1 4.05 volume 2002-5-25
+Act 37 Farmer 2 on Farm 3 Harvest Shield Lichen Field 3 Row 3 3.32 mass 2006-11-24
+Act 38 Farmer 2 on Farm 3 Fertilizers Incrusi Ferti Inc. Pe 349 Field 1 Row 3 3.17 mass 2002-1-10
+Act 39 Farmer 2 on Farm 3 Sowing Shield Lichen Field 3 Row 1 2.35 mass 2001-10-26
+Act 40 Farmer 2 on Farm 3 Harvest Lesser Canadian St. Johnswort Field 2 Row 1 0.48 mass 2010-7-22
+Act 41 Farmer 2 on Farm 3 Fertilizers Incrusi Ferti Inc. Pe 349 Field 2 Row 2 4.24 pack 2010-12-1
+Act 42 Farmer 2 on Farm 3 Sales Atlantic Cup Lichen Field 2 Row 2 4.44 mass 2012-4-7
+Act 43 Farmer 2 on Farm 3 Fertilizers QianZeal Field 1 Row 1 3.68 mass 2018-10-15
+Act 44 Farmer 2 on Farm 3 Harvest Shield Lichen Field 3 Row 1 1.8 pack 2011-1-13
+Act 45 Farmer 2 on Farm 3 Sowing Rock Mousetail Field 2 Row 1 2.45 pack 2004-1-8
+Act 46 Farmer 2 on Farm 3 Sowing Atlantic Cup Lichen Field 1 Row 1 0.93 pack 2006-3-19
+Act 47 Farmer 2 on Farm 3 Sales Rock Mousetail Field 3 Row 1 2.36 mass 2003-8-19
+Act 48 Farmer 2 on Farm 3 Fertilizers QianZeal Field 3 Row 3 0.79 mass 2010-12-4
+Act 49 Farmer 2 on Farm 3 Fertilizers Precipitated Phosphate Field 2 Row 3 4.47 mass 2011-12-1
+Act 50 Farmer 2 on Farm 3 Pesticides Actara 25 Field 2 Row 3 0.37 volume 2007-3-25
+Act 1 Farmer 2 on Farm 7 Sales San Clemente Island Woodland-star Field 2 Row 1 4.53 mass 2003-5-11
+Act 2 Farmer 2 on Farm 7 Sowing Appalachian Valley Rose Field 3 Row 3 4.71 volume 2016-12-14
+Act 3 Farmer 2 on Farm 7 Harvest Drummond's Bruchia Moss Field 3 Row 3 3.5 mass 2005-12-19
+Act 4 Farmer 2 on Farm 7 Sales Streambank Springbeauty Field 3 Row 2 4.69 volume 2020-7-10
+Act 5 Farmer 2 on Farm 7 Sales Bryoid Fissidens Moss Field 3 Row 3 0.95 mass 2019-12-13
+Act 6 Farmer 2 on Farm 7 Sales Appalachian Valley Rose Field 2 Row 1 1.65 mass 2010-10-22
+Act 7 Farmer 2 on Farm 7 Sowing Appalachian Valley Rose Field 2 Row 2 2.15 mass 2002-4-14
+Act 8 Farmer 2 on Farm 7 Fertilizers Kelthweiane Field 1 Row 1 1.7 pack 2020-6-15
+Act 9 Farmer 2 on Farm 7 Harvest Twocleft Stenogyne Field 1 Row 3 0.59 volume 2019-5-29
+Act 10 Farmer 2 on Farm 7 Harvest Pleodendron Field 1 Row 3 3.8 mass 2015-12-15
+Act 11 Farmer 2 on Farm 7 Harvest Fewleaf Sunflower Field 1 Row 1 4.91 mass 2010-9-3
+Act 12 Farmer 2 on Farm 7 Sales Cliff Beardtongue Field 2 Row 1 0.71 volume 2003-3-4
+Act 13 Farmer 2 on Farm 7 Pesticides Neemix Field 2 Row 2 4.65 mass 2000-3-4
+Act 14 Farmer 2 on Farm 7 Sales Needletip Trumpets Field 2 Row 3 3.12 mass 2019-1-9
+Act 15 Farmer 2 on Farm 7 Sales Silky Willow Field 1 Row 1 2.26 volume 2010-8-8
+Act 16 Farmer 2 on Farm 7 Sowing Rough Century Plant Field 3 Row 3 1.83 volume 2010-5-12
+Act 17 Farmer 2 on Farm 7 Sales Appalachian Valley Rose Field 2 Row 3 2.71 mass 2010-12-24
+Act 18 Farmer 2 on Farm 7 Harvest Kentucky Lady's Slipper Field 3 Row 2 2.51 mass 2020-12-19
+Act 19 Farmer 2 on Farm 7 Harvest Rock Mousetail Field 3 Row 2 4.62 volume 2013-6-4
+Act 20 Farmer 2 on Farm 7 Fertilizers Nufos 4Ecwq Field 1 Row 1 4.69 mass 2012-2-30
+Act 21 Farmer 2 on Farm 7 Sales St. Augustine Grass Field 2 Row 3 4.54 pack 2006-6-30
+Act 22 Farmer 2 on Farm 7 Fertilizers Sunpic 3 Field 2 Row 1 2.04 volume 2012-8-17
+Act 23 Farmer 2 on Farm 7 Harvest Fewleaf Sunflower Field 2 Row 1 1.62 mass 2000-6-12
+Act 24 Farmer 2 on Farm 7 Harvest Clay Sand Verbena Field 1 Row 2 2.98 mass 2020-8-24
+Act 25 Farmer 2 on Farm 7 Sowing Rock Mousetail Field 3 Row 1 0.5 volume 2004-9-23
+Act 26 Farmer 2 on Farm 7 Fertilizers Nufos 4Ecwq Field 3 Row 3 2.32 volume 2019-9-29
+Act 27 Farmer 2 on Farm 7 Fertilizers Calcium Ammonium Nitrate 1 Field 1 Row 1 2.01 mass 2018-8-28
+Act 28 Farmer 2 on Farm 7 Harvest San Clemente Island Woodland-star Field 3 Row 1 3.76 mass 2016-1-30
+Act 29 Farmer 2 on Farm 7 Fertilizers Calcium Nitrate Field 1 Row 2 2.42 mass 2003-10-8
+Act 30 Farmer 2 on Farm 7 Fertilizers Calcium Nitrate Field 3 Row 1 4.58 pack 2009-8-14
+Act 31 Farmer 2 on Farm 7 Sales Needletip Trumpets Field 3 Row 2 1.54 pack 2001-3-29
+Act 32 Farmer 2 on Farm 7 Fertilizers Calcium Ammonium Nitrate 1 Field 3 Row 3 0.7 pack 2011-11-17
+Act 33 Farmer 2 on Farm 7 Sales Needletip Trumpets Field 2 Row 3 1.37 volume 2009-1-25
+Act 34 Farmer 2 on Farm 7 Sowing Streambank Springbeauty Field 2 Row 2 3.53 volume 2019-2-18
+Act 35 Farmer 2 on Farm 7 Fertilizers Basic Lime Phosphate Field 3 Row 1 4.5 volume 2020-12-10
+Act 36 Farmer 2 on Farm 7 Fertilizers Kelthweiane Field 1 Row 3 2.74 volume 2012-11-10
+Act 37 Farmer 2 on Farm 7 Sowing Fewleaf Sunflower Field 3 Row 3 1.9 volume 2007-3-12
+Act 38 Farmer 2 on Farm 7 Harvest Woolly Prairie Clover Field 1 Row 3 4.32 pack 2008-9-10
+Act 39 Farmer 2 on Farm 7 Sowing Drummond's Bruchia Moss Field 3 Row 2 2.2 volume 2013-12-20
+Act 40 Farmer 2 on Farm 7 Fertilizers Kelthweiane Field 1 Row 3 3.56 mass 2007-10-30
+Act 41 Farmer 2 on Farm 7 Harvest Silky Willow Field 3 Row 3 1.32 mass 2020-8-19
+Act 42 Farmer 2 on Farm 7 Harvest Atlantic Cup Lichen Field 1 Row 1 2.82 pack 2017-5-11
+Act 43 Farmer 2 on Farm 7 Fertilizers Kelthweiane Field 1 Row 1 4.3 pack 2014-9-29
+Act 44 Farmer 2 on Farm 7 Harvest Oso Manzanita Field 3 Row 3 1.21 pack 2001-11-11
+Act 45 Farmer 2 on Farm 7 Fertilizers Nufos 4Ecwq Field 2 Row 2 4.21 pack 2003-2-17
+Act 46 Farmer 2 on Farm 7 Fertilizers Kelthweiane Field 2 Row 2 0.35 mass 2000-8-29
+Act 47 Farmer 2 on Farm 7 Sales Kern Mallow Field 1 Row 1 0.46 volume 2009-8-21
+Act 48 Farmer 2 on Farm 7 Pesticides Superban 20 Field 2 Row 3 2.31 mass 2003-1-6
+Act 49 Farmer 2 on Farm 7 Fertilizers Calcium Nitrate Field 1 Row 2 0.94 mass 2017-12-17
+Act 50 Farmer 2 on Farm 7 Sowing Cliff Beardtongue Field 2 Row 2 3.44 mass 2002-6-30
+Act 51 Farmer 2 on Farm 7 Sowing Rough Century Plant Field 3 Row 1 2.53 volume 2016-12-23
+Act 52 Farmer 2 on Farm 7 Harvest Fewleaf Sunflower Field 3 Row 1 4.5 pack 2009-7-26
+Act 1 Farmer 2 on Farm 8 Sales Summer Farewell Field 1 Row 1 4.71 pack 2001-12-17
+Act 2 Farmer 2 on Farm 8 Fertilizers Thiodan Field 3 Row 1 1.99 pack 2015-5-17
+Act 3 Farmer 2 on Farm 8 Sales Brown Beaksedge Field 2 Row 3 4.53 pack 2008-10-15
+Act 4 Farmer 2 on Farm 8 Sowing Redbird Flower Field 3 Row 1 2.63 mass 2001-1-22
+Act 5 Farmer 2 on Farm 8 Sowing Oatgrass Field 2 Row 1 3.37 volume 2017-8-21
+Act 6 Farmer 2 on Farm 8 Harvest Summer Farewell Field 2 Row 1 1.15 mass 2008-12-4
+Act 7 Farmer 2 on Farm 8 Pesticides Imidacolprad Field 2 Row 2 3.22 pack 2016-9-2
+Act 8 Farmer 2 on Farm 8 Sowing Guara Blanca Field 3 Row 1 0.91 mass 2001-2-30
+Act 9 Farmer 2 on Farm 8 Sales Rhexophyllum Moss Field 1 Row 1 2.9 volume 2004-4-24
+Act 10 Farmer 2 on Farm 8 Sowing Redbird Flower Field 3 Row 3 2.08 mass 2020-2-6
+Act 11 Farmer 2 on Farm 8 Sales Guara Blanca Field 3 Row 2 3.6 mass 2014-10-2
+Act 12 Farmer 2 on Farm 8 Sowing Rhexophyllum Moss Field 2 Row 1 0.67 mass 2016-8-30
+Act 13 Farmer 2 on Farm 8 Harvest Summer Farewell Field 1 Row 3 3.52 mass 2008-10-2
+Act 14 Farmer 2 on Farm 8 Harvest Needletip Trumpets Field 1 Row 3 1.6 mass 2007-5-1
+Act 15 Farmer 2 on Farm 8 Sales Summer Farewell Field 2 Row 3 1.95 mass 2002-12-16
+Act 16 Farmer 2 on Farm 8 Sowing Hybrid Oak Field 3 Row 1 0.1 volume 2011-8-25
+Act 17 Farmer 2 on Farm 8 Pesticides Esfenvalerate (pyrethroid) Field 3 Row 3 4.99 volume 2012-3-20
+Act 18 Farmer 2 on Farm 8 Fertilizers Kelthweiane Field 3 Row 1 4.56 pack 2005-8-17
+Act 19 Farmer 2 on Farm 8 Pesticides Neemazl-F Field 2 Row 1 2.81 volume 2003-1-13
+Act 20 Farmer 2 on Farm 8 Pesticides Flash 25 Field 1 Row 1 2.37 mass 2006-4-30
+Act 21 Farmer 2 on Farm 8 Sales Drummond's Bruchia Moss Field 2 Row 1 1.83 volume 2008-2-14
+Act 22 Farmer 2 on Farm 8 Sales Night Scented Orchid Field 3 Row 3 0.97 pack 2006-1-26
+Act 23 Farmer 2 on Farm 8 Harvest San Bernardino Spineflower Field 1 Row 2 3.62 volume 2003-9-19
+Act 24 Farmer 2 on Farm 8 Sales Oatgrass Field 1 Row 3 2.71 pack 2011-10-5
+Act 25 Farmer 2 on Farm 8 Pesticides Lorsban 4E (chlorpyrifos) Field 3 Row 2 1.67 pack 2012-4-11
+Act 26 Farmer 2 on Farm 8 Fertilizers Nitrogen Field 2 Row 2 4.54 pack 2005-1-8
+Act 27 Farmer 2 on Farm 8 Harvest Hairy Jointweed Field 3 Row 2 2.36 mass 2002-2-27
+Act 28 Farmer 2 on Farm 8 Fertilizers Ferric Sulfate Field 3 Row 2 0.14 volume 2011-6-30
+Act 29 Farmer 2 on Farm 8 Harvest Dimocarpus Field 3 Row 3 3.07 volume 2006-2-24
+Act 30 Farmer 2 on Farm 8 Harvest Night Scented Orchid Field 3 Row 3 1.73 pack 2016-8-21
+Act 31 Farmer 2 on Farm 8 Harvest Hairy Jointweed Field 2 Row 3 2.59 pack 2006-7-14
+Act 32 Farmer 2 on Farm 8 Harvest Amerorchis Field 1 Row 3 4.1 mass 2002-6-15
+Act 33 Farmer 2 on Farm 8 Harvest San Bernardino Spineflower Field 2 Row 2 4.79 volume 2002-11-16
+Act 34 Farmer 2 on Farm 8 Harvest San Bernardino Spineflower Field 1 Row 2 1.09 mass 2005-8-4
+Act 35 Farmer 2 on Farm 8 Harvest Peach Springs Canyon Cholla Field 3 Row 3 2.79 mass 2002-12-8
+Act 36 Farmer 2 on Farm 8 Fertilizers Anhydrous Ammonia Field 1 Row 3 2.55 volume 2008-3-26
+Act 37 Farmer 2 on Farm 8 Pesticides Carbaryl (N-methyl carbamate), Field 1 Row 2 2.62 volume 2018-5-6
+Act 38 Farmer 2 on Farm 8 Harvest Drummond's Bruchia Moss Field 1 Row 2 2.28 pack 2004-11-28
+Act 39 Farmer 2 on Farm 8 Harvest San Bernardino Spineflower Field 2 Row 2 3.33 volume 2015-1-15
+Act 40 Farmer 2 on Farm 8 Fertilizers Ferric Sulfate Field 2 Row 2 2.2 pack 2004-2-23
+Act 41 Farmer 2 on Farm 8 Sowing Bryoid Fissidens Moss Field 2 Row 2 1.02 mass 2020-5-12
+Act 42 Farmer 2 on Farm 8 Fertilizers Kelthweiane Field 2 Row 1 2.69 mass 2015-11-5
+Act 43 Farmer 2 on Farm 8 Harvest Silky Willow Field 1 Row 2 1.77 volume 2013-3-12
+Act 44 Farmer 2 on Farm 8 Sowing Brown Beaksedge Field 1 Row 1 0.74 mass 2002-2-10
+Act 45 Farmer 2 on Farm 8 Sowing Proliferous Pink Field 1 Row 1 1.23 mass 2013-5-16
+Act 46 Farmer 2 on Farm 8 Harvest Silky Willow Field 3 Row 1 1.96 mass 2016-3-14
+Act 47 Farmer 2 on Farm 8 Fertilizers Kelthweiane Field 3 Row 1 4.52 volume 2011-9-19
+Act 48 Farmer 2 on Farm 8 Fertilizers Urea Field 2 Row 1 2.74 volume 2011-2-14
+Act 49 Farmer 2 on Farm 8 Sowing Bryoid Fissidens Moss Field 1 Row 1 3.88 pack 2010-8-27
+Act 50 Farmer 2 on Farm 8 Sales Brown Beaksedge Field 2 Row 3 0.92 mass 2006-1-10
+Act 1 Farmer 3 on Farm 8 Sales San Bernardino Spineflower Field 3 Row 3 0.43 mass 2010-6-17
+Act 2 Farmer 3 on Farm 8 Sowing Guara Blanca Field 3 Row 2 3.96 pack 2013-12-29
+Act 3 Farmer 3 on Farm 8 Sales Dimocarpus Field 1 Row 2 2.59 mass 2005-12-11
+Act 4 Farmer 3 on Farm 8 Sales Vail Lake Ceanothus Field 2 Row 1 2.98 pack 2000-9-10
+Act 5 Farmer 3 on Farm 8 Pesticides Imidan (phosmet) Field 2 Row 2 2.55 mass 2006-2-21
+Act 6 Farmer 3 on Farm 8 Harvest Rhexophyllum Moss Field 1 Row 2 3.31 pack 2017-6-2
+Act 7 Farmer 3 on Farm 8 Harvest Guara Blanca Field 2 Row 3 4.09 volume 2000-3-1
+Act 8 Farmer 3 on Farm 8 Pesticides Metasystox 25 Field 3 Row 2 4.24 mass 2020-4-7
+Act 9 Farmer 3 on Farm 8 Sowing Guara Blanca Field 3 Row 2 3.01 mass 2008-6-4
+Act 10 Farmer 3 on Farm 8 Harvest Silky Willow Field 3 Row 3 1.82 pack 2006-8-1
+Act 11 Farmer 3 on Farm 8 Sales Prickly Bog Sedge Field 2 Row 3 4.98 pack 2008-7-13
+Act 12 Farmer 3 on Farm 8 Sales Night Scented Orchid Field 2 Row 2 3.06 pack 2011-9-24
+Act 13 Farmer 3 on Farm 8 Sales Hybrid Oak Field 3 Row 2 0.09 volume 2013-5-11
+Act 14 Farmer 3 on Farm 8 Fertilizers Calcium Nitrate Field 3 Row 2 3.54 volume 2004-2-25
+Act 15 Farmer 3 on Farm 8 Sales Needletip Trumpets Field 3 Row 2 4.15 mass 2017-10-1
+Act 16 Farmer 3 on Farm 8 Harvest Peach Springs Canyon Cholla Field 3 Row 2 3.6 mass 2010-11-10
+Act 17 Farmer 3 on Farm 8 Harvest Summer Farewell Field 2 Row 2 3.07 mass 2008-1-25
+Act 18 Farmer 3 on Farm 8 Fertilizers Warrior Chong Field 3 Row 1 4.48 pack 2012-11-26
+Act 19 Farmer 3 on Farm 8 Sales Proliferous Pink Field 2 Row 3 3.75 mass 2000-11-9
+Act 20 Farmer 3 on Farm 8 Sales Guara Blanca Field 2 Row 2 2.47 volume 2012-11-9
+Act 21 Farmer 3 on Farm 8 Harvest Amerorchis Field 1 Row 2 0.31 volume 2015-2-30
+Act 22 Farmer 3 on Farm 8 Harvest Redbird Flower Field 2 Row 1 1.76 pack 2014-10-16
+Act 23 Farmer 3 on Farm 8 Fertilizers Precipitated Phosphate Field 3 Row 3 2.64 mass 2008-10-22
+Act 24 Farmer 3 on Farm 8 Fertilizers Warrior Chong Field 3 Row 2 4.74 pack 2019-4-15
+Act 25 Farmer 3 on Farm 8 Fertilizers Kelthweiane Field 3 Row 1 4.03 volume 2006-4-19
+Act 26 Farmer 3 on Farm 8 Pesticides Fastac BASF Field 2 Row 3 4.37 pack 2019-5-30
+Act 27 Farmer 3 on Farm 8 Sowing Bryoid Fissidens Moss Field 1 Row 3 2.37 mass 2014-5-14
+Act 28 Farmer 3 on Farm 8 Fertilizers Thiodan Field 1 Row 3 0.54 mass 2019-8-25
+Act 29 Farmer 3 on Farm 8 Sowing Drummond's Bruchia Moss Field 2 Row 2 1.62 pack 2018-12-2
+Act 30 Farmer 3 on Farm 8 Pesticides Slyngenta Field 1 Row 2 0.52 mass 2018-5-25
+Act 31 Farmer 3 on Farm 8 Pesticides Imidacolprad Field 3 Row 1 0.17 mass 2018-2-28
+Act 32 Farmer 3 on Farm 8 Fertilizers Calcium Nitrate Field 1 Row 2 1.18 mass 2017-1-7
+Act 33 Farmer 3 on Farm 8 Pesticides Thiodan (endosulfan) Field 1 Row 2 2.45 pack 2016-8-23
+Act 34 Farmer 3 on Farm 8 Harvest Dimocarpus Field 1 Row 2 3.86 volume 2015-4-9
+Act 35 Farmer 3 on Farm 8 Fertilizers Nitrogen Field 1 Row 1 3.26 mass 2017-6-15
+Act 36 Farmer 3 on Farm 8 Sales Summer Farewell Field 1 Row 3 4.52 pack 2012-4-25
+Act 37 Farmer 3 on Farm 8 Sowing Cliff Beardtongue Field 2 Row 1 0.7 volume 2017-6-1
+Act 38 Farmer 3 on Farm 8 Pesticides Esfenvalerate (pyrethroid) Field 3 Row 3 0.69 mass 2001-5-28
+Act 39 Farmer 3 on Farm 8 Sowing Night Scented Orchid Field 1 Row 1 2.67 pack 2000-6-11
+Act 40 Farmer 3 on Farm 8 Harvest Silky Willow Field 3 Row 2 0.08 volume 2013-9-10
+Act 41 Farmer 3 on Farm 8 Pesticides Lorsban 4E (chlorpyrifos) Field 3 Row 2 2.95 mass 2014-12-12
+Act 42 Farmer 3 on Farm 8 Pesticides Shamrock Pesticide Field 2 Row 1 3.69 pack 2001-7-18
+Act 43 Farmer 3 on Farm 8 Pesticides Imidan (phosmet) Field 1 Row 2 3.94 volume 2014-1-30
+Act 44 Farmer 3 on Farm 8 Fertilizers Kelthweiane Field 2 Row 3 1.71 pack 2007-12-13
+Act 45 Farmer 3 on Farm 8 Pesticides Punkaso 10 Field 3 Row 1 4.68 volume 2016-6-11
+Act 46 Farmer 3 on Farm 8 Pesticides Esfenvalerate (pyrethroid) Field 2 Row 1 4.65 volume 2017-6-18
+Act 47 Farmer 3 on Farm 8 Sales Rhexophyllum Moss Field 3 Row 3 4.99 pack 2007-4-9
+Act 48 Farmer 3 on Farm 8 Harvest Proliferous Pink Field 3 Row 2 2.89 mass 2002-1-22
+Act 49 Farmer 3 on Farm 8 Sales Amerorchis Field 3 Row 3 2.37 pack 2004-10-15
+Act 50 Farmer 3 on Farm 8 Sowing Hybrid Oak Field 2 Row 1 3.23 volume 2003-7-25
+Act 51 Farmer 3 on Farm 8 Sales San Bernardino Spineflower Field 2 Row 3 2.1 pack 2017-10-9
+Act 1 Farmer 3 on Farm 10 Sales Greenleaf Five Eyes Field 3 Row 3 4.03 volume 2010-7-23
+Act 2 Farmer 3 on Farm 10 Pesticides Carbaryl (N-methyl carbamate), Field 3 Row 3 2.63 volume 2001-11-8
+Act 3 Farmer 3 on Farm 10 Fertilizers Ferric Sulfate Field 3 Row 2 2.97 mass 2009-12-8
+Act 4 Farmer 3 on Farm 10 Harvest Idaho Blue-eyed Grass Field 1 Row 2 2.02 mass 2008-3-24
+Act 5 Farmer 3 on Farm 10 Pesticides Cruiser 5FS (thiamethoxam) Field 3 Row 3 3.64 pack 2015-10-25
+Act 6 Farmer 3 on Farm 10 Sowing Twocleft Stenogyne Field 3 Row 2 1.65 pack 2010-5-7
+Act 7 Farmer 3 on Farm 10 Fertilizers Aqua Ammonia Field 2 Row 2 1.3 volume 2008-11-9
+Act 8 Farmer 3 on Farm 10 Pesticides Artemisia argyi Wormwood Field 1 Row 2 0.59 mass 2009-8-20
+Act 9 Farmer 3 on Farm 10 Fertilizers Aqua Ammonia Field 1 Row 2 2.27 pack 2006-9-25
+Act 10 Farmer 3 on Farm 10 Fertilizers Aqua Ammonia Field 1 Row 1 1.08 volume 2018-7-24
+Act 11 Farmer 3 on Farm 10 Harvest Twocleft Stenogyne Field 3 Row 2 0.1 volume 2018-9-20
+Act 12 Farmer 3 on Farm 10 Fertilizers Eggshells Field 1 Row 3 2.48 mass 2018-8-7
+Act 13 Farmer 3 on Farm 10 Fertilizers Eggshells Field 1 Row 3 2.31 pack 2012-11-4
+Act 14 Farmer 3 on Farm 10 Sales San Clemente Island Woodland-star Field 2 Row 2 4.51 volume 2010-1-1
+Act 15 Farmer 3 on Farm 10 Harvest Hybrid Oak Field 2 Row 1 2.47 volume 2012-1-3
+Act 16 Farmer 3 on Farm 10 Pesticides Neemazl-F Field 2 Row 3 1.46 volume 2007-11-13
+Act 17 Farmer 3 on Farm 10 Sales Clay Sand Verbena Field 3 Row 1 4.45 mass 2001-2-21
+Act 18 Farmer 3 on Farm 10 Sowing Twocleft Stenogyne Field 2 Row 3 3.08 pack 2011-6-6
+Act 19 Farmer 3 on Farm 10 Harvest Greenleaf Five Eyes Field 1 Row 2 1.68 pack 2001-11-5
+Act 20 Farmer 3 on Farm 10 Harvest Idaho Blue-eyed Grass Field 1 Row 3 1.78 pack 2006-2-2
+Act 21 Farmer 3 on Farm 10 Sales Diablo Hareleaf Field 3 Row 2 2.23 mass 2003-10-11
+Act 22 Farmer 3 on Farm 10 Harvest Diablo Hareleaf Field 3 Row 2 3.42 pack 2002-1-5
+Act 23 Farmer 3 on Farm 10 Fertilizers Aqua Ammonia Field 3 Row 1 3.8 pack 2012-7-13
+Act 24 Farmer 3 on Farm 10 Sowing Hybrid Oak Field 3 Row 2 0.36 mass 2013-9-15
+Act 25 Farmer 3 on Farm 10 Harvest Pink Tickseed Field 2 Row 2 0.92 mass 2003-8-24
+Act 26 Farmer 3 on Farm 10 Fertilizers Calcium Cyanamide Field 1 Row 3 2.21 volume 2010-12-16
+Act 27 Farmer 3 on Farm 10 Fertilizers Eggshells Field 3 Row 1 1.28 pack 2007-4-3
+Act 28 Farmer 3 on Farm 10 Harvest Diablo Hareleaf Field 3 Row 3 1.78 mass 2016-3-28
+Act 29 Farmer 3 on Farm 10 Pesticides Carbaryl (N-methyl carbamate), Field 2 Row 2 4.66 pack 2007-3-28
+Act 30 Farmer 3 on Farm 10 Fertilizers Eggshells Field 3 Row 3 4.36 mass 2011-12-12
+Act 31 Farmer 3 on Farm 10 Harvest Idaho Blue-eyed Grass Field 2 Row 2 1.03 pack 2004-1-30
+Act 32 Farmer 3 on Farm 10 Pesticides CWQ Plant Pesticide Field 3 Row 2 1.59 volume 2015-6-12
+Act 33 Farmer 3 on Farm 10 Sowing Greenleaf Five Eyes Field 1 Row 3 4.92 pack 2010-1-4
+Act 34 Farmer 3 on Farm 10 Harvest Clay Sand Verbena Field 3 Row 1 3.3 volume 2004-11-5
+Act 35 Farmer 3 on Farm 10 Pesticides Lorsban 4E (chlorpyrifos) Field 2 Row 2 0.41 pack 2006-6-9
+Act 36 Farmer 3 on Farm 10 Harvest Idaho Blue-eyed Grass Field 2 Row 2 4.32 volume 2005-8-19
+Act 37 Farmer 3 on Farm 10 Pesticides EcoPest Field 2 Row 1 4.8 pack 2009-6-25
+Act 38 Farmer 3 on Farm 10 Pesticides Neemix Field 1 Row 2 2.21 volume 2016-1-28
+Act 39 Farmer 3 on Farm 10 Sowing Twocleft Stenogyne Field 3 Row 3 3.34 volume 2002-12-4
+Act 40 Farmer 3 on Farm 10 Fertilizers Calcium Cyanamide Field 3 Row 3 3.21 mass 2002-10-11
+Act 41 Farmer 3 on Farm 10 Fertilizers Norm 188 Field 3 Row 2 2.02 mass 2006-8-2
+Act 42 Farmer 3 on Farm 10 Pesticides EcoPest Field 3 Row 1 3.34 volume 2009-11-11
+Act 43 Farmer 3 on Farm 10 Fertilizers Calcium Metaphosphate Field 1 Row 2 3.05 mass 2006-4-30
+Act 44 Farmer 3 on Farm 10 Sowing Swamp Peperomia Field 1 Row 2 0.94 mass 2015-12-13
+Act 45 Farmer 3 on Farm 10 Sales Hybrid Oak Field 3 Row 2 3.85 volume 2004-5-3
+Act 46 Farmer 3 on Farm 10 Sowing Swamp Peperomia Field 2 Row 1 4.23 pack 2008-2-14
+Act 47 Farmer 3 on Farm 10 Pesticides Artemisia argyi Wormwood Field 3 Row 2 0.69 volume 2007-4-16
+Act 48 Farmer 3 on Farm 10 Fertilizers Aqua Ammonia Field 2 Row 3 3.18 mass 2005-6-28
+Act 49 Farmer 3 on Farm 10 Sales Swamp Peperomia Field 1 Row 2 4.55 volume 2017-12-6
+Act 50 Farmer 3 on Farm 10 Sales Twocleft Stenogyne Field 1 Row 1 4.81 mass 2000-11-14
+Act 1 Farmer 3 on Farm 4 Pesticides Vertimac Field 1 Row 3 2.09 mass 2011-3-11
+Act 2 Farmer 3 on Farm 4 Harvest Puckhout Field 3 Row 1 3.41 volume 2019-11-29
+Act 3 Farmer 3 on Farm 4 Fertilizers Zinc Petrusia Field 1 Row 3 1.94 volume 2013-9-11
+Act 4 Farmer 3 on Farm 4 Harvest Maui Melicope Field 3 Row 1 4.45 mass 2019-5-18
+Act 5 Farmer 3 on Farm 4 Pesticides Duojunling Plants Fungicide Field 1 Row 1 3.57 mass 2019-6-20
+Act 6 Farmer 3 on Farm 4 Harvest Rough Century Plant Field 1 Row 1 1.29 volume 2007-11-16
+Act 7 Farmer 3 on Farm 4 Sowing Calabar Bean Field 1 Row 1 4.11 pack 2004-2-19
+Act 8 Farmer 3 on Farm 4 Sowing Pleodendron Field 3 Row 3 1.94 pack 2007-10-8
+Act 9 Farmer 3 on Farm 4 Sales Shield Lichen Field 2 Row 1 4.27 pack 2010-10-10
+Act 10 Farmer 3 on Farm 4 Fertilizers Calcium Metaphosphate Field 3 Row 1 1.56 mass 2008-5-2
+Act 11 Farmer 3 on Farm 4 Sales Chilean Wormseed Field 2 Row 3 4.8 pack 2014-9-13
+Act 12 Farmer 3 on Farm 4 Sales Maui Melicope Field 2 Row 1 1.8 mass 2000-8-27
+Act 13 Farmer 3 on Farm 4 Fertilizers Nitric Phosphate Field 3 Row 1 4.79 mass 2002-10-24
+Act 14 Farmer 3 on Farm 4 Pesticides Gaucho 480 (imidacloprid) Field 2 Row 2 2.41 volume 2012-3-17
+Act 15 Farmer 3 on Farm 4 Pesticides Parathion 4E Field 3 Row 2 4.64 pack 2013-10-8
+Act 16 Farmer 3 on Farm 4 Harvest Yunnan Bauhinia Field 3 Row 2 4.15 volume 2008-11-17
+Act 17 Farmer 3 on Farm 4 Pesticides Flash 25 Field 1 Row 2 2.55 volume 2004-9-26
+Act 18 Farmer 3 on Farm 4 Sales Dimocarpus Field 3 Row 1 2.91 mass 2012-3-17
+Act 19 Farmer 3 on Farm 4 Fertilizers Eggshells Field 1 Row 2 0.27 volume 2017-3-15
+Act 20 Farmer 3 on Farm 4 Sowing Silky Willow Field 1 Row 2 3.22 pack 2007-5-4
+Act 21 Farmer 3 on Farm 4 Harvest Drummond's Bruchia Moss Field 1 Row 3 4.46 mass 2010-12-5
+Act 22 Farmer 3 on Farm 4 Fertilizers Calcium Metaphosphate Field 3 Row 3 0.06 mass 2011-9-24
+Act 23 Farmer 3 on Farm 4 Pesticides Triadimefon Rust Smut Fungicide Field 1 Row 3 2.49 mass 2006-9-28
+Act 24 Farmer 3 on Farm 4 Harvest Ballhead Waterleaf Field 1 Row 2 0.0 volume 2003-1-17
+Act 25 Farmer 3 on Farm 4 Pesticides Gaucho 480 (imidacloprid) Field 2 Row 2 1.61 mass 2010-2-26
+Act 26 Farmer 3 on Farm 4 Harvest Thorn-mint Field 3 Row 2 4.6 pack 2001-4-19
+Act 27 Farmer 3 on Farm 4 Sales Indian Teasel Field 2 Row 2 2.03 mass 2010-6-30
+Act 28 Farmer 3 on Farm 4 Harvest German Iris Field 3 Row 2 1.55 pack 2011-9-28
+Act 29 Farmer 3 on Farm 4 Pesticides Triadimefon Rust Smut Fungicide Field 1 Row 2 0.1 volume 2008-6-22
+Act 30 Farmer 3 on Farm 4 Sowing Liverleaf Wintergreen Field 1 Row 3 3.95 volume 2016-10-9
+Act 31 Farmer 3 on Farm 4 Sales Toothed Pogonatum Moss Field 3 Row 1 2.15 mass 2019-1-20
+Act 32 Farmer 3 on Farm 4 Sowing Hairy White Oldfield Aster Field 1 Row 3 2.85 mass 2015-9-27
+Act 33 Farmer 3 on Farm 4 Sowing Hairy White Oldfield Aster Field 1 Row 3 2.64 pack 2015-5-13
+Act 34 Farmer 3 on Farm 4 Sales Thorn-mint Field 3 Row 2 4.12 pack 2020-3-5
+Act 35 Farmer 3 on Farm 4 Sales Drummond's Bruchia Moss Field 2 Row 3 1.74 pack 2009-2-23
+Act 36 Farmer 3 on Farm 4 Sales Yunnan Bauhinia Field 3 Row 1 4.98 mass 2011-12-21
+Act 37 Farmer 3 on Farm 4 Harvest Dimocarpus Field 3 Row 2 0.32 volume 2007-5-13
+Act 38 Farmer 3 on Farm 4 Sowing Silky Willow Field 1 Row 2 0.58 volume 2015-8-7
+Act 39 Farmer 3 on Farm 4 Sales Calabar Bean Field 1 Row 2 3.94 pack 2003-9-24
+Act 40 Farmer 3 on Farm 4 Harvest Hybrid Oak Field 3 Row 1 3.55 volume 2010-11-10
+Act 41 Farmer 3 on Farm 4 Harvest Dimocarpus Field 2 Row 3 2.97 pack 2013-3-19
+Act 42 Farmer 3 on Farm 4 Fertilizers Petronas21 Field 1 Row 1 1.72 pack 2006-5-20
+Act 43 Farmer 3 on Farm 4 Pesticides Parathion 4E Field 3 Row 3 2.68 volume 2002-12-9
+Act 44 Farmer 3 on Farm 4 Sowing Calabar Bean Field 2 Row 2 4.52 volume 2000-2-23
+Act 45 Farmer 3 on Farm 4 Fertilizers Cwqgon 400 Field 1 Row 2 3.53 pack 2010-10-3
+Act 46 Farmer 3 on Farm 4 Sowing Ballhead Waterleaf Field 2 Row 2 2.23 mass 2016-1-8
+Act 47 Farmer 3 on Farm 4 Sales Woolly Prairie Clover Field 3 Row 3 3.26 volume 2008-7-4
+Act 48 Farmer 3 on Farm 4 Sales German Iris Field 3 Row 1 4.9 volume 2000-8-28
+Act 49 Farmer 3 on Farm 4 Sales Woolly Prairie Clover Field 1 Row 3 3.79 mass 2015-2-28
+Act 50 Farmer 3 on Farm 4 Fertilizers Calcium Metaphosphate Field 1 Row 3 2.64 volume 2006-7-12
+Act 1 Farmer 3 on Farm 1 Sales Black Gram Field 1 Row 2 2.32 volume 2001-4-15
+Act 2 Farmer 3 on Farm 1 Fertilizers Calcium Ammonium Nitrate 1 Field 1 Row 1 3.69 pack 2007-3-10
+Act 3 Farmer 3 on Farm 1 Sowing Staghorn Fern Field 1 Row 2 1.34 volume 2015-12-22
+Act 4 Farmer 3 on Farm 1 Sowing Fewleaf Sunflower Field 1 Row 3 1.89 pack 2011-1-5
+Act 5 Farmer 3 on Farm 1 Sowing Woolly Prairie Clover Field 1 Row 2 3.05 mass 2020-8-14
+Act 6 Farmer 3 on Farm 1 Sales Puckhout Field 1 Row 1 4.6 pack 2002-4-11
+Act 7 Farmer 3 on Farm 1 Sales Puckhout Field 3 Row 3 2.82 volume 2016-1-10
+Act 8 Farmer 3 on Farm 1 Pesticides Malathion (organophosphate), Field 1 Row 1 3.07 pack 2010-2-26
+Act 9 Farmer 3 on Farm 1 Sowing Puckhout Field 1 Row 1 3.25 pack 2010-10-13
+Act 10 Farmer 3 on Farm 1 Fertilizers Incrusi Ferti Inc. Pe 349 Field 2 Row 1 0.9 mass 2010-6-24
+Act 11 Farmer 3 on Farm 1 Harvest Puckhout Field 2 Row 3 1.43 pack 2014-2-17
+Act 12 Farmer 3 on Farm 1 Sowing Redbird Flower Field 3 Row 2 2.65 mass 2019-9-6
+Act 13 Farmer 3 on Farm 1 Harvest Fewleaf Sunflower Field 2 Row 3 1.8 pack 2006-9-12
+Act 14 Farmer 3 on Farm 1 Pesticides Cygon 400 (dimethoate) Field 2 Row 2 3.45 mass 2011-6-7
+Act 15 Farmer 3 on Farm 1 Fertilizers Soil Amendment Field 3 Row 2 1.96 volume 2011-3-21
+Act 16 Farmer 3 on Farm 1 Sales Black Gram Field 2 Row 3 1.81 pack 2017-8-11
+Act 17 Farmer 3 on Farm 1 Sales Greenleaf Five Eyes Field 1 Row 2 0.22 pack 2007-3-14
+Act 18 Farmer 3 on Farm 1 Sowing Peach Springs Canyon Cholla Field 1 Row 1 3.7 mass 2000-2-29
+Act 19 Farmer 3 on Farm 1 Sowing Fewleaf Sunflower Field 1 Row 3 0.46 mass 2003-4-29
+Act 20 Farmer 3 on Farm 1 Harvest Staghorn Fern Field 1 Row 1 4.05 mass 2020-3-30
+Act 21 Farmer 3 on Farm 1 Fertilizers Incrusi Ferti Inc. Pe 349 Field 2 Row 3 2.0 volume 2004-8-14
+Act 22 Farmer 3 on Farm 1 Sales Hairy White Oldfield Aster Field 3 Row 3 4.79 mass 2011-11-12
+Act 23 Farmer 3 on Farm 1 Harvest Black Gram Field 3 Row 1 3.03 pack 2000-3-27
+Act 24 Farmer 3 on Farm 1 Harvest Hairy White Oldfield Aster Field 3 Row 3 4.95 pack 2015-10-5
+Act 25 Farmer 3 on Farm 1 Harvest Staghorn Fern Field 1 Row 1 2.71 mass 2004-10-6
+Act 26 Farmer 3 on Farm 1 Fertilizers Magnesium Phosphate Field 1 Row 3 0.05 volume 2001-7-15
+Act 27 Farmer 3 on Farm 1 Pesticides Asataf 75 Field 1 Row 3 2.88 mass 2014-5-29
+Act 28 Farmer 3 on Farm 1 Pesticides Asataf 75 Field 2 Row 1 3.43 pack 2014-1-21
+Act 29 Farmer 3 on Farm 1 Harvest Greenleaf Five Eyes Field 1 Row 2 2.68 volume 2006-10-23
+Act 30 Farmer 3 on Farm 1 Pesticides Cygon 400 (dimethoate) Field 3 Row 2 1.92 pack 2009-11-11
+Act 31 Farmer 3 on Farm 1 Sowing Cnicus Field 1 Row 3 3.53 volume 2017-1-7
+Act 32 Farmer 3 on Farm 1 Harvest Staghorn Fern Field 3 Row 3 1.4 pack 2002-2-9
+Act 33 Farmer 3 on Farm 1 Fertilizers Calcium Nitrate Field 1 Row 1 0.69 mass 2005-9-22
+Act 34 Farmer 3 on Farm 1 Pesticides Superban 20 Field 3 Row 1 3.23 pack 2007-5-13
+Act 35 Farmer 3 on Farm 1 Harvest Greenleaf Five Eyes Field 2 Row 2 1.17 mass 2020-12-13
+Act 36 Farmer 3 on Farm 1 Sales Hairy White Oldfield Aster Field 3 Row 3 0.05 pack 2001-1-11
+Act 37 Farmer 3 on Farm 1 Sowing Cnicus Field 1 Row 2 1.26 pack 2003-11-3
+Act 38 Farmer 3 on Farm 1 Sales Calabar Bean Field 2 Row 1 1.66 mass 2007-3-22
+Act 39 Farmer 3 on Farm 1 Pesticides Cygon 400 (dimethoate) Field 1 Row 2 4.56 mass 2012-5-16
+Act 40 Farmer 3 on Farm 1 Sales Hairy White Oldfield Aster Field 1 Row 1 3.29 pack 2004-3-12
+Act 41 Farmer 3 on Farm 1 Sowing Blueflower Eryngo Field 2 Row 1 1.07 pack 2019-3-21
+Act 42 Farmer 3 on Farm 1 Fertilizers Calcium Ammonium Nitrate 1 Field 3 Row 1 1.09 volume 2000-9-12
+Act 43 Farmer 3 on Farm 1 Fertilizers Pinocialy56 Field 3 Row 1 2.1 volume 2003-2-17
+Act 44 Farmer 3 on Farm 1 Sales Greenleaf Five Eyes Field 1 Row 2 4.04 volume 2014-3-18
+Act 45 Farmer 3 on Farm 1 Sowing Redbird Flower Field 3 Row 3 1.17 pack 2001-9-17
+Act 46 Farmer 3 on Farm 1 Sowing Woolly Prairie Clover Field 3 Row 3 1.13 mass 2004-3-10
+Act 47 Farmer 3 on Farm 1 Sowing Cnicus Field 1 Row 1 2.94 volume 2018-4-3
+Act 48 Farmer 3 on Farm 1 Pesticides Cygon 400 (dimethoate) Field 1 Row 2 0.36 pack 2006-7-22
+Act 49 Farmer 3 on Farm 1 Pesticides Cygon 400 (dimethoate) Field 1 Row 2 0.71 mass 2013-6-24
+Act 50 Farmer 3 on Farm 1 Harvest Redbird Flower Field 1 Row 2 3.8 mass 2017-8-21
+Act 51 Farmer 3 on Farm 1 Fertilizers Calcium Nitrate Field 3 Row 1 1.12 pack 2000-5-6
+Act 1 Farmer 4 on Farm 5 Harvest Silky Willow Field 2 Row 2 2.24 pack 2013-8-24
+Act 2 Farmer 4 on Farm 5 Sowing Maui Melicope Field 1 Row 2 0.15 pack 2001-3-4
+Act 3 Farmer 4 on Farm 5 Sowing Pink Tickseed Field 1 Row 3 4.89 mass 2000-3-21
+Act 4 Farmer 4 on Farm 5 Sales Japanese Elm Field 2 Row 3 3.02 mass 2008-8-12
+Act 5 Farmer 4 on Farm 5 Pesticides Methidathion (organophosphate) Field 3 Row 1 4.43 mass 2003-8-8
+Act 6 Farmer 4 on Farm 5 Fertilizers Luwac 991 Field 1 Row 2 2.3 mass 2019-2-14
+Act 7 Farmer 4 on Farm 5 Fertilizers Dup 1.2-1 Field 2 Row 3 0.52 volume 2003-4-7
+Act 8 Farmer 4 on Farm 5 Harvest Silky Willow Field 3 Row 1 3.33 mass 2010-2-8
+Act 9 Farmer 4 on Farm 5 Sales Woolly Prairie Clover Field 1 Row 2 0.98 mass 2008-7-3
+Act 10 Farmer 4 on Farm 5 Pesticides Cymbush 25 Field 1 Row 3 4.08 mass 2018-2-14
+Act 11 Farmer 4 on Farm 5 Pesticides Vertimac Field 1 Row 2 4.52 mass 2013-8-13
+Act 12 Farmer 4 on Farm 5 Sowing Oatgrass Field 2 Row 1 0.0 pack 2008-2-3
+Act 13 Farmer 4 on Farm 5 Harvest Idaho Blue-eyed Grass Field 1 Row 2 4.0 volume 2010-10-6
+Act 14 Farmer 4 on Farm 5 Harvest Atlantic Cup Lichen Field 3 Row 2 1.05 mass 2009-7-5
+Act 15 Farmer 4 on Farm 5 Sales Liverleaf Wintergreen Field 3 Row 3 3.05 pack 2006-12-24
+Act 16 Farmer 4 on Farm 5 Sowing Woolly Prairie Clover Field 2 Row 2 4.17 pack 2010-8-5
+Act 17 Farmer 4 on Farm 5 Sowing Maui Melicope Field 1 Row 1 0.7 pack 2008-10-24
+Act 18 Farmer 4 on Farm 5 Pesticides Baythroid 2 (cyfluthrin) Field 1 Row 3 3.59 volume 2002-1-6
+Act 19 Farmer 4 on Farm 5 Harvest Pink Tickseed Field 2 Row 3 3.76 volume 2008-4-7
+Act 20 Farmer 4 on Farm 5 Harvest Japanese Elm Field 2 Row 2 2.29 volume 2002-1-1
+Act 21 Farmer 4 on Farm 5 Harvest Japanese Elm Field 1 Row 1 0.74 pack 2004-8-14
+Act 22 Farmer 4 on Farm 5 Fertilizers Kelthweiane Field 3 Row 1 1.51 volume 2005-3-29
+Act 23 Farmer 4 on Farm 5 Sowing Idaho Blue-eyed Grass Field 2 Row 1 3.32 volume 2009-4-9
+Act 24 Farmer 4 on Farm 5 Harvest Night Scented Orchid Field 3 Row 2 1.49 pack 2007-9-4
+Act 25 Farmer 4 on Farm 5 Pesticides MSR (oxydemeton-methyl) Field 1 Row 3 3.28 volume 2014-9-22
+Act 26 Farmer 4 on Farm 5 Sales Night Scented Orchid Field 3 Row 3 3.0 pack 2017-5-12
+Act 27 Farmer 4 on Farm 5 Harvest Maui Melicope Field 1 Row 3 4.21 volume 2009-8-30
+Act 28 Farmer 4 on Farm 5 Pesticides ECPA Field 1 Row 3 2.75 volume 2010-5-12
+Act 29 Farmer 4 on Farm 5 Sales Japanese Elm Field 1 Row 3 0.97 mass 2019-7-21
+Act 30 Farmer 4 on Farm 5 Sales Pink Tickseed Field 3 Row 3 1.89 volume 2006-2-10
+Act 31 Farmer 4 on Farm 5 Fertilizers Ammonium Phosphate Sulfate Field 2 Row 1 0.46 pack 2002-8-12
+Act 32 Farmer 4 on Farm 5 Pesticides Slyngenta Field 1 Row 1 2.93 mass 2015-5-5
+Act 33 Farmer 4 on Farm 5 Harvest Silky Willow Field 1 Row 3 0.25 mass 2004-6-4
+Act 34 Farmer 4 on Farm 5 Harvest Maui Melicope Field 3 Row 1 0.54 pack 2001-10-4
+Act 35 Farmer 4 on Farm 5 Sowing Maui Melicope Field 2 Row 1 4.25 volume 2009-8-5
+Act 36 Farmer 4 on Farm 5 Pesticides Dimilin (diflubenzuron) Field 2 Row 1 4.34 mass 2009-6-26
+Act 37 Farmer 4 on Farm 5 Pesticides ECPA Field 2 Row 1 1.9 pack 2008-7-10
+Act 38 Farmer 4 on Farm 5 Harvest Maui Melicope Field 2 Row 2 3.62 pack 2001-8-24
+Act 39 Farmer 4 on Farm 5 Fertilizers Eggshells Field 1 Row 1 4.26 volume 2007-3-2
+Act 40 Farmer 4 on Farm 5 Sales Oatgrass Field 1 Row 3 4.55 mass 2012-4-9
+Act 41 Farmer 4 on Farm 5 Sales Japanese Elm Field 2 Row 3 4.36 volume 2001-3-26
+Act 42 Farmer 4 on Farm 5 Sowing Pink Tickseed Field 3 Row 3 0.06 mass 2020-9-2
+Act 43 Farmer 4 on Farm 5 Sowing Night Scented Orchid Field 1 Row 2 0.57 volume 2004-4-19
+Act 44 Farmer 4 on Farm 5 Sowing Maui Melicope Field 2 Row 2 0.91 pack 2003-9-6
+Act 45 Farmer 4 on Farm 5 Harvest Idaho Blue-eyed Grass Field 1 Row 3 3.6 volume 2018-1-12
+Act 46 Farmer 4 on Farm 5 Sales Oatgrass Field 1 Row 1 2.72 mass 2011-11-27
+Act 47 Farmer 4 on Farm 5 Pesticides Cymbush 25 Field 2 Row 3 1.09 mass 2014-12-28
+Act 48 Farmer 4 on Farm 5 Sales Atlantic Cup Lichen Field 3 Row 1 2.91 mass 2006-12-6
+Act 49 Farmer 4 on Farm 5 Fertilizers Cwqgon 400 Field 1 Row 3 3.41 pack 2002-11-17
+Act 50 Farmer 4 on Farm 5 Sowing Liverleaf Wintergreen Field 3 Row 1 1.49 pack 2015-2-7
+Act 51 Farmer 4 on Farm 5 Fertilizers Ammonium Nitrate - Sulfate Field 2 Row 1 0.58 pack 2017-9-20
+Act 1 Farmer 4 on Farm 1 Pesticides Asataf 75 Field 2 Row 3 2.95 volume 2009-11-19
+Act 2 Farmer 4 on Farm 1 Pesticides Malathion (organophosphate), Field 2 Row 1 3.73 mass 2016-6-7
+Act 3 Farmer 4 on Farm 1 Pesticides Superban 20 Field 3 Row 2 0.34 pack 2008-8-26
+Act 4 Farmer 4 on Farm 1 Sowing Blueflower Eryngo Field 3 Row 3 0.06 pack 2019-9-26
+Act 5 Farmer 4 on Farm 1 Harvest Staghorn Fern Field 2 Row 3 1.43 pack 2015-3-4
+Act 6 Farmer 4 on Farm 1 Harvest Blueflower Eryngo Field 3 Row 2 1.7 volume 2014-6-8
+Act 7 Farmer 4 on Farm 1 Sales Peach Springs Canyon Cholla Field 3 Row 3 2.89 pack 2019-7-21
+Act 8 Farmer 4 on Farm 1 Sales Puckhout Field 1 Row 2 2.73 volume 2009-10-20
+Act 9 Farmer 4 on Farm 1 Sales Redbird Flower Field 1 Row 1 3.42 pack 2010-6-8
+Act 10 Farmer 4 on Farm 1 Sowing Peach Springs Canyon Cholla Field 1 Row 1 1.42 pack 2003-3-9
+Act 11 Farmer 4 on Farm 1 Sales Cnicus Field 3 Row 3 1.75 pack 2018-1-13
+Act 12 Farmer 4 on Farm 1 Fertilizers Cwqgon 400 Field 3 Row 3 3.33 mass 2009-6-17
+Act 13 Farmer 4 on Farm 1 Harvest Redbird Flower Field 2 Row 1 0.27 volume 2015-2-16
+Act 14 Farmer 4 on Farm 1 Fertilizers Calcium Nitrate Field 3 Row 3 1.32 mass 2003-2-14
+Act 15 Farmer 4 on Farm 1 Fertilizers Incrusi Ferti Inc. Pe 349 Field 3 Row 2 2.71 pack 2001-3-20
+Act 16 Farmer 4 on Farm 1 Harvest Puckhout Field 3 Row 3 2.81 mass 2009-3-7
+Act 17 Farmer 4 on Farm 1 Pesticides Superban 20 Field 2 Row 1 3.24 mass 2015-5-27
+Act 18 Farmer 4 on Farm 1 Harvest Fewleaf Sunflower Field 2 Row 2 1.52 mass 2011-5-19
+Act 19 Farmer 4 on Farm 1 Fertilizers Soil Amendment Field 3 Row 3 0.67 pack 2009-9-24
+Act 20 Farmer 4 on Farm 1 Harvest Woolly Prairie Clover Field 2 Row 2 2.73 pack 2015-7-22
+Act 21 Farmer 4 on Farm 1 Harvest Black Gram Field 1 Row 1 3.81 volume 2008-8-1
+Act 22 Farmer 4 on Farm 1 Fertilizers Magnesium Phosphate Field 2 Row 3 3.9 pack 2020-12-7
+Act 23 Farmer 4 on Farm 1 Fertilizers Calcium Ammonium Nitrate 1 Field 3 Row 1 3.48 pack 2007-11-14
+Act 24 Farmer 4 on Farm 1 Harvest Redbird Flower Field 1 Row 2 0.9 pack 2010-10-1
+Act 25 Farmer 4 on Farm 1 Sowing Hairy White Oldfield Aster Field 3 Row 2 3.46 mass 2014-1-18
+Act 26 Farmer 4 on Farm 1 Sales Greenleaf Five Eyes Field 1 Row 3 2.02 volume 2018-11-23
+Act 27 Farmer 4 on Farm 1 Sales Woolly Prairie Clover Field 2 Row 2 2.14 pack 2001-1-26
+Act 28 Farmer 4 on Farm 1 Sales Greenleaf Five Eyes Field 1 Row 2 3.61 volume 2002-9-14
+Act 29 Farmer 4 on Farm 1 Fertilizers Soil Amendment Field 3 Row 1 1.97 mass 2019-7-22
+Act 30 Farmer 4 on Farm 1 Sales Peach Springs Canyon Cholla Field 3 Row 2 4.23 pack 2012-1-10
+Act 31 Farmer 4 on Farm 1 Sales Redbird Flower Field 2 Row 3 3.31 volume 2005-11-28
+Act 32 Farmer 4 on Farm 1 Pesticides Asataf 75 Field 3 Row 1 4.91 mass 2016-12-12
+Act 33 Farmer 4 on Farm 1 Pesticides Malathion (organophosphate), Field 1 Row 3 0.06 volume 2001-6-5
+Act 34 Farmer 4 on Farm 1 Pesticides Malathion (organophosphate), Field 1 Row 1 1.05 pack 2001-6-10
+Act 35 Farmer 4 on Farm 1 Harvest Blueflower Eryngo Field 1 Row 2 2.93 mass 2017-5-3
+Act 36 Farmer 4 on Farm 1 Fertilizers Calcium Nitrate Field 3 Row 1 0.27 mass 2014-12-9
+Act 37 Farmer 4 on Farm 1 Sowing Puckhout Field 1 Row 2 1.86 volume 2002-7-19
+Act 38 Farmer 4 on Farm 1 Pesticides Asataf 75 Field 3 Row 2 1.26 volume 2002-6-17
+Act 39 Farmer 4 on Farm 1 Harvest Woolly Prairie Clover Field 1 Row 1 3.19 mass 2004-7-19
+Act 40 Farmer 4 on Farm 1 Pesticides Malathion (organophosphate), Field 3 Row 1 1.68 volume 2015-2-23
+Act 41 Farmer 4 on Farm 1 Fertilizers Superphosphate, Enriched Field 2 Row 2 1.4 volume 2014-4-19
+Act 42 Farmer 4 on Farm 1 Sowing Fewleaf Sunflower Field 3 Row 1 3.09 volume 2003-4-8
+Act 43 Farmer 4 on Farm 1 Sowing Staghorn Fern Field 3 Row 3 4.17 volume 2015-10-6
+Act 44 Farmer 4 on Farm 1 Sales Staghorn Fern Field 2 Row 2 2.63 volume 2013-6-20
+Act 45 Farmer 4 on Farm 1 Harvest Cnicus Field 2 Row 1 3.38 volume 2016-9-12
+Act 46 Farmer 4 on Farm 1 Sales Calabar Bean Field 3 Row 3 4.11 mass 2012-2-3
+Act 47 Farmer 4 on Farm 1 Harvest Blueflower Eryngo Field 1 Row 3 1.91 volume 2019-4-18
+Act 48 Farmer 4 on Farm 1 Fertilizers Calcium Ammonium Nitrate 1 Field 1 Row 3 0.12 pack 2002-8-9
+Act 49 Farmer 4 on Farm 1 Harvest Peach Springs Canyon Cholla Field 2 Row 2 3.58 volume 2012-3-23
+Act 50 Farmer 4 on Farm 1 Fertilizers Cwqgon 400 Field 3 Row 1 4.43 volume 2015-11-16
+Act 1 Farmer 4 on Farm 7 Sales Fewleaf Sunflower Field 2 Row 3 0.73 mass 2005-7-8
+Act 2 Farmer 4 on Farm 7 Harvest Hybrid Oak Field 1 Row 3 4.51 volume 2014-2-6
+Act 3 Farmer 4 on Farm 7 Harvest Drummond's Bruchia Moss Field 2 Row 2 1.78 volume 2001-6-1
+Act 4 Farmer 4 on Farm 7 Fertilizers Kelthweiane Field 1 Row 1 2.98 mass 2003-8-7
+Act 5 Farmer 4 on Farm 7 Pesticides Fulfill (pymetrozine) Field 2 Row 3 3.51 volume 2017-8-6
+Act 6 Farmer 4 on Farm 7 Sowing St. Augustine Grass Field 2 Row 2 2.67 volume 2010-10-12
+Act 7 Farmer 4 on Farm 7 Pesticides Provado (imidacloprid) Field 2 Row 3 4.83 pack 2004-2-4
+Act 8 Farmer 4 on Farm 7 Sowing Oso Manzanita Field 1 Row 1 3.59 pack 2019-5-1
+Act 9 Farmer 4 on Farm 7 Fertilizers Kelthweiane Field 3 Row 3 2.25 mass 2016-7-8
+Act 10 Farmer 4 on Farm 7 Sales Needletip Trumpets Field 3 Row 3 3.41 mass 2014-2-13
+Act 11 Farmer 4 on Farm 7 Harvest Puckhout Field 3 Row 1 3.15 mass 2004-10-5
+Act 12 Farmer 4 on Farm 7 Sowing Hybrid Oak Field 3 Row 2 4.32 pack 2018-2-16
+Act 13 Farmer 4 on Farm 7 Pesticides Neemix Field 2 Row 1 1.08 pack 2008-2-15
+Act 14 Farmer 4 on Farm 7 Fertilizers Calcium Nitrate Field 2 Row 2 4.73 pack 2008-2-25
+Act 15 Farmer 4 on Farm 7 Harvest Twocleft Stenogyne Field 3 Row 2 1.73 mass 2002-10-22
+Act 16 Farmer 4 on Farm 7 Sowing Purplestem Aster Field 1 Row 3 1.57 pack 2002-8-28
+Act 17 Farmer 4 on Farm 7 Harvest Pleodendron Field 2 Row 3 2.98 volume 2001-6-23
+Act 18 Farmer 4 on Farm 7 Pesticides Superban 20 Field 2 Row 2 4.11 mass 2010-12-17
+Act 19 Farmer 4 on Farm 7 Sowing Drummond's Bruchia Moss Field 3 Row 1 4.38 pack 2005-11-16
+Act 20 Farmer 4 on Farm 7 Pesticides HectarLavette 455 Field 1 Row 3 2.94 mass 2008-2-6
+Act 21 Farmer 4 on Farm 7 Sales Vail Lake Ceanothus Field 2 Row 2 3.74 volume 2018-11-10
+Act 22 Farmer 4 on Farm 7 Harvest Woolly Prairie Clover Field 1 Row 1 2.57 mass 2013-8-26
+Act 23 Farmer 4 on Farm 7 Sowing Streambank Springbeauty Field 2 Row 1 3.72 volume 2005-3-17
+Act 24 Farmer 4 on Farm 7 Pesticides Fulfill (pymetrozine) Field 1 Row 1 1.14 mass 2011-2-28
+Act 25 Farmer 4 on Farm 7 Pesticides HectarLavette 455 Field 2 Row 3 4.2 pack 2017-9-30
+Act 26 Farmer 4 on Farm 7 Sales Twocleft Stenogyne Field 2 Row 2 0.11 pack 2008-9-25
+Act 27 Farmer 4 on Farm 7 Sowing Oso Manzanita Field 2 Row 3 2.85 mass 2010-3-9
+Act 28 Farmer 4 on Farm 7 Pesticides Duojunling Plants Fungicide Field 2 Row 1 2.03 pack 2007-10-3
+Act 29 Farmer 4 on Farm 7 Sales Purplestem Aster Field 1 Row 3 3.71 pack 2013-11-19
+Act 30 Farmer 4 on Farm 7 Sales Twocleft Stenogyne Field 1 Row 3 4.49 volume 2018-11-21
+Act 31 Farmer 4 on Farm 7 Harvest Rock Mousetail Field 2 Row 3 0.29 pack 2006-11-20
+Act 32 Farmer 4 on Farm 7 Sowing Hybrid Oak Field 1 Row 1 1.86 pack 2010-4-24
+Act 33 Farmer 4 on Farm 7 Harvest Bryoid Fissidens Moss Field 1 Row 3 1.58 pack 2003-8-13
+Act 34 Farmer 4 on Farm 7 Pesticides Tata Alpha 10 Field 1 Row 2 3.79 volume 2019-5-30
+Act 35 Farmer 4 on Farm 7 Fertilizers Kelthweiane Field 1 Row 1 0.02 volume 2014-2-15
+Act 36 Farmer 4 on Farm 7 Fertilizers Sunpic 3 Field 2 Row 3 0.2 pack 2014-3-11
+Act 37 Farmer 4 on Farm 7 Fertilizers Kelthweiane Field 1 Row 2 2.03 pack 2002-1-26
+Act 38 Farmer 4 on Farm 7 Fertilizers Calcium Nitrate Field 3 Row 2 3.93 volume 2013-2-19
+Act 39 Farmer 4 on Farm 7 Pesticides Malathion Field 3 Row 3 2.07 mass 2000-7-7
+Act 40 Farmer 4 on Farm 7 Sowing Streambank Springbeauty Field 2 Row 3 0.7 pack 2000-1-3
+Act 41 Farmer 4 on Farm 7 Harvest St. Augustine Grass Field 3 Row 2 2.12 pack 2012-12-1
+Act 42 Farmer 4 on Farm 7 Pesticides Tata Alpha 10 Field 1 Row 1 3.56 volume 2015-6-8
+Act 43 Farmer 4 on Farm 7 Sowing Fewleaf Sunflower Field 1 Row 2 0.02 volume 2011-8-24
+Act 44 Farmer 4 on Farm 7 Sowing St. Augustine Grass Field 3 Row 2 0.64 pack 2014-8-15
+Act 45 Farmer 4 on Farm 7 Sales Hybrid Oak Field 2 Row 2 1.56 volume 2002-9-14
+Act 46 Farmer 4 on Farm 7 Pesticides Lorsban 15 G Field 2 Row 2 2.25 mass 2014-7-11
+Act 47 Farmer 4 on Farm 7 Pesticides Artemisia argyi Wormwood Field 1 Row 3 0.19 volume 2018-7-26
+Act 48 Farmer 4 on Farm 7 Harvest Cliff Beardtongue Field 2 Row 3 3.85 pack 2018-11-30
+Act 49 Farmer 4 on Farm 7 Harvest Appalachian Valley Rose Field 3 Row 2 2.22 pack 2008-5-23
+Act 50 Farmer 4 on Farm 7 Harvest Rough Century Plant Field 2 Row 1 2.24 volume 2019-9-2
+Act 51 Farmer 4 on Farm 7 Pesticides HectarLavette 455 Field 3 Row 2 3.23 pack 2020-12-9
+Act 1 Farmer 4 on Farm 6 Fertilizers SevinQian Field 3 Row 1 4.91 volume 2003-9-24
+Act 2 Farmer 4 on Farm 6 Harvest San Bernardino Spineflower Field 2 Row 2 0.31 mass 2008-3-15
+Act 3 Farmer 4 on Farm 6 Harvest Kentucky Lady's Slipper Field 1 Row 3 0.27 pack 2012-12-8
+Act 4 Farmer 4 on Farm 6 Harvest Fewleaf Sunflower Field 1 Row 1 2.08 volume 2014-11-23
+Act 5 Farmer 4 on Farm 6 Pesticides Shamrock Pesticide Field 3 Row 1 3.66 volume 2007-1-23
+Act 6 Farmer 4 on Farm 6 Sowing Ballhead Waterleaf Field 2 Row 3 3.64 pack 2002-9-4
+Act 7 Farmer 4 on Farm 6 Sales Guara Blanca Field 2 Row 2 0.39 mass 2011-1-16
+Act 8 Farmer 4 on Farm 6 Sowing Jointfir Field 2 Row 2 4.89 volume 2017-3-20
+Act 9 Farmer 4 on Farm 6 Harvest San Bernardino Spineflower Field 1 Row 3 3.88 mass 2012-8-7
+Act 10 Farmer 4 on Farm 6 Sales San Bernardino Spineflower Field 3 Row 2 4.85 volume 2008-5-27
+Act 11 Farmer 4 on Farm 6 Sales Vallesia Field 2 Row 3 4.39 mass 2005-7-4
+Act 12 Farmer 4 on Farm 6 Harvest Fewleaf Sunflower Field 1 Row 3 2.81 volume 2005-3-5
+Act 13 Farmer 4 on Farm 6 Pesticides pyrethrin (botanical), Field 2 Row 1 2.39 pack 2000-3-30
+Act 14 Farmer 4 on Farm 6 Pesticides Guthion (azinphos methyl) Field 1 Row 2 2.66 mass 2020-1-12
+Act 15 Farmer 4 on Farm 6 Sowing Kentucky Lady's Slipper Field 3 Row 3 1.05 pack 2008-9-29
+Act 16 Farmer 4 on Farm 6 Sowing Ballhead Waterleaf Field 3 Row 1 2.08 mass 2005-4-3
+Act 17 Farmer 4 on Farm 6 Sales Oso Manzanita Field 2 Row 1 3.78 volume 2001-10-24
+Act 18 Farmer 4 on Farm 6 Harvest Oatgrass Field 1 Row 1 4.91 mass 2000-12-10
+Act 19 Farmer 4 on Farm 6 Pesticides BAYEreagen Field 3 Row 1 3.26 pack 2003-11-6
+Act 20 Farmer 4 on Farm 6 Sowing Swamp Peperomia Field 1 Row 1 4.92 mass 2018-12-10
+Act 21 Farmer 4 on Farm 6 Harvest Staghorn Fern Field 2 Row 1 4.14 mass 2008-7-28
+Act 22 Farmer 4 on Farm 6 Sales Kentucky Lady's Slipper Field 3 Row 1 1.56 mass 2019-1-27
+Act 23 Farmer 4 on Farm 6 Pesticides PPPs Field 3 Row 3 0.93 mass 2003-9-27
+Act 24 Farmer 4 on Farm 6 Harvest Atlantic Cup Lichen Field 2 Row 1 1.68 volume 2018-2-17
+Act 25 Farmer 4 on Farm 6 Sowing Kentucky Lady's Slipper Field 2 Row 1 0.79 mass 2001-5-17
+Act 26 Farmer 4 on Farm 6 Pesticides Pirit 1PCS Field 2 Row 1 4.68 mass 2002-7-6
+Act 27 Farmer 4 on Farm 6 Sales Atlantic Cup Lichen Field 1 Row 3 2.36 mass 2007-7-21
+Act 28 Farmer 4 on Farm 6 Harvest English Walnut Field 1 Row 1 2.94 pack 2009-5-16
+Act 29 Farmer 4 on Farm 6 Harvest Ballhead Waterleaf Field 1 Row 1 1.29 mass 2012-10-5
+Act 30 Farmer 4 on Farm 6 Sowing Staghorn Fern Field 2 Row 2 0.18 mass 2004-1-15
+Act 31 Farmer 4 on Farm 6 Fertilizers Calcium Nitrate Field 1 Row 3 0.59 pack 2000-11-15
+Act 32 Farmer 4 on Farm 6 Sowing English Walnut Field 3 Row 1 4.25 pack 2004-5-2
+Act 33 Farmer 4 on Farm 6 Fertilizers Liquid Amm Polyphosphate Field 1 Row 2 3.73 mass 2005-7-24
+Act 34 Farmer 4 on Farm 6 Fertilizers Basic Slag Field 1 Row 1 4.61 pack 2016-12-30
+Act 35 Farmer 4 on Farm 6 Fertilizers SevinQian Field 3 Row 2 2.25 mass 2003-4-1
+Act 36 Farmer 4 on Farm 6 Pesticides Guthion (azinphos methyl) Field 1 Row 1 3.2 volume 2018-3-16
+Act 37 Farmer 4 on Farm 6 Fertilizers Potassium Nitrate Field 2 Row 2 4.13 mass 2019-4-11
+Act 38 Farmer 4 on Farm 6 Fertilizers Ammonium Nitrate Field 2 Row 2 0.79 mass 2013-6-29
+Act 39 Farmer 4 on Farm 6 Harvest Staghorn Fern Field 1 Row 1 4.5 pack 2010-3-28
+Act 40 Farmer 4 on Farm 6 Fertilizers Bone, Precipitated Field 2 Row 2 3.17 pack 2005-8-18
+Act 41 Farmer 4 on Farm 6 Sales Guara Blanca Field 2 Row 3 0.84 volume 2012-2-30
+Act 42 Farmer 4 on Farm 6 Sales Guara Blanca Field 3 Row 2 2.83 mass 2014-9-20
+Act 43 Farmer 4 on Farm 6 Fertilizers SevinQian Field 2 Row 3 1.56 volume 2009-10-12
+Act 44 Farmer 4 on Farm 6 Sowing Atlantic Cup Lichen Field 1 Row 1 3.13 pack 2001-2-15
+Act 45 Farmer 4 on Farm 6 Sales Ballhead Waterleaf Field 3 Row 2 0.06 mass 2019-7-20
+Act 46 Farmer 4 on Farm 6 Sowing English Walnut Field 1 Row 2 4.05 pack 2007-8-10
+Act 47 Farmer 4 on Farm 6 Sales Vallesia Field 2 Row 1 1.37 volume 2017-11-29
+Act 48 Farmer 4 on Farm 6 Harvest Atlantic Cup Lichen Field 1 Row 2 0.54 volume 2001-4-8
+Act 49 Farmer 4 on Farm 6 Pesticides Triadimefon Rust Smut Fungicide Field 1 Row 2 0.65 pack 2005-10-17
+Act 50 Farmer 4 on Farm 6 Pesticides Meothrin 30 Field 1 Row 2 0.88 volume 2013-7-18
+Act 1 Farmer 4 on Farm 4 Sowing Chilean Wormseed Field 3 Row 3 4.41 mass 2000-4-30
+Act 2 Farmer 4 on Farm 4 Pesticides Rogor 30 Field 2 Row 1 4.82 mass 2017-7-7
+Act 3 Farmer 4 on Farm 4 Sales Rough Century Plant Field 3 Row 3 3.32 volume 2015-11-5
+Act 4 Farmer 4 on Farm 4 Harvest Liverleaf Wintergreen Field 1 Row 1 4.16 volume 2006-2-11
+Act 5 Farmer 4 on Farm 4 Sowing Rough Century Plant Field 1 Row 1 3.42 pack 2005-7-24
+Act 6 Farmer 4 on Farm 4 Harvest Brown Beaksedge Field 2 Row 2 3.19 volume 2008-2-13
+Act 7 Farmer 4 on Farm 4 Sowing Rough Century Plant Field 1 Row 3 4.05 volume 2000-10-23
+Act 8 Farmer 4 on Farm 4 Sowing Toothed Pogonatum Moss Field 2 Row 3 0.36 pack 2005-3-6
+Act 9 Farmer 4 on Farm 4 Sales Toothed Pogonatum Moss Field 3 Row 3 1.13 mass 2016-3-29
+Act 10 Farmer 4 on Farm 4 Pesticides Gaucho 480 (imidacloprid) Field 2 Row 2 1.28 mass 2009-6-22
+Act 11 Farmer 4 on Farm 4 Pesticides Gaucho 480 (imidacloprid) Field 3 Row 2 2.81 pack 2013-1-4
+Act 12 Farmer 4 on Farm 4 Sowing Hybrid Oak Field 1 Row 2 4.85 volume 2019-5-16
+Act 13 Farmer 4 on Farm 4 Fertilizers Soil Amendment Field 3 Row 1 0.87 pack 2002-10-12
+Act 14 Farmer 4 on Farm 4 Sales German Iris Field 2 Row 2 1.07 mass 2019-3-12
+Act 15 Farmer 4 on Farm 4 Pesticides Duojunling Plants Fungicide Field 1 Row 2 3.62 volume 2010-10-15
+Act 16 Farmer 4 on Farm 4 Fertilizers Ferric Sulfate Field 3 Row 1 3.15 mass 2007-5-11
+Act 17 Farmer 4 on Farm 4 Sowing Maui Melicope Field 2 Row 1 2.01 pack 2018-1-7
+Act 18 Farmer 4 on Farm 4 Pesticides Flash 25 Field 3 Row 3 3.37 pack 2009-12-5
+Act 19 Farmer 4 on Farm 4 Harvest Woolly Prairie Clover Field 3 Row 1 1.37 pack 2009-12-22
+Act 20 Farmer 4 on Farm 4 Sales Puckhout Field 3 Row 1 1.15 mass 2003-4-11
+Act 21 Farmer 4 on Farm 4 Pesticides Rogor 30 Field 2 Row 3 1.33 volume 2000-2-24
+Act 22 Farmer 4 on Farm 4 Harvest St. Augustine Grass Field 2 Row 2 2.1 mass 2013-9-29
+Act 23 Farmer 4 on Farm 4 Fertilizers Ammonium Polyphosphate (POLY11) Field 3 Row 3 0.66 volume 2014-7-14
+Act 24 Farmer 4 on Farm 4 Sales German Iris Field 2 Row 1 3.96 volume 2018-2-20
+Act 25 Farmer 4 on Farm 4 Sowing St. Augustine Grass Field 2 Row 1 4.07 volume 2000-2-29
+Act 26 Farmer 4 on Farm 4 Fertilizers Ferric Sulfate Field 3 Row 1 3.72 volume 2004-12-29
+Act 27 Farmer 4 on Farm 4 Sowing Toothed Pogonatum Moss Field 3 Row 3 0.17 volume 2012-2-2
+Act 28 Farmer 4 on Farm 4 Sowing Prickly Bog Sedge Field 3 Row 2 2.05 mass 2011-6-8
+Act 29 Farmer 4 on Farm 4 Fertilizers Eggshells Field 3 Row 2 4.39 volume 2013-8-16
+Act 30 Farmer 4 on Farm 4 Sales Maui Melicope Field 2 Row 2 0.09 mass 2009-7-30
+Act 31 Farmer 4 on Farm 4 Fertilizers Soil Amendment Field 1 Row 3 3.95 mass 2001-11-25
+Act 32 Farmer 4 on Farm 4 Pesticides Shamrock Pesticide Field 3 Row 2 4.84 pack 2020-11-28
+Act 33 Farmer 4 on Farm 4 Fertilizers Cwqgon 400 Field 2 Row 1 2.5 volume 2008-8-11
+Act 34 Farmer 4 on Farm 4 Harvest Hybrid Oak Field 2 Row 1 4.87 volume 2003-11-16
+Act 35 Farmer 4 on Farm 4 Fertilizers Eggshells Field 2 Row 1 2.87 volume 2012-8-10
+Act 36 Farmer 4 on Farm 4 Harvest Silky Willow Field 1 Row 1 0.84 mass 2007-4-16
+Act 37 Farmer 4 on Farm 4 Sowing Brown Beaksedge Field 2 Row 3 3.15 mass 2006-8-20
+Act 38 Farmer 4 on Farm 4 Sales Woolly Prairie Clover Field 1 Row 3 1.57 volume 2015-12-17
+Act 39 Farmer 4 on Farm 4 Fertilizers Ferric Sulfate Field 3 Row 2 3.35 volume 2016-10-29
+Act 40 Farmer 4 on Farm 4 Sales St. Augustine Grass Field 3 Row 3 1.55 pack 2011-12-9
+Act 41 Farmer 4 on Farm 4 Pesticides Vertimac Field 1 Row 3 1.81 mass 2007-6-27
+Act 42 Farmer 4 on Farm 4 Sowing Yunnan Bauhinia Field 2 Row 1 4.9 volume 2012-10-15
+Act 43 Farmer 4 on Farm 4 Fertilizers Calcium Metaphosphate Field 3 Row 1 1.09 mass 2005-4-7
+Act 44 Farmer 4 on Farm 4 Harvest German Iris Field 1 Row 2 1.85 volume 2014-11-20
+Act 45 Farmer 4 on Farm 4 Harvest Woolly Prairie Clover Field 3 Row 2 0.89 volume 2010-8-26
+Act 46 Farmer 4 on Farm 4 Harvest Maui Melicope Field 2 Row 2 1.59 mass 2002-4-15
+Act 47 Farmer 4 on Farm 4 Harvest Drummond's Bruchia Moss Field 1 Row 2 0.9 volume 2019-7-30
+Act 48 Farmer 4 on Farm 4 Pesticides Gaucho 480 (imidacloprid) Field 3 Row 3 3.93 mass 2005-7-26
+Act 49 Farmer 4 on Farm 4 Harvest Shield Lichen Field 3 Row 2 4.57 mass 2012-2-8
+Act 50 Farmer 4 on Farm 4 Harvest St. Augustine Grass Field 3 Row 1 1.93 volume 2008-8-10
+Act 51 Farmer 4 on Farm 4 Harvest Yunnan Bauhinia Field 2 Row 2 3.59 volume 2003-8-17
+Act 52 Farmer 4 on Farm 4 Pesticides Parathion 4E Field 2 Row 1 2.03 mass 2012-5-20
+Act 1 Farmer 4 on Farm 8 Harvest Drummond's Bruchia Moss Field 2 Row 3 1.54 volume 2014-1-2
+Act 2 Farmer 4 on Farm 8 Sales Guara Blanca Field 3 Row 1 0.81 volume 2001-3-29
+Act 3 Farmer 4 on Farm 8 Sowing Hairy Jointweed Field 1 Row 3 2.24 mass 2008-10-23
+Act 4 Farmer 4 on Farm 8 Fertilizers Zinc Ammonium Sulfate Solution Field 2 Row 3 3.1 volume 2006-10-8
+Act 5 Farmer 4 on Farm 8 Sowing Proliferous Pink Field 2 Row 2 0.94 pack 2008-9-25
+Act 6 Farmer 4 on Farm 8 Sales Redbird Flower Field 2 Row 2 3.79 mass 2013-1-2
+Act 7 Farmer 4 on Farm 8 Harvest Guara Blanca Field 2 Row 2 4.36 volume 2016-7-29
+Act 8 Farmer 4 on Farm 8 Sales Proliferous Pink Field 1 Row 1 4.74 pack 2018-12-17
+Act 9 Farmer 4 on Farm 8 Harvest Amerorchis Field 3 Row 3 0.12 pack 2002-3-25
+Act 10 Farmer 4 on Farm 8 Pesticides Esfenvalerate (pyrethroid) Field 2 Row 1 1.46 volume 2016-3-27
+Act 11 Farmer 4 on Farm 8 Sowing Redbird Flower Field 3 Row 3 3.4 mass 2001-12-23
+Act 12 Farmer 4 on Farm 8 Sowing Silky Willow Field 2 Row 1 4.19 pack 2013-5-16
+Act 13 Farmer 4 on Farm 8 Fertilizers Warrior Chong Field 2 Row 1 0.96 pack 2011-5-7
+Act 14 Farmer 4 on Farm 8 Sowing Brown Beaksedge Field 3 Row 3 3.49 volume 2010-4-15
+Act 15 Farmer 4 on Farm 8 Sowing Silky Willow Field 2 Row 3 2.92 pack 2006-1-17
+Act 16 Farmer 4 on Farm 8 Sales Silky Willow Field 1 Row 3 3.78 mass 2000-6-17
+Act 17 Farmer 4 on Farm 8 Sales Vail Lake Ceanothus Field 3 Row 1 4.04 volume 2007-8-19
+Act 18 Farmer 4 on Farm 8 Sales Bryoid Fissidens Moss Field 2 Row 1 3.37 mass 2008-8-27
+Act 19 Farmer 4 on Farm 8 Sowing Prickly Bog Sedge Field 3 Row 3 2.7 pack 2011-11-25
+Act 20 Farmer 4 on Farm 8 Fertilizers Luwac 991 Field 2 Row 3 2.69 pack 2010-12-28
+Act 21 Farmer 4 on Farm 8 Sales Amerorchis Field 3 Row 2 3.79 pack 2002-11-1
+Act 22 Farmer 4 on Farm 8 Sales Vail Lake Ceanothus Field 3 Row 2 1.19 pack 2002-10-24
+Act 23 Farmer 4 on Farm 8 Pesticides Vertimac Field 3 Row 3 4.51 pack 2007-12-23
+Act 24 Farmer 4 on Farm 8 Sowing Rhexophyllum Moss Field 3 Row 3 2.55 volume 2005-3-16
+Act 25 Farmer 4 on Farm 8 Harvest Prickly Bog Sedge Field 2 Row 3 0.17 volume 2001-5-9
+Act 26 Farmer 4 on Farm 8 Harvest Rhexophyllum Moss Field 1 Row 3 4.66 pack 2011-9-24
+Act 27 Farmer 4 on Farm 8 Sowing Hybrid Oak Field 3 Row 1 4.48 mass 2013-1-30
+Act 28 Farmer 4 on Farm 8 Harvest Rhexophyllum Moss Field 2 Row 3 4.47 pack 2006-11-24
+Act 29 Farmer 4 on Farm 8 Sales Proliferous Pink Field 3 Row 2 0.48 pack 2016-1-17
+Act 30 Farmer 4 on Farm 8 Sales Peach Springs Canyon Cholla Field 3 Row 2 3.54 mass 2002-5-4
+Act 31 Farmer 4 on Farm 8 Harvest Silky Willow Field 3 Row 3 4.4 volume 2020-1-7
+Act 32 Farmer 4 on Farm 8 Fertilizers Ferric Sulfate Field 2 Row 3 0.9 volume 2003-1-6
+Act 33 Farmer 4 on Farm 8 Harvest San Bernardino Spineflower Field 1 Row 3 4.3 volume 2015-5-2
+Act 34 Farmer 4 on Farm 8 Pesticides Neemix Field 3 Row 3 1.74 mass 2013-9-3
+Act 35 Farmer 4 on Farm 8 Fertilizers Ferrous Ammonium Sulfate Field 3 Row 1 4.95 volume 2010-9-19
+Act 36 Farmer 4 on Farm 8 Pesticides Imidan (phosmet) Field 3 Row 1 2.37 pack 2012-8-15
+Act 37 Farmer 4 on Farm 8 Pesticides Fastac BASF Field 1 Row 1 2.67 pack 2002-10-13
+Act 38 Farmer 4 on Farm 8 Fertilizers Ferrous Ammonium Sulfate Field 2 Row 1 1.24 pack 2007-8-5
+Act 39 Farmer 4 on Farm 8 Sales Needletip Trumpets Field 3 Row 2 2.06 pack 2005-3-15
+Act 40 Farmer 4 on Farm 8 Sowing Dimocarpus Field 3 Row 3 4.58 mass 2012-2-2
+Act 41 Farmer 4 on Farm 8 Sales Redbird Flower Field 3 Row 1 2.35 pack 2008-3-5
+Act 42 Farmer 4 on Farm 8 Harvest Proliferous Pink Field 3 Row 3 4.12 pack 2004-9-18
+Act 43 Farmer 4 on Farm 8 Pesticides Lorsban 4E (chlorpyrifos) Field 1 Row 2 3.76 pack 2002-5-27
+Act 44 Farmer 4 on Farm 8 Harvest San Bernardino Spineflower Field 2 Row 2 0.34 volume 2013-2-23
+Act 45 Farmer 4 on Farm 8 Pesticides Fenitrothion Field 3 Row 2 4.54 mass 2012-11-23
+Act 46 Farmer 4 on Farm 8 Harvest Cliff Beardtongue Field 2 Row 2 1.74 pack 2010-1-18
+Act 47 Farmer 4 on Farm 8 Fertilizers Hexakis 33 Field 1 Row 1 3.23 volume 2000-1-18
+Act 48 Farmer 4 on Farm 8 Sales Peach Springs Canyon Cholla Field 3 Row 1 4.3 pack 2005-1-21
+Act 49 Farmer 4 on Farm 8 Pesticides Zeal (etoxazole) Field 3 Row 1 2.18 pack 2020-9-6
+Act 50 Farmer 4 on Farm 8 Fertilizers Norm 188 Field 2 Row 1 4.92 pack 2016-9-29
+Act 51 Farmer 4 on Farm 8 Pesticides Imidan (phosmet) Field 1 Row 2 2.77 pack 2001-9-3
+Act 52 Farmer 4 on Farm 8 Fertilizers Precipitated Phosphate Field 3 Row 3 4.97 pack 2011-11-30
+Act 1 Farmer 4 on Farm 10 Sales Greenleaf Five Eyes Field 2 Row 1 2.13 mass 2004-6-10
+Act 2 Farmer 4 on Farm 10 Fertilizers Aqua Ammonia Field 2 Row 2 4.43 pack 2000-10-8
+Act 3 Farmer 4 on Farm 10 Sowing Pink Tickseed Field 2 Row 2 1.46 pack 2004-7-11
+Act 4 Farmer 4 on Farm 10 Sales Idaho Blue-eyed Grass Field 3 Row 2 2.54 mass 2002-7-19
+Act 5 Farmer 4 on Farm 10 Sales Pink Tickseed Field 1 Row 1 0.94 pack 2006-7-26
+Act 6 Farmer 4 on Farm 10 Sowing Diablo Hareleaf Field 2 Row 3 4.19 mass 2019-7-2
+Act 7 Farmer 4 on Farm 10 Sowing Clay Sand Verbena Field 2 Row 1 3.61 mass 2012-12-19
+Act 8 Farmer 4 on Farm 10 Fertilizers Ferric Sulfate Field 3 Row 3 4.18 pack 2019-8-10
+Act 9 Farmer 4 on Farm 10 Sowing Clay Sand Verbena Field 1 Row 2 0.09 volume 2017-2-2
+Act 10 Farmer 4 on Farm 10 Fertilizers Eggshells Field 1 Row 3 0.31 pack 2018-2-20
+Act 11 Farmer 4 on Farm 10 Harvest San Clemente Island Woodland-star Field 2 Row 2 1.19 volume 2020-5-15
+Act 12 Farmer 4 on Farm 10 Sales Greenleaf Five Eyes Field 3 Row 2 3.44 pack 2016-11-22
+Act 13 Farmer 4 on Farm 10 Pesticides Slyngenta Field 3 Row 2 1.49 volume 2001-2-16
+Act 14 Farmer 4 on Farm 10 Fertilizers Sodium Nitrate Field 1 Row 2 0.9 pack 2011-2-2
+Act 15 Farmer 4 on Farm 10 Pesticides Curaron 50 Field 3 Row 2 4.38 mass 2006-10-21
+Act 16 Farmer 4 on Farm 10 Fertilizers Calcium Cyanamide Field 3 Row 3 3.32 volume 2012-7-17
+Act 17 Farmer 4 on Farm 10 Fertilizers Eggshells Field 2 Row 3 1.18 volume 2010-7-5
+Act 18 Farmer 4 on Farm 10 Harvest Twocleft Stenogyne Field 1 Row 3 1.03 mass 2009-3-29
+Act 19 Farmer 4 on Farm 10 Harvest Clay Sand Verbena Field 1 Row 3 1.13 mass 2007-7-2
+Act 20 Farmer 4 on Farm 10 Pesticides Carbaryl (N-methyl carbamate), Field 2 Row 1 3.33 volume 2001-3-23
+Act 21 Farmer 4 on Farm 10 Sales Idaho Blue-eyed Grass Field 3 Row 1 0.76 volume 2016-6-27
+Act 22 Farmer 4 on Farm 10 Harvest Idaho Blue-eyed Grass Field 3 Row 3 1.74 volume 2007-3-24
+Act 23 Farmer 4 on Farm 10 Pesticides Cruiser 5FS (thiamethoxam) Field 2 Row 2 4.78 pack 2011-7-12
+Act 24 Farmer 4 on Farm 10 Sowing Pink Tickseed Field 3 Row 1 3.13 volume 2002-10-22
+Act 25 Farmer 4 on Farm 10 Pesticides Dimilin (diflubenzuron) Field 2 Row 2 3.0 mass 2010-4-3
+Act 26 Farmer 4 on Farm 10 Sales Diablo Hareleaf Field 3 Row 3 2.26 mass 2017-12-21
+Act 27 Farmer 4 on Farm 10 Pesticides Artemisia argyi Wormwood Field 2 Row 1 2.79 volume 2010-4-14
+Act 28 Farmer 4 on Farm 10 Sales Hybrid Oak Field 3 Row 2 2.42 mass 2001-4-25
+Act 29 Farmer 4 on Farm 10 Sowing Idaho Blue-eyed Grass Field 2 Row 2 3.43 pack 2000-6-11
+Act 30 Farmer 4 on Farm 10 Harvest Swamp Peperomia Field 2 Row 3 3.69 mass 2015-4-14
+Act 31 Farmer 4 on Farm 10 Pesticides EcoPest Field 1 Row 3 0.49 mass 2006-8-24
+Act 32 Farmer 4 on Farm 10 Sales Swamp Peperomia Field 3 Row 1 2.78 volume 2016-11-12
+Act 33 Farmer 4 on Farm 10 Sales Swamp Peperomia Field 2 Row 2 1.51 volume 2000-1-20
+Act 34 Farmer 4 on Farm 10 Harvest Diablo Hareleaf Field 3 Row 3 0.88 volume 2017-7-12
+Act 35 Farmer 4 on Farm 10 Sales Clay Sand Verbena Field 1 Row 2 1.32 pack 2011-5-29
+Act 36 Farmer 4 on Farm 10 Sowing Clay Sand Verbena Field 3 Row 2 3.98 pack 2017-11-9
+Act 37 Farmer 4 on Farm 10 Pesticides Triadimefon Rust Smut Fungicide Field 2 Row 3 4.8 mass 2012-12-21
+Act 38 Farmer 4 on Farm 10 Sowing Hybrid Oak Field 3 Row 1 2.09 volume 2019-8-1
+Act 39 Farmer 4 on Farm 10 Sowing Idaho Blue-eyed Grass Field 2 Row 3 3.67 mass 2016-9-19
+Act 40 Farmer 4 on Farm 10 Sales Pink Tickseed Field 2 Row 3 2.39 mass 2015-12-24
+Act 41 Farmer 4 on Farm 10 Harvest Pink Tickseed Field 1 Row 1 3.02 volume 2014-9-24
+Act 42 Farmer 4 on Farm 10 Sowing Twocleft Stenogyne Field 3 Row 3 3.22 mass 2020-3-16
+Act 43 Farmer 4 on Farm 10 Sales Twocleft Stenogyne Field 1 Row 2 3.51 volume 2011-2-2
+Act 44 Farmer 4 on Farm 10 Pesticides Imidacolprad Field 2 Row 1 0.06 mass 2013-4-18
+Act 45 Farmer 4 on Farm 10 Fertilizers Bone Meal, Raw Field 1 Row 2 0.05 mass 2000-3-21
+Act 46 Farmer 4 on Farm 10 Sowing Diablo Hareleaf Field 3 Row 1 0.36 mass 2013-12-18
+Act 47 Farmer 4 on Farm 10 Fertilizers Aqua Ammonia Field 3 Row 2 2.26 pack 2019-7-21
+Act 48 Farmer 4 on Farm 10 Pesticides Triadimefon Rust Smut Fungicide Field 3 Row 2 1.88 mass 2020-5-6
+Act 49 Farmer 4 on Farm 10 Harvest Clay Sand Verbena Field 3 Row 3 2.25 volume 2002-2-8
+Act 50 Farmer 4 on Farm 10 Pesticides CWQ Plant Pesticide Field 3 Row 1 0.86 mass 2012-2-10
+Act 51 Farmer 4 on Farm 10 Sales Idaho Blue-eyed Grass Field 3 Row 1 4.36 mass 2001-5-2
+Act 52 Farmer 4 on Farm 10 Harvest Swamp Peperomia Field 3 Row 1 4.48 volume 2005-5-5
+Act 1 Farmer 5 on Farm 9 Fertilizers MSR Field 2 Row 2 4.71 volume 2015-11-26
+Act 2 Farmer 5 on Farm 9 Pesticides Malathion Field 3 Row 3 4.44 volume 2009-5-14
+Act 3 Farmer 5 on Farm 9 Fertilizers Ammonium Polysulfide Field 3 Row 2 4.12 volume 2001-2-16
+Act 4 Farmer 5 on Farm 9 Sowing Whiskerbush Field 1 Row 1 4.95 volume 2013-11-26
+Act 5 Farmer 5 on Farm 9 Sales Royal Tonguefern Field 2 Row 2 1.19 mass 2019-4-7
+Act 6 Farmer 5 on Farm 9 Sowing Rhexophyllum Moss Field 1 Row 3 4.91 pack 2009-2-18
+Act 7 Farmer 5 on Farm 9 Sales Vallesia Field 3 Row 3 2.68 pack 2010-6-16
+Act 8 Farmer 5 on Farm 9 Sales Wild Chives Field 1 Row 1 0.34 volume 2009-2-7
+Act 9 Farmer 5 on Farm 9 Pesticides Zagro Fighter 505 Field 3 Row 1 4.31 pack 2017-6-6
+Act 10 Farmer 5 on Farm 9 Sales Moenkopi Milkvetch Field 1 Row 1 1.74 mass 2003-3-8
+Act 11 Farmer 5 on Farm 9 Pesticides Vertimac Field 2 Row 3 1.11 pack 2000-10-6
+Act 12 Farmer 5 on Farm 9 Sales Calabar Bean Field 3 Row 1 1.41 pack 2010-10-22
+Act 13 Farmer 5 on Farm 9 Harvest Prickly Bog Sedge Field 2 Row 2 3.96 pack 2011-6-8
+Act 14 Farmer 5 on Farm 9 Sowing Eggleaf Silktassel Field 1 Row 2 1.12 mass 2016-12-28
+Act 15 Farmer 5 on Farm 9 Sowing Idaho Blue-eyed Grass Field 2 Row 3 2.37 mass 2009-2-8
+Act 16 Farmer 5 on Farm 9 Sowing Eggleaf Silktassel Field 3 Row 1 4.45 pack 2007-5-13
+Act 17 Farmer 5 on Farm 9 Fertilizers Aqua Ammonia Field 1 Row 1 1.9 mass 2003-6-5
+Act 18 Farmer 5 on Farm 9 Sowing Oso Manzanita Field 3 Row 2 0.2 volume 2010-7-5
+Act 19 Farmer 5 on Farm 9 Harvest Maui Melicope Field 3 Row 1 2.08 pack 2008-12-8
+Act 20 Farmer 5 on Farm 9 Harvest Giant Flatsedge Field 3 Row 2 2.69 volume 2013-5-7
+Act 21 Farmer 5 on Farm 9 Fertilizers Bone Meal, Raw Field 2 Row 1 0.47 mass 2009-1-13
+Act 22 Farmer 5 on Farm 9 Harvest Eggleaf Silktassel Field 3 Row 3 4.44 pack 2005-3-30
+Act 23 Farmer 5 on Farm 9 Fertilizers Manganese Slag Field 1 Row 3 1.17 volume 2012-1-18
+Act 24 Farmer 5 on Farm 9 Pesticides Vertimac Field 3 Row 3 0.21 mass 2000-7-28
+Act 25 Farmer 5 on Farm 9 Sales Oso Manzanita Field 2 Row 2 4.39 volume 2001-9-7
+Act 26 Farmer 5 on Farm 9 Pesticides Pyrethrins Field 3 Row 1 0.62 pack 2008-10-21
+Act 27 Farmer 5 on Farm 9 Sales Moenkopi Milkvetch Field 3 Row 3 0.98 pack 2007-10-20
+Act 28 Farmer 5 on Farm 9 Sales Vail Lake Ceanothus Field 3 Row 2 4.17 pack 2012-2-30
+Act 29 Farmer 5 on Farm 9 Sales Vallesia Field 3 Row 3 4.24 pack 2008-12-2
+Act 30 Farmer 5 on Farm 9 Harvest Summer Farewell Field 3 Row 2 3.33 mass 2006-8-28
+Act 31 Farmer 5 on Farm 9 Fertilizers Nitrogen Field 3 Row 3 4.49 volume 2013-2-6
+Act 32 Farmer 5 on Farm 9 Fertilizers Ammonium Polysulfide Field 2 Row 2 1.39 pack 2010-3-25
+Act 33 Farmer 5 on Farm 9 Pesticides Pyrethrins Field 3 Row 1 2.61 mass 2007-5-27
+Act 34 Farmer 5 on Farm 9 Pesticides Vertimac Field 1 Row 2 4.9 mass 2010-7-18
+Act 35 Farmer 5 on Farm 9 Pesticides Bacillus thuringiensis (BT—Biologicals), Field 1 Row 3 3.21 pack 2015-4-6
+Act 36 Farmer 5 on Farm 9 Pesticides Malathion Field 3 Row 3 2.04 pack 2003-4-13
+Act 37 Farmer 5 on Farm 9 Sales Oatgrass Field 2 Row 1 0.58 pack 2008-2-15
+Act 38 Farmer 5 on Farm 9 Pesticides PPPs Field 2 Row 2 1.1 pack 2015-6-22
+Act 39 Farmer 5 on Farm 9 Pesticides Nufos 4E (chlorpyrifos) Field 3 Row 3 2.06 mass 2015-11-6
+Act 40 Farmer 5 on Farm 9 Pesticides Vertimac Field 1 Row 3 2.54 mass 2018-6-2
+Act 41 Farmer 5 on Farm 9 Sowing Whiskerbush Field 1 Row 2 1.83 mass 2010-5-17
+Act 42 Farmer 5 on Farm 9 Sowing Whiskerbush Field 1 Row 1 2.88 mass 2002-8-4
+Act 43 Farmer 5 on Farm 9 Harvest Wild Chives Field 3 Row 1 3.78 pack 2016-4-1
+Act 44 Farmer 5 on Farm 9 Pesticides Zagro Fighter 505 Field 3 Row 3 2.01 pack 2014-1-28
+Act 45 Farmer 5 on Farm 9 Sales Oatgrass Field 3 Row 1 1.36 volume 2002-5-10
+Act 46 Farmer 5 on Farm 9 Harvest Calabar Bean Field 3 Row 2 1.66 pack 2018-12-30
+Act 47 Farmer 5 on Farm 9 Fertilizers Manganese Slag Field 3 Row 1 4.45 volume 2009-3-25
+Act 48 Farmer 5 on Farm 9 Sowing Whiskerbush Field 1 Row 1 0.99 mass 2001-4-20
+Act 49 Farmer 5 on Farm 9 Sowing Oatgrass Field 3 Row 3 3.52 volume 2016-8-29
+Act 50 Farmer 5 on Farm 9 Pesticides Bacillus thuringiensis (BT—Biologicals), Field 3 Row 3 4.11 volume 2012-4-29
+Act 1 Farmer 5 on Farm 2 Pesticides Asataf 75 Field 2 Row 3 4.17 pack 2000-5-12
+Act 2 Farmer 5 on Farm 2 Pesticides Guthion (azinphos methyl) Field 1 Row 2 2.56 volume 2003-3-2
+Act 3 Farmer 5 on Farm 2 Harvest Kern Mallow Field 1 Row 2 0.77 pack 2001-7-25
+Act 4 Farmer 5 on Farm 2 Sowing Guara Blanca Field 1 Row 1 0.43 volume 2020-3-16
+Act 5 Farmer 5 on Farm 2 Pesticides Dimethoate 4E (organophosphate) Field 2 Row 1 0.05 volume 2005-7-6
+Act 6 Farmer 5 on Farm 2 Pesticides HectarLavette 455 Field 1 Row 3 1.04 mass 2006-12-20
+Act 7 Farmer 5 on Farm 2 Harvest Cnicus Field 2 Row 3 3.52 volume 2006-8-23
+Act 8 Farmer 5 on Farm 2 Sowing Kern Mallow Field 1 Row 2 4.83 pack 2001-2-3
+Act 9 Farmer 5 on Farm 2 Harvest Guara Blanca Field 3 Row 2 3.35 volume 2002-8-24
+Act 10 Farmer 5 on Farm 2 Harvest Shining Alkaligrass Field 1 Row 1 3.14 mass 2012-2-1
+Act 11 Farmer 5 on Farm 2 Harvest Quinine Field 2 Row 2 4.0 mass 2010-8-14
+Act 12 Farmer 5 on Farm 2 Sales Green Medusa Orchid Field 2 Row 2 2.74 volume 2017-11-3
+Act 13 Farmer 5 on Farm 2 Harvest Upright Chickweed Field 2 Row 2 1.14 pack 2009-8-24
+Act 14 Farmer 5 on Farm 2 Sowing Upright Chickweed Field 2 Row 1 3.76 pack 2013-8-7
+Act 15 Farmer 5 on Farm 2 Fertilizers Amm Nitrate-Limestone Mixtures Field 3 Row 1 2.96 pack 2011-5-17
+Act 16 Farmer 5 on Farm 2 Sales Kern Mallow Field 2 Row 2 2.79 mass 2008-5-2
+Act 17 Farmer 5 on Farm 2 Fertilizers Incrusi Ferti Inc. Pe 349 Field 3 Row 3 4.15 volume 2002-4-5
+Act 18 Farmer 5 on Farm 2 Harvest Lacy Spleenwort Field 2 Row 2 1.76 pack 2001-4-6
+Act 19 Farmer 5 on Farm 2 Fertilizers Rikkuan 21 Field 2 Row 3 4.16 pack 2009-9-27
+Act 20 Farmer 5 on Farm 2 Fertilizers Incrusi Ferti Inc. Pe 349 Field 2 Row 2 2.16 volume 2019-10-30
+Act 21 Farmer 5 on Farm 2 Sowing Quinine Field 1 Row 1 1.84 volume 2020-5-17
+Act 22 Farmer 5 on Farm 2 Sales Japanese Elm Field 1 Row 2 3.16 mass 2002-8-27
+Act 23 Farmer 5 on Farm 2 Fertilizers Calcium Metaphosphate Field 3 Row 3 3.84 volume 2003-10-20
+Act 24 Farmer 5 on Farm 2 Fertilizers Incrusi Ferti Inc. Pe 349 Field 1 Row 2 3.84 pack 2011-5-28
+Act 25 Farmer 5 on Farm 2 Sales Russian Rocket Field 3 Row 1 4.52 mass 2019-9-6
+Act 26 Farmer 5 on Farm 2 Harvest Purplestem Aster Field 3 Row 2 1.54 volume 2020-6-10
+Act 27 Farmer 5 on Farm 2 Sowing Chisos Prairie Acacia Field 1 Row 2 1.27 pack 2012-6-17
+Act 28 Farmer 5 on Farm 2 Sowing Clay Sand Verbena Field 2 Row 2 4.64 mass 2019-5-26
+Act 29 Farmer 5 on Farm 2 Pesticides Asataf 75 Field 2 Row 2 2.63 pack 2003-12-25
+Act 30 Farmer 5 on Farm 2 Fertilizers Incrusi Ferti Inc. Pe 349 Field 3 Row 3 3.45 pack 2019-2-2
+Act 31 Farmer 5 on Farm 2 Pesticides EcoPest Field 2 Row 2 2.9 mass 2010-7-15
+Act 32 Farmer 5 on Farm 2 Harvest Dot Lichen Field 1 Row 1 3.51 mass 2010-3-16
+Act 33 Farmer 5 on Farm 2 Harvest Cnicus Field 1 Row 3 0.02 mass 2018-4-11
+Act 34 Farmer 5 on Farm 2 Fertilizers Rikkuan 21 Field 2 Row 2 3.62 volume 2008-12-29
+Act 35 Farmer 5 on Farm 2 Sales Indian Teasel Field 3 Row 3 3.12 mass 2010-8-3
+Act 36 Farmer 5 on Farm 2 Harvest Oso Manzanita Field 1 Row 1 3.72 mass 2011-8-27
+Act 37 Farmer 5 on Farm 2 Sowing Royal Tonguefern Field 3 Row 3 2.64 pack 2017-5-16
+Act 38 Farmer 5 on Farm 2 Harvest Shining Alkaligrass Field 1 Row 3 0.94 mass 2016-11-11
+Act 39 Farmer 5 on Farm 2 Harvest Oxypetalum Field 1 Row 1 0.09 pack 2010-6-20
+Act 40 Farmer 5 on Farm 2 Sales Pleodendron Field 1 Row 2 2.38 pack 2020-12-13
+Act 41 Farmer 5 on Farm 2 Sales Whiskerbush Field 3 Row 2 2.27 volume 2020-5-24
+Act 42 Farmer 5 on Farm 2 Pesticides Guthion (azinphos methyl) Field 1 Row 3 2.36 pack 2016-6-17
+Act 43 Farmer 5 on Farm 2 Sowing Proliferous Pink Field 2 Row 2 1.83 mass 2016-11-6
+Act 44 Farmer 5 on Farm 2 Fertilizers Calcium Metaphosphate Field 1 Row 1 3.93 volume 2008-7-26
+Act 45 Farmer 5 on Farm 2 Harvest Green Medusa Orchid Field 2 Row 2 1.38 pack 2019-8-8
+Act 46 Farmer 5 on Farm 2 Sowing Chisos Prairie Acacia Field 2 Row 3 2.11 pack 2010-10-21
+Act 47 Farmer 5 on Farm 2 Sowing Proliferous Pink Field 2 Row 3 0.27 volume 2020-10-21
+Act 48 Farmer 5 on Farm 2 Harvest Russian Rocket Field 3 Row 3 3.51 pack 2006-12-8
+Act 49 Farmer 5 on Farm 2 Sowing Shining Alkaligrass Field 1 Row 3 4.65 mass 2002-1-3
+Act 50 Farmer 5 on Farm 2 Fertilizers Rikkuan 21 Field 1 Row 1 3.83 mass 2002-1-23
+Act 1 Farmer 5 on Farm 5 Sales Silky Willow Field 3 Row 1 4.57 pack 2018-1-11
+Act 2 Farmer 5 on Farm 5 Sales Silky Willow Field 2 Row 1 0.52 mass 2015-10-6
+Act 3 Farmer 5 on Farm 5 Sales Oatgrass Field 2 Row 3 1.31 volume 2009-6-7
+Act 4 Farmer 5 on Farm 5 Pesticides Permethrin (pyrethroid) Field 2 Row 1 1.28 volume 2000-11-12
+Act 5 Farmer 5 on Farm 5 Fertilizers Chong Fa23 Field 1 Row 1 3.56 pack 2009-5-30
+Act 6 Farmer 5 on Farm 5 Sowing Night Scented Orchid Field 2 Row 2 1.63 pack 2005-1-6
+Act 7 Farmer 5 on Farm 5 Sales Silky Willow Field 3 Row 3 1.75 pack 2002-11-22
+Act 8 Farmer 5 on Farm 5 Pesticides ECPA Field 3 Row 1 0.88 mass 2016-2-23
+Act 9 Farmer 5 on Farm 5 Fertilizers Bone Meal, Raw Field 3 Row 1 0.12 mass 2016-2-25
+Act 10 Farmer 5 on Farm 5 Sowing Pink Tickseed Field 1 Row 1 4.99 mass 2002-2-16
+Act 11 Farmer 5 on Farm 5 Pesticides Vertimac Field 3 Row 2 0.45 mass 2015-3-7
+Act 12 Farmer 5 on Farm 5 Harvest Silky Willow Field 3 Row 3 0.87 pack 2001-1-14
+Act 13 Farmer 5 on Farm 5 Sowing Night Scented Orchid Field 2 Row 1 3.75 mass 2005-1-6
+Act 14 Farmer 5 on Farm 5 Sowing Japanese Elm Field 3 Row 1 4.82 mass 2007-3-11
+Act 15 Farmer 5 on Farm 5 Sowing Pink Tickseed Field 3 Row 1 3.82 mass 2008-4-11
+Act 16 Farmer 5 on Farm 5 Fertilizers Thiodan Field 1 Row 3 1.31 mass 2006-10-24
+Act 17 Farmer 5 on Farm 5 Sales Silky Willow Field 1 Row 2 1.21 volume 2012-4-3
+Act 18 Farmer 5 on Farm 5 Harvest Silky Willow Field 2 Row 1 1.55 volume 2014-10-8
+Act 19 Farmer 5 on Farm 5 Sales Woolly Prairie Clover Field 3 Row 3 1.19 volume 2015-12-21
+Act 20 Farmer 5 on Farm 5 Harvest Oatgrass Field 2 Row 1 0.08 pack 2002-8-19
+Act 21 Farmer 5 on Farm 5 Sales Idaho Blue-eyed Grass Field 2 Row 3 2.6 mass 2001-9-13
+Act 22 Farmer 5 on Farm 5 Fertilizers Bone Meal, Steamed Field 1 Row 2 1.93 pack 2019-8-21
+Act 23 Farmer 5 on Farm 5 Fertilizers DragonW31 Field 2 Row 3 4.49 mass 2019-7-4
+Act 24 Farmer 5 on Farm 5 Fertilizers Kelthweiane Field 1 Row 3 4.68 volume 2012-12-13
+Act 25 Farmer 5 on Farm 5 Sales Maui Melicope Field 1 Row 2 4.85 volume 2010-7-9
+Act 26 Farmer 5 on Farm 5 Sales Woolly Prairie Clover Field 3 Row 3 3.23 volume 2014-6-21
+Act 27 Farmer 5 on Farm 5 Harvest Maui Melicope Field 2 Row 1 0.34 pack 2000-5-19
+Act 28 Farmer 5 on Farm 5 Sales Oatgrass Field 3 Row 1 3.98 volume 2002-10-24
+Act 29 Farmer 5 on Farm 5 Harvest Liverleaf Wintergreen Field 3 Row 1 3.23 pack 2009-2-8
+Act 30 Farmer 5 on Farm 5 Sowing Maui Melicope Field 2 Row 2 0.21 pack 2015-6-16
+Act 31 Farmer 5 on Farm 5 Pesticides Baythroid 2 (cyfluthrin) Field 1 Row 3 2.11 volume 2019-3-29
+Act 32 Farmer 5 on Farm 5 Sales Silky Willow Field 1 Row 3 2.4 pack 2016-7-11
+Act 33 Farmer 5 on Farm 5 Pesticides Vertimac Field 3 Row 3 0.89 pack 2017-12-10
+Act 34 Farmer 5 on Farm 5 Fertilizers SevinQian Field 3 Row 1 1.88 volume 2019-12-22
+Act 35 Farmer 5 on Farm 5 Sowing Idaho Blue-eyed Grass Field 1 Row 3 3.29 mass 2000-11-13
+Act 36 Farmer 5 on Farm 5 Pesticides Slyngenta Field 3 Row 2 2.05 volume 2003-10-30
+Act 37 Farmer 5 on Farm 5 Pesticides Slyngenta Field 1 Row 1 0.85 mass 2014-8-25
+Act 38 Farmer 5 on Farm 5 Sowing Woolly Prairie Clover Field 2 Row 2 4.75 mass 2013-10-1
+Act 39 Farmer 5 on Farm 5 Sowing Oatgrass Field 2 Row 1 4.3 pack 2015-1-15
+Act 40 Farmer 5 on Farm 5 Sowing Silky Willow Field 2 Row 1 0.78 mass 2006-12-30
+Act 41 Farmer 5 on Farm 5 Pesticides Cymbush 25 Field 3 Row 2 4.02 pack 2011-12-19
+Act 42 Farmer 5 on Farm 5 Sales Oatgrass Field 1 Row 1 4.85 mass 2012-10-30
+Act 43 Farmer 5 on Farm 5 Sales Night Scented Orchid Field 2 Row 2 4.49 pack 2017-2-29
+Act 44 Farmer 5 on Farm 5 Harvest Night Scented Orchid Field 2 Row 2 4.7 pack 2006-10-29
+Act 45 Farmer 5 on Farm 5 Sales Night Scented Orchid Field 1 Row 3 1.74 volume 2016-12-25
+Act 46 Farmer 5 on Farm 5 Fertilizers Chong Fa23 Field 1 Row 1 3.36 mass 2013-1-7
+Act 47 Farmer 5 on Farm 5 Harvest Woolly Prairie Clover Field 1 Row 3 1.96 volume 2000-1-12
+Act 48 Farmer 5 on Farm 5 Harvest Japanese Elm Field 3 Row 3 3.95 mass 2002-3-14
+Act 49 Farmer 5 on Farm 5 Sowing Maui Melicope Field 1 Row 1 1.12 volume 2019-10-18
+Act 50 Farmer 5 on Farm 5 Sales Atlantic Cup Lichen Field 1 Row 1 4.39 mass 2014-4-22
+Act 51 Farmer 5 on Farm 5 Sales Night Scented Orchid Field 2 Row 3 1.51 pack 2009-1-13
+Act 52 Farmer 5 on Farm 5 Sales Pink Tickseed Field 3 Row 2 1.34 pack 2019-2-18
+Act 1 Farmer 5 on Farm 8 Sales Rhexophyllum Moss Field 1 Row 3 3.68 pack 2020-3-29
+Act 2 Farmer 5 on Farm 8 Harvest Prickly Bog Sedge Field 2 Row 1 4.47 mass 2001-8-9
+Act 3 Farmer 5 on Farm 8 Sales Oatgrass Field 2 Row 1 0.04 volume 2015-9-18
+Act 4 Farmer 5 on Farm 8 Sowing Silky Willow Field 1 Row 2 1.9 pack 2015-12-8
+Act 5 Farmer 5 on Farm 8 Sowing Redbird Flower Field 2 Row 3 4.67 volume 2004-10-28
+Act 6 Farmer 5 on Farm 8 Pesticides Carbaryl (N-methyl carbamate), Field 3 Row 2 2.18 mass 2007-8-14
+Act 7 Farmer 5 on Farm 8 Sales Hybrid Oak Field 1 Row 3 3.15 mass 2017-10-6
+Act 8 Farmer 5 on Farm 8 Pesticides Imidan (phosmet) Field 3 Row 1 1.48 volume 2016-9-10
+Act 9 Farmer 5 on Farm 8 Sowing Needletip Trumpets Field 1 Row 2 0.74 volume 2011-3-9
+Act 10 Farmer 5 on Farm 8 Fertilizers Kelthweiane Field 1 Row 1 2.38 volume 2000-3-10
+Act 11 Farmer 5 on Farm 8 Fertilizers Calcium Nitrate Field 2 Row 3 2.25 pack 2010-3-16
+Act 12 Farmer 5 on Farm 8 Fertilizers Nufos 4Ecwq Field 3 Row 2 1.58 pack 2020-5-24
+Act 13 Farmer 5 on Farm 8 Pesticides Fenitrothion Field 3 Row 3 4.53 volume 2009-7-1
+Act 14 Farmer 5 on Farm 8 Harvest Prickly Bog Sedge Field 3 Row 3 0.56 pack 2005-7-21
+Act 15 Farmer 5 on Farm 8 Harvest Hybrid Oak Field 3 Row 3 1.89 volume 2011-4-27
+Act 16 Farmer 5 on Farm 8 Harvest Needletip Trumpets Field 2 Row 2 3.1 pack 2019-1-6
+Act 17 Farmer 5 on Farm 8 Harvest Summer Farewell Field 1 Row 2 2.33 volume 2002-8-14
+Act 18 Farmer 5 on Farm 8 Sowing Peach Springs Canyon Cholla Field 1 Row 3 0.29 mass 2016-10-29
+Act 19 Farmer 5 on Farm 8 Fertilizers Ferrous Ammonium Sulfate Field 2 Row 1 2.99 mass 2015-4-19
+Act 20 Farmer 5 on Farm 8 Sales Guara Blanca Field 2 Row 3 2.16 mass 2015-12-25
+Act 21 Farmer 5 on Farm 8 Fertilizers Luwac 991 Field 3 Row 2 3.17 mass 2011-5-15
+Act 22 Farmer 5 on Farm 8 Sowing Hybrid Oak Field 2 Row 1 4.77 mass 2002-4-16
+Act 23 Farmer 5 on Farm 8 Sowing Brown Beaksedge Field 1 Row 3 0.65 pack 2014-5-17
+Act 24 Farmer 5 on Farm 8 Harvest Brown Beaksedge Field 1 Row 2 0.09 mass 2004-2-1
+Act 25 Farmer 5 on Farm 8 Sales San Bernardino Spineflower Field 2 Row 3 4.25 mass 2013-5-8
+Act 26 Farmer 5 on Farm 8 Sowing Bryoid Fissidens Moss Field 1 Row 1 1.28 volume 2005-12-2
+Act 27 Farmer 5 on Farm 8 Fertilizers Precipitated Phosphate Field 3 Row 3 1.21 pack 2019-2-25
+Act 28 Farmer 5 on Farm 8 Pesticides Triadimefon Rust Smut Fungicide Field 1 Row 1 1.31 volume 2010-8-10
+Act 29 Farmer 5 on Farm 8 Pesticides Slyngenta Field 2 Row 1 0.87 volume 2005-12-2
+Act 30 Farmer 5 on Farm 8 Pesticides Imidacolprad Field 3 Row 3 4.43 mass 2020-11-9
+Act 31 Farmer 5 on Farm 8 Sales Silky Willow Field 1 Row 3 4.45 mass 2019-3-24
+Act 32 Farmer 5 on Farm 8 Harvest Needletip Trumpets Field 3 Row 1 2.0 pack 2020-12-21
+Act 33 Farmer 5 on Farm 8 Sowing Cliff Beardtongue Field 2 Row 3 0.82 pack 2003-1-30
+Act 34 Farmer 5 on Farm 8 Sales Brown Beaksedge Field 2 Row 2 1.1 mass 2019-7-18
+Act 35 Farmer 5 on Farm 8 Pesticides Triadimefon Rust Smut Fungicide Field 3 Row 1 1.9 pack 2012-12-2
+Act 36 Farmer 5 on Farm 8 Sowing Prickly Bog Sedge Field 2 Row 2 0.91 volume 2012-7-7
+Act 37 Farmer 5 on Farm 8 Pesticides Neemazl-F Field 3 Row 2 2.87 volume 2019-6-9
+Act 38 Farmer 5 on Farm 8 Sowing Oatgrass Field 1 Row 1 1.16 mass 2020-8-20
+Act 39 Farmer 5 on Farm 8 Sowing Dimocarpus Field 1 Row 3 2.87 pack 2004-2-28
+Act 40 Farmer 5 on Farm 8 Harvest Hairy Jointweed Field 1 Row 2 4.22 volume 2017-9-30
+Act 41 Farmer 5 on Farm 8 Sales Prickly Bog Sedge Field 3 Row 2 1.97 volume 2014-10-9
+Act 42 Farmer 5 on Farm 8 Pesticides Vertimac Field 2 Row 2 4.23 pack 2016-5-18
+Act 43 Farmer 5 on Farm 8 Harvest Hybrid Oak Field 1 Row 1 1.62 mass 2010-7-17
+Act 44 Farmer 5 on Farm 8 Pesticides Imidan (phosmet) Field 1 Row 2 4.02 volume 2008-3-14
+Act 45 Farmer 5 on Farm 8 Harvest Vail Lake Ceanothus Field 1 Row 3 0.46 pack 2000-6-26
+Act 46 Farmer 5 on Farm 8 Pesticides Dimilin (diflubenzuron) Field 1 Row 1 3.06 mass 2000-7-3
+Act 47 Farmer 5 on Farm 8 Fertilizers Eggshells Field 1 Row 3 1.35 mass 2019-2-2
+Act 48 Farmer 5 on Farm 8 Sales Redbird Flower Field 2 Row 3 4.53 volume 2000-1-14
+Act 49 Farmer 5 on Farm 8 Fertilizers Hexakis 33 Field 3 Row 3 3.94 mass 2011-6-16
+Act 50 Farmer 5 on Farm 8 Sowing Dimocarpus Field 3 Row 2 4.22 mass 2016-5-24
+Act 51 Farmer 5 on Farm 8 Harvest Cliff Beardtongue Field 1 Row 3 2.66 mass 2005-11-20
+Act 52 Farmer 5 on Farm 8 Sales Hybrid Oak Field 1 Row 3 3.85 volume 2015-11-30

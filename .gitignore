@@ -2,3 +2,4 @@
 /build/
 /dist/
 # /src/database/
+src/database/.DS_Store

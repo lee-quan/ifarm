@@ -18,8 +18,7 @@ class Farmer implements Runnable {
     private LinkedList<String> farms;
     private Farm[] farm;
     private PrintWriter pw;
-    private HashMap<String,Integer> activities;
-    private int TotalAct;
+    private HashMap<String,Integer> activities;    
 
     public Farmer(String _id) {
         activities = new HashMap<>();         

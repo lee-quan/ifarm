@@ -2,17 +2,9 @@ package ifarm;
 
 public class Activity {
 
-    private String _id;
-    private String date;
-    private String action;
-    private String type;
-    private String unit;
+    private String _id,date,action,type,unit,farmId,userId;
     private Double quantity;
-    private Integer field;
-    private Integer row;
-    private String farmId;
-    private String userId;
-    private String[] plantArr, fertilizerArr, pesticideArr, name = new String[100];
+    private Integer field,row;    
 
     public Activity(String _id, String date, String action, String type,
             String unit, Double quantity, Integer field, Integer row, String farmId,
@@ -68,10 +60,8 @@ public class Activity {
     public String getUserId() {
         return userId;
     }
-//            String[] ActivityName = {"Sowing", "Fertilizers", "Pesticides", "Harvest", "Sales"};
 
     public String toLogFile() {
-
 
         // Exp log file: Sowing Broccoli Field 1 Row 1 1 kg 2022-03-03
         String str = action + " " + type + " Field " + field + " Row " + row + " " + quantity + " " + unit + " " + date;
