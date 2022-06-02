@@ -4,6 +4,9 @@
  */
 package database;
 
+import ifarm.Fertilizer;
+import ifarm.Pesticide;
+import ifarm.Plant;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -53,13 +56,14 @@ public class DBConnection {
         stmt.executeUpdate(sql);
     }
     
-    public String[] generateFertiliserList(){
-        String[] fertilizerArr = new String[100];
+    public Fertilizer[] generateFertiliserList(){
+        Fertilizer[] fertilizerArr = new Fertilizer[100];
         try {            
             this.rs = retrieve("SELECT * FROM fertiliser");
             int counter = 0;
             while(rs.next()){
-                fertilizerArr[counter] = rs.getString(2);
+                int index = Integer.parseInt(rs.getString(1))-1;  
+                fertilizerArr[index] = new Fertilizer(rs.getString(1),rs.getString(2),rs.getString(3));
                 counter++;
             }
         } catch (SQLException ex) {
@@ -68,13 +72,14 @@ public class DBConnection {
         return fertilizerArr;
     }
     
-    public String[] generatePlantList(){
-        String[] plantArr = new String[100];
+    public Plant[] generatePlantList(){
+        Plant[] plantArr = new Plant[100];
         try {
-            this.rs = retrieve("SELECT * FROM plant");
+            this.rs = retrieve("SELECT * FROM plant");            
             int counter = 0;
             while (rs.next()) {
-                plantArr[counter] = rs.getString(2);
+                int index = Integer.parseInt(rs.getString(1))-1;                
+                plantArr[index] = new Plant(rs.getString(1),rs.getString(2),rs.getString(3));
                 counter++;
             }
           } catch (SQLException ex) {
@@ -84,13 +89,14 @@ public class DBConnection {
     }
     
     
-    public String[] generatePesticideList(){
-        String[] pesticideArr = new String[100];
+    public Pesticide[] generatePesticideList(){
+        Pesticide[] pesticideArr = new Pesticide[100];
         try {
             this.rs = retrieve("SELECT * FROM pesticide");
             int counter = 0;
             while(rs.next()){
-                pesticideArr[counter] = rs.getString(2);
+                int index = Integer.parseInt(rs.getString(1))-1;
+                pesticideArr[index] = new Pesticide(rs.getString(1),rs.getString(2),rs.getString(3));
                 counter++;
             }
         } catch (SQLException ex) {

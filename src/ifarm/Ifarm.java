@@ -43,13 +43,9 @@ public class Ifarm {
 
     public static void main(String[] args) throws SQLException, FileNotFoundException, IOException {
         try {
-            String[] plantArr = db.generatePlantList();
-            String[] fertilizerArr = db.generateFertiliserList();
-            String[] pesticideArr = db.generatePesticideList();
-            
-            final int NumOfFarmer = 100;
-            FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM usersList ORDER BY CAST(_id as unsigned)");
-            Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
+            Plant[] plantArr = db.generatePlantList();
+            Fertilizer[] fertilizerArr = db.generateFertiliserList();
+            Pesticide[] pesticideArr = db.generatePesticideList();                        
 
             //Introduction of thread pool
             ExecutorService executorservice = Executors.newFixedThreadPool(20);
@@ -113,18 +109,28 @@ public class Ifarm {
             } catch (InterruptedException ex) {
                 Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
             }
+            // start generate Farmer
+            final int NumOfFarmer = 5;
+            FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM usersList ORDER BY CAST(_id as unsigned)");
+            Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
+            
+            for (int i = 0; i < NumOfFarmer; i++) {
+                System.out.println("Farmers: " + farmer[i].getId() + " Farm : " + farmer[i].getFarm());
+            }
 
             for (int i = 0; i < numOfFarm; i++) {
-//            System.out.println("\nFarm " + (i + 1) + ":");
-//            System.out.println("Plant = " + farms[i].getPlant());
-//            System.out.println("Fertilizer = " + farms[i].getFertiliser());
-//            System.out.println("Pesticide = " + farms[i].getPesticide());
+            System.out.println("\nFarm " + (i + 1) + ":");
+            System.out.println("Plant = " + farms[i].getPlant());
+            System.out.println("Fertilizer = " + farms[i].getFertiliser());
+            System.out.println("Pesticide = " + farms[i].getPesticide());
                 String updateSql = "UPDATE farm "
                         + "SET plants=\"" + farms[i].getPlant() + "\","
                         + "fertilizers=\"" + farms[i].getFertiliser() + "\","
                         + "pesticides=\"" + farms[i].getPesticide() + "\" WHERE _id=\"" + farms[i].getId() + "\"";
                 db.update(updateSql);
             }
+            
+            
 
             Files.deleteIfExists(Paths.get("log.txt"));
             Files.deleteIfExists(Paths.get("log1.txt"));
@@ -149,6 +155,7 @@ public class Ifarm {
                 i.run();
             }
             long sequential_endtime = System.currentTimeMillis();
+            pwS.close();
             System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
 
             for(Farmer i : farmer){
@@ -157,16 +164,15 @@ public class Ifarm {
             
             long starttime = System.currentTimeMillis();
             executorservice.invokeAll(FarmerCallables);
-            executorservice.shutdown();
-            while (!executorservice.isTerminated()) {
-            }
             long endtime = System.currentTimeMillis();
+            pwC.close();
+            executorservice.shutdown();
+            
             System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
             
-//            System.out.println("\nFarmer Activities number: ");
-//            for (Farmer i : farmer) {
-//                System.out.println("Farmer "+i.getId()+" has "+i.getTotalAct() + " activities");
-//            }
+            for(Farmer i : farmer){
+                i.getActivityList();
+            }
         } catch (InterruptedException ex) {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }

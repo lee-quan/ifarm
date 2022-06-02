@@ -10,10 +10,10 @@ public class Plant {
 
     private String _id, name, unitType;
 
-    public Plant(String name) {
-
+    public Plant(String id, String name, String unitType) {
+        this._id = id;
         this.name = name;
-
+        this.unitType = unitType;
     }
 
     public String getId() {

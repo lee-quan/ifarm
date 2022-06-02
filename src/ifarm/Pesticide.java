@@ -10,8 +10,10 @@ public class Pesticide {
 
     private String _id, name, unitType;
 
-    public Pesticide(String name) {
+    public Pesticide(String id, String name, String unitType) {
+        this._id = id;
         this.name = name;
+        this.unitType = unitType;
     }
 
     public String getId() {
