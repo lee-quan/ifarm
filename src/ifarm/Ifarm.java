@@ -43,15 +43,15 @@ public class Ifarm {
 
     public static void main(String[] args) throws SQLException, FileNotFoundException, IOException {
         try {
-            String[] plantArr = new Plant().getPlantArr();
-            String[] fertilizerArr = new Fertilizer().getFertilizerArr();
-            String[] pesticideArr = new Pesticide().getPesticideArr();
-
+            String[] plantArr = db.generatePlantList();
+            String[] fertilizerArr = db.generateFertiliserList();
+            String[] pesticideArr = db.generatePesticideList();
+            
             final int NumOfFarmer = 100;
             FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM usersList ORDER BY CAST(_id as unsigned)");
             Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
 
-//        Introduction of thread pool
+            //Introduction of thread pool
             ExecutorService executorservice = Executors.newFixedThreadPool(20);
 
             String[] tableName = {"farm", "plant", "fertiliser", "pesticide"};
@@ -60,13 +60,13 @@ public class Ifarm {
             HashMap<String, Integer> MaxData = new HashMap<>();
             List<Generator.count> taskList = new ArrayList<>();
 
-// creating callable task
+            // creating callable task
             for (String tableName1 : tableName) {
                 Generator.count run = d.new count(tableName1);
                 taskList.add(run);
             }
 
-// create a list of future object to store data
+            // create a list of future object to store data
             List<Future<Integer>> resultList;
 
             try {
@@ -82,18 +82,18 @@ public class Ifarm {
                 Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
             }
 
-//set all the maximum value into a constant variable
+            //set all the maximum value into a constant variable
             final int numOfFarm = MaxData.get("farm"),
                     numOfPlant = MaxData.get("plant"),
                     numOfFertiliser = MaxData.get("fertiliser"),
                     numOfPesticide = MaxData.get("pesticide");
 
-//create 2 arrays to store all farms
+            //create 2 arrays to store all farms
             Farm[] farms = new Farm[numOfFarm];
 
             List<Callable<Void>> callables = new ArrayList<>();
 
-//execute farm task
+            //execute farm task
             for (int i = 0; i < numOfFarm; i++) {
                 //randomly assign plants to each farm
                 farms[i] = new Farm((i + 1) + "");
@@ -114,10 +114,6 @@ public class Ifarm {
                 Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
             }
 
-//        System.out.println("Farmer");
-//        for (int i = 0; i < numOfUser; i++) {
-//            System.out.println("User's " + (i + 1) + ": " + users[i].getFarm());
-//        }
             for (int i = 0; i < numOfFarm; i++) {
 //            System.out.println("\nFarm " + (i + 1) + ":");
 //            System.out.println("Plant = " + farms[i].getPlant());
@@ -135,7 +131,8 @@ public class Ifarm {
 
             PrintWriter pwS = new PrintWriter(new FileOutputStream("log1.txt", true));
             PrintWriter pwC = new PrintWriter(new FileOutputStream("log.txt", true));
-// generate activities
+            
+            // generate activities
             List<Callable<Void>> FarmerCallables = new ArrayList<>();
 
             for (Farmer i : farmer) {
@@ -166,10 +163,10 @@ public class Ifarm {
             long endtime = System.currentTimeMillis();
             System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
             
-            System.out.println("\nFarmer Activities number: ");
-            for (Farmer i : farmer) {
-                System.out.println("Farmer "+i.getId()+" has "+i.getTotalAct() + " activities");
-            }
+//            System.out.println("\nFarmer Activities number: ");
+//            for (Farmer i : farmer) {
+//                System.out.println("Farmer "+i.getId()+" has "+i.getTotalAct() + " activities");
+//            }
         } catch (InterruptedException ex) {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }

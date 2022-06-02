@@ -10,11 +10,14 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import java.sql.*;
 
+
 /**
  *
  * @author Lee Quan
  */
 public class DBConnection {
+        
+    private ResultSet rs;    
 
     Connection conn = ConnectDB();
 
@@ -48,5 +51,51 @@ public class DBConnection {
     public void update(String sql) throws SQLException {
         Statement stmt = conn.createStatement();
         stmt.executeUpdate(sql);
+    }
+    
+    public String[] generateFertiliserList(){
+        String[] fertilizerArr = new String[100];
+        try {            
+            this.rs = retrieve("SELECT * FROM fertiliser");
+            int counter = 0;
+            while(rs.next()){
+                fertilizerArr[counter] = rs.getString(2);
+                counter++;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(DBConnection.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return fertilizerArr;
+    }
+    
+    public String[] generatePlantList(){
+        String[] plantArr = new String[100];
+        try {
+            this.rs = retrieve("SELECT * FROM plant");
+            int counter = 0;
+            while (rs.next()) {
+                plantArr[counter] = rs.getString(2);
+                counter++;
+            }
+          } catch (SQLException ex) {
+            Logger.getLogger(DBConnection.class.getName()).log(Level.SEVERE, null, ex);
+        } 
+        return plantArr;
+    }
+    
+    
+    public String[] generatePesticideList(){
+        String[] pesticideArr = new String[100];
+        try {
+            this.rs = retrieve("SELECT * FROM pesticide");
+            int counter = 0;
+            while(rs.next()){
+                pesticideArr[counter] = rs.getString(2);
+                counter++;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(DBConnection.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return pesticideArr;
     }
 }
