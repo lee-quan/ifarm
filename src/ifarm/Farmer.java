@@ -14,7 +14,8 @@ class Farmer implements Runnable {
     private Plant[]plantArr; 
     private Fertilizer[]fertilizerArr; 
     private Pesticide[]pesticideArr;
-    volatile int activityNum;
+    private int activityNum;
+    private int counter;
     private LinkedList<String> farms;
     private Farm[] farm;
     private PrintWriter pw;
@@ -24,6 +25,7 @@ class Farmer implements Runnable {
         activities = new HashMap<>();         
         farms = new LinkedList<>();
         this._id = _id;
+        counter = 0;
     }
 
     public void setFarm(Farm[] farm) {
@@ -114,8 +116,7 @@ class Farmer implements Runnable {
     public void run() {
             String[] ActivityName = {"Sowing", "Fertilizers", "Pesticides", "Harvest", "Sales"};
             String[] UnitType = {"mass", "pack", "volume"};
-            Random r = new Random();
-
+            Random r = new Random();            
             for (int i = 0; i < farms.size(); i++) {
                 activityNum = 1;
                 while (true) {
@@ -127,7 +128,7 @@ class Farmer implements Runnable {
                         }
                     }
                     // random for activity id, date, action, type, unit, quantity, field, row, farmid, userid
-                    String id = activityNum + "";
+                    String id = "F"+this._id+"F"+farms.get(i)+" "+activityNum;
                     String date = r.nextInt(21) + 2000 + "-" + (r.nextInt(12) + 1) + "-" + (r.nextInt(30) + 1);
                     String action = ActivityName[r.nextInt(ActivityName.length)];
                     int farmid = Integer.parseInt(farms.get(i));
@@ -159,12 +160,13 @@ class Farmer implements Runnable {
                     Activity act = new Activity(id, date, action, type, unit, quantity, field, row, farmid + "", userid);
                     // write the log file
                     // Exp log file: Sowing Broccol  Field 1 Row 1 1 kg 2022-03-03
-                    writeLogFile(pw, "Act "+activityNum +" Farmer " + this._id + " on Farm " + farms.get(i) + " " + act.toLogFile() + "\n");
+                    writeLogFile(pw, (counter+1)+" "+id +" Farmer " + this._id + " on Farm " + farms.get(i) + " " + act.toLogFile() + "\n");
                     
                     // increment activity number
                     activityNum++;
+                    counter++;
                 }
-                activities.put(farms.get(i), activityNum);
+                activities.put(farms.get(i), activityNum-1);
 
             }
 
