@@ -134,12 +134,13 @@ public class Ifarm {
 
             PrintWriter pwS = new PrintWriter(new FileOutputStream("log1.txt", true));
             PrintWriter pwC = new PrintWriter(new FileOutputStream("log.txt", true));
-            Counter count = new Counter(1);
+            Counter countS = new Counter(1);
+            Counter countC = new Counter(1);
             // generate activities
             List<Callable<Void>> FarmerCallables = new ArrayList<>();
 
             for (Farmer i : farmer) {
-                i.setCounter(count);
+                i.setCounter(countS);
                 i.setFarm(farms);
                 i.setPlantArr(plantArr);
                 i.setPesticideArr(pesticideArr);
@@ -157,6 +158,7 @@ public class Ifarm {
             System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
 
             for(Farmer i : farmer){
+                i.setCounter(countC);
                 i.setPrintWriter(pwC);
             }
             
