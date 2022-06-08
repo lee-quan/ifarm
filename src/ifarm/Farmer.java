@@ -20,7 +20,8 @@ class Farmer implements Runnable {
     private Farm[] farm;
     private PrintWriter pw;
     private HashMap<String,Integer> activities;    
-
+    private Counter count;
+    
     public Farmer(String _id) {
         activities = new HashMap<>();         
         farms = new LinkedList<>();
@@ -44,7 +45,9 @@ class Farmer implements Runnable {
         this.pesticideArr = pesticideArr;
     }
 
-
+    public void setCounter(Counter c){
+        count = c;
+    }
     public void setPrintWriter(PrintWriter pw) {
         this.pw = pw;
     }
@@ -122,7 +125,7 @@ class Farmer implements Runnable {
                 while (true) {
                     // check at least 1000 activities
 
-                    if (activityNum > 50) {
+                    if (activityNum > 1000) {
                         if (r.nextInt(2) == 0) {                            
                             break;
                         }
@@ -160,7 +163,7 @@ class Farmer implements Runnable {
                     Activity act = new Activity(id, date, action, type, unit, quantity, field, row, farmid + "", userid);
                     // write the log file
                     // Exp log file: Sowing Broccol  Field 1 Row 1 1 kg 2022-03-03
-                    writeLogFile(pw, (counter+1)+" "+id +" Farmer " + this._id + " on Farm " + farms.get(i) + " " + act.toLogFile() + "\n");
+                    writeLogFile(pw, count.getAndIncrease() + "<< activity id < " + (counter+1)+" "+id +" Farmer " + this._id + " on Farm " + farms.get(i) + " " + act.toLogFile() + "\n");
                     
                     // increment activity number
                     activityNum++;

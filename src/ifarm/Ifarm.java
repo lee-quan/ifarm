@@ -134,11 +134,12 @@ public class Ifarm {
 
             PrintWriter pwS = new PrintWriter(new FileOutputStream("log1.txt", true));
             PrintWriter pwC = new PrintWriter(new FileOutputStream("log.txt", true));
-            
+            Counter count = new Counter(1);
             // generate activities
             List<Callable<Void>> FarmerCallables = new ArrayList<>();
 
             for (Farmer i : farmer) {
+                i.setCounter(count);
                 i.setFarm(farms);
                 i.setPlantArr(plantArr);
                 i.setPesticideArr(pesticideArr);
