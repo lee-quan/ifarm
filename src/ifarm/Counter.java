@@ -15,7 +15,6 @@ public class Counter {
     }
     
     public int getAndIncrease(){
-        counter.addAndGet(1);
-        return counter.get();
+        return counter.getAndAdd(1);
     }
 }
