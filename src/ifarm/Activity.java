@@ -61,10 +61,5 @@ public class Activity {
         return userId;
     }
 
-    public String toLogFile() {
-
-        // Exp log file: Sowing Broccoli Field 1 Row 1 1 kg 2022-03-03
-        String str = action + " " + type + " Field " + field + " Row " + row + " " + quantity + " " + unit + " " + date;
-        return str;
-    }
+    
 }
