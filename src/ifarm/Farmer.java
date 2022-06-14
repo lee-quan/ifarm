@@ -111,8 +111,7 @@ class Farmer implements Runnable {
     @Override
     // Generate Activities and write into log files (Concurrent)
     public void run() {
-        String[] ActivityName = {"Sowing", "Fertilizers", "Pesticides", "Harvest", "Sales"};
-//        String[] UnitType = {"mass", "pack", "volume"};
+        String[] ActivityName = {"Sowing", "Harvest", "Sales", "Fertilizers", "Pesticides"};
         String[] Unit = {"kg", "g", "pack (1000g)", "pack (500g)", "l", "ml"};
         Random r = new Random();
         for (int i = 0; i < farms.size(); i++) {
@@ -126,7 +125,7 @@ class Farmer implements Runnable {
                     }
                 }
                 // random for activity id, date, action, type, unit, quantity, field, row, farmid, userid
-//                String id = "F" + this._id + "F" + farms.get(i) + " " + activityNum;
+
                 String date = r.nextInt(21) + 2000 + "-" + (r.nextInt(12) + 1) + "-" + (r.nextInt(30) + 1);
                 int action = r.nextInt(ActivityName.length);
                 int farmid = Integer.parseInt(farms.get(i));
@@ -134,22 +133,25 @@ class Farmer implements Runnable {
                 String type, typeId, quantity="";
                 Integer unit;
                 switch (action) {
-                    case 1, 3, 5 -> {
+                    
+                    case 0, 1, 2 -> {                        
                         unit = r.nextInt(2); // kg,g
                         if(unit==0) quantity=(r.nextInt(9)+1)+"."+(r.nextInt(100));
                         else if(unit==1) quantity=(r.nextInt(9+1)*100)+(r.nextInt(100))+"";
                         
                         //store plants name
-                        typeId = farm[farmid - 1].getPlantlist().get(r.nextInt(farm[farmid - 1].getPlantlist().size()));
+                        typeId = farm[farmid-1].getPlantlist().get(r.nextInt(farm[farmid - 1].getPlantlist().size()));
                         type = plantArr[Integer.parseInt(typeId) - 1].getName();
+                        break;
                     }
-                    case 0 -> { //Fertilizer
+                    case 3 -> { //Fertilizer
                         unit = r.nextInt(2) + 2;// pack 1000,500
                         quantity=(r.nextInt(9)+1)+"";
                         
                         //store fertilizers name
                         typeId = farm[farmid - 1].getFertiliserlist().get(r.nextInt(farm[farmid - 1].getFertiliserlist().size()));
                         type = fertilizerArr[Integer.parseInt(typeId) - 1].getName();
+                        break;
                     }
                     default -> {
                         unit = r.nextInt(2) + 4;
@@ -158,11 +160,9 @@ class Farmer implements Runnable {
                         
                         typeId = farm[farmid - 1].getPesticidelist().get(r.nextInt(farm[farmid - 1].getPesticidelist().size()));
                         type = pesticideArr[Integer.parseInt(typeId) - 1].getName();
+                        break;
                     }
                 }
-//                String unit = UnitType[r.nextInt(UnitType.length)];
-//                Double quantity = r.nextDouble(5);
-//                quantity = Math.rint(quantity * 100) / 100;
                 int field = r.nextInt(3) + 1;
                 int row = r.nextInt(3) + 1;
                 Integer id = count.getAndIncrease();
@@ -173,8 +173,8 @@ class Farmer implements Runnable {
                 } catch (SQLException ex) {
                     Logger.getLogger(Farmer.class.getName()).log(Level.SEVERE, null, ex);
                 }
-        // write the log file
-                    // Exp log file: Sowing Broccol  Field 1 Row 1 1 kg 2022-03-03
+                // write the log file
+                // Exp log file: 1- Farmer 1 on Farm 6 Sowing Ammonium Polyphosphate (POLY11) Field 2 Row 1 (2pack (500g)) 2020-5-29
                 writeLogFile(pw, id + "- Farmer " + this._id + " on Farm " + farms.get(i) + " " +
                         ActivityName[action]+" "+type+" Field "+field+" Row " + row + " ("+quantity+""+Unit[unit] +") "+date+"\n");
 

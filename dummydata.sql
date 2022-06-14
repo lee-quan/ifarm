@@ -86,7 +86,7 @@ CREATE TABLE `ifarm`.`activity` (
   `unit` INT NOT NULL,
   `quantity` VARCHAR(255) NOT NULL,
 `field` INT NOT NULL,
-`row` INT NOT NULL,
+`_row` INT NOT NULL,
 `farmId` VARCHAR(255) NOT NULL,
 `userId` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`_id`),
@@ -127,11 +127,11 @@ INSERT INTO `ifarm`.unit (unitType, unit)  VALUES (3,'l');
 INSERT INTO `ifarm`.unit (unitType, unit)  VALUES (3,'ml');
 
 -- sowing, fertilizers, pesticides, harvest, or sales.
-INSERT INTO `ifarm`.action (action)  VALUES ('fertilizers');
 INSERT INTO `ifarm`.action (action)  VALUES ('sowing');
-INSERT INTO `ifarm`.action (action)  VALUES ('pesticides');
 INSERT INTO `ifarm`.action (action)  VALUES ('harvest');
 INSERT INTO `ifarm`.action (action)  VALUES ('sales');
+INSERT INTO `ifarm`.action (action)  VALUES ('fertilizers');
+INSERT INTO `ifarm`.action (action)  VALUES ('pesticides');
 INSERT INTO `ifarm`.plant (_id, name, unitType)  VALUES ("1","Eggleaf Silktassel", 1);
 INSERT INTO `ifarm`.plant (_id, name, unitType)  VALUES ("2","Lacy Spleenwort", 1);
 INSERT INTO `ifarm`.plant (_id, name, unitType)  VALUES ("3","Circumpolar Starwort", 1);

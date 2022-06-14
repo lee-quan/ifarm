@@ -145,7 +145,8 @@ public class Ifarm {
                 i.setFertilizerArr(fertilizerArr);
                 FarmerCallables.add(toCallable(i));
             }
-
+            
+            db.truncate("truncate activity");
             long sequential_starttime = System.currentTimeMillis();
             for (Farmer i : farmer) {
                 i.setPrintWriter(pwS);
@@ -154,7 +155,7 @@ public class Ifarm {
             long sequential_endtime = System.currentTimeMillis();
             pwS.close();
             System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
-
+            db.truncate("truncate activity");
             for (Farmer i : farmer) {
                 i.setCounter(countC);
                 i.setPrintWriter(pwC);

@@ -32,7 +32,7 @@ public class Activity {
 //`row` INT NOT NULL,
 //`farmId` VARCHAR(255) NOT NULL,
 //`userId` VARCHAR(255) NOT NULL,
-        String insertSql = "INSERT INTO activity (_id,date,action,type,unit,quantity,field,row,farmId,userId) VALUES ("
+        String insertSql = "INSERT INTO activity (_id,date,action,type,unit,quantity,field,_row,farmId,userId) VALUES ("
                 + "\"" + _id + "\","
                 + "\"" + date + "\","
                 + action + ","
@@ -43,7 +43,7 @@ public class Activity {
                 + row + ","
                 + "\"" + farmId + "\","
                 + "\"" + userId + "\""
-                + ")";
+                + ")";        
         db.insert(insertSql);
     }
 
@@ -87,10 +87,4 @@ public class Activity {
         return userId;
     }
 
-//    public String toLogFile() {
-//
-//        // Exp log file: Sowing Broccoli Field 1 Row 1 1 kg 2022-03-03
-//        String str = action + " " + type + " Field " + field + " Row " + row + " " + quantity + " " + unit + " " + date;
-//        return str;
-//    }
 }
