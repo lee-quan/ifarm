@@ -15,11 +15,14 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -39,7 +42,7 @@ public class Ifarm {
     }
 
     public static void main(String[] args) throws SQLException, FileNotFoundException, IOException {
-        try {
+            Random r = new Random();
             Plant[] plantArr = db.generatePlantList();
             Fertilizer[] fertilizerArr = db.generateFertiliserList();
             Pesticide[] pesticideArr = db.generatePesticideList();
@@ -107,12 +110,12 @@ public class Ifarm {
                 Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
             }
             // start generate Farmer
-            final int NumOfFarmer = 1;
+            final int NumOfFarmer = 5;
             FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM users ORDER BY CAST(_id as unsigned)");
             Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
 
             for (int i = 0; i < NumOfFarmer; i++) {
-//                System.out.println("Farmers: " + farmer[i].getId() + " Farm : " + farmer[i].getFarm());
+                System.out.println("Farmers: " + farmer[i].getId() + " Farm : " + farmer[i].getFarm());
             }
 
             for (int i = 0; i < numOfFarm; i++) {
@@ -127,11 +130,11 @@ public class Ifarm {
                 db.update(updateSql);
             }
 
-            Files.deleteIfExists(Paths.get("log.txt"));
-            Files.deleteIfExists(Paths.get("log1.txt"));
-
-            PrintWriter pwS = new PrintWriter(new FileOutputStream("log1.txt", true));
-            PrintWriter pwC = new PrintWriter(new FileOutputStream("log.txt", true));
+            Files.deleteIfExists(Paths.get("logC.txt"));
+            Files.deleteIfExists(Paths.get("logS.txt"));
+            
+            PrintWriter pwS = new PrintWriter(new FileOutputStream("logS.txt", true));
+            PrintWriter pwC = new PrintWriter(new FileOutputStream("logC.txt", true));
             Counter countS = new Counter(1);
             Counter countC = new Counter(1);
             // generate activities
@@ -146,36 +149,83 @@ public class Ifarm {
                 FarmerCallables.add(toCallable(i));
             }
             
+            //Compare sequential time and concurrent time
+            
+//            db.truncate("truncate activity");
+//            long sequential_starttime = System.currentTimeMillis();
+//            for (Farmer i : farmer) {
+//                i.setPrintWriter(pwS);
+//                i.run();
+//            }
+//            long sequential_endtime = System.currentTimeMillis();
+//            pwS.close();
+//            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
+//            db.truncate("truncate activity");
+//            for (Farmer i : farmer) {
+//                i.setCounter(countC);
+//                i.setPrintWriter(pwC);
+//            }
+//            
+//            try {
+//                long starttime = System.currentTimeMillis();
+//                executorservice.invokeAll(FarmerCallables);
+//                long endtime = System.currentTimeMillis();
+//                System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
+//            } catch (InterruptedException ex) {
+//                Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
+//            }
+//            pwC.close();
+            
+            // Disaster stimulation
+            // run again the concurrent part but with disaster
             db.truncate("truncate activity");
-            long sequential_starttime = System.currentTimeMillis();
+            Files.deleteIfExists(Paths.get("logException.txt"));
+            PrintWriter pwE = new PrintWriter(new FileOutputStream("logException.txt", true));
+            CustomThreadPool executor = new CustomThreadPool(10, 30, 10,  
+                            TimeUnit.SECONDS, new LinkedBlockingQueue<>());
+            Counter countE = new Counter(1);
             for (Farmer i : farmer) {
-                i.setPrintWriter(pwS);
-                i.run();
+                i.setCounter(countE);
+                i.setPrintWriter(pwE);
+                i.setDisaster(r.nextBoolean());
+                i.setExecutor(executor);
             }
-            long sequential_endtime = System.currentTimeMillis();
-            pwS.close();
-            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
-            db.truncate("truncate activity");
-            for (Farmer i : farmer) {
-                i.setCounter(countC);
-                i.setPrintWriter(pwC);
-            }
-
-            long starttime = System.currentTimeMillis();
-            executorservice.invokeAll(FarmerCallables);
-            long endtime = System.currentTimeMillis();
-            pwC.close();
-            executorservice.shutdown();
-
-            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
-
             System.out.println();
-            for (Farmer i : farmer) {
-                i.getActivityList();
+            try {
+                
+                executor.invokeAll(FarmerCallables);  
+                for (Farmer i : farmer) {                
+                    i.getActivityList();
+                }
+                System.out.println(executor.getSize());                
+                List<Runnable> tasklist = executor.geFailedTaskList();
+                
+                //re-execute the tasklist
+                List<Callable<Void>> test = new ArrayList<>();
+                for (Runnable task: tasklist){
+                    test.add(toCallable(task));
+                }
+                for (Farmer i : farmer) {
+                    i.setDisaster(false);
+                }
+                executorservice.invokeAll(test);
+                for (Farmer i : farmer) {                
+                    i.getActivityList();
+                }
+            } catch (InterruptedException ex) {                
+                
             }
-        } catch (InterruptedException ex) {
-            Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
-        }
+            while(executor.isTerminated()){
+            
+            }
+            executor.shutdown();
+            
+            
+            pwE.close();
+            executorservice.shutdown();
+            System.out.println();
+            
+         
 
     }
 }

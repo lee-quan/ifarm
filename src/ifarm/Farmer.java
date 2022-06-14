@@ -6,6 +6,7 @@ import java.sql.*;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Random;
+import java.util.concurrent.ExecutionException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -22,11 +23,22 @@ class Farmer implements Runnable {
     private PrintWriter pw;
     private HashMap<String, Integer> activities;
     private Counter count;
+    private boolean disaster;
+    private CustomThreadPool executor;
 
     public Farmer(String _id) {
         activities = new HashMap<>();
         farms = new LinkedList<>();
         this._id = _id;
+        disaster = false;
+    }
+    
+    public void setExecutor(CustomThreadPool executor){
+        this.executor = executor;
+    }
+
+    public void setDisaster(boolean disaster) {
+        this.disaster = disaster;
     }
 
     public void setFarm(Farm[] farm) {
@@ -88,10 +100,13 @@ class Farmer implements Runnable {
 
     public void getActivityList() {
         System.out.println("Farmers: " + this._id);
-        activities.entrySet().forEach(entry -> {
-            System.out.println("Farm: " + entry.getKey() + " with activities: " + entry.getValue());
-        });
-        System.out.println();
+        System.out.println(activities.entrySet());
+        
+//        activities.entrySet().forEach(entry -> {
+//            System.out.println("Farm: " + entry.getKey() + " with activities: " + entry.getValue());
+//        });
+//        System.out.println();
+        
     }
 
     public String getFarm() {
@@ -123,9 +138,22 @@ class Farmer implements Runnable {
                     if (r.nextInt(2) == 0) {
                         break;
                     }
+                }                
+                if (disaster){
+                    boolean fail = r.nextBoolean();
+                    if (fail) { // random task to be failed                        
+                        //failed the thread and throw to exeception handler
+                        executor.setException(new DisasterException("Disaster happened"));
+                        Thread.currentThread().stop();                        
+                    }
                 }
+                else{
+                    executor.setException(null);
+                    
+                }
+                
                 // random for activity id, date, action, type, unit, quantity, field, row, farmid, userid
-
+                Integer id = count.getAndIncrease();
                 String date = r.nextInt(21) + 2000 + "-" + (r.nextInt(12) + 1) + "-" + (r.nextInt(30) + 1);
                 int action = r.nextInt(ActivityName.length);
                 int farmid = Integer.parseInt(farms.get(i));
@@ -165,7 +193,7 @@ class Farmer implements Runnable {
                 }
                 int field = r.nextInt(3) + 1;
                 int row = r.nextInt(3) + 1;
-                Integer id = count.getAndIncrease();
+                
                 try {
                     //Create new Activity
                     Activity act = new Activity(id, date, action + 1, typeId+1, unit+1, quantity, field, row, farmid + "", userid);
@@ -188,7 +216,6 @@ class Farmer implements Runnable {
     }
 
     public synchronized void writeLogFile(PrintWriter pw, String str) {
-        pw.write(str);
-
+        pw.write(str);        
     }
 }
