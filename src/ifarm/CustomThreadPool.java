@@ -17,11 +17,13 @@ import java.util.concurrent.TimeUnit;
 public class CustomThreadPool extends ThreadPoolExecutor{
     
     private List<Runnable> list;
+    private int taskFail;
     private Exception exception;
     
     public CustomThreadPool(int PoolSize, int maxPoolSize, long keepAliveTime, TimeUnit unit,BlockingQueue<Runnable> workQueue) {  
         super(PoolSize, maxPoolSize, keepAliveTime, unit, workQueue);  
         list = new ArrayList<>();
+        taskFail=0;
     }  
     
     @Override  
@@ -30,7 +32,7 @@ public class CustomThreadPool extends ThreadPoolExecutor{
         if (throw1 ==null){            
             // complete execution without other exeception throws             
             if (this.exception !=null){
-                list.add(task);                          
+                incTaskFail();                        
             }
         }
         else{
@@ -43,8 +45,16 @@ public class CustomThreadPool extends ThreadPoolExecutor{
         return this.list;
     }
     
-    public int getSize(){
+    public int getSize(){        
         return this.list.size();
+    }
+    
+    public int gettaskFail(){
+        return this.taskFail;
+    }
+    
+    public synchronized void incTaskFail(){
+        taskFail++;
     }
     
     public void setException(Exception exception){

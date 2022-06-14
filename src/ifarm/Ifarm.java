@@ -180,48 +180,49 @@ public class Ifarm {
             // run again the concurrent part but with disaster
             db.truncate("truncate activity");
             Files.deleteIfExists(Paths.get("logException.txt"));
-            PrintWriter pwE = new PrintWriter(new FileOutputStream("logException.txt", true));
+            PrintWriter pwException = new PrintWriter(new FileOutputStream("logException.txt", true));
             CustomThreadPool executor = new CustomThreadPool(10, 30, 10,  
                             TimeUnit.SECONDS, new LinkedBlockingQueue<>());
             Counter countE = new Counter(1);
             for (Farmer i : farmer) {
                 i.setCounter(countE);
-                i.setPrintWriter(pwE);
+                i.setPrintWriterException(pwException);
                 i.setDisaster(r.nextBoolean());
                 i.setExecutor(executor);
             }
             System.out.println();
             try {
-                
+                //fail the thread
                 executor.invokeAll(FarmerCallables);  
-                for (Farmer i : farmer) {                
-                    i.getActivityList();
-                }
-                System.out.println(executor.getSize());                
-                List<Runnable> tasklist = executor.geFailedTaskList();
-                
-                //re-execute the tasklist
-                List<Callable<Void>> test = new ArrayList<>();
-                for (Runnable task: tasklist){
-                    test.add(toCallable(task));
-                }
-                for (Farmer i : farmer) {
-                    i.setDisaster(false);
-                }
-                executorservice.invokeAll(test);
-                for (Farmer i : farmer) {                
-                    i.getActivityList();
-                }
             } catch (InterruptedException ex) {                
                 
             }
+            for (Farmer i : farmer) {                
+                i.getActivityList();
+            }                
+            int failTasknum = executor.gettaskFail();
+
+            //recover the activities - corrective
+            for (Farmer i : farmer){
+                //check which farmer activity is empty
+                if(i.EmptyActivity()){
+                    //find which activity num is missing
+                    
+                }
+            }
+
+            for (Farmer i : farmer) {                
+                i.getActivityList();
+            }
+                
+                
             while(executor.isTerminated()){
             
             }
             executor.shutdown();
             
             
-            pwE.close();
+            pwException.close();
             executorservice.shutdown();
             System.out.println();
             

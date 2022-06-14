@@ -21,6 +21,7 @@ class Farmer implements Runnable {
     private LinkedList<String> farms;
     private Farm[] farm;
     private PrintWriter pw;
+    private PrintWriter pwException;
     private HashMap<String, Integer> activities;
     private Counter count;
     private boolean disaster;
@@ -64,6 +65,9 @@ class Farmer implements Runnable {
     public void setPrintWriter(PrintWriter pw) {
         this.pw = pw;
     }
+    public void setPrintWriterException(PrintWriter pwException) {
+        this.pwException = pwException;
+    }
 
     public void setDetails(String name, String email, String password, String phoneNumber) throws SQLException {
         this.name = name;
@@ -99,14 +103,17 @@ class Farmer implements Runnable {
     }
 
     public void getActivityList() {
-        System.out.println("Farmers: " + this._id);
-        System.out.println(activities.entrySet());
+        System.out.println("Farmers: " + this._id);        
         
-//        activities.entrySet().forEach(entry -> {
-//            System.out.println("Farm: " + entry.getKey() + " with activities: " + entry.getValue());
-//        });
-//        System.out.println();
+        activities.entrySet().forEach(entry -> {
+            System.out.println("Farm: " + entry.getKey() + " with activities: " + entry.getValue());
+        });
+        System.out.println();
         
+    }
+    
+    public boolean EmptyActivity(){
+        return activities.isEmpty();
     }
 
     public String getFarm() {
@@ -124,7 +131,7 @@ class Farmer implements Runnable {
     }
 
     @Override
-    // Generate Activities and write into log files (Concurrent)
+    // Generate Activities and write into log files 
     public void run() {
         String[] ActivityName = {"Sowing", "Harvest", "Sales", "Fertilizers", "Pesticides"};
         String[] Unit = {"kg", "g", "pack (1000g)", "pack (500g)", "l", "ml"};
@@ -217,5 +224,9 @@ class Farmer implements Runnable {
 
     public synchronized void writeLogFile(PrintWriter pw, String str) {
         pw.write(str);        
+    }
+    
+    public synchronized void writeExceptionFile(String str){
+        pwException.write(str);
     }
 }
