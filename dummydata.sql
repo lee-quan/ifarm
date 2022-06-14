@@ -60,10 +60,77 @@ CREATE TABLE `ifarm`.`users` (
   `phoneNumber` VARCHAR(45) NULL,
   PRIMARY KEY (`_id`));
 
+CREATE TABLE `ifarm`.`unit`(
+  `_id` INT NOT NULL AUTO_INCREMENT,
+  `unitType` INT NOT NULL,
+  `unit` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`_id`),
+INDEX `unit_unitType_idx` (`unitType` ASC),
+  CONSTRAINT `unit_unitType`
+    FOREIGN KEY (`unitType`)
+    REFERENCES `ifarm`.`unit_type` (`_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+CREATE TABLE `ifarm`.`action`(  
+  `_id` INT NOT NULL AUTO_INCREMENT,
+  `action` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`_id`));
+
+CREATE TABLE `ifarm`.`activity` (
+  `_id` VARCHAR(45) NOT NULL,
+  `date` DATE NOT NULL,
+  `action` INT NOT NULL,
+  `type` VARCHAR(255) NOT NULL,
+  `unit` INT NOT NULL,
+  `quantity` VARCHAR(255) NOT NULL,
+`field` INT NOT NULL,
+`row` INT NOT NULL,
+`farmId` VARCHAR(255) NOT NULL,
+`userId` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`_id`),
+INDEX `activity_farmId_idx` (`farmId` ASC),
+  CONSTRAINT `activity_farmId`
+    FOREIGN KEY (`farmId`)
+    REFERENCES `ifarm`.`farm` (`_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+INDEX `activity_userId_idx` (`userId` ASC),
+  CONSTRAINT `activity_userId`
+    FOREIGN KEY (`userId`)
+    REFERENCES `ifarm`.`users` (`_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+INDEX `activity_action_idx` (`action` ASC),
+  CONSTRAINT `activity_action`
+    FOREIGN KEY (`action`)
+    REFERENCES `ifarm`.`action` (`_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+INDEX `activity_unit_idx` (`unit` ASC),
+  CONSTRAINT `activity_unit`
+    FOREIGN KEY (`unit`)
+    REFERENCES `ifarm`.`unit` (`_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
 INSERT INTO `ifarm`.unit_type (unitType)  VALUES ('mass');
 INSERT INTO `ifarm`.unit_type (unitType)  VALUES ('pack');
 INSERT INTO `ifarm`.unit_type (unitType)  VALUES ('volume');
 
+INSERT INTO `ifarm`.unit (unitType, unit)  VALUES (1,'kg');
+INSERT INTO `ifarm`.unit (unitType, unit)  VALUES (1,'g');
+INSERT INTO `ifarm`.unit (unitType, unit)  VALUES (2,'pack (1000g)');
+INSERT INTO `ifarm`.unit (unitType, unit)  VALUES (2,'pack (500g)');
+INSERT INTO `ifarm`.unit (unitType, unit)  VALUES (3,'l');
+INSERT INTO `ifarm`.unit (unitType, unit)  VALUES (3,'ml');
+
+-- sowing, fertilizers, pesticides, harvest, or sales.
+INSERT INTO `ifarm`.action (action)  VALUES ('fertilizers');
+INSERT INTO `ifarm`.action (action)  VALUES ('sowing');
+INSERT INTO `ifarm`.action (action)  VALUES ('pesticides');
+INSERT INTO `ifarm`.action (action)  VALUES ('harvest');
+INSERT INTO `ifarm`.action (action)  VALUES ('sales');
 INSERT INTO `ifarm`.plant (_id, name, unitType)  VALUES ("1","Eggleaf Silktassel", 1);
 INSERT INTO `ifarm`.plant (_id, name, unitType)  VALUES ("2","Lacy Spleenwort", 1);
 INSERT INTO `ifarm`.plant (_id, name, unitType)  VALUES ("3","Circumpolar Starwort", 1);
