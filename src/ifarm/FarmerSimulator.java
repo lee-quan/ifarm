@@ -47,9 +47,7 @@ public class FarmerSimulator implements FarmerSimulatorInterface {
 
             // execute generate farm task and wait till finish completion 
             resultList = executorService.invokeAll(taskList);            
-
             // execute mysql to insert details of farmer
-            db.truncate("TRUNCATE `ifarm`.`users`;");
             ResultSet rs = db.retrieve(sql);
 
             int counter = 0;

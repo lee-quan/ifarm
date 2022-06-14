@@ -1,14 +1,17 @@
 package ifarm;
 
+import database.DBConnection;
+import java.sql.SQLException;
+
 public class Activity {
 
-    private String _id,date,action,type,unit,farmId,userId;
-    private Double quantity;
-    private Integer field,row;    
+    DBConnection db = new DBConnection();
+    private String date, type, farmId, userId, quantity;
+    private Integer field, row, action, unit, _id;
 
-    public Activity(String _id, String date, String action, String type,
-            String unit, Double quantity, Integer field, Integer row, String farmId,
-            String userId) {
+    public Activity(Integer _id, String date, Integer action, String type,
+            Integer unit, String quantity, Integer field, Integer row, String farmId,
+            String userId) throws SQLException {
         this._id = _id;
         this.date = date;
         this.action = action;
@@ -19,9 +22,32 @@ public class Activity {
         this.row = row;
         this.farmId = farmId;
         this.userId = userId;
+//        `_id` VARCHAR(45) NOT NULL,
+//  `date` DATE NOT NULL,
+//  `action` INT NOT NULL,
+//  `type` VARCHAR(255) NOT NULL,
+//  `unit` INT NOT NULL,
+//  `quantity` VARCHAR(255) NOT NULL,
+//`field` INT NOT NULL,
+//`row` INT NOT NULL,
+//`farmId` VARCHAR(255) NOT NULL,
+//`userId` VARCHAR(255) NOT NULL,
+        String insertSql = "INSERT INTO activity (_id,date,action,type,unit,quantity,field,row,farmId,userId) VALUES ("
+                + "\"" + _id + "\","
+                + "\"" + date + "\","
+                + action + ","
+                + "\"" + type + "\","
+                + unit + ","
+                + "\"" + quantity + "\","
+                + field + ","
+                + row + ","
+                + "\"" + farmId + "\","
+                + "\"" + userId + "\""
+                + ")";
+        db.insert(insertSql);
     }
 
-    public String get_id() {
+    public Integer get_id() {
         return _id;
     }
 
@@ -29,7 +55,7 @@ public class Activity {
         return date;
     }
 
-    public String getAction() {
+    public Integer getAction() {
         return action;
     }
 
@@ -37,11 +63,11 @@ public class Activity {
         return type;
     }
 
-    public String getUnit() {
+    public Integer getUnit() {
         return unit;
     }
 
-    public Double getQuantity() {
+    public String getQuantity() {
         return quantity;
     }
 
@@ -61,10 +87,10 @@ public class Activity {
         return userId;
     }
 
-    public String toLogFile() {
-
-        // Exp log file: Sowing Broccoli Field 1 Row 1 1 kg 2022-03-03
-        String str = action + " " + type + " Field " + field + " Row " + row + " " + quantity + " " + unit + " " + date;
-        return str;
-    }
+//    public String toLogFile() {
+//
+//        // Exp log file: Sowing Broccoli Field 1 Row 1 1 kg 2022-03-03
+//        String str = action + " " + type + " Field " + field + " Row " + row + " " + quantity + " " + unit + " " + date;
+//        return str;
+//    }
 }

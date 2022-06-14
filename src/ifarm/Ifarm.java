@@ -42,10 +42,10 @@ public class Ifarm {
         try {
             Plant[] plantArr = db.generatePlantList();
             Fertilizer[] fertilizerArr = db.generateFertiliserList();
-            Pesticide[] pesticideArr = db.generatePesticideList();                        
+            Pesticide[] pesticideArr = db.generatePesticideList();
 
             //Introduction of thread pool
-            ExecutorService executorservice = Executors.newFixedThreadPool(20);
+            ExecutorService executorservice = Executors.newFixedThreadPool(8);
 
             String[] tableName = {"farm", "plant", "fertiliser", "pesticide"};
 
@@ -107,27 +107,25 @@ public class Ifarm {
                 Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
             }
             // start generate Farmer
-            final int NumOfFarmer = 100;
-            FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM usersList ORDER BY CAST(_id as unsigned)");
+            final int NumOfFarmer = 1;
+            FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM users ORDER BY CAST(_id as unsigned)");
             Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
-            
+
             for (int i = 0; i < NumOfFarmer; i++) {
-                System.out.println("Farmers: " + farmer[i].getId() + " Farm : " + farmer[i].getFarm());
+//                System.out.println("Farmers: " + farmer[i].getId() + " Farm : " + farmer[i].getFarm());
             }
 
             for (int i = 0; i < numOfFarm; i++) {
-            System.out.println("\nFarm " + (i + 1) + ":");
-            System.out.println("Plant = " + farms[i].getPlant());
-            System.out.println("Fertilizer = " + farms[i].getFertiliser());
-            System.out.println("Pesticide = " + farms[i].getPesticide());
+                System.out.println("\nFarm " + (i + 1) + ":");
+                System.out.println("Plant = " + farms[i].getPlant());
+                System.out.println("Fertilizer = " + farms[i].getFertiliser());
+                System.out.println("Pesticide = " + farms[i].getPesticide());
                 String updateSql = "UPDATE farm "
                         + "SET plants=\"" + farms[i].getPlant() + "\","
                         + "fertilizers=\"" + farms[i].getFertiliser() + "\","
                         + "pesticides=\"" + farms[i].getPesticide() + "\" WHERE _id=\"" + farms[i].getId() + "\"";
                 db.update(updateSql);
             }
-            
-            
 
             Files.deleteIfExists(Paths.get("log.txt"));
             Files.deleteIfExists(Paths.get("log1.txt"));
@@ -157,21 +155,21 @@ public class Ifarm {
             pwS.close();
             System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
 
-            for(Farmer i : farmer){
+            for (Farmer i : farmer) {
                 i.setCounter(countC);
                 i.setPrintWriter(pwC);
             }
-            
+
             long starttime = System.currentTimeMillis();
             executorservice.invokeAll(FarmerCallables);
             long endtime = System.currentTimeMillis();
             pwC.close();
             executorservice.shutdown();
-            
+
             System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
-            
+
             System.out.println();
-            for(Farmer i : farmer){
+            for (Farmer i : farmer) {
                 i.getActivityList();
             }
         } catch (InterruptedException ex) {

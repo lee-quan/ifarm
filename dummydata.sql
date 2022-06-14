@@ -56,8 +56,9 @@ CREATE TABLE `ifarm`.`users` (
   `_id` VARCHAR(45) NOT NULL,
   `name` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
-  `password` VARCHAR(45) NULL,
-  `phoneNumber` VARCHAR(45) NULL,
+  `password` VARCHAR(45) NOT NULL,
+  `phoneNumber` VARCHAR(45) NOT NULL,
+  `farm` VARCHAR(255) NULL,
   PRIMARY KEY (`_id`));
 
 CREATE TABLE `ifarm`.`unit`(
