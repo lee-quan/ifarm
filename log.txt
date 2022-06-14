@@ -1,38 +1,10 @@
-1- Farmer 1 on Farm 8 Sales Confidor 17.8 Field 2 Row 2 (2.24l) 2005-8-1
-2- Farmer 1 on Farm 8 Sowing Pymetrodun Field 3 Row 1 (5pack (500g)) 2014-5-15
-3- Farmer 1 on Farm 8 Pesticides BayerDecus Field 1 Row 1 (5.99l) 2019-3-29
-4- Farmer 1 on Farm 8 Sales Zeal (etoxazole) Field 2 Row 2 (7.89l) 2008-8-11
-5- Farmer 1 on Farm 8 Sales Tata Alpha 10 Field 1 Row 2 (8.41l) 2005-4-4
-6- Farmer 1 on Farm 1 Fertilizers Circumpolar Starwort Field 1 Row 2 (8.48kg) 2017-3-16
-7- Farmer 1 on Farm 1 Pesticides HectarLavette 455 Field 3 Row 3 (3.23l) 2007-3-19
-8- Farmer 1 on Farm 1 Fertilizers West Indian Porterweed Field 1 Row 1 (31g) 2004-2-24
-9- Farmer 1 on Farm 1 Harvest Royal Tonguefern Field 1 Row 2 (5.50kg) 2001-8-2
-10- Farmer 1 on Farm 1 Fertilizers Peach Springs Canyon Cholla Field 2 Row 3 (9.3kg) 2005-4-19
-11- Farmer 1 on Farm 9 Sales Artemisia argyi Wormwood Field 3 Row 1 (3.30l) 2002-8-22
-12- Farmer 1 on Farm 9 Sales PPPs Field 2 Row 3 (8.1l) 2003-1-28
-13- Farmer 1 on Farm 9 Harvest Streambank Springbeauty Field 1 Row 3 (698g) 2020-12-8
-14- Farmer 1 on Farm 9 Pesticides Carbaryl (N-methyl carbamate), Field 3 Row 3 (87ml) 2001-6-18
-15- Farmer 1 on Farm 9 Harvest Russian Rocket Field 2 Row 3 (9.82kg) 2009-10-4
-16- Farmer 1 on Farm 9 Harvest Cottam's Buckwheat Field 2 Row 1 (6.96kg) 2009-8-18
-17- Farmer 1 on Farm 9 Harvest Streambank Springbeauty Field 1 Row 3 (425g) 2010-12-1
-18- Farmer 1 on Farm 9 Fertilizers Puckhout Field 3 Row 1 (1.4kg) 2006-4-20
-19- Farmer 1 on Farm 9 Harvest Cliff Beardtongue Field 2 Row 2 (384g) 2015-11-19
-20- Farmer 1 on Farm 9 Harvest Guara Blanca Field 3 Row 1 (6.18kg) 2007-4-1
-21- Farmer 1 on Farm 9 Harvest Circumpolar Starwort Field 1 Row 1 (7.21kg) 2015-1-21
-22- Farmer 1 on Farm 4 Harvest Woolly Prairie Clover Field 2 Row 1 (870g) 2014-10-24
-23- Farmer 1 on Farm 4 Pesticides Acramite (bifenazate) Field 3 Row 1 (960ml) 2000-1-26
-24- Farmer 1 on Farm 4 Sowing Ammonium Sulfate Field 1 Row 3 (6pack (500g)) 2019-11-18
-25- Farmer 1 on Farm 4 Sales Cythion 57% (malathion) Field 2 Row 2 (5.67l) 2010-11-13
-26- Farmer 1 on Farm 4 Pesticides Lannate L Field 2 Row 3 (6.51l) 2006-10-22
-27- Farmer 1 on Farm 4 Harvest Night Scented Orchid Field 2 Row 2 (422g) 2019-1-16
-28- Farmer 1 on Farm 4 Fertilizers Rough Century Plant Field 2 Row 1 (251g) 2008-1-9
-29- Farmer 1 on Farm 5 Sales Actara 25 Field 2 Row 1 (7.2l) 2000-7-26
-30- Farmer 1 on Farm 5 Sowing Amm Nitrate-Limestone Mixtures Field 2 Row 3 (1pack (500g)) 2005-4-15
-31- Farmer 1 on Farm 5 Sowing Incrusi Ferti Inc. Pe 349 Field 1 Row 3 (4pack (1000g)) 2018-5-1
-32- Farmer 1 on Farm 5 Sowing Zjies Shaet Field 1 Row 3 (5pack (1000g)) 2015-7-6
-33- Farmer 1 on Farm 5 Harvest Shield Lichen Field 2 Row 1 (948g) 2000-5-6
-34- Farmer 1 on Farm 10 Pesticides Vertimac Field 2 Row 2 (616ml) 2008-10-14
-35- Farmer 1 on Farm 10 Fertilizers English Walnut Field 2 Row 3 (9.50kg) 2011-11-27
-36- Farmer 1 on Farm 10 Sowing Basic Lime Phosphate Field 2 Row 2 (1pack (500g)) 2000-4-17
-37- Farmer 1 on Farm 10 Fertilizers Black Gram Field 3 Row 3 (4.50kg) 2016-3-10
-38- Farmer 1 on Farm 10 Pesticides HectarLavette 455 Field 2 Row 3 (3.87l) 2018-11-4
+1 - Farmer 1 on Farm 1 Harvest Quinine Field 2 Row 2 (3.25kg) 2022-05-16
+2 - Farmer 1 on Farm 1 Fertilizers Ammonium Phosphate Sulfate Field 2 Row 2 (4pack(1000g)) 2022-04-26
+3 - Farmer 1 on Farm 1 Fertilizers Soybean Meal Field 3 Row 2 (7pack(1000g)) 2022-04-03
+4 - Farmer 1 on Farm 1 Harvest Royal Tonguefern Field 1 Row 3 (8.43kg) 2022-06-13
+5 - Farmer 1 on Farm 1 Sales Blueflower Eryngo Field 1 Row 2 (9.97kg) 2022-05-29
+6 - Farmer 1 on Farm 7 Pesticides Pyrethrins Field 1 Row 3 (9.13l) 2022-03-24
+7 - Farmer 1 on Farm 7 Fertilizers Diammonium Phosphate Field 1 Row 1 (2pack(1000g)) 2022-05-14
+8 - Farmer 1 on Farm 7 Sales Ballhead Waterleaf Field 3 Row 2 (886g) 2022-05-21
+9 - Farmer 1 on Farm 7 Sales Ballhead Waterleaf Field 3 Row 1 (3.63kg) 2022-04-19
+10 - Farmer 1 on Farm 7 Sales Prickly Bog Sedge Field 1 Row 2 (3.33kg) 2022-03-19
