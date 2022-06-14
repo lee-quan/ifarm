@@ -123,7 +123,7 @@ class Farmer implements Runnable {
                 while (true) {
                     // check at least 1000 activities
 
-                    if (activityNum > 50) {
+                    if (activityNum > 1000) {
                         if (r.nextInt(2) == 0) {                            
                             break;
                         }
