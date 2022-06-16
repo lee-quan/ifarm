@@ -210,7 +210,7 @@ public class Ifarm {
                 switch (opt) {
                     case 1 -> {
                         while (true) {
-                            System.out.print("(0 - Back to main menu)\nEnter farm id to be displayed (1-" + farms.length + "): \n");
+                            System.out.print("(0 - Back to main menu)\nEnter farm id to be displayed (1-" + farms.length + "): ");
                             int displayFarm = sc.nextInt();
                             if (displayFarm > 0 || displayFarm <= farms.length) {
                                 dv.getChoice(opt + "," + displayFarm);
@@ -224,7 +224,7 @@ public class Ifarm {
                     }
                     case 2 -> {
                         while (true) {
-                            System.out.print("(0 - Back to main menu)\nEnter farmer id to be displayed (1-" + farmer.length + "): \n");
+                            System.out.print("(0 - Back to main menu)\nEnter farmer id to be displayed (1-" + farmer.length + "): ");
                             int displayFarmer = sc.nextInt();
                             if (displayFarmer > 0 || displayFarmer <= farms.length) {
                                 dv.getChoice(opt + "," + displayFarmer);

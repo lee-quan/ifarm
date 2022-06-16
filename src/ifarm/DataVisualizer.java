@@ -62,26 +62,23 @@ public class DataVisualizer {
                 printLog(sql);
             }
             case "3" -> {
-                if (arr[1].equals("1")) {
-                    sql = "select ac._id, ac.userId, ac.farmId, a.action, p.name,ac.field,ac._row,ac.quantity,u.unit,date from activity ac "
-                            + "JOIN action a ON a._id = ac.action "
-                            + "JOIN unit u ON ac.unit = u._id "
-                            + "JOIN plant p ON p._id = ac.type "
-                            + "WHERE (ac.action=1 OR ac.action=2 OR ac.action=3) AND ac.type=\"" + arr[2] + "\"   ORDER BY CAST(ac._id as unsigned)";
-                } else if (arr[1].equals("2")) {
-                    sql = "select ac._id,  ac.userId, ac.farmId, a.action, f.name,ac.field,ac._row,ac.quantity,u.unit,date from activity ac "
-                            + "JOIN action a ON a._id = ac.action "
-                            + "JOIN unit u ON ac.unit = u._id "
-                            + "JOIN fertiliser f ON f._id = ac.type "
-                            + "WHERE ac.action=4 AND ac.type=\"" + arr[2] + "\" ORDER BY CAST(ac._id as unsigned)";
-
-                } else {
-                    sql = "select ac._id,  ac.userId, ac.farmId, a.action, pes.name,ac.field,ac._row,ac.quantity,u.unit,date from activity ac "
-                            + "JOIN action a ON a._id = ac.action "
-                            + "JOIN unit u ON ac.unit = u._id "
-                            + "JOIN pesticide pes ON pes._id = ac.type "
-                            + "WHERE ac.action=5 AND ac.type=\"" + arr[2] + "\" ORDER BY CAST(ac._id as unsigned)";
-                }
+                sql = switch (arr[1]) {
+                case "1" -> "select ac._id, ac.userId, ac.farmId, a.action, p.name,ac.field,ac._row,ac.quantity,u.unit,date from activity ac "
+                        + "JOIN action a ON a._id = ac.action "
+                        + "JOIN unit u ON ac.unit = u._id "
+                        + "JOIN plant p ON p._id = ac.type "
+                        + "WHERE (ac.action=1 OR ac.action=2 OR ac.action=3) AND ac.type=\"" + arr[2] + "\"   ORDER BY CAST(ac._id as unsigned)";
+                case "2" -> "select ac._id,  ac.userId, ac.farmId, a.action, f.name,ac.field,ac._row,ac.quantity,u.unit,date from activity ac "
+                        + "JOIN action a ON a._id = ac.action "
+                        + "JOIN unit u ON ac.unit = u._id "
+                        + "JOIN fertiliser f ON f._id = ac.type "
+                        + "WHERE ac.action=4 AND ac.type=\"" + arr[2] + "\" ORDER BY CAST(ac._id as unsigned)";
+                default -> "select ac._id,  ac.userId, ac.farmId, a.action, pes.name,ac.field,ac._row,ac.quantity,u.unit,date from activity ac "
+                        + "JOIN action a ON a._id = ac.action "
+                        + "JOIN unit u ON ac.unit = u._id "
+                        + "JOIN pesticide pes ON pes._id = ac.type "
+                        + "WHERE ac.action=5 AND ac.type=\"" + arr[2] + "\" ORDER BY CAST(ac._id as unsigned)";
+                };
                 printLog(sql);
             }
             case "4" -> {
@@ -181,6 +178,8 @@ public class DataVisualizer {
     public void printLog(String sql) throws SQLException {
         System.out.println();
         ResultSet rs = conn.retrieve(sql);
+        if (!rs.next())
+            System.out.println("There is no activity done" );
         while (rs.next()) {
             System.out.println(rs.getString(1) + " - " + " Farmer " + rs.getString(2) + " on Farm " + rs.getString(3) + " " + rs.getString(4) + " " + rs.getString(5)
                     + " Field " + rs.getInt(6) + " Row " + rs.getInt(7) + " " + rs.getDouble(8) + " " + rs.getString(9) + " " + rs.getString(10));
@@ -194,7 +193,9 @@ public class DataVisualizer {
         List<Double> newQuantity = new ArrayList<>();
         List<String> unit = new ArrayList<>();
         List<String> pair = new ArrayList<>();
-
+        
+        if (!rs.next())
+            System.out.println("There is no activity done" );
         while (rs.next()) {
             String testPair = rs.getString(2) + " " + rs.getString(4);
 //            System.out.println(testPair+" "+pair.indexOf(testPair));
