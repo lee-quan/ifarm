@@ -54,15 +54,15 @@ public class DataVisualizer {
                 + "JOIN pesticide pes ON pes._id = ac.type "
                 + "WHERE ac.action=5))  AS table1 WHERE ";
         switch (arr[0]) {
-            case "1":
+            case "1" -> {
                 sql += " farmId=\"" + arr[1] + "\" ORDER BY CAST(_id as unsigned)";
                 printLog(sql);
-                break;
-            case "2":
+            }
+            case "2" -> {
                 sql += " userId=\"" + arr[1] + "\" ORDER BY CAST(_id as unsigned)";
                 printLog(sql);
-                break;
-            case "3":
+            }
+            case "3" -> {
                 if (arr[1].equals("1")) {
                     sql = "select ac._id, ac.userId, ac.farmId, a.action, p.name,ac.field,ac._row,ac.quantity,u.unit,date from activity ac "
                             + "JOIN action a ON a._id = ac.action "
@@ -84,8 +84,8 @@ public class DataVisualizer {
                             + "WHERE ac.action=5 AND ac.type=\"" + arr[2] + "\" ORDER BY CAST(ac._id as unsigned)";
                 }
                 printLog(sql);
-                break;
-            case "4":
+            }
+            case "4" -> {
                 if (arr[1].equals("1")) {
                     sql = "select ac._id, ac.userId, ac.farmId, a.action, p.name,ac.field,ac._row,ac.quantity,u.unit,date from activity ac "
                             + "JOIN action a ON a._id = ac.action "
@@ -107,34 +107,34 @@ public class DataVisualizer {
                 }
                 sql += " AND ac.type=\"" + arr[2] + "\" AND ac.date between \"" + arr[3] + "\" AND \"" + arr[4] + "\"  ORDER BY CAST(ac._id as unsigned)";
                 printLog(sql);
-                break;
-            default:
-                sql = "(select ac.action,a.action, ac.type, p.name, ac.unit, u.unit, ROUND(SUM(ac.quantity),2) "
-                        + "from activity ac "
-                        + "JOIN plant p ON p._id = ac.type "
-                        + "JOIN unit u ON ac.unit = u._id "
-                        + "JOIN action a on ac.action = a._id "
-                        + "WHERE ac.action=1 OR ac.action=2 OR ac.action=3 AND ac.field=" + arr[2] + " AND ac._row=" + arr[3] + " AND ac.farmId=\"" + arr[1] + "\" AND ac.date between \"" + arr[4] + "\" and \"" + arr[5] + "\""
-                        + " GROUP BY ac.action, ac.type, ac.unit) "
-                        + "UNION "
-                        + "(select ac.action,a.action, ac.type, p.name, ac.unit, u.unit, ROUND(SUM(ac.quantity),2) "
-                        + "from activity ac "
-                        + "JOIN fertiliser p ON p._id = ac.type "
-                        + "JOIN unit u ON ac.unit = u._id "
-                        + "JOIN action a on ac.action = a._id "
-                        + "WHERE ac.action=4 AND ac.field=" + arr[2] + " AND ac._row=" + arr[3] + " AND ac.farmId=\"" + arr[1] + "\" AND ac.date between \"" + arr[4] + "\" and \"" + arr[5] + "\""
-                        + " GROUP BY ac.action, ac.type, ac.unit) "
-                        + "UNION "
-                        + "(select ac.action,a.action, ac.type, p.name, ac.unit, u.unit, ROUND(SUM(ac.quantity),2) "
-                        + "from activity ac "
-                        + "JOIN pesticide p ON p._id = ac.type "
-                        + "JOIN unit u ON ac.unit = u._id "
-                        + "JOIN action a on ac.action = a._id "
-                        + "WHERE ac.action=5 AND ac.field=" + arr[2] + " AND ac._row=" + arr[3] + " AND ac.farmId=\"" + arr[1] + "\" AND ac.date between \"" + arr[4] + "\" and \"" + arr[5] + "\""
-                        + " GROUP BY ac.action, ac.type, ac.unit) "
-                        + "ORDER BY type ";
-                printSummarisedLog(sql, arr);
-                break;
+            }
+            default -> {
+                    sql = "(select ac.action,a.action, ac.type, p.name, ac.unit, u.unit, ROUND(SUM(ac.quantity),2) "
+                            + "from activity ac "
+                            + "JOIN plant p ON p._id = ac.type "
+                            + "JOIN unit u ON ac.unit = u._id "
+                            + "JOIN action a on ac.action = a._id "
+                            + "WHERE ac.action=1 OR ac.action=2 OR ac.action=3 AND ac.field=" + arr[2] + " AND ac._row=" + arr[3] + " AND ac.farmId=\"" + arr[1] + "\" AND ac.date between \"" + arr[4] + "\" and \"" + arr[5] + "\""
+                            + " GROUP BY ac.action, ac.type, ac.unit) "
+                            + "UNION "
+                            + "(select ac.action,a.action, ac.type, p.name, ac.unit, u.unit, ROUND(SUM(ac.quantity),2) "
+                            + "from activity ac "
+                            + "JOIN fertiliser p ON p._id = ac.type "
+                            + "JOIN unit u ON ac.unit = u._id "
+                            + "JOIN action a on ac.action = a._id "
+                            + "WHERE ac.action=4 AND ac.field=" + arr[2] + " AND ac._row=" + arr[3] + " AND ac.farmId=\"" + arr[1] + "\" AND ac.date between \"" + arr[4] + "\" and \"" + arr[5] + "\""
+                            + " GROUP BY ac.action, ac.type, ac.unit) "
+                            + "UNION "
+                            + "(select ac.action,a.action, ac.type, p.name, ac.unit, u.unit, ROUND(SUM(ac.quantity),2) "
+                            + "from activity ac "
+                            + "JOIN pesticide p ON p._id = ac.type "
+                            + "JOIN unit u ON ac.unit = u._id "
+                            + "JOIN action a on ac.action = a._id "
+                            + "WHERE ac.action=5 AND ac.field=" + arr[2] + " AND ac._row=" + arr[3] + " AND ac.farmId=\"" + arr[1] + "\" AND ac.date between \"" + arr[4] + "\" and \"" + arr[5] + "\""
+                            + " GROUP BY ac.action, ac.type, ac.unit) "
+                            + "ORDER BY type ";
+                    printSummarisedLog(sql, arr);
+            }
 
         }
 
@@ -200,18 +200,23 @@ public class DataVisualizer {
             if (pair.indexOf(testPair) == -1) {
                 double quantity = 0;
                 String Unit = "";
-                if (rs.getInt(5) == 2) {
-                    quantity = rs.getDouble(7) / 1000;
-                    Unit = "kg";
-                } else if (rs.getInt(5) == 4) {
-                    quantity = rs.getDouble(7) / 2;
-                    Unit = "pack (1000g)";
-                } else if (rs.getInt(5) == 6) {
-                    quantity = rs.getDouble(7) / 1000;
-                    Unit = "l";
-                } else {
-                    quantity = rs.getDouble(7);
-                    Unit = rs.getString(6);
+                switch (rs.getInt(5)) {
+                    case 2 -> {
+                        quantity = rs.getDouble(7) / 1000;
+                        Unit = "kg";
+                    }
+                    case 4 -> {
+                        quantity = rs.getDouble(7) / 2;
+                        Unit = "pack (1000g)";
+                    }
+                    case 6 -> {
+                        quantity = rs.getDouble(7) / 1000;
+                        Unit = "l";
+                    }
+                    default -> {
+                            quantity = rs.getDouble(7);
+                            Unit = rs.getString(6);
+                    }
                 }
                 pair.add(testPair);
                 newQuantity.add(quantity);
@@ -222,15 +227,12 @@ public class DataVisualizer {
                 int index = pair.indexOf(testPair);
                 double quantity = 0;
                 String Unit = "";
-                if (rs.getInt(5) == 2) {
-                    quantity = rs.getDouble(7) / 1000;
-                } else if (rs.getInt(5) == 4) {
-                    quantity = rs.getDouble(7) / 2;
-                } else if (rs.getInt(5) == 6) {
-                    quantity = rs.getDouble(7) / 1000;
-                } else {
-                    quantity = rs.getDouble(7);
-                }
+                quantity = switch (rs.getInt(5)) {
+                    case 2 -> rs.getDouble(7) / 1000;
+                    case 4 -> rs.getDouble(7) / 2;
+                    case 6 -> rs.getDouble(7) / 1000;
+                    default -> rs.getDouble(7);
+                };
                 newQuantity.set(index, newQuantity.get(index) + quantity);
             }
 
@@ -238,7 +240,7 @@ public class DataVisualizer {
                 if(unit.get(i).equals("kg") || unit.get(i).equals("l")){
                     System.out.println(pair.get(i) + " " + df.format(newQuantity.get(i)) + " " + unit.get(i));
                 }else{
-                    Double data = new Double(newQuantity.get(i));
+                    Double data = (newQuantity.get(i));
                     System.out.println(pair.get(i) + " " + data.intValue() + " " + unit.get(i));
                 }
                 
