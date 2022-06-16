@@ -6,11 +6,12 @@ import java.sql.SQLException;
 public class Activity {
 
     DBConnection db = new DBConnection();
-    private String date, type, farmId, userId, quantity;
-    private Integer field, row, action, unit, _id;
+    private String date, type, farmId, userId;
+    private Integer field, row, action, unit, _id;        
+    private Double quantity;
 
     public Activity(Integer _id, String date, Integer action, String type,
-            Integer unit, String quantity, Integer field, Integer row, String farmId,
+            Integer unit, Double quantity, Integer field, Integer row, String farmId,
             String userId) throws SQLException {
         this._id = _id;
         this.date = date;
@@ -22,16 +23,7 @@ public class Activity {
         this.row = row;
         this.farmId = farmId;
         this.userId = userId;
-//        `_id` VARCHAR(45) NOT NULL,
-//  `date` DATE NOT NULL,
-//  `action` INT NOT NULL,
-//  `type` VARCHAR(255) NOT NULL,
-//  `unit` INT NOT NULL,
-//  `quantity` VARCHAR(255) NOT NULL,
-//`field` INT NOT NULL,
-//`row` INT NOT NULL,
-//`farmId` VARCHAR(255) NOT NULL,
-//`userId` VARCHAR(255) NOT NULL,
+
         String insertSql = "INSERT INTO activity (_id,date,action,type,unit,quantity,field,_row,farmId,userId) VALUES ("
                 + "\"" + _id + "\","
                 + "\"" + date + "\","
@@ -43,9 +35,9 @@ public class Activity {
                 + row + ","
                 + "\"" + farmId + "\","
                 + "\"" + userId + "\""
-                + ")";        
-        db.insert(insertSql);
-    }
+                + ")";                
+        db.insert(insertSql);        
+    }    
 
     public Integer get_id() {
         return _id;
@@ -67,7 +59,7 @@ public class Activity {
         return unit;
     }
 
-    public String getQuantity() {
+    public Double getQuantity() {
         return quantity;
     }
 
@@ -86,5 +78,5 @@ public class Activity {
     public String getUserId() {
         return userId;
     }
-
+    
 }

@@ -1,5 +1,6 @@
 DROP SCHEMA IF EXISTS ifarm;
 CREATE SCHEMA ifarm;
+SET GLOBAL max_connections = 250;
 
 CREATE TABLE `ifarm`.`unit_type` (
   `_id` INT NOT NULL AUTO_INCREMENT,
@@ -84,7 +85,7 @@ CREATE TABLE `ifarm`.`activity` (
   `action` INT NOT NULL,
   `type` VARCHAR(255) NOT NULL,
   `unit` INT NOT NULL,
-  `quantity` VARCHAR(255) NOT NULL,
+  `quantity` DOUBLE NOT NULL,
 `field` INT NOT NULL,
 `_row` INT NOT NULL,
 `farmId` VARCHAR(255) NOT NULL,
@@ -127,11 +128,11 @@ INSERT INTO `ifarm`.unit (unitType, unit)  VALUES (3,'l');
 INSERT INTO `ifarm`.unit (unitType, unit)  VALUES (3,'ml');
 
 -- sowing, fertilizers, pesticides, harvest, or sales.
-INSERT INTO `ifarm`.action (action)  VALUES ('sowing');
-INSERT INTO `ifarm`.action (action)  VALUES ('harvest');
-INSERT INTO `ifarm`.action (action)  VALUES ('sales');
-INSERT INTO `ifarm`.action (action)  VALUES ('fertilizers');
-INSERT INTO `ifarm`.action (action)  VALUES ('pesticides');
+INSERT INTO `ifarm`.action (action)  VALUES ('Sowing');
+INSERT INTO `ifarm`.action (action)  VALUES ('Harvest');
+INSERT INTO `ifarm`.action (action)  VALUES ('Sales');
+INSERT INTO `ifarm`.action (action)  VALUES ('Fertilizers');
+INSERT INTO `ifarm`.action (action)  VALUES ('Pesticides');
 INSERT INTO `ifarm`.plant (_id, name, unitType)  VALUES ("1","Eggleaf Silktassel", 1);
 INSERT INTO `ifarm`.plant (_id, name, unitType)  VALUES ("2","Lacy Spleenwort", 1);
 INSERT INTO `ifarm`.plant (_id, name, unitType)  VALUES ("3","Circumpolar Starwort", 1);

@@ -26,7 +26,7 @@ class Farmer implements Runnable {
     private Farm[] farm;
     private PrintWriter pw;
     private HashMap<String, Integer> activities;
-    private Counter count;
+    private Counter count;        
 
     public Farmer(String _id) {
         activities = new HashMap<>();
@@ -123,7 +123,7 @@ class Farmer implements Runnable {
 
     @Override
     // Generate Activities and write into log files (Concurrent)
-    public void run() {
+    public void run() {        
         String[] ActivityName = {"Sowing", "Harvest", "Sales", "Fertilizers", "Pesticides"};
         String[] Unit = {"kg", "g", "pack(1000g)", "pack(500g)", "l", "ml"};
         Random r = new Random();
@@ -132,7 +132,7 @@ class Farmer implements Runnable {
             while (true) {
                 // check at least 1000 activities
 
-                if (activityNum > 5) {
+                if (activityNum > 100) {
                     if (r.nextInt(2) == 0) {
                         break;
                     }
@@ -156,7 +156,7 @@ class Farmer implements Runnable {
                         }
 
                         //store plants name
-                        typeId = farm[farmid - 1].getPlantlist().get(r.nextInt(farm[farmid - 1].getPlantlist().size()));
+                        typeId = farm[farmid - 1].getPlantlist().get(r.nextInt(farm[farmid - 1].getPlantlist().size()));                        
                         type = plantArr[Integer.parseInt(typeId) - 1].getName();
                         break;
                     }
@@ -181,13 +181,13 @@ class Farmer implements Runnable {
                         type = pesticideArr[Integer.parseInt(typeId) - 1].getName();
                         break;
                     }
-                }
-                int field = r.nextInt(3) + 1;
-                int row = r.nextInt(3) + 1;
+                }                
+                int field = r.nextInt(2) + 1;
+                int row = r.nextInt(2) + 1;
                 Integer id = count.getAndIncrease();
                 try {
                     //Create new Activity
-                    Activity act = new Activity(id, date, action + 1, typeId + 1, unit + 1, quantity, field, row, farmid + "", userid);
+                    Activity act = new Activity(id, date, action + 1,  typeId, unit + 1, Double.parseDouble(quantity), field, row, farmid + "", userid);
 
                 } catch (SQLException ex) {
                     Logger.getLogger(Farmer.class.getName()).log(Level.SEVERE, null, ex);
