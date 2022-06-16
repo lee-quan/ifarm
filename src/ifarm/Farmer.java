@@ -216,7 +216,7 @@ class Farmer implements Runnable {
             activities.put(farms.get(i), activityNum - 1);
 
         }
-        System.out.println("Farmer "+this._id+" is Done!");
+//        System.out.println("Farmer "+this._id+" is Done!");
 
     }
 

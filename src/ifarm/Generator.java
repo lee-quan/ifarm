@@ -17,9 +17,9 @@ import java.util.logging.Logger;
  */
 public class Generator {
 
-    DBConnection db = new DBConnection();
 
     class count implements Callable<Integer> {
+        DBConnection db = new DBConnection();
 
         private int max;
         private final String sql;

@@ -19,8 +19,7 @@ public class Activity {
         this.field = field;
         this.row = row;
         this.farmId = farmId;
-        this.userId = userId;
-                 
+        this.userId = userId;                 
     }
 
     public Integer get_id() {

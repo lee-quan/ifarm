@@ -45,8 +45,9 @@ public class Ifarm {
             Pesticide[] pesticideArr = db.generatePesticideList();
 
             //Introduction of thread pool
-            ExecutorService executorservice = Executors.newFixedThreadPool(8);
+            ExecutorService executorservice = Executors.newFixedThreadPool(10);
 
+            // Generate maximum value for each data
             String[] tableName = {"farm", "plant", "fertiliser", "pesticide"};
 
             Generator d = new Generator();
@@ -106,15 +107,18 @@ public class Ifarm {
             } catch (InterruptedException ex) {
                 Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
             }
+            
+            //Part B
             // start generate Farmer
             final int NumOfFarmer = 100;
             FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM users ORDER BY CAST(_id as unsigned)");
             Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
-
+            
+            System.out.println("Farmers with its farm list: ");
             for (int i = 0; i < NumOfFarmer; i++) {
-//                System.out.println("Farmers: " + farmer[i].getId() + " Farm : " + farmer[i].getFarm());
+                System.out.println("Farmers: " + farmer[i].getId() + " Farm : " + farmer[i].getFarm());
             }
-
+            System.out.println("Farm with its Plant, Fertilizer and Pesticide list: ");
             for (int i = 0; i < numOfFarm; i++) {
                 System.out.println("\nFarm " + (i + 1) + ":");
                 System.out.println("Plant = " + farms[i].getPlant());
@@ -126,7 +130,8 @@ public class Ifarm {
                         + "pesticides=\"" + farms[i].getPesticide() + "\" WHERE _id=\"" + farms[i].getId() + "\"";
                 db.update(updateSql);
             }
-
+            
+            // Part C
             Files.deleteIfExists(Paths.get("log.txt"));
             Files.deleteIfExists(Paths.get("log1.txt"));
 
@@ -143,18 +148,20 @@ public class Ifarm {
                 i.setPlantArr(plantArr);
                 i.setPesticideArr(pesticideArr);
                 i.setFertilizerArr(fertilizerArr);
+                i.setPrintWriter(pwS);
                 FarmerCallables.add(toCallable(i));
             }
             
             db.truncate("truncate activity");
             long sequential_starttime = System.currentTimeMillis();
             for (Farmer i : farmer) {
-                i.setPrintWriter(pwS);
                 i.run();
             }
             long sequential_endtime = System.currentTimeMillis();
             pwS.close();
-            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
+            
+            System.out.println("\nSequential Programming: ");
+            System.out.println("Time consumed for generating 1000 activites for 100 farmers is " + (sequential_endtime - sequential_starttime));
             db.truncate("truncate activity");
             for (Farmer i : farmer) {
                 i.setCounter(countC);
@@ -166,10 +173,11 @@ public class Ifarm {
             long endtime = System.currentTimeMillis();
             pwC.close();
             executorservice.shutdown();
-
-            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
+            System.out.println("\nConcurrent Programming: ");
+            System.out.println("Time consumed for generating 1000 activites for 100 farmers is " + (endtime - starttime));
 
             System.out.println();
+            System.out.println("Farmer Activity List Numer");
             for (Farmer i : farmer) {
                 i.getActivityList();
             }
