@@ -12,14 +12,18 @@ import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Scanner;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -36,6 +40,21 @@ public class Ifarm {
             runnable.run();
             return null;
         };
+    }
+
+    public static boolean validDate(String date) {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        boolean valid;
+        try {
+            format.parse(date);
+            format.setLenient(false);
+            valid = true;
+
+        } catch (ParseException e) {
+            valid = false;
+        }
+
+        return valid;
     }
 
     public static void main(String[] args) throws SQLException, FileNotFoundException, IOException {
@@ -111,22 +130,20 @@ public class Ifarm {
             FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM users ORDER BY CAST(_id as unsigned)");
             Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
 
-            for (int i = 0; i < NumOfFarmer; i++) {
-//                System.out.println("Farmers: " + farmer[i].getId() + " Farm : " + farmer[i].getFarm());
-            }
-
-            for (int i = 0; i < numOfFarm; i++) {
-                System.out.println("\nFarm " + (i + 1) + ":");
-                System.out.println("Plant = " + farms[i].getPlant());
-                System.out.println("Fertilizer = " + farms[i].getFertiliser());
-                System.out.println("Pesticide = " + farms[i].getPesticide());
-                String updateSql = "UPDATE farm "
-                        + "SET plants=\"" + farms[i].getPlant() + "\","
-                        + "fertilizers=\"" + farms[i].getFertiliser() + "\","
-                        + "pesticides=\"" + farms[i].getPesticide() + "\" WHERE _id=\"" + farms[i].getId() + "\"";
-                db.update(updateSql);
-            }
-
+//            for (int i = 0; i < NumOfFarmer; i++) {
+////                System.out.println("Farmers: " + farmer[i].getId() + " Farm : " + farmer[i].getFarm());
+//            }
+//            for (int i = 0; i < numOfFarm; i++) {
+//                System.out.println("\nFarm " + (i + 1) + ":");
+//                System.out.println("Plant = " + farms[i].getPlant());
+//                System.out.println("Fertilizer = " + farms[i].getFertiliser());
+//                System.out.println("Pesticide = " + farms[i].getPesticide());
+//                String updateSql = "UPDATE farm "
+//                        + "SET plants=\"" + farms[i].getPlant() + "\","
+//                        + "fertilizers=\"" + farms[i].getFertiliser() + "\","
+//                        + "pesticides=\"" + farms[i].getPesticide() + "\" WHERE _id=\"" + farms[i].getId() + "\"";
+//                db.update(updateSql);
+//            }
             Files.deleteIfExists(Paths.get("log.txt"));
             Files.deleteIfExists(Paths.get("log1.txt"));
 
@@ -136,44 +153,216 @@ public class Ifarm {
             Counter countC = new Counter(1);
             // generate activities
             List<Callable<Void>> FarmerCallables = new ArrayList<>();
+//
+//            for (Farmer i : farmer) {
+//                i.setCounter(countS);
+//                i.setFarm(farms);
+//                i.setPlantArr(plantArr);
+//                i.setPesticideArr(pesticideArr);
+//                i.setFertilizerArr(fertilizerArr);
+//                FarmerCallables.add(toCallable(i));
+//            }
 
-            for (Farmer i : farmer) {
-                i.setCounter(countS);
-                i.setFarm(farms);
-                i.setPlantArr(plantArr);
-                i.setPesticideArr(pesticideArr);
-                i.setFertilizerArr(fertilizerArr);
-                FarmerCallables.add(toCallable(i));
-            }
-            
-            db.truncate("truncate activity");
-            long sequential_starttime = System.currentTimeMillis();
-            for (Farmer i : farmer) {
-                i.setPrintWriter(pwS);
-                i.run();
-            }
-            long sequential_endtime = System.currentTimeMillis();
-            pwS.close();
-            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
-            db.truncate("truncate activity");
-            for (Farmer i : farmer) {
-                i.setCounter(countC);
-                i.setPrintWriter(pwC);
-            }
-
-            long starttime = System.currentTimeMillis();
-            executorservice.invokeAll(FarmerCallables);
-            long endtime = System.currentTimeMillis();
-            pwC.close();
+//            db.truncate("truncate activity");
+//            long sequential_starttime = System.currentTimeMillis();
+//            for (Farmer i : farmer) {
+//                i.setPrintWriter(pwS);
+//                i.run();
+//            }
+//            long sequential_endtime = System.currentTimeMillis();
+//            pwS.close();
+//            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
+//            db.truncate("truncate activity");
+//            for (Farmer i : farmer) {
+//                i.setCounter(countC);
+//                i.setPrintWriter(pwC);
+//            }
+//            long starttime = System.currentTimeMillis();
+//            executorservice.invokeAll(FarmerCallables);
+//            long endtime = System.currentTimeMillis();
+//            pwC.close();
             executorservice.shutdown();
+//
+//            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
+//
+//            System.out.println();
+//            for (Farmer i : farmer) {
+//                i.getActivityList();
+//            }
 
-            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
+            //part E: Data Visualization
+            Scanner sc = new Scanner(System.in);
+            DataVisualizer dv = new DataVisualizer(farmer, farms);
+            String fromto = dv.getMinAndMaxDate();
+            while (true) {
+                System.out.println("There are five methods to display the activity logs: ");
+                System.out.println("1. Display all activity logs for a target farm");
+                System.out.println("2. Display all activity logs for a target farmer");
+                System.out.println("3. Display all activity logs for a target farm and plant / fertilizer / pesticide");
+                System.out.println("4. Display all activity logs for a target farm and plant / fertilizer / pesticide between date A and date B (inclusive)");
+                System.out.println("5. Display summarized logs by plants, fertilizers and pesticides for a target farm and plant / fertilizer / pesticide between date A and date B (inclusive) for selected field and row number.");
+                System.out.println("0 - Quit\n");
+                System.out.print("Enter number of method to display: ");
+                int opt = sc.nextInt();
+                if (opt == 0) {
+                    break;
+                }
+                switch (opt) {
+                    case 1:
+                        while (true) {
+                            System.out.print("(0 - Back to main menu)\nEnter farm id to be displayed (1-" + farms.length + "): ");
+                            int displayFarm = sc.nextInt();
+                            if (displayFarm > 0 || displayFarm <= farms.length) {
+                                dv.getChoice(opt + "," + displayFarm);
+                                break;
+                            } else if (displayFarm == 0) {
+                                break;
+                            } else {
+                                System.out.println("Farm " + displayFarm + " does not exist! Please try again.");
+                            }
+                        }
+                        break;
+                    case 2:
+                        while (true) {
+                            System.out.print("(0 - Back to main menu)\nEnter farmer id to be displayed (1-" + farmer.length + "): ");
+                            int displayFarmer = sc.nextInt();
+                            if (displayFarmer > 0 || displayFarmer <= farms.length) {
+                                dv.getChoice(opt + "," + displayFarmer);
+                                break;
+                            } else if (displayFarmer == 0) {
+                                break;
+                            } else {
+                                System.out.println("Farmer " + displayFarmer + " does not exist! Please try again.");
+                            }
+                        }
+                        break;
+                    case 3:
+                        System.out.print("(0 - Back to main menu)\nChoose 1 for plant, 2 for fertiliser, 3 for pesticide: ");
+                        while (true) {
+                            int displayType = sc.nextInt();
+                            if (displayType > 3 || displayType < 1) {
+                                System.out.println("Please enter 1,2,3 only");
+                            } else if (displayType == 0) {
+                                break;
+                            } else {
+                                String str = "";
+                                switch (displayType) {
+                                    case 1:
+                                        str = "Plant ID ";
+                                        break;
+                                    case 2:
+                                        str = "Fertilizer ID ";
+                                        break;
+                                    default:
+                                        str = "Pesticide ID ";
+                                        break;
+                                }
+                                while (true) {
+                                    System.out.print("Choose "+str+" (1-100): ");
+                                    int typeId = sc.nextInt();
+                                    if (typeId > 100 || typeId < 0) {
+                                        System.out.println("1 to 100 only. ");
+                                    } else {
+                                        dv.getChoice(opt + "," + displayType+","+typeId);
+                                        break;
+                                    }
+                                }
+                                break;
+                            }
+                        }
+                        break;
+                    case 4:
+                        while (true) {
+                            System.out.print("(0 - Back to main menu)\nChoose 1 for plant, 2 for fertiliser, 3 for pesticide: ");
+                            int displayType = sc.nextInt();
+                            if (displayType > 3 || displayType < 1) {
+                                System.out.println("Please enter 1,2,3 only");
+                            } else if (displayType == 0) {
+                                break;
+                            } else {
+                                String str = "";
+                                switch (displayType) {
+                                    case 1:
+                                        str = "Plant ID ";
+                                        break;
+                                    case 2:
+                                        str = "Fertilizer ID ";
+                                        break;
+                                    default:
+                                        str = "Pesticide ID ";
+                                        break;
+                                }
+                                int typeId;
+                                while (true) {
+                                    System.out.print("Choose "+str+" (1-100): ");
+                                    typeId = sc.nextInt();
+                                    if (typeId > 100 || typeId < 0) {
+                                        System.out.println("1 to 100 only. ");
+                                    } else {
+                                        break;
+                                    }
+                                }
+                                while (true) {
+                                    System.out.println("Between " + fromto.split(",")[0] + " and " + fromto.split(",")[1] + " ");
+                                    System.out.print("From (yyyy-MM-dd: ");
+                                    String from = sc.next();
+                                    System.out.print("To (yyyy-MM-dd: ");
+                                    String to = sc.next();
+                                    if (!validDate(from) && validDate(to)) {
+                                        System.out.println("Please enter date with correct format!");
+                                    } else {
+                                        dv.getChoice(opt + "," + displayType + ","+typeId+ "," + from + "," + to);
+                                        break;
+                                    }
+                                }
+                                break;
+                            }
+                        }
+                        break;
+                    case 5:
+                        while (true) {
+                            int displayFarm;
+                            while (true) {
+                                System.out.print("Enter farm id to be displayed (1-" + farms.length + "):");
+                                displayFarm = sc.nextInt();
+                                if (displayFarm > 0 || displayFarm <= farms.length) {
+                                    break;
+                                } else {
+                                    System.out.println("Farm " + displayFarm + " does not exist! Please try again.");
+                                }
+                            }
 
-            System.out.println();
-            for (Farmer i : farmer) {
-                i.getActivityList();
+                            int field, row;
+                            while (true) {
+                                System.out.print("Which field and row (1-5)?");
+                                field = sc.nextInt();
+                                row = sc.nextInt();
+                                if (field > 5 || row > 5 || field < 1 || row < 1) {
+                                    System.out.println("Please choose 1 to 5 only.");
+                                } else {
+                                    break;
+                                }
+                            }
+                            while (true) {
+                                System.out.println("Between " + fromto.split(",")[0] + " and " + fromto.split(",")[1] + " ");
+                                System.out.print("From (yyyy-MM-dd): ");
+                                String from = sc.next();
+                                System.out.print("To (yyyy-MM-dd): ");
+                                String to = sc.next();
+                                if (!validDate(from) && validDate(to)) {
+                                    System.out.println("Please enter date with correct format!");
+                                } else {
+                                    dv.getChoice(opt + "," + displayFarm + "," + field + "," + row + "," + from + "," + to);
+                                    break;
+                                }
+                            }
+                            break;
+                            }
+                        break;
+                }
             }
-        } catch (InterruptedException ex) {
+
+        } catch (Exception ex) {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }
 
