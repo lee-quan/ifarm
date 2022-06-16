@@ -208,7 +208,7 @@ public class Ifarm {
                     break;
                 }
                 switch (opt) {
-                    case 1:
+                    case 1 -> {
                         while (true) {
                             System.out.print("(0 - Back to main menu)\nEnter farm id to be displayed (1-" + farms.length + "): ");
                             int displayFarm = sc.nextInt();
@@ -221,8 +221,8 @@ public class Ifarm {
                                 System.out.println("Farm " + displayFarm + " does not exist! Please try again.");
                             }
                         }
-                        break;
-                    case 2:
+                    }
+                    case 2 -> {
                         while (true) {
                             System.out.print("(0 - Back to main menu)\nEnter farmer id to be displayed (1-" + farmer.length + "): ");
                             int displayFarmer = sc.nextInt();
@@ -235,8 +235,8 @@ public class Ifarm {
                                 System.out.println("Farmer " + displayFarmer + " does not exist! Please try again.");
                             }
                         }
-                        break;
-                    case 3:
+                    }
+                    case 3 -> {
                         System.out.print("(0 - Back to main menu)\nChoose 1 for plant, 2 for fertiliser, 3 for pesticide: ");
                         while (true) {
                             int displayType = sc.nextInt();
@@ -270,8 +270,8 @@ public class Ifarm {
                                 break;
                             }
                         }
-                        break;
-                    case 4:
+                    }
+                    case 4 -> {
                         while (true) {
                             System.out.print("(0 - Back to main menu)\nChoose 1 for plant, 2 for fertiliser, 3 for pesticide: ");
                             int displayType = sc.nextInt();
@@ -318,8 +318,8 @@ public class Ifarm {
                                 break;
                             }
                         }
-                        break;
-                    case 5:
+                    }
+                    case 5 -> {
                         while (true) {
                             int displayFarm;
                             while (true) {
@@ -357,8 +357,8 @@ public class Ifarm {
                                 }
                             }
                             break;
-                            }
-                        break;
+                        }
+                    }
                 }
             }
 
