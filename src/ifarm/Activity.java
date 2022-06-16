@@ -35,8 +35,11 @@ public class Activity {
                 + row + ","
                 + "\"" + farmId + "\","
                 + "\"" + userId + "\""
-                + ")";                
-        db.insert(insertSql);        
+                + ")";  
+        
+//        db.insert(insertSql);        
+//        System.out.println(_id);
+//        db.insertFast(_id,date,action,type,unit,quantity,field,row,farmId,userId);        
     }    
 
     public Integer get_id() {

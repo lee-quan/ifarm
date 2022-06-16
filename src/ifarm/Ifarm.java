@@ -15,10 +15,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.Callable;
@@ -117,7 +115,7 @@ public class Ifarm {
                 Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
             }
             // start generate Farmer
-            final int NumOfFarmer = 1;
+            final int NumOfFarmer = 5;
             FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM users ORDER BY CAST(_id as unsigned)");
             Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
 
@@ -172,6 +170,8 @@ public class Ifarm {
             }
 
             long starttime = System.currentTimeMillis();
+            String sql = "INSERT INTO activity (_id,date,action,type,unit,quantity,field,_row,farmId,userId) VALUES (?,?,?,?,?,?,?,?,?,?)";
+            db.setSQL(sql);            
             executorservice.invokeAll(FarmerCallables);
             long endtime = System.currentTimeMillis();
             pwC.close();            
@@ -182,7 +182,7 @@ public class Ifarm {
             for (Farmer i : farmer) {
                 i.getActivityList();
             }
-            
+            /*
             //part E: Data Visualization
             Scanner sc = new Scanner(System.in);
             System.out.println("5 methods to display activities log: ");
@@ -342,6 +342,7 @@ public class Ifarm {
                 }
                 
             }
+*/
             
             
             executorservice.shutdown();

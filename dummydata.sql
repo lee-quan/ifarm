@@ -1,6 +1,6 @@
 DROP SCHEMA IF EXISTS ifarm;
 CREATE SCHEMA ifarm;
-SET GLOBAL max_connections = 250;
+SET GLOBAL max_connections = 512;
 
 CREATE TABLE `ifarm`.`unit_type` (
   `_id` INT NOT NULL AUTO_INCREMENT,

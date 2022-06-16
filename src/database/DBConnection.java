@@ -38,11 +38,40 @@ public class DBConnection {
         return stmt.executeQuery(sql);
     }
     
-    private int batchNum;
 
     public void insert(String sql) throws SQLException {                
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.execute();                                                  
+    }
+        
+    static PreparedStatement pstmt;               
+    public void setSQL(String sql) throws SQLException{
+        pstmt = conn.prepareStatement(sql);                      
+    }
+    
+    private static int batch=0;
+    public synchronized void insertFast(Integer _id, String date, Integer action, String type,
+            Integer unit, Double quantity, Integer field, Integer row, String farmId,
+            String userId) throws SQLException{
+        conn.setAutoCommit(false);
+        batch++;
+        pstmt.setString(1, Integer.toString(_id));
+        pstmt.setString(2, date);
+        pstmt.setInt(3, action);
+        pstmt.setString(4, type);
+        pstmt.setInt(5, unit);
+        pstmt.setDouble(6, quantity);
+        pstmt.setInt(7, field);
+        pstmt.setInt(8, row);
+        pstmt.setString(9, farmId);
+        pstmt.setString(10, userId);
+        
+        pstmt.addBatch();
+        if(batch%100==0){
+            System.out.println("Data insert "+batch);
+            pstmt.executeBatch();            
+        }
+        conn.commit();
     }
 
     public void truncate(String sql) throws SQLException {
