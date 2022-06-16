@@ -2,6 +2,7 @@ package ifarm;
 
 import database.DBConnection;
 import java.io.PrintWriter;
+import java.lang.Thread.UncaughtExceptionHandler;
 import java.sql.*;
 import java.time.Duration;
 import java.time.Instant;
@@ -14,7 +15,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class Farmer implements Runnable {
+class Farmer implements Runnable, UncaughtExceptionHandler {
 
     DBConnection db = new DBConnection();
     private String _id, name, email, password, phoneNumber;
@@ -124,15 +125,25 @@ class Farmer implements Runnable {
     @Override
     // Generate Activities and write into log files (Concurrent)
     public void run() {
+        Random r = new Random();
+        int random = r.nextInt(6);
+        if (random == 0) {
+            System.out.println(random);
+            try {
+                db.update("DELETE from activity WHERE userId=\"" + _id + "\"");
+                throw new RuntimeException(" Opps! Error occured!! Farmer ID ="+_id );
+            } catch (SQLException ex) {
+                Logger.getLogger(Farmer.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        }
         String[] ActivityName = {"Sowing", "Harvest", "Sales", "Fertilizers", "Pesticides"};
         String[] Unit = {"kg", "g", "pack(1000g)", "pack(500g)", "l", "ml"};
-        Random r = new Random();
+
         for (int i = 0; i < farms.size(); i++) {
             activityNum = 1;
             while (true) {
-                // check at least 1000 activities
-
-                if (activityNum > 1000) {
+                if (activityNum > 100) {
                     if (r.nextInt(2) == 0) {
                         break;
                     }
@@ -187,19 +198,19 @@ class Farmer implements Runnable {
                 Integer id = count.getAndIncrease();
                 try {
                     //Create new Activity
-                    Activity act = new Activity(id, date, action + 1, Integer.toString(Integer.parseInt(typeId)+1), unit + 1, quantity, field, row, farmid + "", userid);
+                    Activity act = new Activity(id, date, action + 1, Integer.toString(Integer.parseInt(typeId) + 1), unit + 1, quantity, field, row, farmid + "", userid);
                     String insertSql = "INSERT INTO activity (_id,date,action,type,unit,quantity,field,_row,farmId,userId) VALUES ("
-                                    + "\"" + id + "\","
-                                    + "\"" + date + "\","
-                                    + act.getAction() + ","
-                                    +  act.getType() + ","
-                                    + act.getUnit() + ","
-                                    + "\"" + quantity + "\","
-                                    + field + ","
-                                    + row + ","
-                                    + "\"" + farmid + "\","
-                                    + "\"" + userid + "\""
-                                    + ")";      
+                            + "\"" + id + "\","
+                            + "\"" + date + "\","
+                            + act.getAction() + ","
+                            + act.getType() + ","
+                            + act.getUnit() + ","
+                            + "\"" + quantity + "\","
+                            + field + ","
+                            + row + ","
+                            + "\"" + farmid + "\","
+                            + "\"" + userid + "\""
+                            + ")";
                     insertDB(insertSql);
                 } catch (SQLException ex) {
                     Logger.getLogger(Farmer.class.getName()).log(Level.SEVERE, null, ex);
@@ -211,12 +222,12 @@ class Farmer implements Runnable {
 
                 // increment activity number
                 activityNum++;
-                
+
             }
             activities.put(farms.get(i), activityNum - 1);
 
         }
-//        System.out.println("Farmer "+this._id+" is Done!");
+        System.out.println(" - Farmer "+this._id+" is Done!");
 
     }
 
@@ -224,8 +235,19 @@ class Farmer implements Runnable {
         pw.write(str);
 
     }
-    
-    public void insertDB(String sql) throws SQLException{
+
+    public void insertDB(String sql) throws SQLException {
         db.insert(sql);
+    }
+
+    @Override
+    public void uncaughtException(Thread t, Throwable e) {
+        System.out.printf("An exception has been captured\n");
+        System.out.printf("Thread: %s\n", t.getId());
+        System.out.printf("Exception: %s: %s\n", e.getClass().getName(), e.getMessage());
+        System.out.printf("Stack Trace: \n");
+        e.printStackTrace(System.out);
+        System.out.printf("Thread status: %s\n", t.getState());
+        new Thread(t).start();
     }
 }

@@ -23,7 +23,9 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -65,7 +67,8 @@ public class Ifarm {
 
             //Introduction of thread pool
             ExecutorService executorservice = Executors.newFixedThreadPool(8);
-
+            ExecutorService threadPool = new MyThreadPoolExecutor(10, 10, 0L, TimeUnit.MILLISECONDS,
+                    new LinkedBlockingQueue<>());
             String[] tableName = {"farm", "plant", "fertiliser", "pesticide"};
 
             Generator d = new Generator();
@@ -126,24 +129,24 @@ public class Ifarm {
                 Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
             }
             // start generate Farmer
-            final int NumOfFarmer = 100;
+            final int NumOfFarmer = 10;
             FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM users ORDER BY CAST(_id as unsigned)");
             Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
 
-//            for (int i = 0; i < NumOfFarmer; i++) {
-////                System.out.println("Farmers: " + farmer[i].getId() + " Farm : " + farmer[i].getFarm());
-//            }
-//            for (int i = 0; i < numOfFarm; i++) {
-//                System.out.println("\nFarm " + (i + 1) + ":");
-//                System.out.println("Plant = " + farms[i].getPlant());
-//                System.out.println("Fertilizer = " + farms[i].getFertiliser());
-//                System.out.println("Pesticide = " + farms[i].getPesticide());
-//                String updateSql = "UPDATE farm "
-//                        + "SET plants=\"" + farms[i].getPlant() + "\","
-//                        + "fertilizers=\"" + farms[i].getFertiliser() + "\","
-//                        + "pesticides=\"" + farms[i].getPesticide() + "\" WHERE _id=\"" + farms[i].getId() + "\"";
-//                db.update(updateSql);
-//            }
+            for (int i = 0; i < NumOfFarmer; i++) {
+//                System.out.println("Farmers: " + farmer[i].getId() + " Farm : " + farmer[i].getFarm());
+            }
+            for (int i = 0; i < numOfFarm; i++) {
+                System.out.println("\nFarm " + (i + 1) + ":");
+                System.out.println("Plant = " + farms[i].getPlant());
+                System.out.println("Fertilizer = " + farms[i].getFertiliser());
+                System.out.println("Pesticide = " + farms[i].getPesticide());
+                String updateSql = "UPDATE farm "
+                        + "SET plants=\"" + farms[i].getPlant() + "\","
+                        + "fertilizers=\"" + farms[i].getFertiliser() + "\","
+                        + "pesticides=\"" + farms[i].getPesticide() + "\" WHERE _id=\"" + farms[i].getId() + "\"";
+                db.update(updateSql);
+            }
             Files.deleteIfExists(Paths.get("log.txt"));
             Files.deleteIfExists(Paths.get("log1.txt"));
 
@@ -154,36 +157,47 @@ public class Ifarm {
             // generate activities
             List<Callable<Void>> FarmerCallables = new ArrayList<>();
 //
-//            for (Farmer i : farmer) {
-//                i.setCounter(countS);
-//                i.setFarm(farms);
-//                i.setPlantArr(plantArr);
-//                i.setPesticideArr(pesticideArr);
-//                i.setFertilizerArr(fertilizerArr);
-//                FarmerCallables.add(toCallable(i));
-//            }
+            for (Farmer i : farmer) {
+                i.setCounter(countS);
+                i.setFarm(farms);
+                i.setPlantArr(plantArr);
+                i.setPesticideArr(pesticideArr);
+                i.setFertilizerArr(fertilizerArr);
+                i.setPrintWriter(pwS);
+                FarmerCallables.add(toCallable(i));
+            }
 
-//            db.truncate("truncate activity");
-//            long sequential_starttime = System.currentTimeMillis();
+            db.truncate("truncate activity");
+            long sequential_starttime = System.currentTimeMillis();
 //            for (Farmer i : farmer) {
-//                i.setPrintWriter(pwS);
 //                i.run();
 //            }
-//            long sequential_endtime = System.currentTimeMillis();
-//            pwS.close();
-//            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
-//            db.truncate("truncate activity");
-//            for (Farmer i : farmer) {
-//                i.setCounter(countC);
-//                i.setPrintWriter(pwC);
-//            }
-//            long starttime = System.currentTimeMillis();
-//            executorservice.invokeAll(FarmerCallables);
-//            long endtime = System.currentTimeMillis();
-//            pwC.close();
+            long sequential_endtime = System.currentTimeMillis();
+            pwS.close();
+            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using sequential programming is " + (sequential_endtime - sequential_starttime));
+
+            db.truncate("truncate activity");
+            for (Farmer i : farmer) {
+                i.setCounter(countC);
+                i.setPrintWriter(pwC);
+            }
+
+            long starttime = System.currentTimeMillis();
+            for (Farmer i : farmer) {
+                threadPool.execute(i);
+            }
+            threadPool.awaitTermination(1, TimeUnit.MINUTES);
+            while(!threadPool.isTerminated()){
+                
+            }
+//  
+            
+            long endtime = System.currentTimeMillis();
+            pwC.close();
             executorservice.shutdown();
+            //            executorservice.invokeAll(FarmerCallables);
 //
-//            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
+            System.out.println("\nTime consumed for generating 1000 activites for 100 farmers by using concurrent programming is " + (endtime - starttime));
 //
 //            System.out.println();
 //            for (Farmer i : farmer) {
@@ -258,12 +272,12 @@ public class Ifarm {
                                         break;
                                 }
                                 while (true) {
-                                    System.out.print("Choose "+str+" (1-100): ");
+                                    System.out.print("Choose " + str + " (1-100): ");
                                     int typeId = sc.nextInt();
                                     if (typeId > 100 || typeId < 0) {
                                         System.out.println("1 to 100 only. ");
                                     } else {
-                                        dv.getChoice(opt + "," + displayType+","+typeId);
+                                        dv.getChoice(opt + "," + displayType + "," + typeId);
                                         break;
                                     }
                                 }
@@ -294,7 +308,7 @@ public class Ifarm {
                                 }
                                 int typeId;
                                 while (true) {
-                                    System.out.print("Choose "+str+" (1-100): ");
+                                    System.out.print("Choose " + str + " (1-100): ");
                                     typeId = sc.nextInt();
                                     if (typeId > 100 || typeId < 0) {
                                         System.out.println("1 to 100 only. ");
@@ -311,7 +325,7 @@ public class Ifarm {
                                     if (!validDate(from) && validDate(to)) {
                                         System.out.println("Please enter date with correct format!");
                                     } else {
-                                        dv.getChoice(opt + "," + displayType + ","+typeId+ "," + from + "," + to);
+                                        dv.getChoice(opt + "," + displayType + "," + typeId + "," + from + "," + to);
                                         break;
                                     }
                                 }
@@ -357,7 +371,7 @@ public class Ifarm {
                                 }
                             }
                             break;
-                            }
+                        }
                         break;
                 }
             }

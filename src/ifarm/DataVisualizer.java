@@ -137,46 +137,6 @@ public class DataVisualizer {
                 break;
 
         }
-
-//        int num = arr.length;
-//
-//        if (num == 2) {
-//            switch (arr[0]) {
-//                case "1":
-//
-//                    break;
-//                default:
-//
-//                    break;
-//            }
-//        } else if (num == 3) {
-//
-//        } else if (num == 5) {
-//            if (arr[1].equals("1")) {
-//                sql = "select ac._id, ac.userId, ac.farmId, a.action, p.name,ac.field,ac._row,ac.quantity,u.unit,date from activity ac "
-//                        + "JOIN action a ON a._id = ac.action "
-//                        + "JOIN unit u ON ac.unit = u._id"
-//                        + "JOIN plant p ON p._id = ac.type"
-//                        + "WHERE ac.action=1 OR ac.action=2 OR ac.action=3";
-//            } else if (arr[1].equals("2")) {
-//                sql = "select ac._id,  ac.userId, ac.farmId, a.action, f.name,ac.field,ac._row,ac.quantity,u.unit,date from activity ac "
-//                        + "JOIN action a ON a._id = ac.action "
-//                        + "JOIN unit u ON ac.unit = u._id"
-//                        + "JOIN fertiliser f ON f._id = ac.type"
-//                        + "WHERE ac.action=4";
-//            } else {
-//                sql = "select ac._id,  ac.userId, ac.farmId, a.action, pes.name,ac.field,ac._row,ac.quantity,u.unit,date from activity ac "
-//                        + "JOIN action a ON a._id = ac.action "
-//                        + "JOIN unit u ON ac.unit = u._id"
-//                        + "JOIN pesticide pes ON pes._id = ac.type"
-//                        + "WHERE ac.action=5";
-//            }
-//            sql += " AND ac.type=\"" + arr[2] + "\" AND ac.date between \"" + arr[3] + "\" AND \"" + arr[4] + "\" ORDER BY ac._id";
-//            System.out.println(sql);
-//            
-//        } else {
-//            printSummarisedLog(arr);
-//        }
     }
 
     public void printLog(String sql) throws SQLException {
@@ -189,14 +149,12 @@ public class DataVisualizer {
 
     public void printSummarisedLog(String sql, String[] arr) throws SQLException {
         ResultSet rs = conn.retrieve(sql);
-//        (select ac.action,a.action, ac.type, p.name, ac.unit, u.unit, ROUND(SUM(ac.quantity),2)
         List<Double> newQuantity = new ArrayList<>();
         List<String> unit = new ArrayList<>();
         List<String> pair = new ArrayList<>();
 
         while (rs.next()) {
             String testPair = rs.getString(2) + " " + rs.getString(4);
-//            System.out.println(testPair+" "+pair.indexOf(testPair));
             if (pair.indexOf(testPair) == -1) {
                 double quantity = 0;
                 String Unit = "";
@@ -218,7 +176,6 @@ public class DataVisualizer {
                 unit.add(Unit);
 
             } else {
-//                System.out.println(rs.getString(1)+" "+rs.getString(2)+" "+rs.getString(3)+" "+rs.getString(4)+" "+rs.getString(5)+" "+rs.getString(6)+" ");
                 int index = pair.indexOf(testPair);
                 double quantity = 0;
                 String Unit = "";
