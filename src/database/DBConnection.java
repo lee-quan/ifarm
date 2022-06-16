@@ -24,7 +24,7 @@ public class DBConnection {
 
     public Connection ConnectDB() {
         try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ifarm?serverTimezone=UTC", "root", "1Q2w3e4r5t6y-");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ifarm?serverTimezone=UTC", "root", "");
 
             return conn;
         } catch (Exception e) {
