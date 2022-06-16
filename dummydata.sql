@@ -84,7 +84,7 @@ CREATE TABLE `ifarm`.`activity` (
   `action` INT NOT NULL,
   `type` VARCHAR(255) NOT NULL,
   `unit` INT NOT NULL,
-  `quantity` VARCHAR(255) NOT NULL,
+  `quantity` DOUBLE NOT NULL,
 `field` INT NOT NULL,
 `_row` INT NOT NULL,
 `farmId` VARCHAR(255) NOT NULL,
