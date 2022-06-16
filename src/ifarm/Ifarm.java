@@ -107,7 +107,7 @@ public class Ifarm {
                 Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
             }
             // start generate Farmer
-            final int NumOfFarmer = 1;
+            final int NumOfFarmer = 100;
             FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM users ORDER BY CAST(_id as unsigned)");
             Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
 

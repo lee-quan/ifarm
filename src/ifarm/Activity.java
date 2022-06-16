@@ -1,11 +1,9 @@
 package ifarm;
 
-import database.DBConnection;
 import java.sql.SQLException;
 
 public class Activity {
-
-    DBConnection db = new DBConnection();
+    
     private String date, type, farmId, userId, quantity;
     private Integer field, row, action, unit, _id;
 
@@ -22,29 +20,7 @@ public class Activity {
         this.row = row;
         this.farmId = farmId;
         this.userId = userId;
-//        `_id` VARCHAR(45) NOT NULL,
-//  `date` DATE NOT NULL,
-//  `action` INT NOT NULL,
-//  `type` VARCHAR(255) NOT NULL,
-//  `unit` INT NOT NULL,
-//  `quantity` VARCHAR(255) NOT NULL,
-//`field` INT NOT NULL,
-//`row` INT NOT NULL,
-//`farmId` VARCHAR(255) NOT NULL,
-//`userId` VARCHAR(255) NOT NULL,
-        String insertSql = "INSERT INTO activity (_id,date,action,type,unit,quantity,field,_row,farmId,userId) VALUES ("
-                + "\"" + _id + "\","
-                + "\"" + date + "\","
-                + action + ","
-                + "\"" + type + "\","
-                + unit + ","
-                + "\"" + quantity + "\","
-                + field + ","
-                + row + ","
-                + "\"" + farmId + "\","
-                + "\"" + userId + "\""
-                + ")";        
-        db.insert(insertSql);
+                 
     }
 
     public Integer get_id() {

@@ -132,7 +132,7 @@ class Farmer implements Runnable {
             while (true) {
                 // check at least 1000 activities
 
-                if (activityNum > 5) {
+                if (activityNum > 1000) {
                     if (r.nextInt(2) == 0) {
                         break;
                     }
@@ -187,8 +187,20 @@ class Farmer implements Runnable {
                 Integer id = count.getAndIncrease();
                 try {
                     //Create new Activity
-                    Activity act = new Activity(id, date, action + 1, typeId + 1, unit + 1, quantity, field, row, farmid + "", userid);
-
+                    Activity act = new Activity(id, date, action + 1, Integer.toString(Integer.parseInt(typeId)+1), unit + 1, quantity, field, row, farmid + "", userid);
+                    String insertSql = "INSERT INTO activity (_id,date,action,type,unit,quantity,field,_row,farmId,userId) VALUES ("
+                                    + "\"" + id + "\","
+                                    + "\"" + date + "\","
+                                    + act.getAction() + ","
+                                    +  act.getType() + ","
+                                    + act.getUnit() + ","
+                                    + "\"" + quantity + "\","
+                                    + field + ","
+                                    + row + ","
+                                    + "\"" + farmid + "\","
+                                    + "\"" + userid + "\""
+                                    + ")";      
+                    insertDB(insertSql);
                 } catch (SQLException ex) {
                     Logger.getLogger(Farmer.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -199,15 +211,21 @@ class Farmer implements Runnable {
 
                 // increment activity number
                 activityNum++;
+                
             }
             activities.put(farms.get(i), activityNum - 1);
 
         }
+        System.out.println("Farmer "+this._id+" is Done!");
 
     }
 
     public synchronized void writeLogFile(PrintWriter pw, String str) {
         pw.write(str);
 
+    }
+    
+    public void insertDB(String sql) throws SQLException{
+        db.insert(sql);
     }
 }
