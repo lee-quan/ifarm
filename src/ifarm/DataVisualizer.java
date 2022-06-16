@@ -32,8 +32,7 @@ public class DataVisualizer {
         return date;
     }
 
-    public void getChoice(String str) throws SQLException {
-        System.out.println(str + "===================");
+    public void getChoice(String str) throws SQLException {        
         String[] arr = str.split(",");
         String sql = "SELECT * FROM "
                 + "((select ac._id, ac.userId, ac.farmId, a.action, p.name,ac.field,ac._row,ac.quantity,u.unit,date from activity ac "
@@ -180,6 +179,7 @@ public class DataVisualizer {
     }
 
     public void printLog(String sql) throws SQLException {
+        System.out.println();
         ResultSet rs = conn.retrieve(sql);
         while (rs.next()) {
             System.out.println(rs.getString(1) + " - " + " Farmer " + rs.getString(2) + " on Farm " + rs.getString(3) + " " + rs.getString(4) + " " + rs.getString(5)
@@ -188,6 +188,7 @@ public class DataVisualizer {
     }
 
     public void printSummarisedLog(String sql, String[] arr) throws SQLException {
+        System.out.println();
         ResultSet rs = conn.retrieve(sql);
 //        (select ac.action,a.action, ac.type, p.name, ac.unit, u.unit, ROUND(SUM(ac.quantity),2)
         List<Double> newQuantity = new ArrayList<>();

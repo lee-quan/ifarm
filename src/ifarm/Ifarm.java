@@ -195,7 +195,7 @@ public class Ifarm {
             DataVisualizer dv = new DataVisualizer(farmer, farms);
             String fromto = dv.getMinAndMaxDate();
             while (true) {
-                System.out.println("There are five methods to display the activity logs: ");
+                System.out.println("\nThere are five methods to display the activity logs: ");
                 System.out.println("1. Display all activity logs for a target farm");
                 System.out.println("2. Display all activity logs for a target farmer");
                 System.out.println("3. Display all activity logs for a target farm and plant / fertilizer / pesticide");
@@ -210,7 +210,7 @@ public class Ifarm {
                 switch (opt) {
                     case 1 -> {
                         while (true) {
-                            System.out.print("(0 - Back to main menu)\nEnter farm id to be displayed (1-" + farms.length + "): ");
+                            System.out.print("(0 - Back to main menu)\nEnter farm id to be displayed (1-" + farms.length + "): \n");
                             int displayFarm = sc.nextInt();
                             if (displayFarm > 0 || displayFarm <= farms.length) {
                                 dv.getChoice(opt + "," + displayFarm);
@@ -224,7 +224,7 @@ public class Ifarm {
                     }
                     case 2 -> {
                         while (true) {
-                            System.out.print("(0 - Back to main menu)\nEnter farmer id to be displayed (1-" + farmer.length + "): ");
+                            System.out.print("(0 - Back to main menu)\nEnter farmer id to be displayed (1-" + farmer.length + "): \n");
                             int displayFarmer = sc.nextInt();
                             if (displayFarmer > 0 || displayFarmer <= farms.length) {
                                 dv.getChoice(opt + "," + displayFarmer);
@@ -245,18 +245,12 @@ public class Ifarm {
                             } else if (displayType == 0) {
                                 break;
                             } else {
-                                String str = "";
-                                switch (displayType) {
-                                    case 1:
-                                        str = "Plant ID ";
-                                        break;
-                                    case 2:
-                                        str = "Fertilizer ID ";
-                                        break;
-                                    default:
-                                        str = "Pesticide ID ";
-                                        break;
-                                }
+                                String str;
+                                str = switch (displayType) {
+                                    case 1 -> "Plant ID ";
+                                    case 2 -> "Fertilizer ID ";
+                                    default -> "Pesticide ID ";
+                                };
                                 while (true) {
                                     System.out.print("Choose "+str+" (1-100): ");
                                     int typeId = sc.nextInt();
@@ -281,17 +275,11 @@ public class Ifarm {
                                 break;
                             } else {
                                 String str = "";
-                                switch (displayType) {
-                                    case 1:
-                                        str = "Plant ID ";
-                                        break;
-                                    case 2:
-                                        str = "Fertilizer ID ";
-                                        break;
-                                    default:
-                                        str = "Pesticide ID ";
-                                        break;
-                                }
+                                str = switch (displayType) {
+                                    case 1 -> "Plant ID ";
+                                    case 2 -> "Fertilizer ID ";
+                                    default -> "Pesticide ID ";
+                                };
                                 int typeId;
                                 while (true) {
                                     System.out.print("Choose "+str+" (1-100): ");
@@ -323,7 +311,7 @@ public class Ifarm {
                         while (true) {
                             int displayFarm;
                             while (true) {
-                                System.out.print("Enter farm id to be displayed (1-" + farms.length + "):");
+                                System.out.print("Enter farm id to be displayed (1-" + farms.length + "): \n");
                                 displayFarm = sc.nextInt();
                                 if (displayFarm > 0 || displayFarm <= farms.length) {
                                     break;
@@ -362,7 +350,7 @@ public class Ifarm {
                 }
             }
 
-        } catch (Exception ex) {
+        } catch (IOException | SQLException ex) {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }
 
