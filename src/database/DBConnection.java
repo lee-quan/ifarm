@@ -44,10 +44,7 @@ public class DBConnection {
         pstmt.execute();
     }
 
-    public void truncate(String sql) throws SQLException {
-        Statement stmt = conn.createStatement();
-        stmt.executeUpdate(sql);
-    }
+    
 
     public void update(String sql) throws SQLException {
         Statement stmt = conn.createStatement();
