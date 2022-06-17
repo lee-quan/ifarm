@@ -104,7 +104,6 @@ public class Ifarm {
 
             //create 2 arrays to store all farms
             Farm[] farms = new Farm[numOfFarm];
-
             List<Callable<Void>> callables = new ArrayList<>();
 
             //execute farm task
