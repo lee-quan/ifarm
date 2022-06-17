@@ -62,10 +62,4 @@ public class Activity {
     public String getFarmId() {
         return farmId;
     }
-
-    
-    
-    
-    
-
 }
