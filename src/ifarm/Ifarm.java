@@ -43,20 +43,7 @@ public class Ifarm {
         };
     }
 
-    public static boolean validDate(String date) {
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-        boolean valid;
-        try {
-            format.parse(date);
-            format.setLenient(false);
-            valid = true;
 
-        } catch (ParseException e) {
-            valid = false;
-        }
-
-        return valid;
-    }
 
     public static void main(String[] args) throws SQLException, FileNotFoundException, IOException, InterruptedException {
         try {
