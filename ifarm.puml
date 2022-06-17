@@ -1,0 +1,126 @@
+@startuml
+annotation java.lang.Override
+annotation java.lang.SuppressWarnings
+class database.DBConnection
+class ifarm.Activity
+class ifarm.Counter
+class ifarm.DataVisualizer
+class ifarm.Farm
+class ifarm.Farmer
+class ifarm.FarmerSimulator
+class ifarm.Fertilizer
+class ifarm.Generator
+class ifarm.Ifarm
+class ifarm.Main
+class ifarm.MyThreadPoolExecutor
+class ifarm.Pesticide
+class ifarm.Plant
+class ifarm.Summary
+class ifarm.test
+class java.io.FileNotFoundException
+class java.io.FileOutputStream
+class java.io.IOException
+class java.io.PrintWriter
+class java.nio.file.Files
+class java.nio.file.Paths
+class java.sql.SQLException
+class java.text.DecimalFormat
+class java.text.ParseException
+class java.text.SimpleDateFormat
+class java.time.Duration
+class java.time.Instant
+class java.time.ZoneId
+class java.time.format.DateTimeFormatter
+class java.util.ArrayList
+class java.util.HashMap
+class java.util.LinkedList
+class java.util.List
+class java.util.Random
+class java.util.Scanner
+class java.util.concurrent.ExecutionException
+class java.util.concurrent.ExecutorService
+class java.util.concurrent.Executors
+class java.util.concurrent.Future
+class java.util.concurrent.ThreadLocalRandom
+class java.util.concurrent.atomic.AtomicInteger
+class java.util.logging.Level
+class java.util.logging.Logger
+class javax.swing.JDialog
+class javax.swing.JOptionPane
+interface ifarm.FarmerSimulatorInterface
+interface java.lang.Runnable
+interface java.util.concurrent.Callable
+database.DBConnection ..> ifarm.Fertilizer
+database.DBConnection ..> ifarm.Pesticide
+database.DBConnection ..> ifarm.Plant
+database.DBConnection ..> java.util.logging.Level
+database.DBConnection ..> java.util.logging.Logger
+database.DBConnection ..> javax.swing.JOptionPane
+ifarm.Activity ..> java.sql.SQLException
+ifarm.Counter ..> java.util.concurrent.atomic.AtomicInteger
+ifarm.DataVisualizer ..> database.DBConnection
+ifarm.DataVisualizer ..> java.text.DecimalFormat
+ifarm.DataVisualizer ..> java.util.ArrayList
+ifarm.DataVisualizer ..> java.util.List
+ifarm.Farm ..> java.util.LinkedList
+ifarm.Farmer ..> java.lang.Override
+ifarm.Farmer ..> database.DBConnection
+ifarm.Farmer ..> java.io.PrintWriter
+ifarm.Farmer ..> java.time.Duration
+ifarm.Farmer ..> java.time.Instant
+ifarm.Farmer ..> java.time.ZoneId
+ifarm.Farmer ..> java.time.format.DateTimeFormatter
+ifarm.Farmer ..> java.util.HashMap
+ifarm.Farmer ..> java.util.LinkedList
+ifarm.Farmer ..> java.util.Random
+ifarm.Farmer ..> java.util.concurrent.ThreadLocalRandom
+ifarm.Farmer ..> java.util.logging.Level
+ifarm.Farmer ..> java.util.logging.Logger
+ifarm.Farmer --|> java.lang.Runnable
+ifarm.FarmerSimulator ..> java.lang.Override
+ifarm.FarmerSimulator ..> database.DBConnection
+ifarm.FarmerSimulator ..> java.util.ArrayList
+ifarm.FarmerSimulator ..> java.util.List
+ifarm.FarmerSimulator ..> java.util.concurrent.ExecutionException
+ifarm.FarmerSimulator ..> java.util.concurrent.ExecutorService
+ifarm.FarmerSimulator ..> java.util.concurrent.Executors
+ifarm.FarmerSimulator ..> java.util.concurrent.Future
+ifarm.FarmerSimulator ..> java.util.logging.Level
+ifarm.FarmerSimulator ..> java.util.logging.Logger
+ifarm.FarmerSimulator --|> ifarm.FarmerSimulatorInterface
+ifarm.FarmerSimulator ..> java.util.concurrent.Callable
+ifarm.Generator ..> java.lang.Override
+ifarm.Generator ..> database.DBConnection
+ifarm.Generator ..> java.util.Random
+ifarm.Generator ..> java.util.logging.Level
+ifarm.Generator ..> java.util.logging.Logger
+ifarm.Generator ..> java.util.concurrent.Callable
+ifarm.Ifarm ..> database.DBConnection
+ifarm.Ifarm ..> java.io.FileNotFoundException
+ifarm.Ifarm ..> java.io.FileOutputStream
+ifarm.Ifarm ..> java.io.IOException
+ifarm.Ifarm ..> java.io.PrintWriter
+ifarm.Ifarm ..> java.nio.file.Files
+ifarm.Ifarm ..> java.nio.file.Paths
+ifarm.Ifarm ..> java.sql.SQLException
+ifarm.Ifarm ..> java.text.ParseException
+ifarm.Ifarm ..> java.text.SimpleDateFormat
+ifarm.Ifarm ..> java.util.ArrayList
+ifarm.Ifarm ..> java.util.HashMap
+ifarm.Ifarm ..> java.util.List
+ifarm.Ifarm ..> java.util.Scanner
+ifarm.Ifarm ..> java.util.concurrent.ExecutionException
+ifarm.Ifarm ..> java.util.concurrent.ExecutorService
+ifarm.Ifarm ..> java.util.concurrent.Executors
+ifarm.Ifarm ..> java.util.concurrent.Future
+ifarm.Ifarm ..> java.util.concurrent.ThreadLocalRandom
+ifarm.Ifarm ..> java.util.logging.Level
+ifarm.Ifarm ..> java.util.logging.Logger
+ifarm.Ifarm ..> java.util.concurrent.Callable
+ifarm.Main ..> java.lang.Override
+ifarm.Main ..> java.lang.SuppressWarnings
+ifarm.Main --|> javax.swing.JDialog
+ifarm.Summary ..> java.lang.Override
+ifarm.Summary --|> java.util.concurrent.Callable
+ifarm.test ..> java.util.LinkedList
+@enduml

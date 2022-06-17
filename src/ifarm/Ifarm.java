@@ -23,9 +23,12 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JTextArea;
 
 /**
  *
@@ -34,7 +37,7 @@ import java.util.logging.Logger;
 public class Ifarm {
 
     private static final DBConnection db = new DBConnection();
-    private static final int NumOfFarmer = 100;
+    private static final int NumOfFarmer = 10;
 
     private static Callable<Void> toCallable(final Runnable runnable) {
         return () -> {
@@ -58,7 +61,8 @@ public class Ifarm {
         return valid;
     }
 
-    public static void main(String[] args) throws SQLException, FileNotFoundException, IOException, InterruptedException {
+    public static void main(String[] args) {
+
         try {
             Plant[] plantArr = db.generatePlantList();
             Fertilizer[] fertilizerArr = db.generateFertiliserList();
@@ -66,7 +70,9 @@ public class Ifarm {
 
             //Introduction of thread pool
             ExecutorService executorservice = Executors.newFixedThreadPool(10);
-
+            //Disaster Simulator
+//            ExecutorService threadPool = new MyThreadPoolExecutor(10, 10, 0L, TimeUnit.MILLISECONDS,
+//                    new LinkedBlockingQueue<>());
             // Generate maximum value for each data
             String[] tableName = {"farm", "plant", "fertiliser", "pesticide"};
 
@@ -133,24 +139,24 @@ public class Ifarm {
             FarmerSimulator simulator = new FarmerSimulator("SELECT * FROM users ORDER BY CAST(_id as unsigned)");
             Farmer[] farmer = simulator.generateFarmers(NumOfFarmer);
 
-            System.out.println("Farmers with its farm list: ");
+            System.out.println("Farmers with their farm list: \n");
             for (int i = 0; i < NumOfFarmer; i++) {
-                System.out.println("Farmers: " + farmer[i].getId() + " Farm : " + farmer[i].getFarm());
+                System.out.println("Farmers: " + farmer[i].getId() + " Farm : " + farmer[i].getFarm() + "\n");
             }
             System.out.println("Farm with its Plant, Fertilizer and Pesticide list: ");
             for (int i = 0; i < numOfFarm; i++) {
                 System.out.println("\nFarm " + (i + 1) + ":");
-                System.out.println("Plant = " + farms[i].getPlant());
-                System.out.println("Fertilizer = " + farms[i].getFertiliser());
-                System.out.println("Pesticide = " + farms[i].getPesticide());
+                System.out.println("\nPlant = " + farms[i].getPlant());
+                System.out.println("\nFertilizer = " + farms[i].getFertiliser());
+                System.out.println("\nPesticide = " + farms[i].getPesticide());
                 String updateSql = "UPDATE farm "
                         + "SET plants=\"" + farms[i].getPlant() + "\","
                         + "fertilizers=\"" + farms[i].getFertiliser() + "\","
                         + "pesticides=\"" + farms[i].getPesticide() + "\" WHERE _id=\"" + farms[i].getId() + "\"";
                 db.update(updateSql);
             }
-
-            // Part C
+//
+//            // Part C
             Files.deleteIfExists(Paths.get("sequential.txt"));
             Files.deleteIfExists(Paths.get("concurrent.txt"));
 
@@ -160,7 +166,7 @@ public class Ifarm {
             Counter countC = new Counter(1);
             // generate activities
             List<Callable<Void>> FarmerCallables = new ArrayList<>();
-
+//
             for (Farmer i : farmer) {
                 i.setCounter(countS);
                 i.setFarm(farms);
@@ -170,41 +176,45 @@ public class Ifarm {
                 i.setPrintWriter(pwS);
                 FarmerCallables.add(toCallable(i));
             }
-
-//            db.truncate("truncate activity");
-//            long sequential_starttime = System.currentTimeMillis();
-//            for (Farmer i : farmer) {
-//                i.run();
-//            }
-//            long sequential_endtime = System.currentTimeMillis();
-//            pwS.close();
-
-//            System.out.println("\nSequential Programming: ");
-//            System.out.println("Time consumed for generating 1000 activites for 100 farmers is " + (sequential_endtime - sequential_starttime));
-//            db.truncate("truncate activity");
-//            for (Farmer i : farmer) {
-//                i.setCounter(countC);
-//                i.setPrintWriter(pwC);
-//            }
 //
-//            long starttime = System.currentTimeMillis();
-//            executorservice.invokeAll(FarmerCallables);
-//            long endtime = System.currentTimeMillis();
-//            pwC.close();
-//            executorservice.shutdown();
-//            System.out.println("\nConcurrent Programming: ");
-//            System.out.println("Time consumed for generating 1000 activites for 100 farmers is " + (endtime - starttime));
-//
-//            System.out.println();
-//            System.out.println("Farmer Activity List Numer");
-//            for (Farmer i : farmer) {
-//                i.getActivityList();
+            db.truncate("truncate activity");
+            long sequential_starttime = System.currentTimeMillis();
+            for (Farmer i : farmer) {
+                i.run();
+            }
+            long sequential_endtime = System.currentTimeMillis();
+            pwS.close();
+
+            System.out.println("\nSequential Programming: ");
+            System.out.println("\n\nTime consumed for generating 1000 activites for 100 farmers is " + (sequential_endtime - sequential_starttime));
+            db.truncate("truncate activity");
+            for (Farmer i : farmer) {
+                i.setIsDisaster(true);
+                i.setCounter(countC);
+                i.setPrintWriter(pwC);
+
+            }
+            long starttime = System.currentTimeMillis();
+            //Disaster Simulator
+//            for(Farmer i : farmer){
+//                threadPool.execute(i);
 //            }
+            executorservice.invokeAll(FarmerCallables);
+            long endtime = System.currentTimeMillis();
+            pwC.close();
             executorservice.shutdown();
-
-            //part E: Data Visualization
+            System.out.println("\n\nConcurrent Programming: ");
+            System.out.println("\n\nTime consumed for generating 1000 activites for 100 farmers is " + (endtime - starttime));
+            System.out.println("\n\nFarmer Activity List Numer");
+            for (Farmer i : farmer) {
+                System.out.println(i.getActivityList());
+                System.out.println("\n");
+            }
+            executorservice.shutdown();
+//
+//            //part E: Data Visualization
             Scanner sc = new Scanner(System.in);
-            DataVisualizer dv = new DataVisualizer(farmer, farms);
+            DataVisualizer dv = new DataVisualizer();
             String fromto = dv.getMinAndMaxDate();
             while (true) {
                 System.out.println("\nThere are five methods to display the activity logs: ");
@@ -368,7 +378,7 @@ public class Ifarm {
                 }
 
             }
-        } catch (IOException | SQLException ex) {
+        } catch (Exception ex) {
             Logger.getLogger(Ifarm.class.getName()).log(Level.SEVERE, null, ex);
         }
 

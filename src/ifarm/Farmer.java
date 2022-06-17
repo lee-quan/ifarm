@@ -9,8 +9,10 @@ import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.function.Consumer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -27,11 +29,20 @@ class Farmer implements Runnable {
     private PrintWriter pw;
     private HashMap<String, Integer> activities;
     private Counter count;
+    private boolean isDisaster;
 
     public Farmer(String _id) {
         activities = new HashMap<>();
         farms = new LinkedList<>();
+        this.isDisaster = false;
         this._id = _id;
+    }
+    
+    public boolean getIsDisaster(){
+        return this.isDisaster;
+    }
+    public void setIsDisaster(boolean bool) {
+        this.isDisaster = bool;
     }
 
     public void setFarm(Farm[] farm) {
@@ -91,12 +102,16 @@ class Farmer implements Runnable {
         farms.add(farmid);
     }
 
-    public void getActivityList() {
-        System.out.println("Farmers: " + this._id);
-        activities.entrySet().forEach(entry -> {
-            System.out.println("Farm: " + entry.getKey() + " with activities: " + entry.getValue());
+    public String getActivityList() {
+        StringBuilder b = new StringBuilder();
+        b.append("Farmers: " + this._id + "\n");
+        activities.entrySet().forEach(new Consumer<Map.Entry<String, Integer>>() {
+            @Override
+            public void accept(Map.Entry<String, Integer> entry) {
+                b.append("Farm: " + entry.getKey() + " with activities: " + entry.getValue() + "\n");
+            }
         });
-        System.out.println();
+        return b.toString();
     }
 
     public String getFarm() {
@@ -124,9 +139,20 @@ class Farmer implements Runnable {
     @Override
     // Generate Activities and write into log files (Concurrent)
     public void run() {
+        Random r = new Random();
+
+        if (isDisaster) {
+            if (r.nextInt(3) == 0) {
+                try {
+                    db.update("DELETE from activity WHERE userId=\"" + _id + "\"");
+                    throw new RuntimeException(" Opps! Error occured!! Farmer ID =" + _id);
+                } catch (SQLException ex) {
+                    Logger.getLogger(Farmer.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
         String[] ActivityName = {"Sowing", "Harvest", "Sales", "Fertilizers", "Pesticides"};
         String[] Unit = {"kg", "g", "pack(1000g)", "pack(500g)", "l", "ml"};
-        Random r = new Random();
         for (int i = 0; i < farms.size(); i++) {
             activityNum = 1;
             while (true) {
@@ -187,19 +213,19 @@ class Farmer implements Runnable {
                 Integer id = count.getAndIncrease();
                 try {
                     //Create new Activity
-                    Activity act = new Activity(id, date, action + 1, Integer.toString(Integer.parseInt(typeId)+1), unit + 1, quantity, field, row, farmid + "", userid);
+                    Activity act = new Activity(id, date, action + 1, Integer.toString(Integer.parseInt(typeId) + 1), unit + 1, quantity, field, row, farmid + "", userid);
                     String insertSql = "INSERT INTO activity (_id,date,action,type,unit,quantity,field,_row,farmId,userId) VALUES ("
-                                    + "\"" + id + "\","
-                                    + "\"" + date + "\","
-                                    + act.getAction() + ","
-                                    +  act.getType() + ","
-                                    + act.getUnit() + ","
-                                    + "\"" + quantity + "\","
-                                    + field + ","
-                                    + row + ","
-                                    + "\"" + farmid + "\","
-                                    + "\"" + userid + "\""
-                                    + ")";      
+                            + "\"" + id + "\","
+                            + "\"" + date + "\","
+                            + act.getAction() + ","
+                            + act.getType() + ","
+                            + act.getUnit() + ","
+                            + "\"" + quantity + "\","
+                            + field + ","
+                            + row + ","
+                            + "\"" + farmid + "\","
+                            + "\"" + userid + "\""
+                            + ")";
                     insertDB(insertSql);
                 } catch (SQLException ex) {
                     Logger.getLogger(Farmer.class.getName()).log(Level.SEVERE, null, ex);
@@ -211,12 +237,12 @@ class Farmer implements Runnable {
 
                 // increment activity number
                 activityNum++;
-                
+
             }
             activities.put(farms.get(i), activityNum - 1);
 
         }
-//        System.out.println("Farmer "+this._id+" is Done!");
+        System.out.println("Farmer "+this._id+" is Done!");
 
     }
 
@@ -224,8 +250,8 @@ class Farmer implements Runnable {
         pw.write(str);
 
     }
-    
-    public void insertDB(String sql) throws SQLException{
+
+    public void insertDB(String sql) throws SQLException {
         db.insert(sql);
     }
 }

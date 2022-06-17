@@ -5,6 +5,7 @@ import java.sql.*;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JTextArea;
 
 /**
  *
@@ -12,14 +13,13 @@ import java.util.List;
  */
 public class DataVisualizer {
 
+    JTextArea Log;
     Farmer[] farmers;
     Farm[] farms;
     DBConnection conn = new DBConnection();
     private static final DecimalFormat df = new DecimalFormat("0.00");
 
-    public DataVisualizer(Farmer[] farmers, Farm[] farms) {
-        this.farmers = farmers;
-        this.farms = farms;
+    public DataVisualizer() {
     }
 
     public String getMinAndMaxDate() throws SQLException {
