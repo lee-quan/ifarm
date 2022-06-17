@@ -22,9 +22,19 @@ public class Pesticide {
     public String getName() {
         return name;
     }
-
-    
-    
-    
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
