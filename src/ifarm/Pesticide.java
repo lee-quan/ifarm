@@ -11,6 +11,10 @@ public class Pesticide {
         this.unitType = unitType;
     }
 
+    public String getUnitType() {
+        return unitType;
+    }
+    
     public String getId() {
         return _id;
     }
@@ -19,9 +23,7 @@ public class Pesticide {
         return name;
     }
 
-    public String getUnitType() {
-        return unitType;
-    }
+    
     
     
 
