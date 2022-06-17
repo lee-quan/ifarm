@@ -171,35 +171,35 @@ public class Ifarm {
                 FarmerCallables.add(toCallable(i));
             }
 
-//            db.truncate("truncate activity");
-//            long sequential_starttime = System.currentTimeMillis();
-//            for (Farmer i : farmer) {
-//                i.run();
-//            }
-//            long sequential_endtime = System.currentTimeMillis();
-//            pwS.close();
+            db.truncate("truncate activity");
+            long sequential_starttime = System.currentTimeMillis();
+            for (Farmer i : farmer) {
+                i.run();
+            }
+            long sequential_endtime = System.currentTimeMillis();
+            pwS.close();
 
-//            System.out.println("\nSequential Programming: ");
-//            System.out.println("Time consumed for generating 1000 activites for 100 farmers is " + (sequential_endtime - sequential_starttime));
-//            db.truncate("truncate activity");
-//            for (Farmer i : farmer) {
-//                i.setCounter(countC);
-//                i.setPrintWriter(pwC);
-//            }
-//
-//            long starttime = System.currentTimeMillis();
-//            executorservice.invokeAll(FarmerCallables);
-//            long endtime = System.currentTimeMillis();
-//            pwC.close();
-//            executorservice.shutdown();
-//            System.out.println("\nConcurrent Programming: ");
-//            System.out.println("Time consumed for generating 1000 activites for 100 farmers is " + (endtime - starttime));
-//
-//            System.out.println();
-//            System.out.println("Farmer Activity List Numer");
-//            for (Farmer i : farmer) {
-//                i.getActivityList();
-//            }
+            System.out.println("\nSequential Programming: ");
+            System.out.println("Time consumed for generating 1000 activites for 100 farmers is " + (sequential_endtime - sequential_starttime));
+            db.truncate("truncate activity");
+            for (Farmer i : farmer) {
+                i.setCounter(countC);
+                i.setPrintWriter(pwC);
+            }
+
+            long starttime = System.currentTimeMillis();
+            executorservice.invokeAll(FarmerCallables);
+            long endtime = System.currentTimeMillis();
+            pwC.close();
+            executorservice.shutdown();
+            System.out.println("\nConcurrent Programming: ");
+            System.out.println("Time consumed for generating 1000 activites for 100 farmers is " + (endtime - starttime));
+
+            System.out.println();
+            System.out.println("Farmer Activity List Numer");
+            for (Farmer i : farmer) {
+                i.getActivityList();
+            }
             executorservice.shutdown();
 
             //part E: Data Visualization
