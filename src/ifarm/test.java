@@ -10,4 +10,11 @@ import java.util.LinkedList;
  *
  * @author leequan
  */
-
+public class test {
+    public static void main(String[] args) {
+        LinkedList<String> plant = new LinkedList<>();
+        plant.add("asdasdasdasdsadsadsa");
+        System.out.println();
+//        2022-03-18,2022-06-16
+    }
+}
