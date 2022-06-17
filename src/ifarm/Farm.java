@@ -44,7 +44,19 @@ public class Farm {
         return this.pesticide;
     }
     
-    
+    public String getPlant() {
+        String str = "";
+
+        for (int i = 0; i < plant.size(); i++) {
+            if (i == plant.size() - 1) {
+                str += plant.get(i);
+            } else {
+                str += plant.get(i) + ",";
+            }
+        }
+
+        return str;
+    }
 
     public String getFertiliser() {
         String str = "";
