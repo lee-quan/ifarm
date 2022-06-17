@@ -2,10 +2,11 @@ package ifarm;
 
 public class Pesticide {
 
-    private String _id, name, unitType;
+    
+    private String _id,name,unitType;
 
-    public Pesticide(String id, String name, String unitType) {
-        this._id = id;
+    public Pesticide(String _id, String name, String unitType) {
+        this._id = _id;
         this.name = name;
         this.unitType = unitType;
     }
@@ -21,5 +22,7 @@ public class Pesticide {
     public String getUnitType() {
         return unitType;
     }
+    
+    
 
 }
