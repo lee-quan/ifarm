@@ -67,8 +67,4 @@ public class FarmerSimulator implements FarmerSimulatorInterface {
         executorService.shutdown();
         return farmers;
     }
-    
-    // zj please help to do the part of database of this java
-   
-    
 }
