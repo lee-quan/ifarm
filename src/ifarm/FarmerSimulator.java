@@ -68,10 +68,7 @@ public class FarmerSimulator implements FarmerSimulatorInterface {
         return farmers;
     }
     
-    
-    
-    
-    
-    
+    // zj please help to do the part of database of this java
+   
     
 }
