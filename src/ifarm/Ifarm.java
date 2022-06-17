@@ -110,7 +110,6 @@ public class Ifarm {
 
             //create 2 arrays to store all farms
             Farm[] farms = new Farm[numOfFarm];
-
             List<Callable<Void>> callables = new ArrayList<>();
 
             //execute farm task
@@ -202,7 +201,7 @@ public class Ifarm {
             executorservice.invokeAll(FarmerCallables);
             long endtime = System.currentTimeMillis();
             pwC.close();
-            executorservice.shutdown();
+
             System.out.println("\n\nConcurrent Programming: ");
             System.out.println("\n\nTime consumed for generating 1000 activites for 100 farmers is " + (endtime - starttime));
             System.out.println("\n\nFarmer Activity List Numer");
@@ -286,6 +285,7 @@ public class Ifarm {
                                         break;
                                     }
                                 }
+                                
                                 break;
                             }
                         }

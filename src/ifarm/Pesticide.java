@@ -2,14 +2,19 @@ package ifarm;
 
 public class Pesticide {
 
-    private String _id, name, unitType;
+    
+    private String _id,name,unitType;
 
-    public Pesticide(String id, String name, String unitType) {
-        this._id = id;
+    public Pesticide(String _id, String name, String unitType) {
+        this._id = _id;
         this.name = name;
         this.unitType = unitType;
     }
 
+    public String getUnitType() {
+        return unitType;
+    }
+    
     public String getId() {
         return _id;
     }
@@ -17,9 +22,19 @@ public class Pesticide {
     public String getName() {
         return name;
     }
-
-    public String getUnitType() {
-        return unitType;
-    }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
