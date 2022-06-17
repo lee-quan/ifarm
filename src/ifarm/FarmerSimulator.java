@@ -60,6 +60,9 @@ public class FarmerSimulator implements FarmerSimulatorInterface {
                         phoneNumber = rs.getString(5);
                 farmers[counter].setDetails(name, email, password, phoneNumber);
                 counter++;
+                
+                
+                
             }
         } catch (InterruptedException | ExecutionException | SQLException ex) {
             Logger.getLogger(FarmerSimulator.class.getName()).log(Level.SEVERE, null, ex);
