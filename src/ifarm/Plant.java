@@ -2,6 +2,7 @@ package ifarm;
 
 public class Plant {
 
+    
     private String _id, name, unitType;
 
     public Plant(String id, String name, String unitType) {
