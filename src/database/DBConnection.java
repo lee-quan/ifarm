@@ -49,6 +49,10 @@ public class DBConnection {
         stmt.executeUpdate(sql);
     }
 
+    
+    
+    
+    
     public void update(String sql) throws SQLException {
         Statement stmt = conn.createStatement();
         stmt.executeUpdate(sql);
