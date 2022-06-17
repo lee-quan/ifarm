@@ -91,13 +91,6 @@ class Farmer implements Runnable {
         farms.add(farmid);
     }
 
-    public void getActivityList() {
-        System.out.println("Farmers: " + this._id);
-        activities.entrySet().forEach(entry -> {
-            System.out.println("Farm: " + entry.getKey() + " with activities: " + entry.getValue());
-        });
-        System.out.println();
-    }
 
     public String getFarm() {
         String str = "";
