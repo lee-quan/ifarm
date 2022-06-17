@@ -69,10 +69,10 @@ public class Ifarm {
             Pesticide[] pesticideArr = db.generatePesticideList();
 
             //Introduction of thread pool
-            ExecutorService executorservice = Executors.newFixedThreadPool(10);
+            ExecutorService executorservice = new MyThreadPoolExecutor(10, 10, 0L, TimeUnit.MILLISECONDS,
+                   new LinkedBlockingQueue<>());
             //Disaster Simulator
-//            ExecutorService threadPool = new MyThreadPoolExecutor(10, 10, 0L, TimeUnit.MILLISECONDS,
-//                    new LinkedBlockingQueue<>());
+            
             // Generate maximum value for each data
             String[] tableName = {"farm", "plant", "fertiliser", "pesticide"};
 
