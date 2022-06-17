@@ -4,6 +4,7 @@ public class Fertilizer {
     
     private String _id, name, unitType;
 
+    //Fertilizer constructor
     public Fertilizer(String id, String name, String unitType) {
         this._id = id;
         this.name = name;
