@@ -38,29 +38,7 @@ public class FarmerSimulator implements FarmerSimulatorInterface {
         //Farmer array to store all the farmer class
         farmers = new Farmer[numberOfFarmers];
 
-        try {
-            for (int i = 0; i < numberOfFarmers; i++) {
-                farmers[i] = new Farmer((i + 1) + "");
-                Generator.generateFarmForFarmer farmGenerator = gen.new generateFarmForFarmer(farmers[i], count.get());
-                taskList.add(farmGenerator);
-            }
-
-            // execute generate farm task and wait till finish completion 
-            resultList = executorService.invokeAll(taskList);            
-            // execute mysql to insert details of farmer
-            ResultSet rs = db.retrieve(sql);
-
-            int counter = 0;
-            while (rs.next()) {
-                Future<String> future = resultList.get(counter);
-                String _id = rs.getString(1),
-                        name = rs.getString(2),
-                        email = rs.getString(3),
-                        password = rs.getString(4),
-                        phoneNumber = rs.getString(5);
-                farmers[counter].setDetails(name, email, password, phoneNumber);
-                counter++;
-            }
+        
         } catch (InterruptedException | ExecutionException | SQLException ex) {
             Logger.getLogger(FarmerSimulator.class.getName()).log(Level.SEVERE, null, ex);
         }
