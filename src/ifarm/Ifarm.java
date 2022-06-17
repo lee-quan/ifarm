@@ -37,7 +37,7 @@ import javax.swing.JTextArea;
 public class Ifarm {
 
     private static final DBConnection db = new DBConnection();
-    private static final int NumOfFarmer = 10;
+    private static final int NumOfFarmer = 100;
 
     private static Callable<Void> toCallable(final Runnable runnable) {
         return () -> {
